@@ -1,0 +1,2 @@
+testCase,httpStatusCode,obEventPolling1Param,authorization,xFapiAuthDate,xFapiCustomerIpAddress,xFapiInteractionId
+Success,200,0,0,0,0,0

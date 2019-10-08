@@ -1,0 +1,121 @@
+
+[[_securityscheme]]
+== Security
+
+[[_aspspreadaccess]]
+=== ASPSPReadAccess
+[%hardbreaks]
+__Type__ : basic
+
+
+[[_tppreadaccess]]
+=== TPPReadAccess
+[%hardbreaks]
+__Type__ : basic
+
+
+[[_tppoauth2security]]
+=== TPPOAuth2Security
+TPP client credential authorisation flow with the ASPSP
+
+[%hardbreaks]
+__Type__ : oauth2
+__Flow__ : application
+__Token URL__ : https://authserver.example/token
+
+
+[options="header", cols=".^3,.^17"]
+|===
+|Name|Description
+|accounts|Ability to read Accounts information
+|eventpolling|Ability to poll for, acknowledge and receive Security Event Tokens
+|fundsconfirmation|Ability to confirm funds
+|fundsconfirmations|Funds confirmation entitlement
+|payments|Generic payment scope
+|===
+
+
+[[_oauth2securityreadwriteops]]
+=== OAuth2SecurityReadWriteOps
+This API uses OAuth 2 with the client credentials grant flow
+
+[%hardbreaks]
+__Type__ : oauth2
+__Flow__ : application
+__Token URL__ : https://authserver.example/token
+
+
+[options="header", cols=".^3,.^17"]
+|===
+|Name|Description
+|ASPSPReadAccess|Read ASPSP Records
+|TPPModify|Modify Your Third Third Party Provider Record
+|TPPReadAccess|Retrieve or Search for Third Party Providers
+|===
+
+
+[[_oauth2securityreadops]]
+=== OAuth2SecurityReadOps
+This API uses OAuth 2 with the client credentials grant flow
+
+[%hardbreaks]
+__Type__ : oauth2
+__Flow__ : application
+__Token URL__ : https://sso.openbanking.me.uk/as/token.oauth2
+
+
+[options="header", cols=".^3,.^17"]
+|===
+|Name|Description
+|ASPSPReadAccess|Read ASPSP Records
+|TPPReadAccess|Retrieve or Search for Third Party Providers
+|===
+
+
+[[_tppmodify]]
+=== TPPModify
+[%hardbreaks]
+__Type__ : basic
+
+
+[[_oauth2]]
+=== oauth2
+[%hardbreaks]
+__Type__ : oauth2
+__Flow__ : implicit
+__Token URL__ : https://matls-sso.openbanking.org.uk/as/token.oauth2
+
+
+[options="header", cols=".^3,.^17"]
+|===
+|Name|Description
+|ASPSPReadAccess|Read access to  OBAccountPaymentServiceProviders
+|ASPSPReadAll|Read access on OBAccountPaymentServiceProviders
+|AuthoritiesReadAccess|Read access to OBAuthorities resource
+|QTSPReadAccess|Read access to OBQTSP resource
+|TPPReadAccess|Read access on OBThirdPartyproviders
+|TPPReadAll|Read access on OBThirdPartyproviders for match on Organisation Id
+|===
+
+
+[[_psuoauth2security]]
+=== PSUOAuth2Security
+OAuth flow, it is required when the PSU needs to perform SCA with the ASPSP when a TPP wants to access an ASPSP resource owned by the PSU
+
+[%hardbreaks]
+__Type__ : oauth2
+__Flow__ : accessCode
+__Token URL__ : https://authserver.example/authorization
+__Token URL__ : https://authserver.example/token
+
+
+[options="header", cols=".^3,.^17"]
+|===
+|Name|Description
+|accounts|Ability to read Accounts information
+|fundsconfirmations|Funds confirmation entitlement
+|payments|Generic payment scope
+|===
+
+
+

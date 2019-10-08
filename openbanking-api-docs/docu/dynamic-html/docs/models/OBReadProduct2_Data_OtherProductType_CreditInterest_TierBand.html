@@ -1,0 +1,115 @@
+
+<h2>OBReadProduct2_Data_OtherProductType_CreditInterest_TierBand</h2>
+<ul class="parameter">
+  <li class="param-required-true">AER : String
+    <br/>The annual equivalent rate (AER) is interest that is calculated under the assumption that any interest paid is combined with the original balance and the next interest payment will be based on the slightly higher account balance. Overall, this means that interest can be compounded several times in a year depending on the number of times that interest payments are made.  Read more: Annual Equivalent Rate (AER) http://www.investopedia.com/terms/a/aer.asp#ixzz4gfR7IO1A
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">ApplicationFrequency : String
+    <br/>How often is interest applied to the Product for this tier/band i.e. how often the financial institution pays accumulated interest to the customer&#39;s account.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>FQAT</dd>
+            <dd>FQDY</dd>
+            <dd>FQHY</dd>
+            <dd>FQMY</dd>
+            <dd>FQOT</dd>
+            <dd>FQQY</dd>
+            <dd>FQSD</dd>
+            <dd>FQWY</dd>
+            <dd>FQYY</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">BankInterestRate : String
+    <br/>Bank Interest for the product
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">BankInterestRateType : String
+    <br/>Interest rate types, other than AER, which financial institutions may use to describe the annual interest rate payable to the account holder&#39;s account.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>INBB</dd>
+            <dd>INFR</dd>
+            <dd>INGR</dd>
+            <dd>INLR</dd>
+            <dd>INNE</dd>
+            <dd>INOT</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">CalculationFrequency : String
+    <br/>How often is credit interest calculated for the account.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>FQAT</dd>
+            <dd>FQDY</dd>
+            <dd>FQHY</dd>
+            <dd>FQMY</dd>
+            <dd>FQOT</dd>
+            <dd>FQQY</dd>
+            <dd>FQSD</dd>
+            <dd>FQWY</dd>
+            <dd>FQYY</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">DepositInterestAppliedCoverage : String
+    <br/>Amount on which Interest applied.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>INBA</dd>
+            <dd>INTI</dd>
+            <dd>INWH</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">FixedVariableInterestRateType : OB_InterestFixedVariableType1Code
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Identification : String
+    <br/>Unique and unambiguous identification of a  Tier Band for the Product.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Notes : List
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherApplicationFrequency : OB_OtherCodeType1_1
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherBankInterestType : OBReadProduct2_Data_OtherProductType_CreditInterest_OtherBankInterestType
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherCalculationFrequency : OB_OtherCodeType1_2
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">TierValueMaximum : String
+    <br/>Maximum deposit value for which the credit interest tier applies.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">TierValueMinimum : String
+    <br/>Minimum deposit value for which the credit interest tier applies.
+  </li>
+</ul>

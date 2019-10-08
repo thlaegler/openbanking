@@ -1,0 +1,2 @@
+testCase,httpStatusCode,oBWriteDomesticStandingOrderConsent4Param,authorization,xIdempotencyKey,xJwsSignature,xFapiAuthDate,xFapiCustomerIpAddress,xFapiInteractionId,oBWriteDomesticStandingOrder3Param,authorization,xIdempotencyKey,xJwsSignature,xFapiAuthDate,xFapiCustomerIpAddress,xFapiInteractionId,consentId,authorization,xFapiAuthDate,xFapiCustomerIpAddress,xFapiInteractionId,domesticStandingOrderId,authorization,xFapiAuthDate,xFapiCustomerIpAddress,xFapiInteractionId
+Success,200,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

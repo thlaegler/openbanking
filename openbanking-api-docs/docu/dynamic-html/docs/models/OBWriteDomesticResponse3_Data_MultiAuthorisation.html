@@ -1,0 +1,34 @@
+
+<h2>OBWriteDomesticResponse3_Data_MultiAuthorisation</h2>
+<ul class="parameter">
+  <li class="param-required-false">ExpirationDateTime : Date
+    <br/>Date and time at which the requested authorisation flow must be completed.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">LastUpdateDateTime : Date
+    <br/>Last date and time at the authorisation flow was updated.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">NumberReceived : Integer
+    <br/>Number of authorisations received.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">NumberRequired : Integer
+    <br/>Number of authorisations required for payment order (total required at the start of the multi authorisation journey).
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">Status : String
+    <br/>Specifies the status of the authorisation flow in code form.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Authorised</dd>
+            <dd>AwaitingFurtherAuthorisation</dd>
+            <dd>Rejected</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>

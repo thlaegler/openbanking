@@ -1,0 +1,33 @@
+
+<h2>OBWritePaymentDetailsResponse1_Data_StatusDetail</h2>
+<ul class="parameter">
+  <li class="param-required-false">LocalInstrument : OBExternalLocalInstrument1Code
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">Status : String
+    <br/>Status of a transfer, as assigned by the transaction administrator.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">StatusReason : String
+    <br/>Reason Code provided for the status of a transfer.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Cancelled</dd>
+            <dd>PendingFailingSettlement</dd>
+            <dd>PendingSettlement</dd>
+            <dd>Proprietary</dd>
+            <dd>ProprietaryRejection</dd>
+            <dd>Suspended</dd>
+            <dd>Unmatched</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">StatusReasonDescription : String
+    <br/>Reason provided for the status of a transfer.
+  </li>
+</ul>

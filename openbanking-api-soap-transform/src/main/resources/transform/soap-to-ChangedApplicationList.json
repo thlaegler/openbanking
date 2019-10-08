@@ -1,0 +1,7 @@
+{
+	"changedApps": [
+		{
+			"changedDate": "{{this.listChangedApplicationsResponse.sinceDate}}"
+		}
+	]
+}

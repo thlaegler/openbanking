@@ -1,0 +1,88 @@
+
+<h2>UnsecuredSMELendingResponse_SMELoanMarketingState</h2>
+<ul class="parameter">
+  <li class="param-required-true">CoreProduct : CoreProduct_3
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">Eligibility : Eligibility_3
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">FeaturesAndBenefits : FeaturesAndBenefits_3
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">FirstMarketedDate : date
+    <br/>Marketing state start date
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">Identification : String
+    <br/>Unique and unambiguous identification of a  SME Loan Product Marketing State.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">LastMarketedDate : date
+    <br/>Marketing state end date
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">LoanInterest : LoanInterest
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">MarketingState : String
+    <br/>Describes the marketing state (regular or promotional) of the SME Loan Product
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Promotional</dd>
+            <dd>Regular</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Notes : List
+    <br/>Free text for adding details for marketing state
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherFeesCharges : OtherFeesCharges_3
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">PredecessorID : String
+    <br/>Identifies the marketing state that precedes this marketing state
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">Repayment : List
+    <br/>Repayment details of the Loan product
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">StateTenureLength : Float
+    <br/>The length/duration of a promotional state
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">StateTenurePeriod : String
+    <br/>The unit of period (days, weeks, months etc.) of the promotional length
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Day</dd>
+            <dd>Half Year</dd>
+            <dd>Month</dd>
+            <dd>Quarter</dd>
+            <dd>Week</dd>
+            <dd>Year</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>

@@ -1,0 +1,54 @@
+package {{package}}.impl;
+
+import {{package}}.*;
+import {{modelPackage}}.*;
+import java.util.ArrayList;
+import javax.ws.rs.core.GenericEntity;
+{{#operations}}{{#operation}}{{#isMultipart}}import org.jboss.resteasy.plugins.providers.multipart.MultipartFormDataInput;
+{{/isMultipart}}{{/operation}}{{/operations}}
+
+{{#imports}}import {{import}};
+{{/imports}}
+
+import java.util.List;
+import {{package}}.NotFoundException;
+
+import java.io.InputStream;
+
+import javax.ws.rs.core.Response;
+import javax.ws.rs.core.SecurityContext;
+
+{{>generatedAnnotation}}
+{{#operations}}
+public class {{classname}}ServiceImpl extends {{classname}}Service {
+
+	{{#operation}}
+	{{#responses.0}}
+	@Override
+	public Response {{nickname}}({{#isMultipart}}MultipartFormDataInput input,{{/isMultipart}}{{#allParams}}{{>serviceQueryParams}}{{>servicePathParams}}{{>serviceHeaderParams}}{{>serviceBodyParams}}{{^isMultipart}}{{>serviceFormParams}},{{/isMultipart}}{{#isMultipart}}{{^isFormParam}},{{/isFormParam}}{{/isMultipart}}{{/allParams}}SecurityContext securityContext) throws NotFoundException {
+		// TODO: REST API mock-method returning an example response.
+		// You have to customize the result in this method like:
+		// Foo result = FooBuilder.id(1).name("my name").build();
+		{{^containerType}}
+		{{#schema.genericRef}}
+		{{schema.genericRef.simpleRef}} result = {{schema.genericRef.simpleRef}}.getExample();
+		{{/schema.genericRef}}
+		{{^schema.genericRef}}
+		ApiResponseMessage result = new ApiResponseMessage(ApiResponseMessage.OK, "{{message}}");
+		{{/schema.genericRef}}
+		{{/containerType}}
+		{{#containerType}}
+		List<{{baseType}}> results = new ArrayList<{{baseType}}>();
+		results.add({{baseType}}.getExample());
+		results.add({{baseType}}.getExample());
+		results.add({{baseType}}.getExample());
+		GenericEntity result = new GenericEntity<List<{{baseType}}>>(results){};
+		{{/containerType}}
+		
+		return Response.status({{code}}).entity(result).build();
+	}
+	{{/responses.0}}
+	{{/operation}}
+
+}
+{{/operations}}

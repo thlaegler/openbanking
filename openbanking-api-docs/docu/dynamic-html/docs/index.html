@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-responsive.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script src="assets/js/jquery-1.8.3.min.js" type="text/javascript"></script>
+  <script src="assets/js/main.js" type="text/javascript"></script>
+
+  <title>REST API Resources</title>
+</head>
+<body>
+  <div class="header">
+    <div class="top-bar">
+      <h1 id="logo"><a class="logo" href="/"><span>Swagger</span><span class="light">API Docs</span></a></h1>
+    </div>
+  </div>
+  <div class="model-container"></div>
+  <div class="content">
+    <div class="box clearfix">
+      <div class="sidebar">
+        <div class="section-box">
+          <div class="section-header">
+            Overview
+          </div>
+          <ul>
+            <li>Getting Started</li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/ATMApi">ATMApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/ATMApi#atmsGet">atmsGet</a></li>
+            <li><a href="#!/ATMApi#atmsHead">atmsHead</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/AccountAccessApi">AccountAccessApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/AccountAccessApi#createAccountAccessConsents">createAccountAccessConsents</a></li>
+            <li><a href="#!/AccountAccessApi#deleteAccountAccessConsentsConsentId">deleteAccountAccessConsentsConsentId</a></li>
+            <li><a href="#!/AccountAccessApi#getAccountAccessConsentsConsentId">getAccountAccessConsentsConsentId</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/AccountsApi">AccountsApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/AccountsApi#getAccounts">getAccounts</a></li>
+            <li><a href="#!/AccountsApi#getAccountsAccountId">getAccountsAccountId</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/AuthorisationServersApi">AuthorisationServersApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/AuthorisationServersApi#organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdDelete">organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdDelete</a></li>
+            <li><a href="#!/AuthorisationServersApi#organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdGet">organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdGet</a></li>
+            <li><a href="#!/AuthorisationServersApi#organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdPut">organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdPut</a></li>
+            <li><a href="#!/AuthorisationServersApi#organisationOrganisationTypeOrganisationIdAuthorisationServerGet">organisationOrganisationTypeOrganisationIdAuthorisationServerGet</a></li>
+            <li><a href="#!/AuthorisationServersApi#organisationOrganisationTypeOrganisationIdAuthorisationServerPost">organisationOrganisationTypeOrganisationIdAuthorisationServerPost</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/BCAApi">BCAApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/BCAApi#businessCurrentAccountsGet">businessCurrentAccountsGet</a></li>
+            <li><a href="#!/BCAApi#businessCurrentAccountsHead">businessCurrentAccountsHead</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/BalancesApi">BalancesApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/BalancesApi#getAccountsAccountIdBalances">getAccountsAccountIdBalances</a></li>
+            <li><a href="#!/BalancesApi#getBalances">getBalances</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/BeneficiariesApi">BeneficiariesApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/BeneficiariesApi#getAccountsAccountIdBeneficiaries">getAccountsAccountIdBeneficiaries</a></li>
+            <li><a href="#!/BeneficiariesApi#getBeneficiaries">getBeneficiaries</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/BranchApi">BranchApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/BranchApi#branchesGet">branchesGet</a></li>
+            <li><a href="#!/BranchApi#branchesHead">branchesHead</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/CCCApi">CCCApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/CCCApi#commercialCreditCardsGet">commercialCreditCardsGet</a></li>
+            <li><a href="#!/CCCApi#commercialCreditCardsHead">commercialCreditCardsHead</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/CallbackURLsApi">CallbackURLsApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/CallbackURLsApi#callbackUrlsCallbackUrlIdDelete">callbackUrlsCallbackUrlIdDelete</a></li>
+            <li><a href="#!/CallbackURLsApi#callbackUrlsCallbackUrlIdPut">callbackUrlsCallbackUrlIdPut</a></li>
+            <li><a href="#!/CallbackURLsApi#callbackUrlsGet">callbackUrlsGet</a></li>
+            <li><a href="#!/CallbackURLsApi#callbackUrlsPost">callbackUrlsPost</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/CertificateAssociationsApi">CertificateAssociationsApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/CertificateAssociationsApi#organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateOrganisationAssociativeCertificateTypeCertificateOrKeyIdPut">organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateOrganisationAssociativeCertificateTypeCertificateOrKeyIdPut</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/CertificateValidationApi">CertificateValidationApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/CertificateValidationApi#certificateValidatePost">certificateValidatePost</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/ClientRegistrationApi">ClientRegistrationApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/ClientRegistrationApi#registerClientIdDelete">registerClientIdDelete</a></li>
+            <li><a href="#!/ClientRegistrationApi#registerClientIdGet">registerClientIdGet</a></li>
+            <li><a href="#!/ClientRegistrationApi#registerClientIdPut">registerClientIdPut</a></li>
+            <li><a href="#!/ClientRegistrationApi#registerPost">registerPost</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/ContactsApi">ContactsApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/ContactsApi#organisationOrganisationTypeOrganisationIdContactContactTypeGet">organisationOrganisationTypeOrganisationIdContactContactTypeGet</a></li>
+            <li><a href="#!/ContactsApi#organisationOrganisationTypeOrganisationIdContactContactTypePut">organisationOrganisationTypeOrganisationIdContactContactTypePut</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/DirectDebitsApi">DirectDebitsApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/DirectDebitsApi#getAccountsAccountIdDirectDebits">getAccountsAccountIdDirectDebits</a></li>
+            <li><a href="#!/DirectDebitsApi#getDirectDebits">getDirectDebits</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/DomesticPaymentsApi">DomesticPaymentsApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/DomesticPaymentsApi#createDomesticPaymentConsents">createDomesticPaymentConsents</a></li>
+            <li><a href="#!/DomesticPaymentsApi#createDomesticPayments">createDomesticPayments</a></li>
+            <li><a href="#!/DomesticPaymentsApi#getDomesticPaymentConsentsConsentId">getDomesticPaymentConsentsConsentId</a></li>
+            <li><a href="#!/DomesticPaymentsApi#getDomesticPaymentConsentsConsentIdFundsConfirmation">getDomesticPaymentConsentsConsentIdFundsConfirmation</a></li>
+            <li><a href="#!/DomesticPaymentsApi#getDomesticPaymentsDomesticPaymentId">getDomesticPaymentsDomesticPaymentId</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/DomesticScheduledPaymentsApi">DomesticScheduledPaymentsApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/DomesticScheduledPaymentsApi#createDomesticScheduledPaymentConsents">createDomesticScheduledPaymentConsents</a></li>
+            <li><a href="#!/DomesticScheduledPaymentsApi#createDomesticScheduledPayments">createDomesticScheduledPayments</a></li>
+            <li><a href="#!/DomesticScheduledPaymentsApi#getDomesticScheduledPaymentConsentsConsentId">getDomesticScheduledPaymentConsentsConsentId</a></li>
+            <li><a href="#!/DomesticScheduledPaymentsApi#getDomesticScheduledPaymentsDomesticScheduledPaymentId">getDomesticScheduledPaymentsDomesticScheduledPaymentId</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/DomesticStandingOrdersApi">DomesticStandingOrdersApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/DomesticStandingOrdersApi#createDomesticStandingOrderConsents">createDomesticStandingOrderConsents</a></li>
+            <li><a href="#!/DomesticStandingOrdersApi#createDomesticStandingOrders">createDomesticStandingOrders</a></li>
+            <li><a href="#!/DomesticStandingOrdersApi#getDomesticStandingOrderConsentsConsentId">getDomesticStandingOrderConsentsConsentId</a></li>
+            <li><a href="#!/DomesticStandingOrdersApi#getDomesticStandingOrdersDomesticStandingOrderId">getDomesticStandingOrdersDomesticStandingOrderId</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/EventNotificationApi">EventNotificationApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/EventNotificationApi#createEventNotification">createEventNotification</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/EventSubscriptionsApi">EventSubscriptionsApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/EventSubscriptionsApi#changeEventSubscriptionsEventSubscriptionId">changeEventSubscriptionsEventSubscriptionId</a></li>
+            <li><a href="#!/EventSubscriptionsApi#createEventSubscriptions">createEventSubscriptions</a></li>
+            <li><a href="#!/EventSubscriptionsApi#deleteEventSubscriptionsEventSubscriptionId">deleteEventSubscriptionsEventSubscriptionId</a></li>
+            <li><a href="#!/EventSubscriptionsApi#getEventSubscriptions">getEventSubscriptions</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/EventsApi">EventsApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/EventsApi#createEvents">createEvents</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/FilePaymentsApi">FilePaymentsApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/FilePaymentsApi#createFilePaymentConsents">createFilePaymentConsents</a></li>
+            <li><a href="#!/FilePaymentsApi#createFilePaymentConsentsConsentIdFile">createFilePaymentConsentsConsentIdFile</a></li>
+            <li><a href="#!/FilePaymentsApi#createFilePayments">createFilePayments</a></li>
+            <li><a href="#!/FilePaymentsApi#getFilePaymentConsentsConsentId">getFilePaymentConsentsConsentId</a></li>
+            <li><a href="#!/FilePaymentsApi#getFilePaymentConsentsConsentIdFile">getFilePaymentConsentsConsentIdFile</a></li>
+            <li><a href="#!/FilePaymentsApi#getFilePaymentsFilePaymentId">getFilePaymentsFilePaymentId</a></li>
+            <li><a href="#!/FilePaymentsApi#getFilePaymentsFilePaymentIdReportFile">getFilePaymentsFilePaymentIdReportFile</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/FundsConfirmationsApi">FundsConfirmationsApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/FundsConfirmationsApi#createFundsConfirmationConsents">createFundsConfirmationConsents</a></li>
+            <li><a href="#!/FundsConfirmationsApi#createFundsConfirmations">createFundsConfirmations</a></li>
+            <li><a href="#!/FundsConfirmationsApi#deleteFundsConfirmationConsentsConsentId">deleteFundsConfirmationConsentsConsentId</a></li>
+            <li><a href="#!/FundsConfirmationsApi#getFundsConfirmationConsentsConsentId">getFundsConfirmationConsentsConsentId</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/InternationalPaymentsApi">InternationalPaymentsApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/InternationalPaymentsApi#createInternationalPaymentConsents">createInternationalPaymentConsents</a></li>
+            <li><a href="#!/InternationalPaymentsApi#createInternationalPayments">createInternationalPayments</a></li>
+            <li><a href="#!/InternationalPaymentsApi#getInternationalPaymentConsentsConsentId">getInternationalPaymentConsentsConsentId</a></li>
+            <li><a href="#!/InternationalPaymentsApi#getInternationalPaymentConsentsConsentIdFundsConfirmation">getInternationalPaymentConsentsConsentIdFundsConfirmation</a></li>
+            <li><a href="#!/InternationalPaymentsApi#getInternationalPaymentsInternationalPaymentId">getInternationalPaymentsInternationalPaymentId</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/InternationalScheduledPaymentsApi">InternationalScheduledPaymentsApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/InternationalScheduledPaymentsApi#createInternationalScheduledPaymentConsents">createInternationalScheduledPaymentConsents</a></li>
+            <li><a href="#!/InternationalScheduledPaymentsApi#createInternationalScheduledPayments">createInternationalScheduledPayments</a></li>
+            <li><a href="#!/InternationalScheduledPaymentsApi#getInternationalScheduledPaymentConsentsConsentId">getInternationalScheduledPaymentConsentsConsentId</a></li>
+            <li><a href="#!/InternationalScheduledPaymentsApi#getInternationalScheduledPaymentConsentsConsentIdFundsConfirmation">getInternationalScheduledPaymentConsentsConsentIdFundsConfirmation</a></li>
+            <li><a href="#!/InternationalScheduledPaymentsApi#getInternationalScheduledPaymentsInternationalScheduledPaymentId">getInternationalScheduledPaymentsInternationalScheduledPaymentId</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/InternationalStandingOrdersApi">InternationalStandingOrdersApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/InternationalStandingOrdersApi#createInternationalStandingOrderConsents">createInternationalStandingOrderConsents</a></li>
+            <li><a href="#!/InternationalStandingOrdersApi#createInternationalStandingOrders">createInternationalStandingOrders</a></li>
+            <li><a href="#!/InternationalStandingOrdersApi#getInternationalStandingOrderConsentsConsentId">getInternationalStandingOrderConsentsConsentId</a></li>
+            <li><a href="#!/InternationalStandingOrdersApi#getInternationalStandingOrdersInternationalStandingOrderPaymentId">getInternationalStandingOrdersInternationalStandingOrderPaymentId</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/OBAccountPaymentServiceProvidersApi">OBAccountPaymentServiceProvidersApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/OBAccountPaymentServiceProvidersApi#oBAccountPaymentServiceProvidersGet">oBAccountPaymentServiceProvidersGet</a></li>
+            <li><a href="#!/OBAccountPaymentServiceProvidersApi#oBAccountPaymentServiceProvidersIdGet">oBAccountPaymentServiceProvidersIdGet</a></li>
+            <li><a href="#!/OBAccountPaymentServiceProvidersApi#oBAccountPaymentServiceProvidersSearchPost">oBAccountPaymentServiceProvidersSearchPost</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/OBAuthoritiesApi">OBAuthoritiesApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/OBAuthoritiesApi#oBAuthoritiesGet">oBAuthoritiesGet</a></li>
+            <li><a href="#!/OBAuthoritiesApi#oBAuthoritiesIdGet">oBAuthoritiesIdGet</a></li>
+            <li><a href="#!/OBAuthoritiesApi#oBAuthoritiesSearchPost">oBAuthoritiesSearchPost</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/OBQualifiedTrustServiceProvidersApi">OBQualifiedTrustServiceProvidersApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/OBQualifiedTrustServiceProvidersApi#oBQualifiedTrustServiceProvidersGet">oBQualifiedTrustServiceProvidersGet</a></li>
+            <li><a href="#!/OBQualifiedTrustServiceProvidersApi#oBQualifiedTrustServiceProvidersIdGet">oBQualifiedTrustServiceProvidersIdGet</a></li>
+            <li><a href="#!/OBQualifiedTrustServiceProvidersApi#oBQualifiedTrustServiceProvidersSearchPost">oBQualifiedTrustServiceProvidersSearchPost</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/OBThirdPartyProvidersApi">OBThirdPartyProvidersApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/OBThirdPartyProvidersApi#oBThirdPartyProvidersGet">oBThirdPartyProvidersGet</a></li>
+            <li><a href="#!/OBThirdPartyProvidersApi#oBThirdPartyProvidersIdGet">oBThirdPartyProvidersIdGet</a></li>
+            <li><a href="#!/OBThirdPartyProvidersApi#oBThirdPartyProvidersSearchPost">oBThirdPartyProvidersSearchPost</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/OffersApi">OffersApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/OffersApi#getAccountsAccountIdOffers">getAccountsAccountIdOffers</a></li>
+            <li><a href="#!/OffersApi#getOffers">getOffers</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/OrganisationCertificatesApi">OrganisationCertificatesApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/OrganisationCertificatesApi#organisationOrganisationTypeOrganisationIdCertificateGet">organisationOrganisationTypeOrganisationIdCertificateGet</a></li>
+            <li><a href="#!/OrganisationCertificatesApi#organisationOrganisationTypeOrganisationIdCertificateKidCertificateOrKeyIdDelete">organisationOrganisationTypeOrganisationIdCertificateKidCertificateOrKeyIdDelete</a></li>
+            <li><a href="#!/OrganisationCertificatesApi#organisationOrganisationTypeOrganisationIdCertificateKidCertificateOrKeyIdGet">organisationOrganisationTypeOrganisationIdCertificateKidCertificateOrKeyIdGet</a></li>
+            <li><a href="#!/OrganisationCertificatesApi#organisationOrganisationTypeOrganisationIdCertificateOrganisationCertificateTypeGet">organisationOrganisationTypeOrganisationIdCertificateOrganisationCertificateTypeGet</a></li>
+            <li><a href="#!/OrganisationCertificatesApi#organisationOrganisationTypeOrganisationIdCertificateOrganisationCertificateTypePost">organisationOrganisationTypeOrganisationIdCertificateOrganisationCertificateTypePost</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/OrganisationsApi">OrganisationsApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/OrganisationsApi#organisationOrganisationTypeGet">organisationOrganisationTypeGet</a></li>
+            <li><a href="#!/OrganisationsApi#organisationOrganisationTypeOrganisationIdGet">organisationOrganisationTypeOrganisationIdGet</a></li>
+            <li><a href="#!/OrganisationsApi#organisationOrganisationTypePost">organisationOrganisationTypePost</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/PCAApi">PCAApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/PCAApi#personalCurrentAccountsGet">personalCurrentAccountsGet</a></li>
+            <li><a href="#!/PCAApi#personalCurrentAccountsHead">personalCurrentAccountsHead</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/PartiesApi">PartiesApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/PartiesApi#getAccountsAccountIdParties">getAccountsAccountIdParties</a></li>
+            <li><a href="#!/PartiesApi#getAccountsAccountIdParty">getAccountsAccountIdParty</a></li>
+            <li><a href="#!/PartiesApi#getParty">getParty</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/PaymentDetailsApi">PaymentDetailsApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/PaymentDetailsApi#getDomesticPaymentsDomesticPaymentIdPaymentDetails">getDomesticPaymentsDomesticPaymentIdPaymentDetails</a></li>
+            <li><a href="#!/PaymentDetailsApi#getDomesticScheduledPaymentsDomesticScheduledPaymentIdPaymentDetails">getDomesticScheduledPaymentsDomesticScheduledPaymentIdPaymentDetails</a></li>
+            <li><a href="#!/PaymentDetailsApi#getDomesticStandingOrdersDomesticStandingOrderIdPaymentDetails">getDomesticStandingOrdersDomesticStandingOrderIdPaymentDetails</a></li>
+            <li><a href="#!/PaymentDetailsApi#getFilePaymentsFilePaymentIdPaymentDetails">getFilePaymentsFilePaymentIdPaymentDetails</a></li>
+            <li><a href="#!/PaymentDetailsApi#getInternationalPaymentsInternationalPaymentIdPaymentDetails">getInternationalPaymentsInternationalPaymentIdPaymentDetails</a></li>
+            <li><a href="#!/PaymentDetailsApi#getInternationalScheduledPaymentsInternationalScheduledPaymentIdPaymentDetails">getInternationalScheduledPaymentsInternationalScheduledPaymentIdPaymentDetails</a></li>
+            <li><a href="#!/PaymentDetailsApi#getInternationalStandingOrdersInternationalStandingOrderPaymentIdPaymentDetails">getInternationalStandingOrdersInternationalStandingOrderPaymentIdPaymentDetails</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/ProductsApi">ProductsApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/ProductsApi#getAccountsAccountIdProduct">getAccountsAccountIdProduct</a></li>
+            <li><a href="#!/ProductsApi#getProducts">getProducts</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/SMEApi">SMEApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/SMEApi#unsecuredSmeLoansGet">unsecuredSmeLoansGet</a></li>
+            <li><a href="#!/SMEApi#unsecuredSmeLoansHead">unsecuredSmeLoansHead</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/ScheduledPaymentsApi">ScheduledPaymentsApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/ScheduledPaymentsApi#getAccountsAccountIdScheduledPayments">getAccountsAccountIdScheduledPayments</a></li>
+            <li><a href="#!/ScheduledPaymentsApi#getScheduledPayments">getScheduledPayments</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/SoftwareStatementAssertionsApi">SoftwareStatementAssertionsApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/SoftwareStatementAssertionsApi#organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdSoftwareStatementAssertionGet">organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdSoftwareStatementAssertionGet</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/SoftwareStatementCertificatesApi">SoftwareStatementCertificatesApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/SoftwareStatementCertificatesApi#organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateGet">organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateGet</a></li>
+            <li><a href="#!/SoftwareStatementCertificatesApi#organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateOrganisationAssociativeCertificateTypeCertificateOrKeyIdGet">organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateOrganisationAssociativeCertificateTypeCertificateOrKeyIdGet</a></li>
+            <li><a href="#!/SoftwareStatementCertificatesApi#organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateSoftwareStatementCertificateOrKeyTypeGet">organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateSoftwareStatementCertificateOrKeyTypeGet</a></li>
+            <li><a href="#!/SoftwareStatementCertificatesApi#organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateSoftwareStatementCertificateOrKeyTypePost">organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateSoftwareStatementCertificateOrKeyTypePost</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/SoftwareStatementRedirectURIsApi">SoftwareStatementRedirectURIsApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/SoftwareStatementRedirectURIsApi#organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdRedirectUriPost">organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdRedirectUriPost</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/SoftwareStatementsApi">SoftwareStatementsApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/SoftwareStatementsApi#organisationOrganisationTypeOrganisationIdSoftwareStatementGet">organisationOrganisationTypeOrganisationIdSoftwareStatementGet</a></li>
+            <li><a href="#!/SoftwareStatementsApi#organisationOrganisationTypeOrganisationIdSoftwareStatementPost">organisationOrganisationTypeOrganisationIdSoftwareStatementPost</a></li>
+            <li><a href="#!/SoftwareStatementsApi#organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdGet">organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdGet</a></li>
+            <li><a href="#!/SoftwareStatementsApi#organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdPut">organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdPut</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/StandingOrdersApi">StandingOrdersApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/StandingOrdersApi#getAccountsAccountIdStandingOrders">getAccountsAccountIdStandingOrders</a></li>
+            <li><a href="#!/StandingOrdersApi#getStandingOrders">getStandingOrders</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/StatementsApi">StatementsApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/StatementsApi#getAccountsAccountIdStatements">getAccountsAccountIdStatements</a></li>
+            <li><a href="#!/StatementsApi#getAccountsAccountIdStatementsStatementId">getAccountsAccountIdStatementsStatementId</a></li>
+            <li><a href="#!/StatementsApi#getAccountsAccountIdStatementsStatementIdFile">getAccountsAccountIdStatementsStatementIdFile</a></li>
+            <li><a href="#!/StatementsApi#getStatements">getStatements</a></li>
+          </ul>
+        </div>
+        <div class="section-box">
+          <div class="section-header">
+            <a href="#!/TransactionsApi">TransactionsApi</a>
+          </div>
+          <ul>
+            <li><a href="#!/TransactionsApi#getAccountsAccountIdStatementsStatementIdTransactions">getAccountsAccountIdStatementsStatementIdTransactions</a></li>
+            <li><a href="#!/TransactionsApi#getAccountsAccountIdTransactions">getAccountsAccountIdTransactions</a></li>
+            <li><a href="#!/TransactionsApi#getTransactions">getTransactions</a></li>
+          </ul>
+        </div>
+      </div>
+    <div class="non-sidebar">
+      <div class="main-content">
+        <h2>Getting Started</h2>
+        <p>To begin using your fancy HTTP API, follow the steps below.</p>
+        <p>You can add some helpful tips, here</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,2 @@
+testCase,httpStatusCode,obWriteInternationalStandingOrder3Param,authorization,xIdempotencyKey,xJwsSignature,xFapiAuthDate,xFapiCustomerIpAddress,xFapiInteractionId,internationalStandingOrderPaymentId,authorization,xFapiAuthDate,xFapiCustomerIpAddress,xFapiInteractionId,internationalStandingOrderPaymentId,authorization,xFapiAuthDate,xFapiCustomerIpAddress,xFapiInteractionId
+Success,200,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

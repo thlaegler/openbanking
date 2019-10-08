@@ -1,0 +1,25 @@
+steps:
+
+- id: INIT
+  name: gcr.io/cloud-builders/gcloud
+  entrypoint: /bin/bash
+  args:
+  - '-c'
+  - |
+    gsutil -m cp -n -r "gs://$PROJECT_ID-private/*" cloudbuild/
+    chmod +x cloudbuild/*.sh
+    ./cloudbuild/init.sh $PROJECT_ID $_DEBUG $SHORT_SHA "branch_$BRANCH_NAME" "tag_$TAG_NAME"
+
+- id: MAVEN
+  name: gcr.io/$PROJECT_ID/maven-builder
+  waitFor: [ 'INIT' ]
+  entrypoint: /bin/bash
+  args: [ './cloudbuild/maven.sh' ]
+
+- id: REPORT
+  name: gcr.io/cloud-builders/gcloud
+  waitFor: [ 'MAVEN' ]
+  entrypoint: /bin/bash
+  args: [ './cloudbuild/report.sh' ]
+
+timeout: 30m

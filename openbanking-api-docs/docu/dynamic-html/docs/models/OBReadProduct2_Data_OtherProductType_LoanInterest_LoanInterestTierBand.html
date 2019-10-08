@@ -1,0 +1,104 @@
+
+<h2>OBReadProduct2_Data_OtherProductType_LoanInterest_LoanInterestTierBand</h2>
+<ul class="parameter">
+  <li class="param-required-true">FixedVariableInterestRateType : OB_InterestFixedVariableType1Code
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Identification : String
+    <br/>Unique and unambiguous identification of a  Tier Band for a SME Loan.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">LoanInterestFeesCharges : List
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">LoanProviderInterestRate : String
+    <br/>Loan provider Interest for the SME Loan product
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">LoanProviderInterestRateType : String
+    <br/>Interest rate types, other than APR, which financial institutions may use to describe the annual interest rate payable for the SME Loan.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>INBB</dd>
+            <dd>INFR</dd>
+            <dd>INGR</dd>
+            <dd>INLR</dd>
+            <dd>INNE</dd>
+            <dd>INOT</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">MaxTermPeriod : String
+    <br/>The unit of period (days, weeks, months etc.) of the Maximum Term
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>PACT</dd>
+            <dd>PDAY</dd>
+            <dd>PHYR</dd>
+            <dd>PMTH</dd>
+            <dd>PQTR</dd>
+            <dd>PWEK</dd>
+            <dd>PYER</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">MinTermPeriod : String
+    <br/>The unit of period (days, weeks, months etc.) of the Minimum Term
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>PACT</dd>
+            <dd>PDAY</dd>
+            <dd>PHYR</dd>
+            <dd>PMTH</dd>
+            <dd>PQTR</dd>
+            <dd>PWEK</dd>
+            <dd>PYER</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Notes : List
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherLoanProviderInterestRateType : OBReadProduct2_Data_OtherProductType_LoanInterest_OtherLoanProviderInterestRateType
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">RepAPR : String
+    <br/>The annual equivalent rate (AER) is interest that is calculated under the assumption that any interest paid is combined with the original balance and the next interest payment will be based on the slightly higher account balance. Overall, this means that interest can be compounded several times in a year depending on the number of times that interest payments are made.  For SME Loan, this APR is the representative APR which includes any account fees.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">TierValueMaxTerm : Integer
+    <br/>Maximum loan term for which the loan interest tier applies.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">TierValueMaximum : String
+    <br/>Maximum loan value for which the loan interest tier applies.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">TierValueMinTerm : Integer
+    <br/>Minimum loan term for which the loan interest tier applies.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">TierValueMinimum : String
+    <br/>Minimum loan value for which the loan interest tier applies.
+  </li>
+</ul>

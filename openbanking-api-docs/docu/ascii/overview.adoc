@@ -1,0 +1,91 @@
+= Open Banking API
+
+
+[[_overview]]
+== Overview
+Latest Swagger specification for OpenBanking
+
+
+=== Version information
+[%hardbreaks]
+__Version__ : v2.3
+
+
+=== Contact information
+[%hardbreaks]
+__Contact__ : Thomas Laegler
+__Contact Email__ : thomas.laegler@googlemail.com
+
+
+=== License information
+[%hardbreaks]
+__License__ : MIT Licence
+__License URL__ : http://github.org/thlaegler/openbanking-api/LICENCE
+__Terms of service__ : http://github.org/thlaegler/openbanking-api
+
+
+=== URI scheme
+[%hardbreaks]
+__Host__ : localhost:8080
+__BasePath__ : /open-banking/v2.3
+__Schemes__ : HTTPS
+
+
+=== Tags
+
+* ATM : Endpoint for getting ATM data
+* Account Access : Account Info Account Access
+* Accounts : Account Info Accounts
+* BCA : Endpoint for getting Business Current Account data
+* Balances : Account Info Balances
+* Beneficiaries : Account Info Beneficiaries
+* Branch : Endpoint for getting Branch data
+* CCC : Endpoint for getting Commercial Credit Card data
+* Callback URLs
+* Client Registration
+* Direct Debits : Account Info Direct Debits
+* Domestic Payments
+* Domestic Scheduled Payments
+* Event Notification
+* Event Subscriptions
+* Events : Aggregated Polling Events
+* File Payments
+* Funds Confirmations
+* International Payments
+* International Scheduled Payments
+* OBAccountPaymentServiceProviders : Operations on the OBAccountPaymentServiceProviders resource type
+* OBAuthorities : Operations on the OBAuthorities resource type
+* OBQualifiedTrustServiceProviders : Operations on the OBQualifiedTrustServiceProviders resource type
+* OBThirdPartyProviders : Operations on the OBThirdPartyProviders resource type
+* Offers : Account Info Offers
+* Optional
+* PCA : Endpoint for getting Personal Current Account data
+* Parties : Account Info Parties
+* Payment Details
+* Products : Account Info Products
+* SME : Endpoint for getting Unsecured SME Loan data
+* Scheduled Payments : Account Info Scheduled Payments
+* Software Statement Certificates
+* Standing Orders : Account Info Standing Orders
+* Statements : Account Info Statements
+* Transactions : Account Info Transactions
+
+
+=== Consumes
+
+* `application/json; charset=utf-8`
+* `application/jose+jwe`
+* `application/jose`
+* `application/scim+json`
+
+
+=== Produces
+
+* `application/prs.openbanking.opendata.v2.3+json`
+* `application/json; charset=utf-8`
+* `application/jose+jwe`
+* `application/json`
+* `application/scim+json`
+
+
+

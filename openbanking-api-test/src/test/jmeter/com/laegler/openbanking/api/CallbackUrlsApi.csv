@@ -1,0 +1,2 @@
+testCase,httpStatusCode,callbackUrlId,authorization,xFapiInteractionId,callbackUrlId,oBCallbackUrl1Param,authorization,xJwsSignature,xFapiInteractionId,authorization,xFapiInteractionId,oBCallbackUrl1Param,authorization,xJwsSignature,xFapiInteractionId
+Success,200,0,0,0,0,0,0,0,0,0,0,0,0,0,0

@@ -1,0 +1,38 @@
+# language: en
+{{#operations}}
+Feature: {{classname}} {{summary}}
+	{{notes}}{{description}}
+
+{{#operation}}
+{{#responses}}
+Scenario: {{summary}} - {{message}}
+	Expecting HTTP status code: {{code}}
+	{{^hasAuthMethods}}
+	Given a consumer
+	{{/hasAuthMethods}}
+	{{#hasAuthMethods}}
+	Given a consumer authenticated with "{{authMethods.0.type}}" method "{{authMethods.0.name}}" flow "{{authMethods.0.flow}}" scope "{{authMethods.0.scopes.0.scope}}"
+	{{/hasAuthMethods}}
+	When the consumer does "{{httpMethod}}" on "{{host}}{{basePath}}/{{baseName}}{{path}}"
+	{{#hasConsumes}}
+	And the request content type is "{{consumes.0.mediaType}}"
+	{{/hasConsumes}}
+	And the request body is "{{requestBody}}"
+	Then the endpoint should answer with a response
+	And the response HTTP code should be {{code}}
+	{{#hasProduces}}
+	And the response content type should be "{{produces.0.mediaType}}"
+	{{/hasProduces}}
+	And the response body should be "{{example}}"
+
+{{/responses}}
+Scenario: Wrong Content-Type
+	Expecting HTTP status code: 415
+	Given a consumer
+	When the consumer does "{{httpMethod}}" on "{{host}}{{basePath}}/{{baseName}}{{path}}"
+	And the request content type is "total/wrong"
+	Then the endpoint should answer with a response
+	And the response HTTP code should be 415
+
+{{/operation}}
+{{/operations}}

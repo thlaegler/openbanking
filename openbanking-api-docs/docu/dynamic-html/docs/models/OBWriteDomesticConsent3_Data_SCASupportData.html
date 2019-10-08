@@ -1,0 +1,34 @@
+
+<h2>OBWriteDomesticConsent3_Data_SCASupportData</h2>
+<ul class="parameter">
+  <li class="param-required-false">AppliedAuthenticationApproach : String
+    <br/>Specifies a character string with a maximum length of 40 characters. Usage: This field indicates whether the PSU was subject to SCA performed by the TPP
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>CA</dd>
+            <dd>SCA</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">ReferencePaymentOrderId : String
+    <br/>Specifies a character string with a maximum length of 140 characters. Usage: If the payment is recurring then the transaction identifier of the previous payment occurrence so that the ASPSP can verify that the PISP, amount and the payee are the same as the previous occurrence.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">RequestedSCAExemptionType : String
+    <br/>This field allows a PISP to request specific SCA Exemption for a Payment Initiation
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>BillPayment</dd>
+            <dd>ContactlessTravel</dd>
+            <dd>EcommerceGoods</dd>
+            <dd>EcommerceServices</dd>
+            <dd>Kiosk</dd>
+            <dd>Parking</dd>
+            <dd>PartyToParty</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>

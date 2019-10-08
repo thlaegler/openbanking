@@ -1,0 +1,51 @@
+
+<h2>OBReadProduct2_Data_OtherProductType_CreditInterest_TierBandSet</h2>
+<ul class="parameter">
+  <li class="param-required-false">CalculationMethod : OB_InterestCalculationMethod1Code
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">Destination : String
+    <br/>Describes whether accrued interest is payable only to the BCA or to another bank account
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>INOT</dd>
+            <dd>INPA</dd>
+            <dd>INSC</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Notes : List
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherCalculationMethod : OB_OtherCodeType1_0
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherDestination : OB_OtherCodeType1_0
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">TierBand : List
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">TierBandMethod : String
+    <br/>The methodology of how credit interest is paid/applied. It can be:- 1. Banded Interest rates are banded. i.e. Increasing rate on whole balance as balance increases. 2. Tiered Interest rates are tiered. i.e. increasing rate for each tier as balance increases, but interest paid on tier fixed for that tier and not on whole balance. 3. Whole The same interest rate is applied irrespective of the product holder&#39;s account balance
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>INBA</dd>
+            <dd>INTI</dd>
+            <dd>INWH</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>

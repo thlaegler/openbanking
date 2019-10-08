@@ -1,0 +1,16 @@
+server:
+  servlet:
+    contextPath: '/api/v1/openbanking/'
+  port: 8080
+spring:
+  application:
+    name: openbanking
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+#    date-format: com.laegler.openbanking.api.RFC3339DateFormat
+springfox:
+  documentation:
+    swagger:
+      v2:
+        path: /api-docs

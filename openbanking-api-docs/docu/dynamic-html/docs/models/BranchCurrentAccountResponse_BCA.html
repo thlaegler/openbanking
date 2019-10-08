@@ -1,0 +1,62 @@
+
+<h2>BranchCurrentAccountResponse_BCA</h2>
+<ul class="parameter">
+  <li class="param-required-true">BCAMarketingState : List
+    <br/>The marketing state (promotional or regular) of the BCA Product.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">FeeFreeLength : Float
+    <br/>The length/duration of the fee free period
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">FeeFreeLengthPeriod : String
+    <br/>The unit of period (days, weeks, months etc.) of the promotional length
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Day</dd>
+            <dd>HalfYear</dd>
+            <dd>Month</dd>
+            <dd>Quarter</dd>
+            <dd>Week</dd>
+            <dd>AcademicTerm</dd>
+            <dd>Year</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">Identification : String
+    <br/>The unique ID that has been internally assigned by the financial institution to each of the current account banking products they market to their retail and/or small to medium enterprise (SME) customers.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">Name : String
+    <br/>The name of the BCA product used for marketing purposes from a customer perspective. I.e. what the customer would recognise.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Notes : List
+    <br/>Optional additional notes to supplement the product details
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OnSaleIndicator : Boolean
+    <br/>Indicates that the published product is OnSale(value 1) or Back Book (value 0)
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherSegment : List
+    <br/>Other Segment not available in the standard segment list
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Segment : List
+    <br/>Market segmentation is a marketing term referring to the aggregating of prospective buyers into groups, or segments, that have common needs and respond similarly to a marketing action. Market segmentation enables companies to target different categories of consumers who perceive the full value of certain products and services differently from one another. Read more: Market Segmentation http://www.investopedia.com/terms/m/marketsegmentation.asp#ixzz4gfEEalTd  Follow us: Investopedia on Facebook With respect to BCA products, they are segmented in relation to different markets that they wish to focus on.
+      <dl class="param-enum">
+        <dt>Enum:
+        </dt>
+      </dl>
+  </li>
+</ul>

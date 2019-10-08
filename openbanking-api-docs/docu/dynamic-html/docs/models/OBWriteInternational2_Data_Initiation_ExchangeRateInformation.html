@@ -1,0 +1,29 @@
+
+<h2>OBWriteInternational2_Data_Initiation_ExchangeRateInformation</h2>
+<ul class="parameter">
+  <li class="param-required-false">ContractIdentification : String
+    <br/>Unique and unambiguous reference to the foreign exchange contract agreed between the initiating party/creditor and the debtor agent.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">ExchangeRate : BigDecimal
+    <br/>The factor used for conversion of an amount from one currency to another. This reflects the price at which one currency was bought with another currency.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">RateType : String
+    <br/>Specifies the type used to complete the currency exchange.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Actual</dd>
+            <dd>Agreed</dd>
+            <dd>Indicative</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">UnitCurrency : String
+    <br/>Currency in which the rate of exchange is expressed in a currency exchange. In the example 1GBP &#x3D; xxxCUR, the unit currency is GBP.
+  </li>
+</ul>

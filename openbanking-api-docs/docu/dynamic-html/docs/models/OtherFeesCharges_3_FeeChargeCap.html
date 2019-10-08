@@ -1,0 +1,57 @@
+
+<h2>OtherFeesCharges_3_FeeChargeCap</h2>
+<ul class="parameter">
+  <li class="param-required-false">CappingPeriod : String
+    <br/>Period e.g. day, week, month etc. for which the fee/charge is capped
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Day</dd>
+            <dd>Half Year</dd>
+            <dd>Month</dd>
+            <dd>Quarter</dd>
+            <dd>Week</dd>
+            <dd>Year</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">FeeCapAmount : String
+    <br/>Cap amount charged for a fee/charge (where it is charged in terms of an amount rather than a rate)
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">FeeCapOccurrence : Float
+    <br/>fee/charges are captured dependent on the number of occurrences rather than capped at a particular amount
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">FeeType : List
+    <br/>Fee/charge type which is being capped
+      <dl class="param-enum">
+        <dt>Enum:
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">MinMaxType : String
+    <br/>Min Max type
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Minimum</dd>
+            <dd>Maximum</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Notes : List
+    <br/>Free text for adding  extra details for fee charge cap
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherFeeType : List
+    <br/>Other fee type code which is not available in the standard code set
+  </li>
+</ul>

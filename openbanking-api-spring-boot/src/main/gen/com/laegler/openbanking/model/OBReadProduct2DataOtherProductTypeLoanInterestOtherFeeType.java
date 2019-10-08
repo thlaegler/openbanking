@@ -1,0 +1,134 @@
+package com.laegler.openbanking.model;
+
+import java.util.Objects;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonCreator;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import org.springframework.validation.annotation.Validated;
+import javax.validation.Valid;
+import javax.validation.constraints.*;
+
+/**
+ * Other fee type code which is not available in the standard code set
+ */
+@ApiModel(description = "Other fee type code which is not available in the standard code set")
+@Validated
+@javax.annotation.Generated(value = "class com.laegler.openbanking.codegen.module.OpenbankingSpringCodegen", date = "2019-10-19T13:25:17.080+13:00")
+
+public class OBReadProduct2DataOtherProductTypeLoanInterestOtherFeeType   {
+  @JsonProperty("Code")
+  private String code = null;
+
+  @JsonProperty("Description")
+  private String description = null;
+
+  @JsonProperty("Name")
+  private String name = null;
+
+  public OBReadProduct2DataOtherProductTypeLoanInterestOtherFeeType code(String code) {
+    this.code = code;
+    return this;
+  }
+
+  /**
+   * Get code
+   * @return code
+  **/
+  @ApiModelProperty(value = "")
+
+@Pattern(regexp="^\\w{0,4}$") 
+  public String getCode() {
+    return code;
+  }
+
+  public void setCode(String code) {
+    this.code = code;
+  }
+
+  public OBReadProduct2DataOtherProductTypeLoanInterestOtherFeeType description(String description) {
+    this.description = description;
+    return this;
+  }
+
+  /**
+   * Get description
+   * @return description
+  **/
+  @ApiModelProperty(required = true, value = "")
+  @NotNull
+
+@Size(min=1,max=350) 
+  public String getDescription() {
+    return description;
+  }
+
+  public void setDescription(String description) {
+    this.description = description;
+  }
+
+  public OBReadProduct2DataOtherProductTypeLoanInterestOtherFeeType name(String name) {
+    this.name = name;
+    return this;
+  }
+
+  /**
+   * Get name
+   * @return name
+  **/
+  @ApiModelProperty(required = true, value = "")
+  @NotNull
+
+@Size(min=1,max=70) 
+  public String getName() {
+    return name;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
+
+  @Override
+  public boolean equals(java.lang.Object o) {
+    if (this == o) {
+      return true;
+    }
+    if (o == null || getClass() != o.getClass()) {
+      return false;
+    }
+    OBReadProduct2DataOtherProductTypeLoanInterestOtherFeeType obReadProduct2DataOtherProductTypeLoanInterestOtherFeeType = (OBReadProduct2DataOtherProductTypeLoanInterestOtherFeeType) o;
+    return Objects.equals(this.code, obReadProduct2DataOtherProductTypeLoanInterestOtherFeeType.code) &&
+        Objects.equals(this.description, obReadProduct2DataOtherProductTypeLoanInterestOtherFeeType.description) &&
+        Objects.equals(this.name, obReadProduct2DataOtherProductTypeLoanInterestOtherFeeType.name);
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(code, description, name);
+  }
+
+  @Override
+  public String toString() {
+    StringBuilder sb = new StringBuilder();
+    sb.append("class OBReadProduct2DataOtherProductTypeLoanInterestOtherFeeType {\n");
+    
+    sb.append("    code: ").append(toIndentedString(code)).append("\n");
+    sb.append("    description: ").append(toIndentedString(description)).append("\n");
+    sb.append("    name: ").append(toIndentedString(name)).append("\n");
+    sb.append("}");
+    return sb.toString();
+  }
+
+  /**
+   * Convert the given object to string with each line indented by 4 spaces
+   * (except the first line).
+   */
+  private String toIndentedString(java.lang.Object o) {
+    if (o == null) {
+      return "null";
+    }
+    return o.toString().replace("\n", "\n    ");
+  }
+}
+

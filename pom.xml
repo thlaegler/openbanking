@@ -1,0 +1,951 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.laegler.openbanking</groupId>
+	<artifactId>openbanking</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>Open Banking API</name>
+	<description>Open Banking API</description>
+
+	<properties>
+		<!-- Basics: Encoding and Java version -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+		<java.version>1.8</java.version>
+		<maven.compiler.source>${java.version}</maven.compiler.source>
+		<maven.compiler.target>${java.version}</maven.compiler.target>
+		<project.scm.id>github</project.scm.id>
+		<maven.test.failure.ignore>true</maven.test.failure.ignore>
+		<maven.test.error.ignore>true</maven.test.error.ignore>
+		<maven.javadoc.failOnError>false</maven.javadoc.failOnError>
+		<maven.skip.deploy>true</maven.skip.deploy>
+
+		<!-- Dependency versions -->
+		<swagger.plugin.version>3.1.8</swagger.plugin.version>
+		<io.swagger.plugin.version>2.4.8</io.swagger.plugin.version>
+		<swagger.core.version>1.5.23</swagger.core.version>
+		<swagger2markup.version>1.3.7</swagger2markup.version>
+		<lombok.version>1.18.6</lombok.version>
+		<slf4j.version>1.7.28</slf4j.version>
+		<oltu.version>1.0.2</oltu.version>
+		<junit.version>4.12</junit.version>
+		<mockito.version>1.10.19</mockito.version>
+		<cucumber.version>1.2.5</cucumber.version>
+		<cucumber.pro.version>2.0.4</cucumber.pro.version>
+		<restassured.version>3.1.0</restassured.version>
+
+		<projectBaseName>openbanking-api</projectBaseName>
+		<siteDirectory>${project.basedir}/${projectBaseName}-docs/docu/maven-site</siteDirectory>
+		<javadocDirectory>${project.basedir}/${projectBaseName}-docs/docu/javadoc</javadocDirectory>
+		<asciidocDirectory>${project.basedir}${projectBaseName}-docs/asciidoc</asciidocDirectory>
+	</properties>
+
+	<modules>
+		<module>${projectBaseName}-codegen</module>
+		<module>${projectBaseName}-codegen-maven-plugin</module>
+		<module>${projectBaseName}-docs</module>
+		<module>${projectBaseName}-pdf</module>
+		<module>${projectBaseName}-model</module>
+		<module>${projectBaseName}-soap-transform</module>
+		<module>${projectBaseName}-definition</module>
+		<module>${projectBaseName}-service</module>
+		<module>${projectBaseName}-server</module>
+		<module>${projectBaseName}-client</module>
+		<module>${projectBaseName}-spring-boot</module>
+		<!-- <module>${projectBaseName}-nodejs</module> -->
+		<module>${projectBaseName}-test</module>
+	</modules>
+
+	<build>
+		<finalName>${project.artifactId}</finalName>
+
+		<plugins>
+			<!-- Necessary for Heroku -->
+			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-dependency-plugin</artifactId> 
+				<version>2.4</version> <executions> <execution> <id>copy-dependencies</id> 
+				<phase>package</phase> <goals> <goal>copy-dependencies</goal> </goals> </execution> 
+				</executions> </plugin> -->
+			<!-- <plugin> <groupId>org.codehaus.mojo</groupId> <artifactId>build-helper-maven-plugin</artifactId> 
+				<version>1.9.1</version> <executions> <execution> <id>add-source</id> <phase>generate-sources</phase> 
+				<goals> <goal>add-source</goal> </goals> <configuration> <sources> <source>${project.basedir}/src/gen/java</source> 
+				</sources> </configuration> </execution> </executions> </plugin> -->
+			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-compiler-plugin</artifactId> 
+				<version>3.5.1</version> <configuration> <source>${compiler.source.version}</source> 
+				<target>${compiler.target.version}</target> </configuration> </plugin> -->
+			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-war-plugin</artifactId> 
+				<version>2.1.1</version> <configuration> <warName>${project.build.finalName}</warName> 
+				</configuration> </plugin> -->
+			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-source-plugin</artifactId> 
+				<version>3.0.1</version> <executions> <execution> <id>attach-sources</id> 
+				<goals> <goal>jar</goal> </goals> </execution> </executions> </plugin> -->
+			<!-- <plugin> <groupId>doccheck</groupId> <artifactId>maven-doccheck-plugin</artifactId> 
+				<version>1.4-0.1</version> </plugin> <plugin> <groupId>org.apache.maven.plugins</groupId> 
+				<artifactId>maven-failsafe-plugin</artifactId> <version>2.19.1</version> 
+				<executions> <execution> <goals> <goal>integration-test</goal> <goal>verify</goal> 
+				</goals> </execution> </executions> </plugin> -->
+		</plugins>
+	</build>
+
+	<profiles>
+		<profile>
+			<id>docu</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-site-plugin</artifactId>
+						<version>3.4</version>
+						<configuration>
+							<!-- <templateFile>${project.basedir}/maven-site.vm</templateFile> -->
+							<outputDirectory>${siteDirectory}</outputDirectory>
+							<port>9000</port>
+							<tempWebappDirectory>${siteDirectory}/webapp</tempWebappDirectory>
+							<locales>en,de</locales>
+						</configuration>
+						<dependencies>
+							<dependency>
+								<groupId>lt.velykis.maven.skins</groupId>
+								<artifactId>reflow-velocity-tools</artifactId>
+								<version>1.1.1</version>
+							</dependency>
+							<dependency>
+								<groupId>org.apache.velocity</groupId>
+								<artifactId>velocity</artifactId>
+								<version>1.7</version>
+							</dependency>
+						</dependencies>
+					</plugin>
+					<plugin>
+						<groupId>com.agilejava.docbkx</groupId>
+						<artifactId>docbkx-maven-plugin</artifactId>
+						<version>2.0.17</version>
+						<executions>
+							<execution>
+								<id>docbkx</id>
+								<phase>generate-sources</phase>
+								<goals>
+									<goal>generate-html</goal>
+									<goal>generate-xhtml</goal>
+									<goal>generate-xhtml5</goal>
+									<goal>generate-webhelp</goal>
+									<goal>generate-rtf</goal>
+									<goal>generate-pdf</goal>
+									<goal>generate-eclipse</goal>
+									<goal>generate-manpages</goal>
+								</goals>
+							</execution>
+						</executions>
+						<dependencies>
+							<dependency>
+								<groupId>net.sf.xslthl</groupId>
+								<artifactId>xslthl</artifactId>
+								<version>2.0.1</version>
+								<scope>runtime</scope>
+							</dependency>
+							<dependency>
+								<groupId>net.sf.offo</groupId>
+								<artifactId>fop-hyph</artifactId>
+								<version>1.2</version>
+								<scope>runtime</scope>
+							</dependency>
+						</dependencies>
+						<configuration>
+							<targetDirectory>${siteDirectory}/docbook</targetDirectory>
+							<includes>book.xml</includes>
+							<highlightSource>1</highlightSource>
+							<hyphenate>true</hyphenate>
+							<hyphenateVerbatim>true</hyphenateVerbatim>
+						</configuration>
+					</plugin>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-pdf-plugin</artifactId>
+						<version>1.3</version>
+						<configuration>
+							<!-- <locales>en,de</locales> -->
+							<!-- <implementation>itext</implementation> -->
+							<aggregate>true</aggregate>
+							<outputDirectory>${siteDirectory}</outputDirectory>
+							<includeReports>true</includeReports>
+						</configuration>
+						<executions>
+							<execution>
+								<id>pdf</id>
+								<phase>site</phase>
+								<goals>
+									<goal>pdf</goal>
+								</goals>
+							</execution>
+						</executions>
+						<!-- <dependencies> <dependency> <groupId>org.apache.maven.doxia</groupId> 
+							<artifactId>doxia-core</artifactId> <version>1.7</version> </dependency> 
+							<dependency> <groupId>org.apache.maven.doxia</groupId> <artifactId>doxia-module-markdown</artifactId> 
+							<version>1.7</version> </dependency> <dependency> <groupId>org.apache.maven.doxia</groupId> 
+							<artifactId>doxia-doc-renderer</artifactId> <version>1.7</version> </dependency> 
+							<dependency> <groupId>org.apache.maven.doxia</groupId> <artifactId>doxia-module-rtf</artifactId> 
+							<version>1.7</version> </dependency> </dependencies> -->
+					</plugin>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-javadoc-plugin</artifactId>
+						<version>2.10.4</version>
+						<configuration>
+							<aggregate>true</aggregate>
+							<source>${compiler.source.version}</source>
+							<encoding>UTF-8</encoding>
+							<maxmemory>1g</maxmemory>
+							<show>private</show>
+							<additionalparam>${javadoc.opts}</additionalparam>
+							<excludePackageNames>target.generated-sources.annotations</excludePackageNames>
+							<!-- <taglets> <taglet> <tagletClass>net.sourceforge.taglets.Taglets</tagletClass> 
+								<tagletArtifact> <groupId>net.sourceforge.taglets</groupId> <artifactId>taglets</artifactId> 
+								<version>2.0.3</version> </tagletArtifact> </taglet> </taglets> -->
+							<failOnError>false</failOnError>
+							<outputDirectory>${javadocDirectory}</outputDirectory>
+							<configuration> <!-- add this to disable checking -->
+								<additionalparam>-Xdoclint:none</additionalparam>
+							</configuration>
+						</configuration>
+						<executions>
+							<execution>
+								<id>attach-javadocs</id>
+								<phase>generate-sources</phase>
+								<goals>
+									<goal>javadoc</goal>
+									<goal>jar</goal>
+									<goal>test-javadoc</goal>
+									<goal>test-jar</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+					<!-- Generate Swagger JSON from Java API or YAML -->
+					<!-- https://github.com/kongchen/swagger-maven-plugin -->
+					<!-- <plugin> <groupId>com.github.kongchen</groupId> <artifactId>swagger-maven-plugin</artifactId> 
+						<version>${swagger.plugin.version}</version> <configuration> <apiSources> 
+						<apiSource> <info> <title>${project.name}</title> <version>${project.version}</version> 
+						</info> <locations>${project.groupId}</locations> <outputPath>${project.build.directory}</outputPath> 
+						<swaggerDirectory>${project.build.directory}</swaggerDirectory> </apiSource> 
+						</apiSources> </configuration> </plugin> -->
+					<!-- https://mvnrepository.com/artifact/com.github.jeluard/plantuml-maven-plugin -->
+					<plugin>
+						<groupId>com.github.jeluard</groupId>
+						<artifactId>plantuml-maven-plugin</artifactId>
+						<version>7954</version>
+						<configuration>
+							<sourceFiles>
+								<directory>${siteDirectory}</directory>
+							</sourceFiles>
+							<format>png</format>
+							<outputInSourceDirectory>true</outputInSourceDirectory>
+							<!-- <verbose>true</verbose> -->
+						</configuration>
+					</plugin>
+					<!-- <plugin> <groupId>org.kuali.maven.plugins</groupId> <artifactId>graph-maven-plugin</artifactId> 
+						<version>1.2.3</version> <configuration> <keepDotFile>true</keepDotFile> 
+						</configuration> <executions> <execution> <id>graphviz</id> <phase>site</phase> 
+						<goals> <goal>dependencies</goal> <goal>report</goal> </goals> </execution> 
+						</executions> </plugin> -->
+				</plugins>
+			</build>
+			<reporting>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-checkstyle-plugin</artifactId>
+						<version>2.17</version>
+						<configuration>
+							<logViolationsToConsole>true</logViolationsToConsole>
+							<configLocation>${project.basedir}/src/checkstyle/checkstyle.xml</configLocation>
+							<propertiesLocation>${project.basedir}/src/checkstyle/checkstyle.properties</propertiesLocation>
+							<propertyExpansion>projectname=${project.artifactId}</propertyExpansion>
+						</configuration>
+					</plugin>
+				</plugins>
+			</reporting>
+		</profile>
+
+		<profile>
+			<!-- Docker image -->
+			<!-- https://github.com/fabric8io/docker-maven-plugin -->
+			<id>docker</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>io.fabric8</groupId>
+						<artifactId>docker-maven-plugin</artifactId>
+						<version>0.15.14</version>
+						<!-- <groupId>org.jolokia</groupId> <artifactId>docker-maven-plugin</artifactId> -->
+						<extensions>true</extensions>
+						<executions>
+							<execution>
+								<id>start</id>
+								<phase>pre-integration-test</phase>
+								<goals>
+									<goal>build</goal>
+									<goal>start</goal>
+								</goals>
+							</execution>
+							<execution>
+								<id>stop</id>
+								<phase>post-integration-test</phase>
+								<goals>
+									<goal>stop</goal>
+								</goals>
+							</execution>
+							<execution>
+								<id>build-docker-image</id>
+								<phase>package</phase>
+								<goals>
+									<goal>build</goal>
+								</goals>
+							</execution>
+						</executions>
+						<configuration>
+							<images>
+								<image>
+									<alias>${project.groupId}.${project.artifactId}</alias>
+									<name>example/swagger-example-api</name>
+									<build>
+										<from>jboss/wildfly</from>
+										<maintainer>thlaegler</maintainer>
+										<assembly>
+											<descriptor>${project.basedir}/src/docker/assembly.xml</descriptor>
+											<basedir>/opt/wildfly9/Wildfly-10.0.0.Final/standalone/deployments</basedir>
+											<user>jboss:jboss:jboss</user>
+										</assembly>
+										<ports>
+											<port>8080</port>
+										</ports>
+										<!-- <cmd> <shell>java -jar \ /maven/${project.build.finalName}.${project.packaging} 
+											server \ /maven/docker-config.yml</shell> </cmd> -->
+										<!-- <command>java -Djava.security.egd=file:/dev/./urandom -jar 
+											/maven/${project.build.finalName}.${project.packaging}</command> -->
+									</build>
+									<run>
+										<namingStrategy>alias</namingStrategy>
+										<ports>
+											<port>${server.port}:8080</port>
+											<port>${server.port.admin}:8081</port>
+										</ports>
+										<volumes>
+											<bind>
+												<volume>${user.home}/logs:/logs</volume>
+											</bind>
+										</volumes>
+										<wait>
+											<log>Server startup complete</log>
+											<url>http://${server.host}:${server.port}/</url>
+											<time>20000</time>
+										</wait>
+										<log>
+											<prefix>${project.artifactId}</prefix>
+											<prefix>MQ</prefix>
+											<date>DEFAULT</date>
+											<color>YELLOW</color>
+										</log>
+									</run>
+								</image>
+								<!-- <image> <alias>mongodb</alias> <name>mongo:2.6.11</name> <run> 
+									<namingStrategy>alias</namingStrategy> <cmd>-smallfiles</cmd> <wait> <log>waiting 
+									for connections on port</log> <time>10000</time> </wait> <log> <prefix>MongoDB</prefix> 
+									<color>yellow</color> </log> </run> </image> -->
+								<!-- <image> <alias>db</alias> <name>postgres:9</name> <run> <wait> 
+									<log>database system is ready to accept connections</log> </wait> </run> 
+									</image> -->
+							</images>
+						</configuration>
+					</plugin>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-failsafe-plugin</artifactId>
+						<version>2.19.1</version>
+						<configuration>
+							<phase>integration-test</phase>
+							<includes>
+								<include>**/*.java</include>
+							</includes>
+							<groups>${project.groupId}.IntegrationTest</groups>
+							<systemPropertyVariables>
+								<service.url>http://${server.host}:${server.port}/</service.url>
+							</systemPropertyVariables>
+						</configuration>
+						<executions>
+							<execution>
+								<goals>
+									<goal>integration-test</goal>
+									<goal>verify</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+
+		<!-- Wildfly deployment -->
+		<!-- See: https://docs.jboss.org/wildfly/plugins/maven/latest/plugin-info.html -->
+		<!-- run "mvn wildfly:run" or "mvn wildfly:deploy" or "mvn wildfly:start" -->
+		<profile>
+			<!-- Remote deployment -->
+			<id>deploy-remote</id>
+			<build>
+				<plugins>
+					<plugin>
+						<!-- https://mvnrepository.com/artifact/org.wildfly.plugins/wildfly-maven-plugin -->
+						<groupId>org.wildfly.plugins</groupId>
+						<artifactId>wildfly-maven-plugin</artifactId>
+						<version>1.1.0.Alpha11</version>
+						<configuration>
+							<skip>false</skip>
+							<hostname>v22015123236530736.hotsrv.de</hostname>
+							<port>9990</port>
+							<username>management</username>
+							<password>test</password>
+							<!-- <filename>../lib/lib.war</filename> -->
+							<!-- <filename>${project.build.finalName}.${project.packaging}</filename> -->
+							<!-- <machine> <autoCreate>true</autoCreate> <createOptions> <virtualbox-memory>10000</virtualbox-memory> 
+								<virtualbox-no-share></virtualbox-no-share> </createOptions> </machine> -->
+							<!-- in-memory deployment -->
+							<!-- <server-args> <server-arg>-Djboss.server.base.dir=/opt/WildFly/standalone/</server-arg> 
+								<server-arg>-b=0.0.0.0</server-arg> </server-args> <java-opts> <java-opt>-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5005</java-opt> 
+								</java-opts> <commands> <command>/subsystem=logging/file-handler=debug:add(level=DEBUG,autoflush=true,file={"relative-to"=>"jboss.server.log.dir", 
+								"path"=>"debug.log"})</command> <command>/subsystem=logging/logger=org.jboss.as:add(level=DEBUG,handlers=[debug])</command> 
+								</commands> <scripts> <script>config.cli</script> </scripts> <jboss-home>/opt/WildFly</jboss-home> 
+								<modules-path>/opt/WildFly/modules</modules-path> <port>9999</port> <add-user> 
+								<users> <user> <username>admin</username> <password>admin.1234</password> 
+								</user> <user> <username>admin-user</username> <password>user.1234</password> 
+								<groups> <group>admin</group> <group>user</group> </groups> <application-user>true</application-user> 
+								</user> <user> <username>default-user</username> <password>user.1234</password> 
+								<groups> <group>user</group> </groups> <application-user>true</application-user> 
+								</user> </users> </add-user> -->
+						</configuration>
+						<!-- <executions> <execution> <id>add-datasource</id> <phase>package</phase> 
+							<goals> <goal>add-resource</goal> </goals> <configuration> <address>subsystem=datasources,data-source=java:jboss/myDs</address> 
+							<resources> <resource> <properties> <jndi-name>java:jboss/myDs</jndi-name> 
+							<enabled>true</enabled> <connection-url>jdbc:h2:mem:test;DB_CLOSE_DELAY=-1</connection-url> 
+							<driver-class>org.h2.Driver</driver-class> <driver-name>h2</driver-name> 
+							<user-name>sa</user-name> <password>sa</password> </properties> </resource> 
+							<resource> <address>xa-data-source=java:jboss/datasources/postgresDS</address> 
+							<properties> <xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class> 
+							<jndi-name>java:jboss/datasources/postgresDS</jndi-name> <enabled>true</enabled> 
+							<driver-name>postgresql.jar</driver-name> </properties> <resources> <resource> 
+							<address>xa-datasource-properties=DatabaseName</address> <properties> <value>myDatabase</value> 
+							</properties> </resource> <resource> <address>xa-datasource-properties=ServerName</address> 
+							<properties> <value>localhost</value> </properties> </resource> <resource> 
+							<address>xa-datasource-properties=User</address> <properties> <value>dbuser</value> 
+							</properties> </resource> <resource> <address>xa-datasource-properties=Password</address> 
+							<properties> <value>supersecret</value> </properties> </resource> </resources> 
+							</resource> <resource> <address>subsystem=messaging,hornetq-server=default,jms-queue=myJmsQueue</address> 
+							<properties> <durable>true</durable> <entries>!!["java:jboss/myJmsQueue", 
+							"java:jboss/myJmsQueueAlias"]</entries> </properties> </resource> </resources> 
+							</configuration> </execution> </executions> -->
+					</plugin>
+					<plugin>
+						<groupId>org.codehaus.cargo</groupId>
+						<artifactId>cargo-maven2-plugin</artifactId>
+						<configuration>
+							<container>
+								<containerId>wildfly10x</containerId>
+								<type>remote</type>
+							</container>
+							<configuration>
+								<type>runtime</type>
+								<properties>
+									<cargo.hostname>localhost</cargo.hostname>
+									<cargo.servlet.port>8080</cargo.servlet.port>
+									<cargo.remote.username>admin</cargo.remote.username>
+									<cargo.remote.password>admin</cargo.remote.password>
+								</properties>
+							</configuration>
+							<deployables>
+								<deployable>
+									<groupId>com.laegler.swagger</groupId>
+									<artifactId>swagger-example-api</artifactId>
+									<type>war</type>
+									<properties>
+										<context>/example</context>
+									</properties>
+								</deployable>
+							</deployables>
+						</configuration>
+						<executions>
+							<execution>
+								<id>start-server</id>
+								<phase>pre-integration-test</phase>
+								<goals>
+									<goal>deploy</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<profile>
+			<!-- Localhost deployment -->
+			<id>deploy-localhost</id>
+			<build>
+				<plugins>
+					<plugin>
+						<!-- https://mvnrepository.com/artifact/org.wildfly.plugins/wildfly-maven-plugin -->
+						<groupId>org.wildfly.plugins</groupId>
+						<artifactId>wildfly-maven-plugin</artifactId>
+						<version>1.1.0.Alpha11</version>
+						<configuration>
+							<skip>false</skip>
+							<hostname>localhost</hostname>
+							<port>9990</port>
+							<username>management</username>
+							<password>test</password>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jxr-plugin</artifactId>
+				<version>2.3</version>
+				<reportSets>
+					<reportSet>
+						<id>aggregate</id>
+						<inherited>false</inherited>
+						<reports>
+							<report>aggregate</report>
+						</reports>
+					</reportSet>
+				</reportSets>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-report-plugin</artifactId>
+				<version>2.19.1</version>
+				<configuration>
+					<outputDirectory>${siteDirectory}</outputDirectory>
+					<aggregate>true</aggregate>
+					<reportSets>
+						<reportSet>
+							<reports>
+								<report>report-only</report>
+							</reports>
+						</reportSet>
+					</reportSets>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-checkstyle-plugin</artifactId>
+				<version>2.17</version>
+				<configuration>
+					<logViolationsToConsole>true</logViolationsToConsole>
+					<!-- <configLocation>${project.basedir}/src/checkstyle/checkstyle.xml</configLocation> 
+						<propertiesLocation>${project.basedir}/src/checkstyle/checkstyle.properties</propertiesLocation> -->
+					<propertyExpansion>projectname=${project.artifactId}</propertyExpansion>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-project-info-reports-plugin</artifactId>
+				<version>2.9</version>
+				<configuration>
+					<outputDirectory>${siteDirectory}</outputDirectory>
+					<linkOnly>true</linkOnly>
+				</configuration>
+				<reportSets>
+					<reportSet>
+						<reports>
+							<report>index</report>
+							<report>summary</report>
+							<report>license</report>
+							<report>modules</report>
+							<report>project-team</report>
+							<report>mailing-list</report>
+							<report>cim</report>
+							<report>issue-tracking</report>
+							<report>scm</report>
+							<report>dependencies</report>
+							<report>dependency-info</report>
+							<report>dependency-convergence</report>
+							<report>dependency-management</report>
+							<report>plugin-management</report>
+							<report>plugins</report>
+							<report>help</report>
+							<!-- <report>maven-doccheck-plugin</report> -->
+						</reports>
+					</reportSet>
+				</reportSets>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.10.4</version>
+				<reportSets>
+					<reportSet>
+						<id>html</id>
+						<reports>
+							<report>javadoc</report>
+							<report>test-javadoc</report>
+						</reports>
+						<configuration>
+							<name>JavaDoc HTML</name>
+							<description>HTML documents of JavaDoc.</description>
+							<destDir>html</destDir>
+							<show>private</show>
+							<additionalparam>${javadoc.opts}</additionalparam>
+							<!-- <excludePackageNames>target.generated-sources.annotations</excludePackageNames> -->
+							<failOnError>false</failOnError>
+							<outputDirectory>${javadocDirectory}</outputDirectory>
+						</configuration>
+					</reportSet>
+					<!-- JavaDoc PDF -->
+					<reportSet>
+						<id>pdf</id>
+						<reports>
+							<report>javadoc</report>
+						</reports>
+						<configuration>
+							<name>JavaDoc PDF</name>
+							<description>PDF document of JavaDoc
+								(com.tarsec.javadoc.pdfdoclet).</description>
+							<destDir>pdf</destDir>
+							<doclet>com.tarsec.javadoc.pdfdoclet.PDFDoclet</doclet>
+							<docletPath>${project.basedir}/src/doclet/pdf/pdfdoclet-1.0.3-all.jar</docletPath>
+							<useStandardDocletOptions>false</useStandardDocletOptions>
+							<additionalparam>-pdf
+								javadoc.pdf ${javadoc.opts}</additionalparam>
+							<excludePackageNames>target.generated-sources.annotations</excludePackageNames>
+							<failOnError>false</failOnError>
+							<outputDirectory>${javadocDirectory}</outputDirectory>
+						</configuration>
+					</reportSet>
+					<!-- JavaDoc DocCheck -->
+					<!-- <reportSet> <id>doccheck</id> <reports> <report>javadoc</report> 
+						<report>test-javadoc</report> </reports> <configuration> <name>${project.name}</name> 
+						<description>${project.description}</description> <doclet>com.sun.tools.doclets.doccheck.DocCheck</doclet> 
+						<docletArtifact> <groupId>com.sun.tools.doclets</groupId> <artifactId>doccheck</artifactId> 
+						<version>1.2b2</version> </docletArtifact> <additionalparam>-d ${project.basedir}/src/main/webapp/doccheck 
+						${javadoc.opts}</additionalparam> <destDir>doccheck</destDir><failOnError>false</failOnError></configuration> 
+						</reportSet> -->
+					<!-- <reportSet> <id>doccheck2</id> <reports> <report>javadoc</report> 
+						<report>test-javadoc</report> </reports> <configuration> <name>${project.name}</name> 
+						<description>${project.description}</description> <doclet>com.sun.tools.doclets.doccheck.DocCheck</doclet> 
+						<docletArtifact> <groupId>mx.com.inftel.oss</groupId> <artifactId>java7-markdown-doclets</artifactId> 
+						<version>1.6-b147-133</version> </docletArtifact> <additionalparam>-d ${project.basedir}/src/main/webapp/doccheck2 
+						${javadoc.opts}</additionalparam> <destDir>${project.basedir}/src/main/webapp/doccheck2</destDir><failOnError>false</failOnError></configuration> 
+						</reportSet> -->
+					<!-- JavaDoc yUML -->
+					<!-- Doesn't work with JDK 1.8: https://power2build.wordpress.com/2015/02/24/uml-doclet-in-eclipse/ -->
+					<!-- Run with JDK 1.7 and change compiler.source.version and compiler.target.version 
+						in parent POM -->
+					<!-- <reportSet> <id>yuml</id> <reports> <report>javadoc</report> <report>test-javadoc</report> 
+						</reports> <configuration> <name>JavaDoc UML (yUML)</name> <description>UML 
+						diagrams in HTML JavaDoc (ydoc.doclets.YStandard).</description> <destDir>yuml</destDir> 
+						<doclet>ydoc.doclets.YStandard</doclet> <docletPath>${project.basedir}/src/doclet/uml/lib/ydoc.jar:${project.basedir}/src/doclet/uml/lib/styleed.jar:${project.basedir}/src/doclet/uml/resources</docletPath> 
+						<show>private</show> <additionalparam>-umlautogen ${javadoc.opts}</additionalparam> 
+						<failOnError>false</failOnError> </configuration> </reportSet> -->
+					<!-- JavaDoc plantUML -->
+					<!-- <reportSet> <id>plantuml</id> <reports> <report>javadoc</report> 
+						<report>test-javadoc</report> </reports> <configuration> <name>JavaDoc UML 
+						(plantUML)</name> <description>UML diagrams in HTML JavaDoc (org.umlgraph.doclet).</description> 
+						<destDir>plantuml</destDir> <doclet>nl.talsmasoftware.umldoclet.UMLDoclet</doclet> 
+						<docletArtifact> <groupId>nl.talsmasoftware</groupId> <artifactId>umldoclet</artifactId> 
+						<version>1.0.3</version> </docletArtifact> <show>private</show> <additionalparam>-umlSkipStandardDoclet 
+						true -umlLogLevel DEBUG ${javadoc.opts}</additionalparam> <failOnError>false</failOnError> 
+						</configuration> </reportSet> -->
+					<!-- JavaDoc UML2 -->
+					<reportSet>
+						<id>uml</id>
+						<reports>
+							<report>javadoc</report>
+							<report>test-javadoc</report>
+						</reports>
+						<configuration>
+							<name>JavaDoc UML (umlgraph)</name>
+							<description>UML diagrams in HTML JavaDoc (org.umlgraph.doclet).</description>
+							<destDir>uml</destDir>
+							<doclet>org.umlgraph.doclet.UmlGraphDoc</doclet>
+							<docletPath>${project.basedir}/src/doclet/uml/doclet-5.4.jar</docletPath>
+							<!-- <docletArtifact> <groupId>org.umlgraph</groupId> <artifactId>doclet</artifactId> 
+								<version>5.4</version> </docletArtifact> -->
+							<show>private</show>
+							<additionalparam>
+								-inferrel -inferdep -quiet -hide java.*
+								-collpackages java.util.* -qualify
+								-postfixpackage
+								-nodefontsize 9
+								-nodefontpackagesize 7 ${javadoc.opts}
+							</additionalparam>
+							<failOnError>false</failOnError>
+							<outputDirectory>${javadocDirectory}</outputDirectory>
+						</configuration>
+					</reportSet>
+					<!-- dbdoclet -->
+					<!-- <reportSet> <id>dbdoclet</id> <reports> <report>javadoc</report> 
+						<report>test-javadoc</report> </reports> <configuration> <name>JavaDoc DocBook</name> 
+						<description>JavaDoc DocBook</description> <destDir>dbdoclet</destDir> <doclet>org.dbdoclet.doclet.docbook.DocBookDoclet</doclet> 
+						<docletArtifact> <groupId>org.dbdoclet</groupId> <artifactId>dbdoclet</artifactId> 
+						<version>8.0.2</version> </docletArtifact> <show>private</show> <additionalparam>${javadoc.opts}</additionalparam> 
+						<failOnError>false</failOnError> </configuration> </reportSet> -->
+					<!-- ApiGuide -->
+					<!-- <reportSet> <id>apiguide</id> <reports> <report>javadoc</report> 
+						<report>test-javadoc</report> </reports> <configuration> <name>JavaDoc ApiGuide</name> 
+						<description>JavaDoc ApiGuide.</description> <destDir>apiguide</destDir> 
+						<doclet>apiguide.ApiGuide</doclet> <docletPath>${project.basedir}/src/doclet/apiguide/ApiGuideDoclet.jar</docletPath> 
+						<show>private</show> <additionalparam>${javadoc.opts}</additionalparam> <failOnError>false</failOnError> 
+						</configuration> </reportSet> -->
+					<!-- XHTML -->
+					<!-- <reportSet> <id>xhtml</id> <reports> <report>javadoc</report> <report>test-javadoc</report> 
+						</reports> <configuration> <name>JavaDoc XHTML</name> <description>JavaDoc 
+						XHTML.</description> <destDir>xhtml</destDir> <doclet>net.sourceforge.xhtmldoclet.Doclet</doclet> 
+						<docletPath>${project.basedir}/src/doclet/xhtml/XHTML_Doclet_0.4.jar</docletPath> 
+						<show>private</show> <additionalparam>${javadoc.opts}</additionalparam> <failOnError>false</failOnError> 
+						</configuration> </reportSet> -->
+					<!-- LaTeX -->
+					<!-- <reportSet> <id>latex</id> <reports> <report>javadoc</report> <report>test-javadoc</report> 
+						</reports> <configuration> <name>JavaDoc LaTeX</name> <description>JavaDoc 
+						LaTeX.</description> <destDir>latex</destDir> <doclet>org.wonderly.doclets.TexDoclet</doclet> 
+						<docletPath>${project.basedir}/src/doclet/latex/texdoclet.jar</docletPath> 
+						<show>private</show> <additionalparam>${javadoc.opts}</additionalparam> <failOnError>false</failOnError> 
+						</configuration> </reportSet> -->
+					<!-- JavaDoc UML3 -->
+					<!-- <reportSet> <id>uml3</id> <reports> <report>javadoc</report> <report>test-javadoc</report> 
+						</reports> <configuration> <name>JavaDoc UML (spinellis)</name> <description>UML 
+						diagrams in HTML JavaDoc (gr.spinellis.UmlGraph).</description> <destDir>html</destDir> 
+						<doclet>gr.spinellis.umlgraph.doclet.UmlGraph</doclet> <docletArtifact> <groupId>gr.spinellis</groupId> 
+						<artifactId>UmlGraph</artifactId> <version>4.6</version> </docletArtifact> 
+						<show>private</show> <failOnError>false</failOnError> </configuration> </reportSet> -->
+				</reportSets>
+			</plugin>
+			<!-- Dependency Graph. GraphViz must be installed -->
+			<!-- <plugin> <groupId>org.kuali.maven.plugins</groupId> <artifactId>graph-maven-plugin</artifactId> 
+				<version>1.2.3</version> <configuration> <keepDotFile>true</keepDotFile> 
+				</configuration> </plugin> -->
+			<!-- Dependency Graph with GraphViz -->
+			<!-- <plugin> <groupId>us.bryon</groupId> <artifactId>graphviz-maven-plugin</artifactId> 
+				<version>1.0</version> <configuration> <basedir>${siteDirectory}</basedir> 
+				</configuration> </plugin> -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jxr-plugin</artifactId>
+				<version>2.5</version>
+				<configuration>
+					<docTitle>JavaDoc Source HTML</docTitle>
+					<destDir>source</destDir>
+					<linkJavadoc>true</linkJavadoc>
+				</configuration>
+			</plugin>
+			<!-- Generate Changelog from Jira, Github or changes.xml -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-changes-plugin</artifactId>
+				<version>2.12</version>
+				<configuration>
+					<xmlPath>${javadocDirectory}/changes.xml</xmlPath>
+					<columnNames>Type,Key,Summary,Assignee,Status,Fix Version</columnNames>
+					<useJql>true</useJql>
+					<githubAPIScheme>https</githubAPIScheme>
+					<githubAPIPort>443</githubAPIPort>
+					<onlyMilestoneIssues>false</onlyMilestoneIssues>
+					<includeOpenIssues>false</includeOpenIssues>
+					<onlyCurrentVersion>true</onlyCurrentVersion>
+					<fixVersionIds>13722,12515</fixVersionIds>
+				</configuration>
+				<reportSets>
+					<reportSet>
+						<reports>
+							<report>changes-report</report>
+						</reports>
+					</reportSet>
+				</reportSets>
+			</plugin>
+			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-changelog-plugin</artifactId> 
+				<version>2.3</version> <configuration> <type>tag</type> <tags> <tag implementation="java.lang.String">alpha-2</tag> 
+				<tag implementation="java.lang.String">alpha-3</tag> </tags> <type>date</type> 
+				<dates> <date implementation="java.lang.String">2005-08-01</date> <date implementation="java.lang.String">2005-09-01</date> 
+				</dates> <dateFormat>yyyy-MM-dd</dateFormat> </configuration> <reportSets> 
+				<reportSet> <id>dual-report</id> <configuration> <type>range</type> <range>30</range> 
+				</configuration> <reports> <report>changelog</report> <report>file-activity</report> 
+				</reports> </reportSet> </reportSets> </plugin> -->
+
+		</plugins>
+	</reporting>
+
+	<dependencies>
+		<dependency>
+			<groupId>io.swagger</groupId>
+			<artifactId>swagger-annotations</artifactId>
+			<version>${swagger.core.version}</version>
+		</dependency>
+
+		<!-- URL Rewrite -->
+		<!-- https://mvnrepository.com/artifact/org.tuckey/urlrewritefilter -->
+		<!-- <dependency> <groupId>org.tuckey</groupId> <artifactId>urlrewritefilter</artifactId> 
+			<version>4.0.4</version> <scope>runtime</scope> </dependency> -->
+
+		<!-- Apache Oltu OAuth2 -->
+		<!-- https://mvnrepository.com/artifact/org.apache.oltu.oauth2/org.apache.oltu.oauth2.common -->
+		<dependency>
+			<groupId>org.apache.oltu.oauth2</groupId>
+			<artifactId>org.apache.oltu.oauth2.common</artifactId>
+			<version>${oltu.version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.oltu.oauth2/org.apache.oltu.oauth2.resourceserver -->
+		<dependency>
+			<groupId>org.apache.oltu.oauth2</groupId>
+			<artifactId>org.apache.oltu.oauth2.resourceserver</artifactId>
+			<version>${oltu.version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.oltu.oauth2/org.apache.oltu.oauth2.authzserver -->
+		<dependency>
+			<groupId>org.apache.oltu.oauth2</groupId>
+			<artifactId>org.apache.oltu.oauth2.authzserver</artifactId>
+			<version>${oltu.version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.oltu.oauth2/org.apache.oltu.oauth2.client -->
+		<dependency>
+			<groupId>org.apache.oltu.oauth2</groupId>
+			<artifactId>org.apache.oltu.oauth2.client</artifactId>
+			<version>${oltu.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>gr.spinellis</groupId>
+			<artifactId>UmlGraph</artifactId>
+			<version>4.6</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/nl.talsmasoftware/umldoclet -->
+		<dependency>
+			<groupId>nl.talsmasoftware</groupId>
+			<artifactId>umldoclet</artifactId>
+			<version>1.0.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>${slf4j.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- Mockito und PowerMock -->
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-all</artifactId>
+			<version>${mockito.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- REST-Assured -->
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>${restassured.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- Cucumber und Gherkin -->
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-jvm</artifactId>
+			<version>${cucumber.version}</version>
+			<type>pom</type>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-core</artifactId>
+			<version>${cucumber.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>${cucumber.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>${cucumber.version}</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<ciManagement>
+		<system>Google Cloud Build</system>
+		<url>https://console.cloud.google.com/cloud-build/builds?project=mobility23</url>
+		<notifiers>
+			<notifier>
+				<configuration />
+				<type>mail</type>
+				<address>thomas.laegler@googlemail.com</address>
+			</notifier>
+		</notifiers>
+	</ciManagement>
+
+	<repositories>
+		<repository>
+			<id>mobility23-repo-bucket-snapshot</id>
+			<url>gs://mobility23-maven-repository/snapshot</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>mobility23-repo-bucket-release</id>
+			<url>gs://mobility23-maven-repository/release</url>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<!--</repository> -->
+		<repository>
+			<id>jcenter</id>
+			<name>jcenter</name>
+			<url>https://jcenter.bintray.com/</url>
+		</repository>
+		<repository>
+			<id>spring-milestones</id>
+			<name>Spring Milestone Repository</name>
+			<url>http://repo.spring.io/milestone</url>
+		</repository>
+		<repository>
+			<id>apollo-graphql</id>
+			<name>apollo-graphql</name>
+			<url>https://dl.bintray.com/apollographql/android</url>
+		</repository>
+	</repositories>
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>mobility23-repo-bucket-snapshot</id>
+			<url>gs://mobility23-maven-repository/snapshot</url>
+		</snapshotRepository>
+		<repository>
+			<id>mobility23-repo-bucket-release</id>
+			<url>gs://mobility23-maven-repository/release</url>
+		</repository>
+	</distributionManagement>
+
+</project>

@@ -1,0 +1,146 @@
+
+<h2>OtherFeesCharges_FeeChargeDetail</h2>
+<ul class="parameter">
+  <li class="param-required-true">ApplicationFrequency : String
+    <br/>How frequently the fee/charge is applied to the account
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Daily</dd>
+            <dd>Flexible</dd>
+            <dd>Fortnightly</dd>
+            <dd>Holiday</dd>
+            <dd>HalfYearly</dd>
+            <dd>Monthly</dd>
+            <dd>Other</dd>
+            <dd>Quarterly</dd>
+            <dd>Weekly</dd>
+            <dd>Yearly</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">CalculationFrequency : String
+    <br/>How frequently the fee/charge is calculated
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Daily</dd>
+            <dd>Flexible</dd>
+            <dd>Fortnightly</dd>
+            <dd>Holiday</dd>
+            <dd>HalfYearly</dd>
+            <dd>Monthly</dd>
+            <dd>Other</dd>
+            <dd>Quarterly</dd>
+            <dd>Weekly</dd>
+            <dd>Yearly</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">FeeAmount : String
+    <br/>Fee Amount charged for a fee/charge (where it is charged in terms of an amount rather than a rate)
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">FeeApplicableRange : FeeApplicableRange
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">FeeCategory : String
+    <br/>Categorisation of fees and charges into standard categories.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>CashAdvance</dd>
+            <dd>BalanceTransfer</dd>
+            <dd>Purchase</dd>
+            <dd>Cheque</dd>
+            <dd>Card</dd>
+            <dd>FX</dd>
+            <dd>Penalty</dd>
+            <dd>Servicing</dd>
+            <dd>Other</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">FeeRate : String
+    <br/>Rate charged for Fee/Charge (where it is charged in terms of a rate rather than an amount)
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">FeeRateType : String
+    <br/>Rate type for Fee/Charge (where it is charged in terms of a rate rather than an amount)
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Gross</dd>
+            <dd>Other</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">FeeType : String
+    <br/>Fee/Charge Type
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>AdditionalCard</dd>
+            <dd>BalanceTransfer</dd>
+            <dd>CashAdvance</dd>
+            <dd>Card</dd>
+            <dd>ChequeIssue</dd>
+            <dd>CashWithdrawal</dd>
+            <dd>EmergencyCard</dd>
+            <dd>ForeignCash</dd>
+            <dd>Handling</dd>
+            <dd>Maintenance</dd>
+            <dd>Other</dd>
+            <dd>Purchase</dd>
+            <dd>Penalty</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">IncludedInPeriodicFeeIndicator : Boolean
+    <br/>Commercial credit cards often have a periodic fee charged (defined in CoreProduct section). Some Fees/charges may be covered by the periodic fee, and you can use the IncludedInPeriodicFeeIndicator to indicate that this is so
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">NegotiableIndicator : Boolean
+    <br/>Fee/charge which is usually negotiable(YES) rather than a fixed(NO) amount
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Notes : List
+    <br/>Optional additional notes to supplement the fee/charge details.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherApplicationFrequency : OtherApplicationFrequency
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherCalculationFrequency : OtherCalculationFrequency
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherFeeCategory : OtherFeeCategory
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherFeeRateType : OtherFeeRateType
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherFeeType : OtherFeeType_2
+    <br/>
+  </li>
+</ul>

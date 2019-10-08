@@ -1,0 +1,70 @@
+
+<h2>ATMResponse_ATM</h2>
+<ul class="parameter">
+  <li class="param-required-false">ATMServices : List
+    <br/>Describes the type of transaction available for a customer on an ATM.
+      <dl class="param-enum">
+        <dt>Enum:
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Access24HoursIndicator : Boolean
+    <br/>Indicates that the ATM is available for use by customers 24 hours per day
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Accessibility : List
+    <br/>Indicates Types of Accessibility
+      <dl class="param-enum">
+        <dt>Enum:
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Branch : Branch
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">Identification : String
+    <br/>ATM terminal device identification for the acquirer and the issuer.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">Location : Location
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">MinimumPossibleAmount : String
+    <br/>Minimum amount allowed for a transaction in the service.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Note : List
+    <br/>Summary description of the ATM.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherATMServices : List
+    <br/>Enter a new code , name and description for any other ATM Service
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherAccessibility : List
+    <br/>Enter a new code , name and description for any other ATM accessibility options
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">SupportedCurrencies : List
+    <br/>All ISO 4217 defined currency  supported by the ATM.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">SupportedLanguages : List
+    <br/>Identification of the language name according to the ISO 639-1 codes. The type is validated by the list of values coded with two alphabetic characters, defined in the standard.
+  </li>
+</ul>

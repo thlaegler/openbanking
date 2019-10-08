@@ -1,0 +1,270 @@
+
+<h2>OtherFeesCharges_2_FeeChargeDetail</h2>
+<ul class="parameter">
+  <li class="param-required-true">ApplicationFrequency : String
+    <br/>How frequently the fee/charge is applied to the account
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>AccountClosing</dd>
+            <dd>AccountOpening</dd>
+            <dd>AcademicTerm</dd>
+            <dd>ChargingPeriod</dd>
+            <dd>Daily</dd>
+            <dd>PerItem</dd>
+            <dd>Monthly</dd>
+            <dd>OnAccountAnniversary</dd>
+            <dd>Other</dd>
+            <dd>PerHour</dd>
+            <dd>PerOccurrence</dd>
+            <dd>PerSheet</dd>
+            <dd>PerTransaction</dd>
+            <dd>PerTransactionAmount</dd>
+            <dd>PerTransactionPercentage</dd>
+            <dd>Quarterly</dd>
+            <dd>SixMonthly</dd>
+            <dd>StatementMonthly</dd>
+            <dd>Weekly</dd>
+            <dd>Yearly</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">CalculationFrequency : String
+    <br/>How frequently the fee/charge is calculated
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>AccountClosing</dd>
+            <dd>AccountOpening</dd>
+            <dd>AcademicTerm</dd>
+            <dd>ChargingPeriod</dd>
+            <dd>Daily</dd>
+            <dd>PerItem</dd>
+            <dd>Monthly</dd>
+            <dd>OnAccountAnniversary</dd>
+            <dd>Other</dd>
+            <dd>PerHour</dd>
+            <dd>PerOccurrence</dd>
+            <dd>PerSheet</dd>
+            <dd>PerTransaction</dd>
+            <dd>PerTransactionAmount</dd>
+            <dd>PerTransactionPercentage</dd>
+            <dd>Quarterly</dd>
+            <dd>SixMonthly</dd>
+            <dd>StatementMonthly</dd>
+            <dd>Weekly</dd>
+            <dd>Yearly</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">FeeAmount : String
+    <br/>Fee Amount charged for a fee/charge (where it is charged in terms of an amount rather than a rate)
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">FeeApplicableRange : FeeApplicableRange
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">FeeCategory : String
+    <br/>Categorisation of fees and charges into standard categories.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>AUTO</dd>
+            <dd>ATM</dd>
+            <dd>BankersDrafts</dd>
+            <dd>CashCentre</dd>
+            <dd>Card</dd>
+            <dd>Cheque</dd>
+            <dd>CounterServices</dd>
+            <dd>Foreign</dd>
+            <dd>FX</dd>
+            <dd>International</dd>
+            <dd>Investigation</dd>
+            <dd>Legal</dd>
+            <dd>NightSafe</dd>
+            <dd>Online</dd>
+            <dd>Other</dd>
+            <dd>PaymentScheme</dd>
+            <dd>Report</dd>
+            <dd>Safekeeping</dd>
+            <dd>Servicing</dd>
+            <dd>Transaction</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">FeeRate : String
+    <br/>Rate charged for Fee/Charge (where it is charged in terms of a rate rather than an amount)
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">FeeRateType : String
+    <br/>Rate type for Fee/Charge (where it is charged in terms of a rate rather than an amount)
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>LinkedBaseRate</dd>
+            <dd>Gross</dd>
+            <dd>Net</dd>
+            <dd>Other</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">FeeType : String
+    <br/>Fee/Charge Type
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>CashCentreCoinHandling</dd>
+            <dd>CashCentreCashX</dd>
+            <dd>CashCentreCashFeePercent</dd>
+            <dd>CashCentreCashFeeRate</dd>
+            <dd>CashCentreNotesLodged</dd>
+            <dd>CashCentreNotesOut</dd>
+            <dd>CashCentreCashIn</dd>
+            <dd>CashCentreCashOut</dd>
+            <dd>ReportCertBalance</dd>
+            <dd>ATMAbroadConVisaDebit</dd>
+            <dd>ATMConGroupATM</dd>
+            <dd>ATMAbroad</dd>
+            <dd>ATMForeignCashDebCard</dd>
+            <dd>ATMAbroadGoldVisaDebit</dd>
+            <dd>ATMNonSterlingWithdrawal</dd>
+            <dd>ATMAbroadVisaDebit</dd>
+            <dd>CHAPSOutBranch</dd>
+            <dd>CHAPSCancellation</dd>
+            <dd>CHAPSIn</dd>
+            <dd>CHAPSOutInterBank</dd>
+            <dd>CHAPSInterBank</dd>
+            <dd>CHAPSOutPost</dd>
+            <dd>CHAPSOutInterBranch</dd>
+            <dd>CHAPSOut</dd>
+            <dd>CHAPSOutOnline</dd>
+            <dd>CardCardReplacement</dd>
+            <dd>DraftsCounter</dd>
+            <dd>DraftsBankers</dd>
+            <dd>DraftsCancellation</dd>
+            <dd>CardGuaranteed</dd>
+            <dd>DraftsIntlPayableAbroad</dd>
+            <dd>DraftsLostStolen</dd>
+            <dd>CardPersonalisedCard</dd>
+            <dd>DraftsIntlStoppedCancelled</dd>
+            <dd>EmergencyLending</dd>
+            <dd>FPSInBranch</dd>
+            <dd>LegalCourtOrder</dd>
+            <dd>IntlPayFXPaymentIn</dd>
+            <dd>IntlPayForeignPaymentInUKAcc</dd>
+            <dd>IntlPayForeignCharge</dd>
+            <dd>IntlPayForeignInternet</dd>
+            <dd>IntlPayFXPaymentOut</dd>
+            <dd>IntlPayFXPaymentOutIR</dd>
+            <dd>IntlPayPurchaseNonSterling</dd>
+            <dd>IntlPayPaymentTracing</dd>
+            <dd>IntlPayTransNonSterling</dd>
+            <dd>IntlPayTransRateNonSterling</dd>
+            <dd>IntlPayWorldpayPayment</dd>
+            <dd>InvPayBankDetailsWrong</dd>
+            <dd>InvPayForeignBCNR</dd>
+            <dd>InvPayForeignRecall</dd>
+            <dd>InvPayStandingOrdUnpaid</dd>
+            <dd>SafeKeepingEnvelope</dd>
+            <dd>SafeKeepingInspection</dd>
+            <dd>SafeKeepingLargeItem</dd>
+            <dd>SafeKeepingParcel</dd>
+            <dd>NightSafeNightSafePaidIn</dd>
+            <dd>OverdraftReview</dd>
+            <dd>ChqBookTheftLossAllStopped</dd>
+            <dd>ChqCopy</dd>
+            <dd>ChqDraftSterling</dd>
+            <dd>ChqOutIssued</dd>
+            <dd>ChqSpecialChqPresentation</dd>
+            <dd>ChqSpecialChqClearance</dd>
+            <dd>ChqStopped</dd>
+            <dd>ChqinCashCentre</dd>
+            <dd>ChqDraftFX</dd>
+            <dd>ChqForeignCourier</dd>
+            <dd>ChqGiftCheque</dd>
+            <dd>ChqForeign</dd>
+            <dd>ChqChequePhotocopy</dd>
+            <dd>ChqChequeRetrieval</dd>
+            <dd>ChqSpecialPresentationCount</dd>
+            <dd>ChqSpecialPresentationPTT</dd>
+            <dd>ChqUnpaidCharge</dd>
+            <dd>ChqUnpaidTransIn</dd>
+            <dd>ChqUnpaidTransOut</dd>
+            <dd>ChqUnpaidCheque</dd>
+            <dd>ReportCertInterestDuplicate</dd>
+            <dd>ReportCertInterest</dd>
+            <dd>ReportReference</dd>
+            <dd>ReportReferralItem</dd>
+            <dd>ReportStatementCopyRegular</dd>
+            <dd>ReportStatusEnquiry</dd>
+            <dd>ReportStatementFrequent</dd>
+            <dd>ReportStatementCopy1</dd>
+            <dd>SEPAIn</dd>
+            <dd>SEPAEuro</dd>
+            <dd>SEPAOut</dd>
+            <dd>TransCreditTransferUKDifferent</dd>
+            <dd>TransCredit</dd>
+            <dd>TransCreditTransfer</dd>
+            <dd>TransBuyForeignWithGBP</dd>
+            <dd>TransSWIFTOutUKForeign</dd>
+            <dd>TransPOSSaleForeign</dd>
+            <dd>TransReturnPayment</dd>
+            <dd>TransTransferExGroup</dd>
+            <dd>TransSWIFTOutNonEEASterling</dd>
+            <dd>AutoAutomatedEntries</dd>
+            <dd>OnlineReplacementCardReader</dd>
+            <dd>OnlineUrgentPayment</dd>
+            <dd>ForeignChqSent</dd>
+            <dd>ForeignFXInwardsCust</dd>
+            <dd>ForeignFXOutwards</dd>
+            <dd>ForeignPurchase</dd>
+            <dd>ForeignChqDraft</dd>
+            <dd>ServiceCAccountFee</dd>
+            <dd>ServiceCAccountFeeMonthly</dd>
+            <dd>ServiceCOther</dd>
+            <dd>CounterCashOut</dd>
+            <dd>CounterForeignNoteHandling</dd>
+            <dd>CounterForeignCashOut</dd>
+            <dd>CounterCashFeeRate</dd>
+            <dd>Other</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Notes : List
+    <br/>Optional additional notes to supplement the fee/charge details.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherApplicationFrequency : OtherApplicationFrequency
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherCalculationFrequency : OtherCalculationFrequency
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherFeeCategory : OtherFeeCategory
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherFeeRateType : OtherFeeRateType
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherFeeType : OtherFeeType_5
+    <br/>
+  </li>
+</ul>

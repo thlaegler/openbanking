@@ -1,0 +1,43 @@
+
+<h2>OBReadDirectDebit1_Data_DirectDebit</h2>
+<ul class="parameter">
+  <li class="param-required-true">AccountId : AccountId
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">DirectDebitId : String
+    <br/>A unique and immutable identifier used to identify the direct debit resource. This identifier has no meaning to the account owner.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">DirectDebitStatusCode : String
+    <br/>Specifies the status of the direct debit in code form.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Active</dd>
+            <dd>Inactive</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">MandateIdentification : String
+    <br/>Direct Debit reference. For AUDDIS service users provide Core Reference. For non AUDDIS service users provide Core reference if possible or last used reference.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">Name : String
+    <br/>Name of Service User.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">PreviousPaymentAmount : OBReadDirectDebit1_Data_PreviousPaymentAmount
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">PreviousPaymentDateTime : Date
+    <br/>Date of most recent direct debit collection.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00
+  </li>
+</ul>

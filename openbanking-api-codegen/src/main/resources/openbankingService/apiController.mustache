@@ -1,0 +1,148 @@
+package {{package}};
+
+{{^jdk8}}
+{{#imports}}import {{import}};
+{{/imports}}
+{{/jdk8}}
+import com.fasterxml.jackson.databind.ObjectMapper;
+import io.swagger.annotations.*;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+import lombok.extern.slf4j.Slf4j;
+import com.laegler.openbanking.soap.service.*;
+import com.laegler.openbanking.soap.model.GETGetStandingOrdersInputMessage;
+import com.laegler.openbanking.Transformation;
+import com.laegler.openbanking.model.*;
+import javax.validation.constraints.*;
+import javax.validation.Valid;
+import javax.servlet.http.HttpServletRequest;
+import java.util.Optional;
+import java.util.Optional;
+import java.io.IOException;
+import java.util.List;
+import java.util.concurrent.Callable;
+import java.io.IOException;
+import java.util.Optional;
+import javax.script.ScriptException;
+import javax.servlet.http.HttpServletRequest;
+import javax.validation.Valid;
+import javax.xml.bind.JAXBException;
+import io.swagger.annotations.*;
+
+{{>generatedAnnotation}}
+@RestController
+@Slf4j
+{{#operations}}
+public class {{classname}}Controller implements {{classname}} {
+
+{{#isDelegate}}
+    private final {{classname}}Delegate delegate;
+
+    @org.springframework.beans.factory.annotation.Autowired
+    public {{classname}}Controller({{classname}}Delegate delegate) {
+        this.delegate = delegate;
+    }
+    {{#jdk8}}
+
+    @Override
+    public {{classname}}Delegate getDelegate() {
+        return delegate;
+    }
+    {{/jdk8}}
+{{/isDelegate}}
+{{^isDelegate}}
+    {{^jdk8}}
+
+    {{/jdk8}}
+    private final ObjectMapper objectMapper;
+
+    private final HttpServletRequest request;
+
+	@org.springframework.beans.factory.annotation.Autowired
+    private DefaultPortType soapService;
+    
+    @org.springframework.beans.factory.annotation.Autowired
+    public {{classname}}Controller(ObjectMapper objectMapper, HttpServletRequest request) {
+        this.objectMapper = objectMapper;
+        this.request = request;
+    }
+    {{#jdk8}}
+
+    @Override
+    public Optional<ObjectMapper> getObjectMapper() {
+        return Optional.ofNullable(objectMapper);
+    }
+
+    @Override
+    public Optional<HttpServletRequest> getRequest() {
+        return Optional.ofNullable(request);
+    }
+    {{/jdk8}}
+
+{{/isDelegate}}
+{{#operation}}
+    public {{#async}}Callable<{{/async}}ResponseEntity<{{>returnTypes}}>{{#async}}>{{/async}} {{operationId}}({{#allParams}}{{>queryParams}}{{>pathParams}}{{>headerParams}}{{>bodyParams}}{{>formParams}}{{#hasMore}},{{/hasMore}}{{/allParams}}) {
+        {{^isDelegate}}
+        {{^async}}
+        String accept = request.getHeader("Accept");
+        {{#examples}}
+        if (accept != null && accept.contains("{{{contentType}}}")) {
+            try {
+            	// TODO
+		        Object bodyParam = null;
+		        Class<?> bodyType = bodyParam.getClass();
+		        Object soapRequest = Transformation.transform(bodyParam, bodyType);
+		        Object soapResponse = soapService.getGetStandingOrders((GETGetStandingOrdersInputMessage) soapRequest);
+		        Object restResponse =
+		            Transformation.transform(soapResponse, {{>returnTypes}}.class);
+		        return new ResponseEntity<{{>returnTypes}}>((HttpStatus) restResponse);
+            } catch (IOException | NoSuchMethodException | JAXBException | ScriptException | GETGetStandingOrders400 | GETGetStandingOrders404 | GETGetStandingOrders403 | GETGetStandingOrders401 | GETGetStandingOrders500 | GETGetStandingOrders429 | GETGetStandingOrders406 | GETGetStandingOrders405 ex) {
+                log.error("Couldn't serialize response for content type {{{contentType}}}", ex);
+                return new ResponseEntity<{{>returnTypes}}>(HttpStatus.INTERNAL_SERVER_ERROR);
+            }
+        }
+
+        {{/examples}}
+        return new ResponseEntity<{{>returnTypes}}>(HttpStatus.NOT_IMPLEMENTED);
+        {{/async}}
+        {{#async}}
+        return new Callable<ResponseEntity<{{>returnTypes}}>>() {
+            @Override
+            public ResponseEntity<{{>returnTypes}}> call() {
+                String accept = request.getHeader("Accept");
+                {{#examples}}
+                if (accept != null && accept.contains("{{{contentType}}}")) {
+                    try {
+                    	// TODO
+						Object bodyParam = null;
+				        Class<?> bodyType = bodyParam.getClass();
+				        Object soapRequest = Transformation.transform(bodyParam, bodyType);
+				        Object soapResponse = soapService.getLoanApplicationSoapBinding()
+				            .listChangedApplications((ListChangedApplicationsRequest) soapRequest);
+				        Object restResponse =
+				            Transformation.transform(soapResponse, {{>returnTypes}}.class);
+				        return new ResponseEntity<{{>returnTypes}}>((HttpStatus) restResponse);
+                    } catch (IOException | NoSuchMethodException | JAXBException | ScriptException ex) {
+                        log.error("Couldn't serialize response for content type {{{contentType}}}", ex);
+                        return new ResponseEntity<{{>returnTypes}}>(HttpStatus.INTERNAL_SERVER_ERROR);
+                    }
+                }
+
+                {{/examples}}
+                return new ResponseEntity<{{>returnTypes}}>(HttpStatus.NOT_IMPLEMENTED);
+            }
+        };
+        {{/async}}
+        {{/isDelegate}}
+        {{#isDelegate}}
+        return delegate.{{operationId}}({{#allParams}}{{paramName}}{{#hasMore}}, {{/hasMore}}{{/allParams}});
+        {{/isDelegate}}
+    }
+
+{{/operation}}
+}
+{{/operations}}

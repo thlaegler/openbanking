@@ -1,0 +1,29 @@
+{{#operations}}
+package {{apiPackage}}.feature.{{baseNamePackage}};
+{{/operations}}
+
+import features.steps.AbstractFeatureSteps;
+import {{package}}.*;
+import static io.restassured.RestAssured.*;
+import static org.hamcrest.core.StringContains.*;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+{{#operations}}{{#operation}}{{#isMultipart}}import org.jboss.resteasy.plugins.providers.multipart.MultipartFormDataInput;
+{{/isMultipart}}{{/operation}}{{/operations}}
+
+{{#imports}}import {{import}};
+{{/imports}}
+
+{{>generatedAnnotation}}
+{{#operations}}
+public class {{classname}}FeatureSteps extends AbstractFeatureSteps {
+
+	//TODO: Create your custom steps here
+	//@Given("^an example step$")
+	//public void an_example_step() throws Throwable {
+	//	given().spec(spec());
+	//}
+
+}
+{{/operations}}

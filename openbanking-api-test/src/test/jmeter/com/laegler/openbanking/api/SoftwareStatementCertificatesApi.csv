@@ -1,0 +1,2 @@
+testCase,httpStatusCode,organisationType,organisationId,softwareStatementId,organisationType,organisationId,softwareStatementId,organisationAssociativeCertificateType,certificateOrKeyId,organisationType,organisationId,softwareStatementId,softwareStatementCertificateOrKeyType,organisationType,organisationId,softwareStatementId,softwareStatementCertificateOrKeyType,cSROrKey
+Success,200,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

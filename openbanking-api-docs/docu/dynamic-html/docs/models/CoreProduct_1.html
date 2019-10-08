@@ -1,0 +1,104 @@
+
+<h2>CoreProduct_1</h2>
+<ul class="parameter">
+  <li class="param-required-true">APR : String
+    <br/>Annual Percentage Rate (APR) is a measure that attempts to calculate what percentage of the principal youâ€™ll pay per period (in this case a year), taking every charge â€“ monthly payments over the course of the loan, upfront fees, etc. â€“ into account. For commercial credit cards, this APR is the representative APR which includes any account fees.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">CardScheme : List
+    <br/>Operator of Card Scheme
+      <dl class="param-enum">
+        <dt>Enum:
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">ContactlessIndicator : Boolean
+    <br/>Indicates whether the card can be used with a contactless terminal
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">MaxCreditLimit : String
+    <br/>The maximum amount of credit that the bank will offer against the card account and is normally â€œsubject to statusâ€
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">MaxDailyCardWithdrawalLimit : String
+    <br/>The maximum amount of money that you can withdraw per day (so long as you do not exceed your available credit limit)
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">MaxPurchaseInterestFreeLengthDays : Integer
+    <br/>The maximum number of days that you have between making a purchase via the credit card and having to repay the balance without incurring interest charges
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">MinCreditLimit : String
+    <br/>The minimum amount of credit that the bank will offer against the card account
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Notes : List
+    <br/>Free text for adding details for core product.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherCardScheme : List
+    <br/>Other card scheme which is not available in the standard code list
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">PeriodicFee : String
+    <br/>Charge made on a periodic basis for the card account e.g. Annual Fee
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">PeriodicFeePeriod : String
+    <br/>The unit of period (days, weeks, months etc.) of the Periodic Fee
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Day</dd>
+            <dd>Half Year</dd>
+            <dd>Month</dd>
+            <dd>Quarter</dd>
+            <dd>Week</dd>
+            <dd>Year</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">ProductDescription : String
+    <br/>The description of the CCC product used for marketing purposes from a customer perspective. I.e. what the customer would recognise.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">ProductURL : String
+    <br/>URL provided by the organisation which redirects to the product (on live products only) available on an external website. There might be more than one product at a given URL.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">SalesAccessChannels : List
+    <br/>Channels via which a customer can open a CCC.
+      <dl class="param-enum">
+        <dt>Enum:
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">ServicingAccessChannels : List
+    <br/>Channels via which customers can access CCC services.
+      <dl class="param-enum">
+        <dt>Enum:
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">TcsAndCsURL : String
+    <br/>URL provided by the financial institution which redirects to the CCC T&amp;Cs on an external website
+  </li>
+</ul>

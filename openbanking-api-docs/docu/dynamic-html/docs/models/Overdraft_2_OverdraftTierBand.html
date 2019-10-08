@@ -1,0 +1,48 @@
+
+<h2>Overdraft_2_OverdraftTierBand</h2>
+<ul class="parameter">
+  <li class="param-required-false">BankGuaranteedIndicator : Boolean
+    <br/>Indicates that a bank provides the overdraft limit up to TierValueMIn to all customers automatically
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">EAR : String
+    <br/>EAR means Effective Annual Rate and/or Equivalent Annual Rate (frequently used interchangeably), being the actual annual interest rate of an Overdraft.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Identification : String
+    <br/>Unique and unambiguous identification of a  Tier Band for a overdraft.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Notes : List
+    <br/>Optional additional notes to supplement the Tier/band details
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OverdraftFeesCharges : List
+    <br/>Overdraft fees and charges
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OverdraftInterestChargingCoverage : String
+    <br/>Interest charged on whole amount or tiered/banded
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Tiered</dd>
+            <dd>Whole</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">TierValueMax : String
+    <br/>Maximum value of Overdraft Tier/Band
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">TierValueMin : String
+    <br/>Minimum value of Overdraft Tier/Band
+  </li>
+</ul>

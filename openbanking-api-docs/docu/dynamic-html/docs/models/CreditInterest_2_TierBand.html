@@ -1,0 +1,118 @@
+
+<h2>CreditInterest_2_TierBand</h2>
+<ul class="parameter">
+  <li class="param-required-true">AER : String
+    <br/>The annual equivalent rate (AER) is interest that is calculated under the assumption that any interest paid is combined with the original balance and the next interest payment will be based on the slightly higher account balance. Overall, this means that interest can be compounded several times in a year depending on the number of times that interest payments are made.   Read more: Annual Equivalent Rate (AER) http://www.investopedia.com/terms/a/aer.asp#ixzz4gfR7IO1A
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">ApplicationFrequency : String
+    <br/>How often is interest applied to the PCA for this tier/band i.e. how often the financial institution pays accumulated interest to the customer&#39;s PCA.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>PerAcademicTerm</dd>
+            <dd>Daily</dd>
+            <dd>HalfYearly</dd>
+            <dd>Monthly</dd>
+            <dd>Other</dd>
+            <dd>Quarterly</dd>
+            <dd>PerStatementDate</dd>
+            <dd>Weekly</dd>
+            <dd>Yearly</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">BankInterestRate : String
+    <br/>Bank Interest for the PCA product
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">BankInterestRateType : String
+    <br/>Interest rate types, other than AER, which financial institutions may use to describe the annual interest rate payable to the PCA.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>LinkedBaseRate</dd>
+            <dd>Gross</dd>
+            <dd>Net</dd>
+            <dd>Other</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">CalculationFrequency : String
+    <br/>How often is credit interest calculated for the account.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>PerAcademicTerm</dd>
+            <dd>Daily</dd>
+            <dd>HalfYearly</dd>
+            <dd>Monthly</dd>
+            <dd>Other</dd>
+            <dd>Quarterly</dd>
+            <dd>PerStatementDate</dd>
+            <dd>Weekly</dd>
+            <dd>Yearly</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">DepositInterestAppliedCoverage : String
+    <br/>Amount on which Interest applied.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Tiered</dd>
+            <dd>Whole</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">FixedVariableInterestRateType : String
+    <br/>Type of interest rate, Fixed or Variable
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Fixed</dd>
+            <dd>Variable</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Identification : String
+    <br/>Unique and unambiguous identification of a  Tier Band for a PCA.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Notes : List
+    <br/>Optional additional notes to supplement the Tier Band details
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherApplicationFrequency : OtherApplicationFrequency_1
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherBankInterestType : OtherBankInterestType
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherCalculationFrequency : OtherCalculationFrequency_1
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">TierValueMaximum : String
+    <br/>Maximum deposit value for which the credit interest tier applies.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">TierValueMinimum : String
+    <br/>Minimum deposit value for which the credit interest tier applies.
+  </li>
+</ul>

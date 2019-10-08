@@ -1,0 +1,22 @@
+
+<h2>OBError1</h2>
+<ul class="parameter">
+  <li class="param-required-true">ErrorCode : String
+    <br/>Low level textual error code, e.g., UK.OBIE.Field.Missing
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">Message : String
+    <br/>A description of the error that occurred. e.g., &#39;A mandatory field isn&#39;t supplied&#39; or &#39;RequestedExecutionDateTime must be in future&#39; OBIE doesn&#39;t standardise this field
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Path : String
+    <br/>Recommended but optional reference to the JSON Path of the field with error, e.g., Data.Initiation.InstructedAmount.Currency
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Url : String
+    <br/>URL to help remediate the problem, or provide more information, or to API Reference, or help etc
+  </li>
+</ul>

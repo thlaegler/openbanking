@@ -1,0 +1,104 @@
+
+<h2>Repayment_NonRepaymentFeeChargeDetail</h2>
+<ul class="parameter">
+  <li class="param-required-true">ApplicationFrequency : String
+    <br/>How frequently the fee/charge is applied to the account
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Daily</dd>
+            <dd>Flexible</dd>
+            <dd>Fortnightly</dd>
+            <dd>Holiday</dd>
+            <dd>HalfYearly</dd>
+            <dd>Monthly</dd>
+            <dd>Other</dd>
+            <dd>Quarterly</dd>
+            <dd>Weekly</dd>
+            <dd>Yearly</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">CalculationFrequency : String
+    <br/>How frequently the fee/charge is calculated
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Daily</dd>
+            <dd>Flexible</dd>
+            <dd>Fortnightly</dd>
+            <dd>Holiday</dd>
+            <dd>HalfYearly</dd>
+            <dd>Monthly</dd>
+            <dd>Other</dd>
+            <dd>Quarterly</dd>
+            <dd>Weekly</dd>
+            <dd>Yearly</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">FeeAmount : String
+    <br/>Fee Amount charged for a fee/charge (where it is charged in terms of an amount rather than a rate)
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">FeeRate : String
+    <br/>Rate charged for Fee/Charge (where it is charged in terms of a rate rather than an amount)
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">FeeRateType : String
+    <br/>Rate type for Fee/Charge (where it is charged in terms of a rate rather than an amount)
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Gross</dd>
+            <dd>Other</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">FeeType : String
+    <br/>Non repayment fee type code
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>LatePayment</dd>
+            <dd>OverCreditLimit</dd>
+            <dd>Other</dd>
+            <dd>ReturnPayment</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">NegotiableIndicator : Boolean
+    <br/>Fee/charge which is usually negotiable rather than a fixed amount. Indicates if the Fee/charge is negotiable (Y) or Fixed (N)
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Notes : List
+    <br/>Optional additional notes to supplement the fee/charge details.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherApplicationFrequency : OtherApplicationFrequency
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherCalculationFrequency : OtherCalculationFrequency
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherFeeRateType : OtherFeeRateType
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherFeeType : OtherFeeType_3
+    <br/>
+  </li>
+</ul>

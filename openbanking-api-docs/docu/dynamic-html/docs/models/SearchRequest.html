@@ -1,0 +1,52 @@
+
+<h2>SearchRequest</h2>
+<ul class="parameter">
+  <li class="param-required-false">attributes : List
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">count : Integer
+    <br/>An integer indicating the desired maximum number of query results per page.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">excludedAttributes : List
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">filter : String
+    <br/>The filter string used to request a subset of resources.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">schemas : List
+    <br/>Contains a list of one or more URIs that indicate included SCIM schemas that are used to indicate the attributes contained within a resource.
+      <dl class="param-enum">
+        <dt>Enum:
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">sortBy : String
+    <br/>A string indicating the attribute whose value shall be used to order the returned responses.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">sortOrder : String
+    <br/>A string indicating the order in which the &#39;sortBy&#39; parameter is applied.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>ascending</dd>
+            <dd>descending</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">startIndex : Integer
+    <br/>An integer indicating the 1-based index of the first query result.
+  </li>
+</ul>

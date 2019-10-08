@@ -1,0 +1,2 @@
+testCase,httpStatusCode,organisationType,organisationId,softwareStatementId,organisationAssociativeCertificateType,certificateOrKeyId,certificateOrKeyAssociation
+Success,200,0,0,0,0,0,0

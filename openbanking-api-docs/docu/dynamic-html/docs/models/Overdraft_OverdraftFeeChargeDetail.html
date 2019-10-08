@@ -1,0 +1,147 @@
+
+<h2>Overdraft_OverdraftFeeChargeDetail</h2>
+<ul class="parameter">
+  <li class="param-required-true">ApplicationFrequency : String
+    <br/>Frequency at which the overdraft charge is applied to the account
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>OnClosing</dd>
+            <dd>OnOpening</dd>
+            <dd>ChargingPeriod</dd>
+            <dd>Daily</dd>
+            <dd>PerItem</dd>
+            <dd>Monthly</dd>
+            <dd>OnAnniversary</dd>
+            <dd>Other</dd>
+            <dd>PerHundredPounds</dd>
+            <dd>PerHour</dd>
+            <dd>PerOccurrence</dd>
+            <dd>PerSheet</dd>
+            <dd>PerTransaction</dd>
+            <dd>PerTransactionAmount</dd>
+            <dd>PerTransactionPercentage</dd>
+            <dd>Quarterly</dd>
+            <dd>SixMonthly</dd>
+            <dd>StatementMonthly</dd>
+            <dd>Weekly</dd>
+            <dd>Yearly</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">CalculationFrequency : String
+    <br/>How often is the overdraft fee/charge calculated for the account.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>OnClosing</dd>
+            <dd>OnOpening</dd>
+            <dd>ChargingPeriod</dd>
+            <dd>Daily</dd>
+            <dd>PerItem</dd>
+            <dd>Monthly</dd>
+            <dd>OnAnniversary</dd>
+            <dd>Other</dd>
+            <dd>PerHundredPounds</dd>
+            <dd>PerHour</dd>
+            <dd>PerOccurrence</dd>
+            <dd>PerSheet</dd>
+            <dd>PerTransaction</dd>
+            <dd>PerTransactionAmount</dd>
+            <dd>PerTransactionPercentage</dd>
+            <dd>Quarterly</dd>
+            <dd>SixMonthly</dd>
+            <dd>StatementMonthly</dd>
+            <dd>Weekly</dd>
+            <dd>Yearly</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">FeeAmount : String
+    <br/>Amount charged for an overdraft fee/charge (where it is charged in terms of an amount rather than a rate)
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">FeeRate : String
+    <br/>Rate charged for overdraft fee/charge (where it is charged in terms of a rate rather than an amount)
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">FeeRateType : String
+    <br/>Rate type for overdraft fee/charge (where it is charged in terms of a rate rather than an amount)
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Gross</dd>
+            <dd>Other</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">FeeType : String
+    <br/>Overdraft fee type
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>ArrangedOverdraft</dd>
+            <dd>AnnualReview</dd>
+            <dd>EmergencyBorrowing</dd>
+            <dd>BorrowingItem</dd>
+            <dd>OverdraftRenewal</dd>
+            <dd>OverdraftSetup</dd>
+            <dd>Surcharge</dd>
+            <dd>TempOverdraft</dd>
+            <dd>UnauthorisedBorrowing</dd>
+            <dd>UnauthorisedPaidTrans</dd>
+            <dd>Other</dd>
+            <dd>UnauthorisedUnpaidTrans</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">IncrementalBorrowingAmount : String
+    <br/>Every additional tranche of an overdraft balance to which an overdraft fee is applied
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">NegotiableIndicator : Boolean
+    <br/>Indicates whether fee and charges are negotiable
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Notes : List
+    <br/>Free text for capturing any other info related to Overdraft Fees Charge Details
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherApplicationFrequency : OtherApplicationFrequency
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherCalculationFrequency : OtherCalculationFrequency
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherFeeRateType : OtherFeeRateType_1
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherFeeType : OtherFeeType_1
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OverdraftControlIndicator : Boolean
+    <br/>Indicates if the fee/charge is already covered by an Overdraft Control fee or not.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OverdraftFeeChargeCap : Overdraft_OverdraftFeeChargeCap
+    <br/>
+  </li>
+</ul>
