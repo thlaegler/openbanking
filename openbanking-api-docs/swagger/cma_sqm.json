@@ -1,0 +1,1303 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"version": "v1.0.1",
+		"title": "CMA Service Quality Metrics",
+		"description": "CMA Service Quality Metrics\n\nResponse `Content-Type` clarification for `Get` requests -\n- Successful `200` responses to `GET` requests will produce `application/json` in the response body.\n- Error responses will produce `application/xml` in the response body.\n"
+	},
+	"host": "sqm.openbanking.org.uk",
+	"basePath": "/cma-service-quality-metrics/v1.0",
+	"schemes": [
+		"https"
+	],
+	"produces": [
+		"application/json",
+		"application/xml"
+	],
+	"tags": [
+		{
+			"name": "PCA",
+			"description": "Endpoints for CMA Personal Current Account Service Metrics data"
+		},
+		{
+			"name": "BCA",
+			"description": "Endpoints for CMA Business Current Account Service Metrics data"
+		}
+	],
+	"paths": {
+		"/product-type/pca/area/{area}/export-type/aggregated/wave/{wave}": {
+			"get": {
+				"tags": [
+					"PCA"
+				],
+				"description": "Aggregated CMA Personal Current Account Service Metrics data",
+				"operationId": "getPCAAggregated",
+				"parameters": [
+					{
+						"$ref": "#/parameters/If-Modified-Since"
+					},
+					{
+						"$ref": "#/parameters/If-None-Match"
+					},
+					{
+						"$ref": "#/parameters/Area"
+					},
+					{
+						"$ref": "#/parameters/Wave"
+					}
+				],
+				"responses": {
+					"200": {
+						"$ref": "#/responses/200OKAggregated"
+					},
+					"304": {
+						"$ref": "#/responses/304NoContent"
+					},
+					"400": {
+						"$ref": "#/responses/400ErrorResponse"
+					},
+					"404": {
+						"$ref": "#/responses/404ErrorResponse"
+					},
+					"500": {
+						"$ref": "#/responses/500ErrorResponse"
+					},
+					"503": {
+						"$ref": "#/responses/503ErrorResponse"
+					},
+					"default": {
+						"$ref": "#/responses/StandardErrorResponse"
+					}
+				}
+			},
+			"head": {
+				"tags": [
+					"PCA"
+				],
+				"description": "Aggregated CMA Personal Current Account Service Metrics data",
+				"operationId": "headPCAAggregated",
+				"produces": [
+					""
+				],
+				"parameters": [
+					{
+						"$ref": "#/parameters/If-Modified-Since"
+					},
+					{
+						"$ref": "#/parameters/If-None-Match"
+					},
+					{
+						"$ref": "#/parameters/Area"
+					},
+					{
+						"$ref": "#/parameters/Wave"
+					}
+				],
+				"responses": {
+					"200": {
+						"$ref": "#/responses/200OKHead"
+					},
+					"304": {
+						"$ref": "#/responses/304NoContent"
+					},
+					"400": {
+						"$ref": "#/responses/400ErrorResponseHead"
+					},
+					"404": {
+						"$ref": "#/responses/404ErrorResponseHead"
+					},
+					"500": {
+						"$ref": "#/responses/500ErrorResponseHead"
+					},
+					"503": {
+						"$ref": "#/responses/503ErrorResponseHead"
+					},
+					"default": {
+						"$ref": "#/responses/StandardErrorResponseHead"
+					}
+				}
+			}
+		},
+		"/product-type/pca/area/{area}/export-type/full/wave/{wave}": {
+			"get": {
+				"tags": [
+					"PCA"
+				],
+				"description": "Full CMA Personal Current Account Service Metrics data",
+				"operationId": "getPCAFull",
+				"parameters": [
+					{
+						"$ref": "#/parameters/If-Modified-Since"
+					},
+					{
+						"$ref": "#/parameters/If-None-Match"
+					},
+					{
+						"$ref": "#/parameters/Area"
+					},
+					{
+						"$ref": "#/parameters/Wave"
+					}
+				],
+				"responses": {
+					"200": {
+						"$ref": "#/responses/200OKPCAFull"
+					},
+					"304": {
+						"$ref": "#/responses/304NoContent"
+					},
+					"400": {
+						"$ref": "#/responses/400ErrorResponse"
+					},
+					"404": {
+						"$ref": "#/responses/404ErrorResponse"
+					},
+					"500": {
+						"$ref": "#/responses/500ErrorResponse"
+					},
+					"503": {
+						"$ref": "#/responses/503ErrorResponse"
+					},
+					"default": {
+						"$ref": "#/responses/StandardErrorResponse"
+					}
+				}
+			},
+			"head": {
+				"tags": [
+					"PCA"
+				],
+				"description": "Full CMA Personal Current Account Service Metrics data",
+				"operationId": "headPCAFull",
+				"produces": [
+					""
+				],
+				"parameters": [
+					{
+						"$ref": "#/parameters/If-Modified-Since"
+					},
+					{
+						"$ref": "#/parameters/If-None-Match"
+					},
+					{
+						"$ref": "#/parameters/Area"
+					},
+					{
+						"$ref": "#/parameters/Wave"
+					}
+				],
+				"responses": {
+					"200": {
+						"$ref": "#/responses/200OKHead"
+					},
+					"304": {
+						"$ref": "#/responses/304NoContent"
+					},
+					"400": {
+						"$ref": "#/responses/400ErrorResponseHead"
+					},
+					"404": {
+						"$ref": "#/responses/404ErrorResponseHead"
+					},
+					"500": {
+						"$ref": "#/responses/500ErrorResponseHead"
+					},
+					"503": {
+						"$ref": "#/responses/503ErrorResponseHead"
+					},
+					"default": {
+						"$ref": "#/responses/StandardErrorResponseHead"
+					}
+				}
+			}
+		},
+		"/product-type/bca/area/{area}/export-type/aggregated/wave/{wave}": {
+			"get": {
+				"tags": [
+					"BCA"
+				],
+				"description": "Aggregated CMA Business Current Account Service Metrics data",
+				"operationId": "getBCAAggregated",
+				"parameters": [
+					{
+						"$ref": "#/parameters/If-Modified-Since"
+					},
+					{
+						"$ref": "#/parameters/If-None-Match"
+					},
+					{
+						"$ref": "#/parameters/Area"
+					},
+					{
+						"$ref": "#/parameters/Wave"
+					}
+				],
+				"responses": {
+					"200": {
+						"$ref": "#/responses/200OKAggregated"
+					},
+					"304": {
+						"$ref": "#/responses/304NoContent"
+					},
+					"400": {
+						"$ref": "#/responses/400ErrorResponse"
+					},
+					"404": {
+						"$ref": "#/responses/404ErrorResponse"
+					},
+					"500": {
+						"$ref": "#/responses/500ErrorResponse"
+					},
+					"503": {
+						"$ref": "#/responses/503ErrorResponse"
+					},
+					"default": {
+						"$ref": "#/responses/StandardErrorResponse"
+					}
+				}
+			},
+			"head": {
+				"tags": [
+					"BCA"
+				],
+				"description": "Aggregated CMA Business Current Account Service Metrics data",
+				"operationId": "headBCAAggregated",
+				"produces": [
+					""
+				],
+				"parameters": [
+					{
+						"$ref": "#/parameters/If-Modified-Since"
+					},
+					{
+						"$ref": "#/parameters/If-None-Match"
+					},
+					{
+						"$ref": "#/parameters/Area"
+					},
+					{
+						"$ref": "#/parameters/Wave"
+					}
+				],
+				"responses": {
+					"200": {
+						"$ref": "#/responses/200OKHead"
+					},
+					"304": {
+						"$ref": "#/responses/304NoContent"
+					},
+					"400": {
+						"$ref": "#/responses/400ErrorResponseHead"
+					},
+					"404": {
+						"$ref": "#/responses/404ErrorResponseHead"
+					},
+					"500": {
+						"$ref": "#/responses/500ErrorResponseHead"
+					},
+					"503": {
+						"$ref": "#/responses/503ErrorResponseHead"
+					},
+					"default": {
+						"$ref": "#/responses/StandardErrorResponseHead"
+					}
+				}
+			}
+		},
+		"/product-type/bca/area/{area}/export-type/full/wave/{wave}": {
+			"get": {
+				"tags": [
+					"BCA"
+				],
+				"description": "Full CMA Business Current Account Service Metrics data",
+				"operationId": "getBCAFull",
+				"parameters": [
+					{
+						"$ref": "#/parameters/If-Modified-Since"
+					},
+					{
+						"$ref": "#/parameters/If-None-Match"
+					},
+					{
+						"$ref": "#/parameters/Area"
+					},
+					{
+						"$ref": "#/parameters/Wave"
+					}
+				],
+				"responses": {
+					"200": {
+						"$ref": "#/responses/200OKBCAFull"
+					},
+					"304": {
+						"$ref": "#/responses/304NoContent"
+					},
+					"400": {
+						"$ref": "#/responses/400ErrorResponse"
+					},
+					"404": {
+						"$ref": "#/responses/404ErrorResponse"
+					},
+					"500": {
+						"$ref": "#/responses/500ErrorResponse"
+					},
+					"503": {
+						"$ref": "#/responses/503ErrorResponse"
+					},
+					"default": {
+						"$ref": "#/responses/StandardErrorResponse"
+					}
+				}
+			},
+			"head": {
+				"tags": [
+					"BCA"
+				],
+				"description": "Full CMA Business Current Account Service Metrics data",
+				"operationId": "headBCAFull",
+				"produces": [
+					""
+				],
+				"parameters": [
+					{
+						"$ref": "#/parameters/If-Modified-Since"
+					},
+					{
+						"$ref": "#/parameters/If-None-Match"
+					},
+					{
+						"$ref": "#/parameters/Area"
+					},
+					{
+						"$ref": "#/parameters/Wave"
+					}
+				],
+				"responses": {
+					"200": {
+						"$ref": "#/responses/200OKHead"
+					},
+					"304": {
+						"$ref": "#/responses/304NoContent"
+					},
+					"400": {
+						"$ref": "#/responses/400ErrorResponseHead"
+					},
+					"404": {
+						"$ref": "#/responses/404ErrorResponseHead"
+					},
+					"500": {
+						"$ref": "#/responses/500ErrorResponseHead"
+					},
+					"503": {
+						"$ref": "#/responses/503ErrorResponseHead"
+					},
+					"default": {
+						"$ref": "#/responses/StandardErrorResponseHead"
+					}
+				}
+			}
+		}
+	},
+	"parameters": {
+		"Area": {
+			"name": "area",
+			"type": "string",
+			"enum": [
+				"GB",
+				"NI"
+			],
+			"description": "Indicates area to be returned. Value must be either `GB` or `NI`",
+			"in": "path",
+			"required": true
+		},
+		"Wave": {
+			"name": "wave",
+			"type": "string",
+			"description": "Indicates wave to be returned. Use `latest` to retrive the latest version, or the standard wave format (`YYYY-H1` or `YYYY-H2`) to retrive a specific version.",
+			"in": "path",
+			"required": true
+		},
+		"If-Modified-Since": {
+			"name": "If-Modified-Since",
+			"type": "string",
+			"description": "Used for conditional request, to retrieve data only if modified since a given date",
+			"in": "header",
+			"required": false
+		},
+		"If-None-Match": {
+			"name": "If-None-Match",
+			"type": "string",
+			"description": "Used for conditional request, to retrieve data only if the given `Etag` value does not match",
+			"in": "header",
+			"required": false
+		}
+	},
+	"responses": {
+		"200OKAggregated": {
+			"description": "Aggregated Results successfully retrieved",
+			"schema": {
+				"$ref": "#/definitions/Aggregated"
+			},
+			"headers": {
+				"Cache-Control": {
+					"type": "string",
+					"description": "Describes how long this response can be cached"
+				},
+				"Content-Length": {
+					"type": "integer",
+					"description": "The length of the request body in octets (8-bit bytes)"
+				},
+				"Content-Type": {
+					"type": "string",
+					"description": "The MIME type of this content"
+				},
+				"Date": {
+					"type": "string",
+					"description": "The date and time that the message was sent (in \"HTTP-date\" format as defined by RFC 7231)"
+				},
+				"Etag": {
+					"type": "string",
+					"description": "A unique ID identifying whether this resource has changed"
+				},
+				"Last-Modified": {
+					"type": "string",
+					"description": "The last modified date for the requested object (in \"HTTP-date\" format as defined by RFC 7231)"
+				},
+				"Age": {
+					"type": "integer",
+					"description": "A non-negative integer, representing time in seconds the object has been in a proxy cache"
+				}
+			}
+		},
+		"200OKPCAFull": {
+			"description": "PCA Full Results successfully retrieved",
+			"schema": {
+				"$ref": "#/definitions/PCAFull"
+			},
+			"headers": {
+				"Cache-Control": {
+					"type": "string",
+					"description": "Describes how long this response can be cached"
+				},
+				"Content-Length": {
+					"type": "integer",
+					"description": "The length of the request body in octets (8-bit bytes)"
+				},
+				"Content-Type": {
+					"type": "string",
+					"description": "The MIME type of this content"
+				},
+				"Date": {
+					"type": "string",
+					"description": "The date and time that the message was sent (in \"HTTP-date\" format as defined by RFC 7231)"
+				},
+				"Etag": {
+					"type": "string",
+					"description": "A unique ID identifying whether this resource has changed"
+				},
+				"Last-Modified": {
+					"type": "string",
+					"description": "The last modified date for the requested object (in \"HTTP-date\" format as defined by RFC 7231)"
+				},
+				"Age": {
+					"type": "integer",
+					"description": "A non-negative integer, representing time in seconds the object has been in a proxy cache"
+				}
+			}
+		},
+		"200OKBCAFull": {
+			"description": "BCA Full Results successfully retrieved",
+			"schema": {
+				"$ref": "#/definitions/BCAFull"
+			},
+			"headers": {
+				"Cache-Control": {
+					"type": "string",
+					"description": "Describes how long this response can be cached"
+				},
+				"Content-Length": {
+					"type": "integer",
+					"description": "The length of the request body in octets (8-bit bytes)"
+				},
+				"Content-Type": {
+					"type": "string",
+					"description": "The MIME type of this content"
+				},
+				"Date": {
+					"type": "string",
+					"description": "The date and time that the message was sent (in \"HTTP-date\" format as defined by RFC 7231)"
+				},
+				"Etag": {
+					"type": "string",
+					"description": "A unique ID identifying whether this resource has changed"
+				},
+				"Last-Modified": {
+					"type": "string",
+					"description": "The last modified date for the requested object (in \"HTTP-date\" format as defined by RFC 7231)"
+				},
+				"Age": {
+					"type": "integer",
+					"description": "A non-negative integer, representing time in seconds the object has been in a proxy cache"
+				}
+			}
+		},
+		"200OKHead": {
+			"description": "Results successfully retrieved",
+			"headers": {
+				"Cache-Control": {
+					"type": "string",
+					"description": "Describes how long this response can be cached"
+				},
+				"Content-Length": {
+					"type": "integer",
+					"description": "The length of the request body in octets (8-bit bytes)"
+				},
+				"Content-Type": {
+					"type": "string",
+					"description": "The MIME type of this content"
+				},
+				"Date": {
+					"type": "string",
+					"description": "The date and time that the message was sent (in \"HTTP-date\" format as defined by RFC 7231)"
+				},
+				"Etag": {
+					"type": "string",
+					"description": "A unique ID identifying whether this resource has changed"
+				},
+				"Last-Modified": {
+					"type": "string",
+					"description": "The last modified date for the requested object (in \"HTTP-date\" format as defined by RFC 7231)"
+				},
+				"Age": {
+					"type": "integer",
+					"description": "A non-negative integer, representing time in seconds the object has been in a proxy cache"
+				}
+			}
+		},
+		"304NoContent": {
+			"description": "No Content",
+			"headers": {
+				"Cache-Control": {
+					"type": "string",
+					"description": "Describes how long this response can be cached"
+				},
+				"Date": {
+					"type": "string",
+					"description": "The date and time that the message was sent (in \"HTTP-date\" format as defined by RFC 7231)"
+				},
+				"Etag": {
+					"type": "string",
+					"description": "A unique ID identifying whether this resource has changed"
+				},
+				"Age": {
+					"type": "integer",
+					"description": "A non-negative integer, representing time in seconds the object has been in a proxy cache"
+				}
+			}
+		},
+		"400ErrorResponse": {
+			"description": "Bad Request",
+			"schema": {
+				"$ref": "#/definitions/Error"
+			}
+		},
+		"400ErrorResponseHead": {
+			"description": "Bad Request"
+		},
+		"404ErrorResponse": {
+			"description": "Not Found",
+			"schema": {
+				"$ref": "#/definitions/Error"
+			}
+		},
+		"404ErrorResponseHead": {
+			"description": "Not Found"
+		},
+		"500ErrorResponse": {
+			"description": "Internal Server Error",
+			"schema": {
+				"$ref": "#/definitions/Error"
+			}
+		},
+		"500ErrorResponseHead": {
+			"description": "Internal Server Error"
+		},
+		"503ErrorResponse": {
+			"description": "Service Unavailable",
+			"schema": {
+				"$ref": "#/definitions/Error"
+			}
+		},
+		"503ErrorResponseHead": {
+			"description": "Service Unavailable"
+		},
+		"StandardErrorResponse": {
+			"description": "Standard Error Response",
+			"schema": {
+				"$ref": "#/definitions/Error"
+			}
+		},
+		"StandardErrorResponseHead": {
+			"description": "Standard Error Response"
+		}
+	},
+	"definitions": {
+		"Aggregated": {
+			"type": "object",
+			"properties": {
+				"Meta": {
+					"$ref": "#/definitions/Meta"
+				},
+				"Data": {
+					"$ref": "#/definitions/AggregatedData"
+				}
+			},
+			"required": [
+				"Meta",
+				"Data"
+			],
+			"additionalProperties": false
+		},
+		"PCAFull": {
+			"type": "object",
+			"properties": {
+				"Meta": {
+					"$ref": "#/definitions/Meta"
+				},
+				"Data": {
+					"$ref": "#/definitions/PCAFullData"
+				}
+			},
+			"required": [
+				"Meta",
+				"Data"
+			],
+			"additionalProperties": false
+		},
+		"BCAFull": {
+			"type": "object",
+			"properties": {
+				"Meta": {
+					"$ref": "#/definitions/Meta"
+				},
+				"Data": {
+					"$ref": "#/definitions/BCAFullData"
+				}
+			},
+			"required": [
+				"Meta",
+				"Data"
+			],
+			"additionalProperties": false
+		},
+		"AggregatedData": {
+			"type": "object",
+			"properties": {
+				"Question": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/AggregatedQuestion"
+					}
+				}
+			},
+			"required": [
+				"Question"
+			],
+			"additionalProperties": false
+		},
+		"PCAFullData": {
+			"type": "object",
+			"properties": {
+				"Brand": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/PCABrand"
+					}
+				}
+			},
+			"required": [
+				"Brand"
+			],
+			"additionalProperties": false
+		},
+		"PCABrand": {
+			"type": "object",
+			"properties": {
+				"BrandName": {
+					"type": "string"
+				},
+				"Data": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/PCAFullResult"
+					}
+				}
+			},
+			"required": [
+				"BrandName",
+				"Data"
+			],
+			"additionalProperties": false
+		},
+		"PCAFullResult": {
+			"type": "object",
+			"properties": {
+				"PCAQ1All": {
+					"description": "Thinking about your {current account/payment account}, taking everything into account, are you likely or unlikely to recommend {bank} to friends and family for current account banking, if asked by them? Are you extremely likely, very likely, fairly likely or unlikely?",
+					"type": "string",
+					"enum": [
+						"Extremely likely",
+						"Very likely",
+						"Fairly likely",
+						"Unlikely",
+						"NOT USED IN RANKING: Don't know",
+						"NOT USED IN RANKING: Do not recommend"
+					]
+				},
+				"PCAQ1Recommend": {
+					"description": "Thinking about your {current account/payment account}, taking everything into account, are you likely or unlikely to recommend {bank} to friends and family for current account banking, if asked by them? Are you extremely likely, very likely, fairly likely or unlikely?",
+					"type": "string",
+					"enum": [
+						"Extremely likely",
+						"Very likely",
+						"Fairly likely",
+						"Unlikely"
+					]
+				},
+				"PCAQ2All": {
+					"description": "I'd like to ask next about the branch services that {bank} offers – by that I mean the staff and facilities including any machines inside the branch. If you have used a Post Office to carry out banking activities on your {bank} account please include this. Based on your experience over the last three months are you likely or unlikely to recommend {bank}'s branch services to friends and family, if asked by them?",
+					"type": "string",
+					"enum": [
+						"Extremely likely",
+						"Very likely",
+						"Fairly likely",
+						"Unlikely",
+						"NOT USED IN RANKING: Don't know",
+						"NOT USED IN RANKING: Have not used a branch in the last 3 months",
+						"NOT USED IN RANKING: Do not recommend"
+					]
+				},
+				"PCAQ2Recommend": {
+					"description": "I'd like to ask next about the branch services that {bank} offers – by that I mean the staff and facilities including any machines inside the branch. If you have used a Post Office to carry out banking activities on your {bank} account please include this. Based on your experience over the last three months are you likely or unlikely to recommend {bank}'s branch services to friends and family, if asked by them?",
+					"type": "string",
+					"enum": [
+						"Extremely likely",
+						"Very likely",
+						"Fairly likely",
+						"Unlikely"
+					]
+				},
+				"PCAQ3All": {
+					"description": "And again based on your experience over the last three months are you likely or unlikely to recommend {bank}'s online and mobile banking services to friends and family, if asked by them?",
+					"type": "string",
+					"enum": [
+						"Extremely likely",
+						"Very likely",
+						"Fairly likely",
+						"Unlikely",
+						"NOT USED IN RANKING: Don't know",
+						"NOT USED IN RANKING: Have not used online or mobile banking in the last 3 months",
+						"NOT USED IN RANKING: Do not recommend"
+					]
+				},
+				"PCAQ3Recommend": {
+					"description": "And again based on your experience over the last three months are you likely or unlikely to recommend {bank}'s online and mobile banking services to friends and family, if asked by them?",
+					"type": "string",
+					"enum": [
+						"Extremely likely",
+						"Very likely",
+						"Fairly likely",
+						"Unlikely"
+					]
+				},
+				"PCAQ4All": {
+					"description": "Based on your experience over the last twelve months are you likely or unlikely to recommend {bank}'s overdraft services to friends and family, if asked by them?",
+					"type": "string",
+					"enum": [
+						"Extremely likely",
+						"Very likely",
+						"Fairly likely",
+						"Unlikely",
+						"NOT USED IN RANKING: Don't know",
+						"NOT USED IN RANKING: Have not been overdrawn in the last 12 months",
+						"NOT USED IN RANKING: Do not recommend"
+					]
+				},
+				"PCAQ4Recommend": {
+					"description": "Based on your experience over the last twelve months are you likely or unlikely to recommend {bank}'s overdraft services to friends and family, if asked by them?",
+					"type": "string",
+					"enum": [
+						"Extremely likely",
+						"Very likely",
+						"Fairly likely",
+						"Unlikely"
+					]
+				},
+				"Brand": {
+					"$ref": "#/definitions/Brand"
+				},
+				"Age": {
+					"description": "Age Band of the respondent",
+					"type": "string",
+					"enum": [
+						"16-24",
+						"25-34",
+						"35-44",
+						"45-54",
+						"55-64",
+						"65+"
+					]
+				},
+				"Weight": {
+					"$ref": "#/definitions/Weight"
+				}
+			},
+			"additionalProperties": false
+		},
+		"Brand": {
+			"description": "Master Brand",
+			"type": "string",
+			"additionalProperties": false
+		},
+		"Weight": {
+			"description": "Weight to be used for calculating scores",
+			"type": "number",
+			"format": "double",
+			"additionalProperties": false
+		},
+		"AggregatedQuestion": {
+			"type": "object",
+			"properties": {
+				"QuestionNumber": {
+					"type": "string",
+					"description": "Number of the question"
+				},
+				"Title": {
+					"type": "string",
+					"description": "Title of the question"
+				},
+				"SubTitle": {
+					"type": "string",
+					"description": "Subtitle of the question"
+				},
+				"Footnotes": {
+					"type": "array",
+					"description": "Array of footnotes",
+					"items": {
+						"type": "string"
+					}
+				},
+				"Results": {
+					"type": "array",
+					"description": "Results of the survey",
+					"items": {
+						"$ref": "#/definitions/AggregatedScore"
+					}
+				}
+			},
+			"required": [
+				"QuestionNumber",
+				"Title",
+				"SubTitle",
+				"Footnotes",
+				"Results"
+			],
+			"additionalProperties": false
+		},
+		"AggregatedScore": {
+			"type": "object",
+			"properties": {
+				"Brand": {
+					"type": "string",
+					"description": "The brand"
+				},
+				"Rank": {
+					"type": "integer",
+					"description": "The rank achieved by the brand"
+				},
+				"DisplayRank": {
+					"type": "string",
+					"description": "The rank as above, but prefixed with \"=\" in the case of ties"
+				},
+				"PublishedScore": {
+					"type": "string",
+					"description": "The published score expressed as a percentage, but encoded as a string"
+				},
+				"PublishedScore2dp": {
+					"type": "string",
+					"description": "Published score accurate to 2 decimal places. This is a percentage value encoded as a string"
+				},
+				"LowBase": {
+					"type": "boolean",
+					"description": "Indicates if the base was too low"
+				}
+			},
+			"required": [
+				"Brand",
+				"Rank",
+				"DisplayRank",
+				"PublishedScore",
+				"PublishedScore2dp",
+				"LowBase"
+			],
+			"additionalProperties": false
+		},
+		"BCAFullData": {
+			"type": "object",
+			"properties": {
+				"Brand": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/BCABrand"
+					}
+				}
+			},
+			"required": [
+				"Brand"
+			],
+			"additionalProperties": false
+		},
+		"BCABrand": {
+			"type": "object",
+			"properties": {
+				"BrandName": {
+					"type": "string"
+				},
+				"Data": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/BCAFullResult"
+					}
+				}
+			},
+			"required": [
+				"BrandName",
+				"Data"
+			],
+			"additionalProperties": false
+		},
+		"BCAFullResult": {
+			"type": "object",
+			"properties": {
+				"BCAQ5": {
+					"description": "How many employees are there in (BUSINESS NAME) in the UK, including yourself and both full and part time workers?",
+					"type": "string",
+					"enum": [
+						"1",
+						"2-9",
+						"10+"
+					]
+				},
+				"BCAQ10All": {
+					"description": "Taking everything into account, if asked, are you likely or unlikely to recommend [BRAND]'s business banking to other small and medium sized businesses?",
+					"type": "string",
+					"enum": [
+						"Extremely likely",
+						"Very likely",
+						"Fairly likely",
+						"Unlikely",
+						"Not used in ranking: Don't know"
+					]
+				},
+				"BCAQ10Recommend": {
+					"description": "Taking everything into account, if asked, are you likely or unlikely to recommend [BRAND]'s business banking to other small and medium sized businesses?",
+					"type": "string",
+					"enum": [
+						"Extremely likely",
+						"Very likely",
+						"Fairly likely",
+						"Unlikely"
+					]
+				},
+				"BCAQ11All": {
+					"description": "If asked, are you likely or unlikely to recommend [BRAND]'s relationship and account management to other small and medium sized businesses? This would include the handling of routine business enquiries or more detailed discussions about your business needs, either face-to-face or by phone.",
+					"type": "string",
+					"enum": [
+						"Extremely likely",
+						"Very likely",
+						"Fairly likely",
+						"Unlikely",
+						"Not used in ranking: Don't know",
+						"Not used in ranking: No experience",
+						"Not used in ranking: No recent use"
+					]
+				},
+				"BCAQ11Recommend": {
+					"description": "If asked, are you likely or unlikely to recommend [BRAND]'s relationship and account management to other small and medium sized businesses? This would include the handling of routine business enquiries or more detailed discussions about your business needs, either face-to-face or by phone.",
+					"type": "string",
+					"enum": [
+						"Extremely likely",
+						"Very likely",
+						"Fairly likely",
+						"Unlikely"
+					]
+				},
+				"BCAQ12All": {
+					"description": "Thinking now about the digital channels that you may have used to access your business bank account in the last 12 months, how likely or unlikely are you to recommend [BRAND]'s online and/or mobile business banking to other small and medium sized businesses, if asked by them?",
+					"type": "string",
+					"enum": [
+						"Extremely likely",
+						"Very likely",
+						"Fairly likely",
+						"Unlikely",
+						"Not used in ranking: Don't know",
+						"Not used in ranking: No experience",
+						"Not used in ranking: No recent use"
+					]
+				},
+				"BCAQ12Recommend": {
+					"description": "Thinking now about the digital channels that you may have used to access your business bank account in the last 12 months, how likely or unlikely are you to recommend [BRAND]'s online and/or mobile business banking to other small and medium sized businesses, if asked by them?",
+					"type": "string",
+					"enum": [
+						"Extremely likely",
+						"Very likely",
+						"Fairly likely",
+						"Unlikely"
+					]
+				},
+				"BCAQ13All": {
+					"description": "I'd now like to focus on your use of branch facilities provided by [BRAND] in the last 12 months, including  Post Office counters if you have used them for [BRAND] business banking purposes, but not ATMs / cash machines positioned outside a branch. With this in mind, are you likely or unlikely to recommend [BRAND]'s branch and business centre services to other small and medium sized businesses, if asked by them?",
+					"type": "string",
+					"enum": [
+						"Extremely likely",
+						"Very likely",
+						"Fairly likely",
+						"Unlikely",
+						"Not used in ranking: Don't know",
+						"Not used in ranking: No experience",
+						"Not used in ranking: No recent use"
+					]
+				},
+				"BCAQ13Recommend": {
+					"description": "I'd now like to focus on your use of branch facilities provided by [BRAND] in the last 12 months, including  Post Office counters if you have used them for [BRAND] business banking purposes, but not ATMs / cash machines positioned outside a branch. With this in mind, are you likely or unlikely to recommend [BRAND]'s branch and business centre services to other small and medium sized businesses, if asked by them?",
+					"type": "string",
+					"enum": [
+						"Extremely likely",
+						"Very likely",
+						"Fairly likely",
+						"Unlikely"
+					]
+				},
+				"BCAQ16All": {
+					"description": "Thinking now about the business overdraft and loan facilities provided by [BRAND] over the last 12 months, are you likely or unlikely to recommend [BRAND]'s overdraft or loan services to other small and medium sized businesses, if asked by them?",
+					"type": "string",
+					"enum": [
+						"Extremely likely",
+						"Very likely",
+						"Fairly likely",
+						"Unlikely",
+						"Not used in ranking: Don't know",
+						"Not used in ranking: No experience",
+						"Not used in ranking: No recent use"
+					]
+				},
+				"BCAQ16Recommend": {
+					"description": "Thinking now about the business overdraft and loan facilities provided by [BRAND] over the last 12 months, are you likely or unlikely to recommend [BRAND]'s overdraft or loan services to other small and medium sized businesses, if asked by them?",
+					"type": "string",
+					"enum": [
+						"Extremely likely",
+						"Very likely",
+						"Fairly likely",
+						"Unlikely"
+					]
+				},
+				"BCAQ17_1": {
+					"description": "When did you, or someone that you work with, last deal with [BRAND] about a routine business banking enquiry (via any method)?",
+					"type": "string",
+					"enum": [
+						"Today",
+						"Within the last 2-3 days",
+						"Within the last week",
+						"Within the last fortnight",
+						"Within the last month",
+						"Within the last 3 months",
+						"Within the last 6 months",
+						"Within the last year",
+						"Longer ago than that",
+						"Don't know",
+						"Never used/experienced"
+					]
+				},
+				"BCAQ17_2": {
+					"description": "When did you, or someone that you work with, last have a detailed discussion with [BRAND] about your business banking needs (via any method)?",
+					"type": "string",
+					"enum": [
+						"Today",
+						"Within the last 2-3 days",
+						"Within the last week",
+						"Within the last fortnight",
+						"Within the last month",
+						"Within the last 3 months",
+						"Within the last 6 months",
+						"Within the last year",
+						"Longer ago than that",
+						"Don't know",
+						"Never used/experienced"
+					]
+				},
+				"BCAQ17_3": {
+					"description": "When did you, or someone that you work with, last use [BRAND] online business banking?",
+					"type": "string",
+					"enum": [
+						"Today",
+						"Within the last 2-3 days",
+						"Within the last week",
+						"Within the last fortnight",
+						"Within the last month",
+						"Within the last 3 months",
+						"Within the last 6 months",
+						"Within the last year",
+						"Longer ago than that",
+						"Don't know",
+						"Never used/experienced"
+					]
+				},
+				"BCAQ17_4": {
+					"description": "When did you, or someone that you work with, last use [BRAND] mobile business banking?",
+					"type": "string",
+					"enum": [
+						"Today",
+						"Within the last 2-3 days",
+						"Within the last week",
+						"Within the last fortnight",
+						"Within the last month",
+						"Within the last 3 months",
+						"Within the last 6 months",
+						"Within the last year",
+						"Longer ago than that",
+						"Don't know",
+						"Never used/experienced"
+					]
+				},
+				"BCAQ17_5": {
+					"description": "When did you, or someone that you work with, last visit a [BRAND] branch or business centre, to manage the [BRAND] business account?",
+					"type": "string",
+					"enum": [
+						"Today",
+						"Within the last 2-3 days",
+						"Within the last week",
+						"Within the last fortnight",
+						"Within the last month",
+						"Within the last 3 months",
+						"Within the last 6 months",
+						"Within the last year",
+						"Longer ago than that",
+						"Don't know",
+						"Never used/experienced"
+					]
+				},
+				"BCAQ17_6": {
+					"description": "When did you, or someone that you work with, last use a Post Office counter to manage the (BRAND) business account?",
+					"type": "string",
+					"enum": [
+						"Today",
+						"Within the last 2-3 days",
+						"Within the last week",
+						"Within the last fortnight",
+						"Within the last month",
+						"Within the last 3 months",
+						"Within the last 6 months",
+						"Within the last year",
+						"Longer ago than that",
+						"Don't know",
+						"Never used/experienced"
+					]
+				},
+				"Brand": {
+					"$ref": "#/definitions/Brand"
+				},
+				"Weight": {
+					"$ref": "#/definitions/Weight"
+				}
+			},
+			"additionalProperties": false
+		},
+		"Meta": {
+			"title": "Meta data",
+			"type": "object",
+			"properties": {
+				"ProductType": {
+					"type": "string",
+					"enum": [
+						"BCA",
+						"PCA"
+					]
+				},
+				"Area": {
+					"type": "string",
+					"enum": [
+						"GB",
+						"NI"
+					]
+				},
+				"LastUpdated": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"TotalResults": {
+					"type": "integer",
+					"minimum": 0
+				},
+				"Wave": {
+					"type": "string",
+					"pattern": "20\\d{2}-H(1|2)"
+				},
+				"Agreement": {
+					"type": "string",
+					"enum": [
+						"Use of the APIs and any related data will be subject to the terms of the Open Licence and subject to terms and conditions"
+					]
+				},
+				"License": {
+					"description": "Open Banking License",
+					"type": "string",
+					"format": "uri",
+					"enum": [
+						"https://www.openbanking.org.uk/open-licence"
+					]
+				},
+				"TermsOfUse": {
+					"description": "Open Banking Terms of Use",
+					"type": "string",
+					"format": "uri",
+					"enum": [
+						"https://www.openbanking.org.uk/terms"
+					]
+				}
+			},
+			"required": [
+				"ProductType",
+				"Area",
+				"LastUpdated",
+				"TotalResults",
+				"Wave",
+				"Agreement",
+				"License",
+				"TermsOfUse"
+			],
+			"additionalProperties": false
+		},
+		"Error": {
+			"type": "object",
+			"properties": {
+				"Code": {
+					"type": "string",
+					"description": "The error code is a string that uniquely identifies an error condition."
+				},
+				"Message": {
+					"type": "string"
+				},
+				"Key": {
+					"type": "string"
+				},
+				"RequestId": {
+					"type": "string",
+					"description": "ID of the request associated with the error."
+				},
+				"HostId": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}

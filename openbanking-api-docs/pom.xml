@@ -1,0 +1,495 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.laegler.openbanking</groupId>
+	<artifactId>openbanking-api-docs</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>Open Banking API Documentation</name>
+	<description>Open Banking API Documentation, Specification and Reports</description>
+
+	<properties>
+		<!-- Basics: Encoding and Java version -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+		<java.version>1.8</java.version>
+		<maven.compiler.source>${java.version}</maven.compiler.source>
+		<maven.compiler.target>${java.version}</maven.compiler.target>
+		<project.scm.id>github</project.scm.id>
+		<maven.test.failure.ignore>true</maven.test.failure.ignore>
+		<maven.test.error.ignore>true</maven.test.error.ignore>
+		<maven.javadoc.failOnError>false</maven.javadoc.failOnError>
+		<maven.skip.deploy>true</maven.skip.deploy>
+		<maven.site.skip>true</maven.site.skip>
+
+		<swagger-ui.version>2.2.10</swagger-ui.version>
+		<swagger.version>2.4.8</swagger.version>
+
+		<projectBaseName>openbanking-api</projectBaseName>
+	</properties>
+
+	<build>
+		<finalName>${project.artifactId}</finalName>
+	</build>
+	
+	<profiles>
+		<profile>
+			<id>generate</id>
+			<build>
+				<plugins>
+					<plugin>
+						<artifactId>maven-clean-plugin</artifactId>
+						<version>3.1.0</version>
+						<configuration>
+							<filesets>
+								<fileset>
+									<directory>${project.basedir}/..</directory>
+									<includes>
+										<!-- <include>${project.basedir}/docu/**/*.*</include> -->
+										<!-- <include>${projectBaseName}-pdf/src/main/gen/**/*.*</include> 
+											<include>${projectBaseName}-pdf/src/test/gen/**/*.*</include> -->
+										<!-- <include>${projectBaseName}-model/src/main/gen/**/*.*</include> -->
+										<!-- <include>${projectBaseName}-model/src/test/gen/**/*.*</include> -->
+										<include>${projectBaseName}-soap-transform/src/main/gen/**/*.*</include>
+										<include>${projectBaseName}-soap-transform/src/test/gen/**/*.*</include>
+										<include>${projectBaseName}-definition/src/main/gen/**/*.*</include>
+										<include>${projectBaseName}-definition/src/test/gen/**/*.*</include>
+										<include>${projectBaseName}-service/src/main/gen/**/*.*</include>
+										<include>${projectBaseName}-service/src/test/gen/**/*.*</include>
+										<!-- <include>${projectBaseName}-server/src/main/gen/**/*.*</include> 
+											<include>${projectBaseName}-server/src/test/gen/**/*.*</include> <include>${projectBaseName}-client/src/main/gen/**/*.*</include> 
+											<include>${projectBaseName}-client/src/test/gen/**/*.*</include> <include>${projectBaseName}-spring-boot/src/main/gen/**/*.*</include> 
+											<include>${projectBaseName}-spring-boot/src/test/java/com/laegler/openbanking/api/**/*.*</include> -->
+										<include>${projectBaseName}-test/src/main/gen/**/*.*</include>
+										<include>${projectBaseName}-test/src/test/java/com/laegler/openbanking/api/**/*.*</include>
+									</includes>
+								</fileset>
+							</filesets>
+						</configuration>
+					</plugin>
+					<plugin>
+						<groupId>com.googlecode.maven-download-plugin</groupId>
+						<artifactId>download-maven-plugin</artifactId>
+						<version>1.4.2</version>
+						<executions>
+							<execution>
+								<id>swagger-ui</id>
+								<phase>prepare-package</phase>
+								<goals>
+									<goal>wget</goal>
+								</goals>
+								<configuration>
+									<url>https://github.com/swagger-api/swagger-ui/archive/v${swagger-ui.version}.tar.gz</url>
+									<unpack>true</unpack>
+									<outputDirectory>${project.basedir}/swagger-ui</outputDirectory>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<groupId>com.laegler.openbanking</groupId>
+						<artifactId>openbanking-api-codegen-maven-plugin</artifactId>
+						<version>${project.version}</version>
+						<executions>
+							<!-- <execution> <id>model</id> <phase>generate-sources</phase> <goals> 
+								<goal>generate</goal> </goals> <configuration> <language>com.laegler.openbanking.codegen.module.OpenbankingModelCodegen</language> 
+								<inputSpec>${project.basedir}/swagger.yaml</inputSpec> <output>${project.basedir}/../${projectBaseName}-model</output> 
+								<addCompileSourceRoot>true</addCompileSourceRoot> <groupId>${project.groupId}</groupId> 
+								<artifactId>${projectBaseName}-model</artifactId> <artifactVersion>${project.version}</artifactVersion> 
+								<apiPackage>${project.groupId}.api</apiPackage> <modelPackage>${project.groupId}.model</modelPackage> 
+								<invokerPackage>${project.groupId}</invokerPackage> <verbose>false</verbose> 
+								<configOptions> <sourceFolder>src/main/gen</sourceFolder> <testFolder>src/test/gen</testFolder> 
+								</configOptions> <additionalProperties> <configPackage>${project.groupId}</configPackage> 
+								<java8>true</java8> </additionalProperties> </configuration> </execution> -->
+							<execution>
+								<id>soap</id>
+								<phase>generate-sources</phase>
+								<goals>
+									<goal>generate</goal>
+								</goals>
+								<configuration>
+									<language>com.laegler.openbanking.codegen.module.OpenbankingSoapCodegen</language>
+									<inputSpec>${project.basedir}/swagger.yaml</inputSpec>
+									<output>${project.basedir}/../${projectBaseName}-soap-transform</output>
+									<groupId>${project.groupId}</groupId>
+									<artifactId>${projectBaseName}-soap-transform</artifactId>
+									<artifactVersion>${project.version}</artifactVersion>
+									<apiPackage>${project.groupId}.api</apiPackage>
+									<modelPackage>${project.groupId}.model</modelPackage>
+									<invokerPackage>${project.groupId}</invokerPackage>
+									<verbose>false</verbose>
+									<configOptions>
+										<sourceFolder>src/main/gen</sourceFolder>
+										<testFolder>src/test/gen</testFolder>
+									</configOptions>
+									<additionalProperties>
+										<configPackage>${project.groupId}</configPackage>
+										<java8>true</java8>
+									</additionalProperties>
+								</configuration>
+							</execution>
+							<execution>
+								<id>definition</id>
+								<phase>generate-sources</phase>
+								<goals>
+									<goal>generate</goal>
+								</goals>
+								<configuration>
+									<language>com.laegler.openbanking.codegen.module.OpenbankingDefinitionCodegen</language>
+									<inputSpec>${project.basedir}/swagger.yaml</inputSpec>
+									<output>${project.basedir}/../${projectBaseName}-definition</output>
+									<groupId>${project.groupId}</groupId>
+									<artifactId>${projectBaseName}-definition</artifactId>
+									<artifactVersion>${project.version}</artifactVersion>
+									<apiPackage>${project.groupId}.api</apiPackage>
+									<modelPackage>${project.groupId}.model</modelPackage>
+									<invokerPackage>${project.groupId}</invokerPackage>
+									<verbose>false</verbose>
+									<configOptions>
+										<sourceFolder>src/main/gen</sourceFolder>
+										<testFolder>src/test/gen</testFolder>
+									</configOptions>
+									<additionalProperties>
+										<configPackage>${project.groupId}</configPackage>
+										<java8>true</java8>
+									</additionalProperties>
+								</configuration>
+							</execution>
+							<execution>
+								<id>service</id>
+								<phase>generate-sources</phase>
+								<goals>
+									<goal>generate</goal>
+								</goals>
+								<configuration>
+									<language>com.laegler.openbanking.codegen.module.OpenbankingServiceCodegen</language>
+									<inputSpec>${project.basedir}/swagger.yaml</inputSpec>
+									<output>${project.basedir}/../${projectBaseName}-service</output>
+									<groupId>${project.groupId}</groupId>
+									<artifactId>${projectBaseName}-service</artifactId>
+									<artifactVersion>${project.version}</artifactVersion>
+									<apiPackage>${project.groupId}.api</apiPackage>
+									<modelPackage>${project.groupId}.model</modelPackage>
+									<invokerPackage>${project.groupId}</invokerPackage>
+									<verbose>false</verbose>
+									<configOptions>
+										<sourceFolder>src/main/gen</sourceFolder>
+										<testFolder>src/test/gen</testFolder>
+									</configOptions>
+									<additionalProperties>
+										<configPackage>${project.groupId}</configPackage>
+										<java8>true</java8>
+									</additionalProperties>
+								</configuration>
+							</execution>
+							<execution>
+								<id>test</id>
+								<phase>generate-sources</phase>
+								<goals>
+									<goal>generate</goal>
+								</goals>
+								<configuration>
+									<language>com.laegler.openbanking.codegen.module.OpenbankingTestCodegen</language>
+									<inputSpec>${project.basedir}/swagger.yaml</inputSpec>
+									<output>${project.basedir}/../${projectBaseName}-test</output>
+									<groupId>${project.groupId}</groupId>
+									<artifactId>${projectBaseName}-test</artifactId>
+									<artifactVersion>${project.version}</artifactVersion>
+									<apiPackage>${project.groupId}.api</apiPackage>
+									<modelPackage>${project.groupId}.model</modelPackage>
+									<invokerPackage>${project.groupId}</invokerPackage>
+									<verbose>false</verbose>
+									<configOptions>
+										<sourceFolder>src/main/gen</sourceFolder>
+										<testFolder>src/test/gen</testFolder>
+									</configOptions>
+									<additionalProperties>
+										<configPackage>${project.groupId}</configPackage>
+										<java8>true</java8>
+									</additionalProperties>
+								</configuration>
+							</execution>
+							<!-- <execution> <id>spring-boot</id> <phase>generate-sources</phase> 
+								<goals> <goal>generate</goal> </goals> <configuration> <language>com.laegler.openbanking.codegen.module.OpenbankingSpringCodegen</language> 
+								<library>spring-boot</library> <inputSpec>${project.basedir}/swagger.yaml</inputSpec> 
+								<output>${project.basedir}/../${projectBaseName}-spring-boot</output> <groupId>${project.groupId}</groupId> 
+								<artifactId>${projectBaseName}-spring-boot</artifactId> <artifactVersion>${project.version}</artifactVersion> 
+								<apiPackage>${project.groupId}.api</apiPackage> <modelPackage>${project.groupId}.model</modelPackage> 
+								<invokerPackage>${project.groupId}</invokerPackage> <verbose>false</verbose> 
+								<configOptions> <sourceFolder>src/main/gen</sourceFolder> <testFolder>src/test/gen</testFolder> 
+								</configOptions> <additionalProperties> <configPackage>${project.groupId}</configPackage> 
+								<java8>true</java8> </additionalProperties> </configuration> </execution> -->
+							<!-- <execution> <id>pdf-docu</id> <phase>generate-sources</phase> 
+								<goals> <goal>generate</goal> </goals> <configuration> <language>com.laegler.openbanking.codegen.module.OpenbankingSpringCodegen</language> 
+								<library>spring-boot</library> <inputSpec>${project.basedir}/swagger.yaml</inputSpec> 
+								<output>${project.basedir}/../${projectBaseName}-pdf</output> <groupId>${project.groupId}</groupId> 
+								<artifactId>${projectBaseName}-pdf</artifactId> <artifactVersion>${project.version}</artifactVersion> 
+								<apiPackage>${project.groupId}.api</apiPackage> <modelPackage>${project.groupId}.model</modelPackage> 
+								<invokerPackage>${project.groupId}</invokerPackage> <verbose>false</verbose> 
+								<configOptions> <sourceFolder>src/main/gen</sourceFolder> <testFolder>src/test/gen</testFolder> 
+								</configOptions> <additionalProperties> <configPackage>${project.groupId}</configPackage> 
+								<java8>true</java8> </additionalProperties> </configuration> </execution> -->
+							<!-- <execution> <id>server</id> <phase>generate-sources</phase> <goals> 
+								<goal>generate</goal> </goals> <configuration> <language>com.laegler.openbanking.codegen.module.OpenbankingCxfServerCodegen</language> 
+								<inputSpec>${project.basedir}/swagger.yaml</inputSpec> <output>${project.basedir}/../${projectBaseName}-server</output> 
+								<groupId>${project.groupId}</groupId> <artifactId>${projectBaseName}-server</artifactId> 
+								<artifactVersion>${project.version}</artifactVersion> <apiPackage>${project.groupId}.api</apiPackage> 
+								<modelPackage>${project.groupId}.model</modelPackage> <invokerPackage>${project.groupId}</invokerPackage> 
+								<importMappings>LocalTime=java.time.LocalTime</importMappings> <importMappings>LocalDateTime=java.time.LocalDateTime</importMappings> 
+								<verbose>false</verbose> <configOptions> <sourceFolder>src/main/gen</sourceFolder> 
+								<testFolder>src/test/gen</testFolder> </configOptions> <additionalProperties> 
+								<useMultipartFeature>true</useMultipartFeature> <addConsumesProducesJson>true</addConsumesProducesJson> 
+								<useAnnotatedBasePath>true</useAnnotatedBasePath> <generateNonSpringApplication>true</generateNonSpringApplication> 
+								<configPackage>${project.groupId}</configPackage> <java8>true</java8> </additionalProperties> 
+								</configuration> </execution> -->
+						</executions>
+					</plugin>
+					<plugin>
+						<groupId>io.swagger</groupId>
+						<artifactId>swagger-codegen-maven-plugin</artifactId>
+						<version>${swagger.version}</version>
+						<executions>
+							<!-- <execution> <id>client</id> <phase>generate-sources</phase> <goals> 
+								<goal>generate</goal> </goals> <configuration> <language>jaxrs-cxf-client</language> 
+								<inputSpec>${project.basedir}/swagger.yaml</inputSpec> <output>${project.basedir}/../${projectBaseName}-client</output> 
+								<groupId>${project.groupId}</groupId> <artifactId>${projectBaseName}-client</artifactId> 
+								<artifactVersion>${project.version}</artifactVersion> <apiPackage>${project.groupId}.api</apiPackage> 
+								<modelPackage>${project.groupId}.model</modelPackage> <invokerPackage>${project.groupId}</invokerPackage> 
+								<importMappings>LocalTime=java.time.LocalTime</importMappings> <importMappings>LocalDateTime=java.time.LocalDateTime</importMappings> 
+								<verbose>false</verbose> <configOptions> <sourceFolder>src/main/gen</sourceFolder> 
+								<testFolder>src/test/gen</testFolder> </configOptions> <additionalProperties> 
+								<configPackage>${project.groupId}</configPackage> <java8>true</java8> </additionalProperties> 
+								</configuration> </execution> -->
+							<execution>
+								<id>nodejs</id>
+								<phase>generate-sources</phase>
+								<goals>
+									<goal>generate</goal>
+								</goals>
+								<configuration>
+									<language>nodejs-server</language>
+									<inputSpec>${project.basedir}/swagger.yaml</inputSpec>
+									<output>${project.basedir}/../${projectBaseName}-nodejs</output>
+									<groupId>${project.groupId}</groupId>
+									<artifactId>${projectBaseName}-nodejs</artifactId>
+									<artifactVersion>${project.version}</artifactVersion>
+									<apiPackage>${project.groupId}.api</apiPackage>
+									<modelPackage>${project.groupId}.model</modelPackage>
+									<invokerPackage>${project.groupId}</invokerPackage>
+									<verbose>false</verbose>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<profile>
+			<id>docu</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>com.laegler.openbanking</groupId>
+						<artifactId>openbanking-api-codegen-maven-plugin</artifactId>
+						<version>${project.version}</version>
+						<!-- <dependencies> <dependency> <groupId>com.laegler.openbanking</groupId> 
+							<artifactId>openbanking-api-codegen</artifactId> <version>0.0.1-SNAPSHOT</version> 
+							</dependency> </dependencies> -->
+						<executions>
+							<execution>
+								<id>markdown-docu</id>
+								<phase>generate-sources</phase>
+								<goals>
+									<goal>generate</goal>
+								</goals>
+								<configuration>
+									<language>com.laegler.openbanking.codegen.module.OpenbankingSpringCodegen</language>
+									<library>spring-boot</library>
+									<inputSpec>${project.basedir}/swagger.yaml</inputSpec>
+									<output>${project.basedir}/docu</output>
+									<groupId>${project.groupId}</groupId>
+									<artifactId>${projectBaseName}-markdown</artifactId>
+									<artifactVersion>${project.version}</artifactVersion>
+									<apiPackage>${project.groupId}.api</apiPackage>
+									<modelPackage>${project.groupId}.model</modelPackage>
+									<invokerPackage>${project.groupId}</invokerPackage>
+									<verbose>false</verbose>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<groupId>io.swagger</groupId>
+						<artifactId>swagger-codegen-maven-plugin</artifactId>
+						<version>${swagger.version}</version>
+						<executions>
+							<execution>
+								<id>jmeter</id>
+								<phase>generate-sources</phase>
+								<goals>
+									<goal>generate</goal>
+								</goals>
+								<configuration>
+									<language>jmeter</language>
+									<inputSpec>${project.basedir}/swagger.yaml</inputSpec>
+									<output>${project.basedir}/../${projectBaseName}-test/src/test/jmeter</output>
+									<groupId>${project.groupId}</groupId>
+									<artifactId>${projectBaseName}-jmeter</artifactId>
+									<artifactVersion>${project.version}</artifactVersion>
+									<apiPackage>${project.groupId}.api</apiPackage>
+									<modelPackage>${project.groupId}.model</modelPackage>
+									<invokerPackage>${project.groupId}</invokerPackage>
+									<verbose>false</verbose>
+								</configuration>
+							</execution>
+							<execution>
+								<id>html-docu</id>
+								<phase>generate-sources</phase>
+								<goals>
+									<goal>generate</goal>
+								</goals>
+								<configuration>
+									<language>html</language>
+									<inputSpec>${project.basedir}/swagger.yaml</inputSpec>
+									<output>${project.basedir}/docu/html1</output>
+									<groupId>${project.groupId}</groupId>
+									<artifactId>${projectBaseName}</artifactId>
+									<artifactVersion>${project.version}</artifactVersion>
+									<apiPackage>${project.groupId}.api</apiPackage>
+									<modelPackage>${project.groupId}.model</modelPackage>
+									<invokerPackage>${project.groupId}</invokerPackage>
+									<verbose>false</verbose>
+								</configuration>
+							</execution>
+							<execution>
+								<id>html2-docu</id>
+								<phase>generate-sources</phase>
+								<goals>
+									<goal>generate</goal>
+								</goals>
+								<configuration>
+									<language>html2</language>
+									<inputSpec>${project.basedir}/swagger.yaml</inputSpec>
+									<output>${project.basedir}/docu/html2</output>
+									<groupId>${project.groupId}</groupId>
+									<artifactId>${projectBaseName}</artifactId>
+									<artifactVersion>${project.version}</artifactVersion>
+									<apiPackage>${project.groupId}.api</apiPackage>
+									<modelPackage>${project.groupId}.model</modelPackage>
+									<invokerPackage>${project.groupId}</invokerPackage>
+									<verbose>false</verbose>
+								</configuration>
+							</execution>
+							<execution>
+								<id>dynamic-html-docu</id>
+								<phase>generate-sources</phase>
+								<goals>
+									<goal>generate</goal>
+								</goals>
+								<configuration>
+									<language>dynamic-html</language>
+									<inputSpec>${project.basedir}/swagger.yaml</inputSpec>
+									<output>${project.basedir}/docu/dynamic-html</output>
+									<groupId>${project.groupId}</groupId>
+									<artifactId>${projectBaseName}</artifactId>
+									<artifactVersion>${project.version}</artifactVersion>
+									<apiPackage>${project.groupId}.api</apiPackage>
+									<modelPackage>${project.groupId}.model</modelPackage>
+									<invokerPackage>${project.groupId}</invokerPackage>
+									<verbose>false</verbose>
+								</configuration>
+							</execution>
+							<execution>
+								<id>cwiki-docu</id>
+								<phase>generate-sources</phase>
+								<goals>
+									<goal>generate</goal>
+								</goals>
+								<configuration>
+									<language>cwiki</language>
+									<inputSpec>${project.basedir}/swagger.yaml</inputSpec>
+									<output>${project.basedir}/docu/cwiki</output>
+									<groupId>${project.groupId}</groupId>
+									<artifactId>${projectBaseName}</artifactId>
+									<artifactVersion>${project.version}</artifactVersion>
+									<apiPackage>${project.groupId}.api</apiPackage>
+									<modelPackage>${project.groupId}.model</modelPackage>
+									<invokerPackage>${project.groupId}</invokerPackage>
+									<verbose>false</verbose>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+
+	<ciManagement>
+		<system>Google Cloud Build</system>
+		<url>https://console.cloud.google.com/cloud-build/builds?project=mobility23</url>
+		<notifiers>
+			<notifier>
+				<configuration />
+				<type>mail</type>
+				<address>thomas.laegler@googlemail.com</address>
+			</notifier>
+		</notifiers>
+	</ciManagement>
+
+	<repositories>
+		<repository>
+			<id>mobility23-repo-bucket-snapshot</id>
+			<url>gs://mobility23-maven-repository/snapshot</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>mobility23-repo-bucket-release</id>
+			<url>gs://mobility23-maven-repository/release</url>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<!--</repository> -->
+		<repository>
+			<id>jcenter</id>
+			<name>jcenter</name>
+			<url>https://jcenter.bintray.com/</url>
+		</repository>
+		<repository>
+			<id>spring-milestones</id>
+			<name>Spring Milestone Repository</name>
+			<url>http://repo.spring.io/milestone</url>
+		</repository>
+		<repository>
+			<id>apollo-graphql</id>
+			<name>apollo-graphql</name>
+			<url>https://dl.bintray.com/apollographql/android</url>
+		</repository>
+	</repositories>
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>mobility23-repo-bucket-snapshot</id>
+			<url>gs://mobility23-maven-repository/snapshot</url>
+		</snapshotRepository>
+		<repository>
+			<id>mobility23-repo-bucket-release</id>
+			<url>gs://mobility23-maven-repository/release</url>
+		</repository>
+	</distributionManagement>
+
+</project>

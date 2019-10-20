@@ -1,0 +1,33 @@
+
+<h2>BranchResponse_ContactInfo</h2>
+<ul class="parameter">
+  <li class="param-required-true">ContactContent : String
+    <br/>Collection of information that identifies a phone/Fax number/ email, as defined by telecom services.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">ContactDescription : String
+    <br/>Description of contact such as main phone number, alternate phone number, Fax number, alternate fax number, email and alternate email
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">ContactType : String
+    <br/>Contact type such Phone, Fax and email
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>AlternateEmail</dd>
+            <dd>AlternateFax</dd>
+            <dd>AlternatePhone</dd>
+            <dd>Email</dd>
+            <dd>Fax</dd>
+            <dd>Other</dd>
+            <dd>Phone</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherContactType : OtherContactType
+    <br/>
+  </li>
+</ul>

@@ -1,0 +1,88 @@
+
+<h2>UnsecuredSMELendingResponse_Repayment</h2>
+<ul class="parameter">
+  <li class="param-required-false">AmountType : String
+    <br/>The repayment is for paying just the interest only or both interest and capital or bullet amount or balance to date etc
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>BalanceToDate</dd>
+            <dd>Balloon</dd>
+            <dd>CapitalAndInterest</dd>
+            <dd>FeeChargeCap</dd>
+            <dd>InterestOnly</dd>
+            <dd>Bullet</dd>
+            <dd>Other</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Notes : List
+    <br/>Optional additional notes to supplement the Repayment
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherAmountType : OtherAmountType
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherRepaymentFrequency : OtherRepaymentFrequency
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherRepaymentType : OtherRepaymentType
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">RepaymentFeeCharges : RepaymentFeeCharges
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">RepaymentFrequency : String
+    <br/>Repayment frequency
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Daily</dd>
+            <dd>Flexible</dd>
+            <dd>Fortnightly</dd>
+            <dd>HalfYearly</dd>
+            <dd>Monthly</dd>
+            <dd>Other</dd>
+            <dd>Quarterly</dd>
+            <dd>Weekly</dd>
+            <dd>Yearly</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">RepaymentHoliday : List
+    <br/>Details of capital repayment holiday if any
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">RepaymentType : String
+    <br/>Repayment type
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Balloon</dd>
+            <dd>Bullet</dd>
+            <dd>CapitalAndInterest</dd>
+            <dd>CustomSchedule</dd>
+            <dd>EarlyRepayment</dd>
+            <dd>FixedCapitalFullyAmortising</dd>
+            <dd>FixedCapitalWithBullet</dd>
+            <dd>FixedCapitalAndInterestReducingBalance</dd>
+            <dd>InterestOnly</dd>
+            <dd>Other</dd>
+            <dd>PrepaymentFee</dd>
+            <dd>RepaymentWithBullet</dd>
+            <dd>StraightLineInterestOnly</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>

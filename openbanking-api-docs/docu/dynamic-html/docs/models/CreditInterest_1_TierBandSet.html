@@ -1,0 +1,46 @@
+
+<h2>CreditInterest_1_TierBandSet</h2>
+<ul class="parameter">
+  <li class="param-required-false">CalculationMethod : String
+    <br/>Methods of calculating interest
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Compound</dd>
+            <dd>SimpleInterest</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">Destination : String
+    <br/>Describes whether accrued interest is payable only to the BCA or to another bank account
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>PayAway</dd>
+            <dd>SelfCredit</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Notes : List
+    <br/>Optional additional notes to supplement the Tier Band Set details
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">TierBand : List
+    <br/>Tier Band Details
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">TierBandMethod : String
+    <br/>The methodology of how credit interest is paid/applied. It can be:-  1. Banded Interest rates are banded. i.e. Increasing rate on whole balance as balance increases.  2. Tiered Interest rates are tiered. i.e. increasing rate for each tier as balance increases, but interest paid on tier fixed for that tier and not on whole balance.  3. Whole The same interest rate is applied irrespective of the BCA balance
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Banded</dd>
+            <dd>Tiered</dd>
+            <dd>Whole</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>

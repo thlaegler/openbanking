@@ -1,0 +1,2 @@
+testCase,httpStatusCode,obWriteDomesticScheduled2Param,authorization,xIdempotencyKey,xJwsSignature,xFapiAuthDate,xFapiCustomerIpAddress,xFapiInteractionId,domesticScheduledPaymentId,authorization,xFapiAuthDate,xFapiCustomerIpAddress,xFapiInteractionId,domesticScheduledPaymentId,authorization,xFapiAuthDate,xFapiCustomerIpAddress,xFapiInteractionId
+Success,200,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

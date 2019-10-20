@@ -1,0 +1,21 @@
+# language: en
+{{#operations}}
+Feature: {{classname}} {{summary}}
+	{{notes}}{{description}}
+
+{{#operation}}
+{{#responses}}
+Scenario: As an API-user I want to {{summary}} - {{message}}
+	Expecting HTTP status code: {{code}}
+	Given I'm an authorized API-user
+	When I request to "{{httpMethod}}" to "{{{summary}}}"
+	Then the request content type is "{{consumes.0.mediaType}}"
+	And the request body is "{{requestBody}}"
+	Then the endpoint should answer with a response
+	And the response code should be {{code}}
+	And the response content type should be "{{produces.0.mediaType}}"
+	And the response body should be "{{example}}"
+
+{{/responses}}
+{{/operation}}
+{{/operations}}

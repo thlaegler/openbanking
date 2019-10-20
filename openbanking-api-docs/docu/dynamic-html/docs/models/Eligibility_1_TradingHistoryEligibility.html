@@ -1,0 +1,69 @@
+
+<h2>Eligibility_1_TradingHistoryEligibility</h2>
+<ul class="parameter">
+  <li class="param-required-false">Amount : String
+    <br/>Amount indicating the min max type
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Indicator : Boolean
+    <br/>Any eligibility criteria where the value can be indicated by a true or false value. e.g. PreviousCCJS is True or False
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">MinMaxType : String
+    <br/>Min Max type
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Minimum</dd>
+            <dd>Maximum</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Notes : List
+    <br/>Optional additional notes to supplement the TradingHistoryEligibility details
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherTradingType : OtherTradingType
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Period : String
+    <br/>The unit of period (days, weeks, months etc.)
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Day</dd>
+            <dd>Half Year</dd>
+            <dd>Month</dd>
+            <dd>Quarter</dd>
+            <dd>Week</dd>
+            <dd>Year</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Textual : String
+    <br/>Any eligibility criteria where a long description is supplied
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">TradingType : String
+    <br/>Trading type eligibility for the CCC product
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>AnnualReturns</dd>
+            <dd>PreviousCCJSAllowed</dd>
+            <dd>GoodTradingHistory</dd>
+            <dd>Other</dd>
+            <dd>PreviousBankruptcyAllowed</dd>
+            <dd>TradingLength</dd>
+            <dd>Turnover</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>

@@ -1,0 +1,75 @@
+
+<h2>OBReadProduct2_Data_OtherProductType_Overdraft_OverdraftTierBand</h2>
+<ul class="parameter">
+  <li class="param-required-false">AgreementLengthMax : Integer
+    <br/>Specifies the maximum length of a band for a fixed overdraft agreement
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">AgreementLengthMin : Integer
+    <br/>Specifies the minimum length of a band for a fixed overdraft agreement
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">AgreementPeriod : String
+    <br/>Specifies the period of a fixed length overdraft agreement
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>PACT</dd>
+            <dd>PDAY</dd>
+            <dd>PHYR</dd>
+            <dd>PMTH</dd>
+            <dd>PQTR</dd>
+            <dd>PWEK</dd>
+            <dd>PYER</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">BankGuaranteedIndicator : Boolean
+    <br/>Indicates whether the advertised overdraft rate is guaranteed to be offered to a borrower by the bank e.g. if its part of a government scheme, or whether the rate may vary dependent on the applicants circumstances.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">EAR : String
+    <br/>EAR means Effective Annual Rate and/or Equivalent Annual Rate (frequently used interchangeably), being the actual annual interest rate of an Overdraft.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Identification : String
+    <br/>Unique and unambiguous identification of a  Tier Band for a overdraft.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Notes : List
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OverdraftFeesCharges : List
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OverdraftInterestChargingCoverage : String
+    <br/>Refers to which interest rate is applied when interests are tiered. For example, if an overdraft balance is 2k and the interest tiers are:- 0-500 0.1%, 500-1000 0.2%, 1000-10000 0.5%, then the applicable interest rate could either be 0.5% of the entire balance (since the account balance sits in the top interest tier) or (0.1%*500)+(0.2%*500)+(0.5%*1000). In the 1st situation, we say the interest is applied to the Whole of the account balance,  and in the 2nd that it is Tiered.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>INBA</dd>
+            <dd>INTI</dd>
+            <dd>INWH</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">TierValueMax : String
+    <br/>Maximum value of Overdraft Tier/Band
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">TierValueMin : String
+    <br/>Minimum value of Overdraft Tier/Band
+  </li>
+</ul>

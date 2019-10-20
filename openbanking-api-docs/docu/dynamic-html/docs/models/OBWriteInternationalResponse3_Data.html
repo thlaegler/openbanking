@@ -1,0 +1,67 @@
+
+<h2>OBWriteInternationalResponse3_Data</h2>
+<ul class="parameter">
+  <li class="param-required-false">Charges : List
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">ConsentId : String
+    <br/>OB: Unique identification as assigned by the ASPSP to uniquely identify the consent resource.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">CreationDateTime : Date
+    <br/>Date and time at which the message was created.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">ExchangeRateInformation : OBWriteInternationalConsentResponse3_Data_ExchangeRateInformation
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">ExpectedExecutionDateTime : Date
+    <br/>Expected execution date and time for the payment resource.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">ExpectedSettlementDateTime : Date
+    <br/>Expected settlement date and time for the payment resource.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">Initiation : OBWriteInternational2_Data_Initiation
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">InternationalPaymentId : String
+    <br/>OB: Unique identification as assigned by the ASPSP to uniquely identify the international payment resource.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">MultiAuthorisation : OBWriteDomesticResponse3_Data_MultiAuthorisation
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">Status : String
+    <br/>Specifies the status of the payment information group.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>AcceptedCreditSettlementCompleted</dd>
+            <dd>AcceptedSettlementCompleted</dd>
+            <dd>AcceptedSettlementInProcess</dd>
+            <dd>AcceptedWithoutPosting</dd>
+            <dd>Pending</dd>
+            <dd>Rejected</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">StatusUpdateDateTime : Date
+    <br/>Date and time at which the resource status was updated.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00
+  </li>
+</ul>

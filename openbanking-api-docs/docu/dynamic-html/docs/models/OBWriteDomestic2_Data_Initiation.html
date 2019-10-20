@@ -1,0 +1,47 @@
+
+<h2>OBWriteDomestic2_Data_Initiation</h2>
+<ul class="parameter">
+  <li class="param-required-true">CreditorAccount : OBWriteDomestic2_Data_Initiation_CreditorAccount
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">CreditorPostalAddress : OBPostalAddress6
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">DebtorAccount : OBWriteDomestic2_Data_Initiation_DebtorAccount
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">EndToEndIdentification : String
+    <br/>Unique identification assigned by the initiating party to unambiguously identify the transaction. This identification is passed on, unchanged, throughout the entire end-to-end chain. Usage: The end-to-end identification can be used for reconciliation or to link tasks relating to the transaction. It can be included in several messages related to the transaction. OB: The Faster Payments Scheme can only access 31 characters for the EndToEndIdentification field.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">InstructedAmount : OBWriteDomestic2_Data_Initiation_InstructedAmount
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">InstructionIdentification : String
+    <br/>Unique identification as assigned by an instructing party for an instructed party to unambiguously identify the instruction. Usage: the  instruction identification is a point to point reference that can be used between the instructing party and the instructed party to refer to the individual instruction. It can be included in several messages related to the instruction.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">LocalInstrument : OBExternalLocalInstrument1Code
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">RemittanceInformation : OBWriteDomestic2_Data_Initiation_RemittanceInformation
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">SupplementaryData : OBSupplementaryData1
+    <br/>
+  </li>
+</ul>

@@ -1,0 +1,26 @@
+
+<h2>OBReadConsent1_Data</h2>
+<ul class="parameter">
+  <li class="param-required-false">ExpirationDateTime : Date
+    <br/>Specified date and time the permissions will expire. If this is not populated, the permissions will be open ended.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">Permissions : List
+    <br/>
+      <dl class="param-enum">
+        <dt>Enum:
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">TransactionFromDateTime : Date
+    <br/>Specified start date and time for the transaction query period. If this is not populated, the start date will be open ended, and data will be returned from the earliest available transaction.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">TransactionToDateTime : Date
+    <br/>Specified end date and time for the transaction query period. If this is not populated, the end date will be open ended, and data will be returned to the latest available transaction.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00
+  </li>
+</ul>

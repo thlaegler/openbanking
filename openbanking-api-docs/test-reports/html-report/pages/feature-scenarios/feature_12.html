@@ -1,0 +1,791 @@
+
+
+    <!--
+    Copyright 2019 trivago N.V.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+    -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <base href="./../..">
+    <head title="Cluecumber Report - Scenarios in Feature">
+        <title>Cluecumber Report - Scenarios in Feature</title>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta http-equiv="Content-Security-Policy" content="default-src *  data: blob: 'unsafe-inline' 'unsafe-eval';
+script-src * data: blob: 'unsafe-inline' 'unsafe-eval';
+connect-src * data: blob: 'unsafe-inline';
+img-src * data: blob: 'unsafe-inline';
+frame-src * data: blob: ;
+style-src * data: blob: 'unsafe-inline';
+font-src * data: blob: 'unsafe-inline';"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Cluecumber Report">
+<meta name="author" content="Cluecumber Report Plugin version 2.3.1">
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="css/datatables.min.css">
+<link rel="stylesheet" href="css/dataTables.bootstrap4.min.css">
+<link rel="stylesheet" href="css/jquery.fancybox.min.css"/>
+<link rel="stylesheet" href="css/cluecumber.css" type="text/css">
+<link rel="stylesheet" href="css/cluecumber-custom.css"/>
+<link rel="stylesheet" href="css/cluecumber-additional.css"/>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/datatables.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/Chart.bundle.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+            // Data tables
+            $('.renderAsDataTable').on('draw.dt', function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            }).DataTable({
+                "oLanguage": {
+                    "sSearch": "Search:"
+                },
+                "pageLength": 25,
+                "responsive": true
+            });
+
+            $('.collapse').on('shown.bs.collapse', function (e) {
+                $(e.target).find("iframe").each(function (index, iframe) {
+                    resizeIframe(iframe);
+                })
+            });
+
+            // Lightbox
+            $("a.grouped_elements").fancybox();
+
+            // Tool tips
+            $('[data-toggle="tooltip"]').tooltip();
+
+            // Chart
+            var canvas = document.getElementById('chart-area');
+            var ctx = canvas.getContext("2d");
+            var chart = new Chart(ctx, {
+  "data": {
+    "labels": [
+      "passed",
+      "failed",
+      "skipped"
+    ],
+    "datasets": [
+      {
+        "data": [
+          27,
+          0,
+          0
+        ],
+        "backgroundColor": [
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(255, 193, 7, 1.000)"
+        ]
+      }
+    ]
+  },
+  "options": {
+    "events": [
+      "click",
+      "mousemove"
+    ]
+  },
+  "type": "pie"
+});
+
+            var original;
+            if (chart.config.type === "pie") {
+                original = Chart.defaults.pie.legend.onClick;
+            } else {
+                original = Chart.defaults.global.legend.onClick;
+            }
+
+            chart.options.onClick = function (evt, elements) {
+                if (chart.config.type !== "pie") return;
+                chartArea = elements[0];
+                if (chartArea === undefined) return;
+                chartArea.hidden = !chartArea.hidden;
+                chart.update();
+                toggleVisibilityByStatus(chartArea._model.label, !chartArea.hidden)
+            };
+
+            chart.options.legend.onClick = function (evt, label) {
+                original.call(this, evt, label);
+                toggleVisibilityByStatus(label.text, label.hidden);
+            };
+
+            function toggleVisibilityByStatus(statusText, show) {
+                var card = $("#card_" + statusText);
+                if (card !== undefined) {
+                    if (show) {
+                        card.show();
+                    } else {
+                        card.hide();
+                    }
+                }
+
+                var row = $(".table-row-" + statusText);
+                if (row !== undefined) {
+                    if (show) {
+                        row.show();
+                    } else {
+                        row.hide();
+                    }
+                }
+            }
+
+
+            if (false) {
+                $(".btn-outline-secondary[data-cluecumber-item='before-after-hooks-button']").click();
+            }
+            if (false) {
+                $(".btn-outline-secondary[data-cluecumber-item='step-hooks-button']").click();
+            }
+            if (false) {
+                $(".btn-outline-secondary[data-cluecumber-item='doc-strings-button']").click();
+            }
+        }
+    );
+
+    function resizeIframe(iframe) {
+        iframe.style.height = (iframe.contentWindow.document.body.scrollHeight + 25) + 'px';
+    }
+</script>    </head>
+    <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                                <a class="nav-link " href="index.html">All Scenarios</a>
+                    </li>
+                    <li class="nav-item">
+                                <a class="nav-link " href="pages/scenario-sequence.html">Scenario Sequence</a>
+                    </li>
+                    <li class="nav-item">
+                                <a class="nav-link " href="pages/tag-summary.html">All Tags</a>
+                    </li>
+                    <li class="nav-item">
+                                <a class="nav-link " href="pages/step-summary.html">All Steps</a>
+                    </li>
+                    <li class="nav-item">
+                                <a class="nav-link text-white" href="pages/feature-summary.html">All Features</a>
+                    </li>
+            </ul>
+            <span class="text-light">2019-10-19 19:19:42</span>
+        </div>
+    </nav>
+    <main role="main" class="container">
+        <div class="cluecumber-template">
+            <div class="pb-2 mt-4 mb-2 border-bottom">
+                    <h3>Scenarios in Feature 'DomesticPaymentsApi'</h3>
+            </div>
+
+
+    <div class="row">
+    <div class="col-sm-6  h-auto" data-cluecumber-item="card">
+        <div class="card h-100">
+                <div class="card-header">Scenario Results</div>
+            <div class="card-body">
+    <div id="canvas-holder" class="w-100 text-center" style="min-height: 15rem;" data-cluecumber-item="chart">
+        <canvas id="chart-area" class="w-100"></canvas>
+    </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3  h-auto" data-cluecumber-item="card">
+        <div class="card h-100">
+                <div class="card-header">Test Suite Time</div>
+            <div class="card-body">
+            <ul class="list-group list-group-flush">
+                    <li class="list-group-item" data-cluecumber-item="total-start">
+                        Started on:<br>2019-10-19 19:19:29</li>
+                    <li class="list-group-item" data-cluecumber-item="total-end">
+                        Ended on:<br>2019-10-19 19:19:29</li>
+                <li class="list-group-item" data-cluecumber-item="total-runtime">
+                    Test Runtime:<br>0m 00s 229ms
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3  h-auto" data-cluecumber-item="card">
+        <div class="card h-100">
+                <div class="card-header">Test Suite Summary</div>
+            <div class="card-body">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item" data-cluecumber-item="scenario-summary">
+                    27         Scenarios
+
+                </li>
+                <li class="list-group-item" data-cluecumber-item="scenario-summary">
+                        <a href="javascript:;"
+                           onclick="document.location.hash='anchor-passed';">27
+                            passed</a>     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
+       title="passed"><span style="display:none">passed</span></i>
+
+                        <br>
+                        <a href="javascript:;"
+                           onclick="document.location.hash='anchor-failed';">0
+                            failed</a>     <i class="color-failed cluecumber-icon icon-failed" data-toggle="tooltip"
+       title="failed"><span style="display:none">failed</span></i>
+
+                        <br>
+                        <a href="javascript:;"
+                           onclick="document.location.hash='anchor-skipped';">0
+                            skipped</a>     <i class="color-skipped cluecumber-icon icon-skipped" data-toggle="tooltip"
+       title="skipped"><span style="display:none">skipped</span></i>
+
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+        <a class="anchor" id="anchor-passed"></a>
+        <div class="row" id="card_passed" data-cluecumber-item="scenario-summary-table">
+            <div class=" col-sm-12">
+                <div class="card">
+
+                            <div class="card-header border-color-passed">
+                                27
+        passed Scenarios
+    <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
+       title="passed"><span style="display:none">passed</span></i>
+                            </div>
+
+                    <div class="card-body">
+                        <table id="results_passed" class="table table-hover renderAsDataTable">
+                            <thead>
+                            <tr>
+                                <th class="text-left">Feature</th>
+                                <th class="text-left">Scenario</th>
+                                <th>Started</th>
+                                <th>Duration</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/domesticPayments/domestic-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_12.html">DomesticPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_294.html"
+                                                   style="word-break: break-all">As an API-user I want to Create Domestic Payments - Bad request</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:29.685Z">
+                                                2019-10-19<br>19:19:29
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="7,225,896">
+                                                <span class="nobr">0m 00s 007ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/domesticPayments/domestic-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_12.html">DomesticPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_295.html"
+                                                   style="word-break: break-all">As an API-user I want to Create Domestic Payments - Unauthorized</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:29.695Z">
+                                                2019-10-19<br>19:19:29
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="6,881,007">
+                                                <span class="nobr">0m 00s 006ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/domesticPayments/domestic-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_12.html">DomesticPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_296.html"
+                                                   style="word-break: break-all">As an API-user I want to Create Domestic Payments - Forbidden</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:29.703Z">
+                                                2019-10-19<br>19:19:29
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="7,060,347">
+                                                <span class="nobr">0m 00s 007ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/domesticPayments/domestic-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_12.html">DomesticPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_297.html"
+                                                   style="word-break: break-all">As an API-user I want to Create Domestic Payments - Not found</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:29.712Z">
+                                                2019-10-19<br>19:19:29
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="6,874,099">
+                                                <span class="nobr">0m 00s 006ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/domesticPayments/domestic-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_12.html">DomesticPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_298.html"
+                                                   style="word-break: break-all">As an API-user I want to Create Domestic Payments - Internal Server Error</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:29.720Z">
+                                                2019-10-19<br>19:19:29
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="7,026,905">
+                                                <span class="nobr">0m 00s 007ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/domesticPayments/domestic-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_12.html">DomesticPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_299.html"
+                                                   style="word-break: break-all">As an API-user I want to Create Domestic Payments - Method Not Allowed</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:29.729Z">
+                                                2019-10-19<br>19:19:29
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="6,741,690">
+                                                <span class="nobr">0m 00s 006ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/domesticPayments/domestic-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_12.html">DomesticPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_300.html"
+                                                   style="word-break: break-all">As an API-user I want to Create Domestic Payments - Not Acceptable</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:29.737Z">
+                                                2019-10-19<br>19:19:29
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="6,525,931">
+                                                <span class="nobr">0m 00s 006ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/domesticPayments/domestic-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_12.html">DomesticPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_301.html"
+                                                   style="word-break: break-all">As an API-user I want to Create Domestic Payments - Domestic Payments Created</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:29.745Z">
+                                                2019-10-19<br>19:19:29
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="6,487,649">
+                                                <span class="nobr">0m 00s 006ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/domesticPayments/domestic-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_12.html">DomesticPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_302.html"
+                                                   style="word-break: break-all">As an API-user I want to Create Domestic Payments - Too Many Requests</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:29.753Z">
+                                                2019-10-19<br>19:19:29
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="6,405,005">
+                                                <span class="nobr">0m 00s 006ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/domesticPayments/domestic-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_12.html">DomesticPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_303.html"
+                                                   style="word-break: break-all">As an API-user I want to Get Domestic Payments - Bad request</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:29.761Z">
+                                                2019-10-19<br>19:19:29
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="7,123,802">
+                                                <span class="nobr">0m 00s 007ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/domesticPayments/domestic-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_12.html">DomesticPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_304.html"
+                                                   style="word-break: break-all">As an API-user I want to Get Domestic Payments - Unauthorized</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:29.770Z">
+                                                2019-10-19<br>19:19:29
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="6,872,133">
+                                                <span class="nobr">0m 00s 006ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/domesticPayments/domestic-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_12.html">DomesticPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_305.html"
+                                                   style="word-break: break-all">As an API-user I want to Get Domestic Payments - Forbidden</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:29.778Z">
+                                                2019-10-19<br>19:19:29
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="6,810,274">
+                                                <span class="nobr">0m 00s 006ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/domesticPayments/domestic-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_12.html">DomesticPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_306.html"
+                                                   style="word-break: break-all">As an API-user I want to Get Domestic Payments - Not found</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:29.786Z">
+                                                2019-10-19<br>19:19:29
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="7,121,791">
+                                                <span class="nobr">0m 00s 007ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/domesticPayments/domestic-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_12.html">DomesticPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_307.html"
+                                                   style="word-break: break-all">As an API-user I want to Get Domestic Payments - Internal Server Error</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:29.795Z">
+                                                2019-10-19<br>19:19:29
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="7,011,088">
+                                                <span class="nobr">0m 00s 007ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/domesticPayments/domestic-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_12.html">DomesticPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_308.html"
+                                                   style="word-break: break-all">As an API-user I want to Get Domestic Payments - Method Not Allowed</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:29.803Z">
+                                                2019-10-19<br>19:19:29
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="6,874,025">
+                                                <span class="nobr">0m 00s 006ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/domesticPayments/domestic-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_12.html">DomesticPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_309.html"
+                                                   style="word-break: break-all">As an API-user I want to Get Domestic Payments - Not Acceptable</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:29.811Z">
+                                                2019-10-19<br>19:19:29
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="6,869,062">
+                                                <span class="nobr">0m 00s 006ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/domesticPayments/domestic-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_12.html">DomesticPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_310.html"
+                                                   style="word-break: break-all">As an API-user I want to Get Domestic Payments - Domestic Payments Read</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:29.820Z">
+                                                2019-10-19<br>19:19:29
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="6,945,055">
+                                                <span class="nobr">0m 00s 006ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/domesticPayments/domestic-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_12.html">DomesticPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_311.html"
+                                                   style="word-break: break-all">As an API-user I want to Get Domestic Payments - Too Many Requests</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:29.828Z">
+                                                2019-10-19<br>19:19:29
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="7,038,559">
+                                                <span class="nobr">0m 00s 007ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/domesticPayments/domestic-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_12.html">DomesticPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_312.html"
+                                                   style="word-break: break-all">As an API-user I want to Get Payment Details - Bad request</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:29.836Z">
+                                                2019-10-19<br>19:19:29
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="7,937,259">
+                                                <span class="nobr">0m 00s 007ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/domesticPayments/domestic-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_12.html">DomesticPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_313.html"
+                                                   style="word-break: break-all">As an API-user I want to Get Payment Details - Unauthorized</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:29.846Z">
+                                                2019-10-19<br>19:19:29
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="7,122,876">
+                                                <span class="nobr">0m 00s 007ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/domesticPayments/domestic-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_12.html">DomesticPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_314.html"
+                                                   style="word-break: break-all">As an API-user I want to Get Payment Details - Forbidden</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:29.854Z">
+                                                2019-10-19<br>19:19:29
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="7,749,154">
+                                                <span class="nobr">0m 00s 007ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/domesticPayments/domestic-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_12.html">DomesticPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_315.html"
+                                                   style="word-break: break-all">As an API-user I want to Get Payment Details - Not found</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:29.863Z">
+                                                2019-10-19<br>19:19:29
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="7,108,468">
+                                                <span class="nobr">0m 00s 007ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/domesticPayments/domestic-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_12.html">DomesticPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_316.html"
+                                                   style="word-break: break-all">As an API-user I want to Get Payment Details - Internal Server Error</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:29.872Z">
+                                                2019-10-19<br>19:19:29
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="7,303,743">
+                                                <span class="nobr">0m 00s 007ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/domesticPayments/domestic-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_12.html">DomesticPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_317.html"
+                                                   style="word-break: break-all">As an API-user I want to Get Payment Details - Method Not Allowed</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:29.881Z">
+                                                2019-10-19<br>19:19:29
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="7,346,851">
+                                                <span class="nobr">0m 00s 007ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/domesticPayments/domestic-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_12.html">DomesticPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_318.html"
+                                                   style="word-break: break-all">As an API-user I want to Get Payment Details - Not Acceptable</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:29.889Z">
+                                                2019-10-19<br>19:19:29
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="7,320,082">
+                                                <span class="nobr">0m 00s 007ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/domesticPayments/domestic-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_12.html">DomesticPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_319.html"
+                                                   style="word-break: break-all">As an API-user I want to Get Payment Details - Payment Details Read</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:29.898Z">
+                                                2019-10-19<br>19:19:29
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="7,195,524">
+                                                <span class="nobr">0m 00s 007ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/domesticPayments/domestic-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_12.html">DomesticPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_320.html"
+                                                   style="word-break: break-all">As an API-user I want to Get Payment Details - Too Many Requests</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:29.907Z">
+                                                2019-10-19<br>19:19:29
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="7,115,830">
+                                                <span class="nobr">0m 00s 007ms</span>
+                                            </td>
+                                        </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+<footer class="footer navbar-dark">
+    <div class="container-fluid">
+        <span>Cluecumber Report Plugin version 2.3.1 - Report generated on 2019-10-19 19:19:42.</span>
+    </div>
+</footer>    </body>
+    </html>
+

@@ -1,0 +1,100 @@
+
+<h2>BranchResponse_Branch</h2>
+<ul class="parameter">
+  <li class="param-required-false">Accessibility : List
+    <br/>Accessibility is the ability and ease a customer can access a service, good, associate, or facility. Features which make the Bank accessible to disabled people
+      <dl class="param-enum">
+        <dt>Enum:
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Availability : Availability
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">ContactInfo : List
+    <br/>Communication device number or electronic address used for communication.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">CustomerSegment : List
+    <br/>The marketing segment which the branch is able to address in terms of customer type. Market segmentation is a marketing term referring to the aggregating of prospective buyers into groups, or segments, that have common needs and respond similarly to a marketing action. Market segmentation enables companies to target different categories of consumers who perceive the full value of certain products and services differently from one another
+      <dl class="param-enum">
+        <dt>Enum:
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">Identification : String
+    <br/>Unique and unambiguous identification of a branch of a financial institution.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Name : String
+    <br/>Name by which a branch is known and which is usually used to identify that branch.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Note : String
+    <br/>Summary description of services, facility and availability.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherAccessibility : List
+    <br/>Enter any new code , name and description for any other Accessibility
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherCustomerSegment : List
+    <br/>Enter a new code , name and description for any other Customer Segment
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherServiceAndFacility : List
+    <br/>Enter any new code , name and description for any Other Facility
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Photo : String
+    <br/>Image related to the branch
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">PostalAddress : PostalAddress_1
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">SequenceNumber : String
+    <br/>Sequence Number that is used in conjunction with Identification to uniquely identify a branch. Physical branches should have 0 assigned, mobile and sub branches should have 1,2,3....etc. assigned.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">ServiceAndFacility : List
+    <br/>Service/Facilities offered at a branch.
+      <dl class="param-enum">
+        <dt>Enum:
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">SortCode : List
+    <br/>United Kingdom (UK) Sort Code - identifies British financial institutions on the British national clearing systems. The sort code, which is a six-digit number, is usually formatted as three pairs of numbers, for example 12-34-56. It identifies both the bank and the branch(s) where the account is held.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">Type : String
+    <br/>Codeset to indicate if a branch is physically in 1 location or is mobile
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Mobile</dd>
+            <dd>Physical</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>

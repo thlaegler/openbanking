@@ -1,0 +1,87 @@
+
+<h2>SoftwareStatement_1_SoftwareStatements</h2>
+<ul class="parameter">
+  <li class="param-required-false">Active : Boolean
+    <br/>Flag to show if software statement is active
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">ClientId : String
+    <br/>Requested Client Id - note that OB will issue a set of credentials with this clientid for this given piece of software. ASPSPs are not obliged to honour this requested clientid
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">ClientName : String
+    <br/>Human readable client name. May be localised.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">ClientUri : String
+    <br/>The “home page” or other wise recognisable url of the application (oath client) Version 22, 14th November 2017. V39 Changed to required
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Description : String
+    <br/>Description of the unique instance of this piece of software. If only one instance of a piece of software is to be registered then this should be the same as the SoftwareDescription \\nV39 Changed to required
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Id : String
+    <br/>Unique Scheme Wide Software id
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">LogoUri : String
+    <br/>The software logo Version 22, 14th November 2017. V39 Changed to required
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Mode : String
+    <br/>A flag to identify if a piece of software should have access to production PSU accounts. This field has been added at the request of an ASPSP to allow BETA or Non Production testing against production platforms. The default for this system should be &#39;Live&#39;
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">ObClientCreated : Boolean
+    <br/>An indicator to show if the client has been created in Open Banking
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OnBehalfOfObOrganisation : String
+    <br/>The organisation on whom this software statement is behalf of Altered from reference to string, 10/11/2017
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">PolicyUri : String
+    <br/>An optional document containing a link to a Policy document governing the privacy information policy of for the application. Purely to be displayed a PSU at a ASPSP if the ASPSP supports it. Optional for the TPP to provide. V39 Changed to required
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">RedirectUri : List
+    <br/>Redirect Uri&#39;s for the registered piece of software. May be overridden by the RFC7591 payload. Changed in v27. V39 Changed to required
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Roles : List
+    <br/>Roles for which this software statement can be used. Changed to required Mike Ekers request
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">SigningKeyIds : List
+    <br/>KeyIds of Keys  used for signing messages
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">TermsOfServiceUri : String
+    <br/>An optional document containing a link to a Terms of Service document governing the terms of service for the application. Purely to be displayed a PSU at a ASPSP if the ASPSP supports it. Optional for the TPP to provide. V39 Changed to required
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">TransportKeyIds : List
+    <br/>KeyIds of Keys used for securing message transport (TLS)
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Version : BigDecimal
+    <br/>Version of the sofware. V39 Changed to required
+  </li>
+</ul>

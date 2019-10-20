@@ -1,0 +1,174 @@
+
+<h2>OtherFeesCharges_3_FeeChargeDetail</h2>
+<ul class="parameter">
+  <li class="param-required-true">ApplicationFrequency : String
+    <br/>How frequently the fee/charge is applied to the account
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>OnClosing</dd>
+            <dd>OnOpening</dd>
+            <dd>ChargingPeriod</dd>
+            <dd>Daily</dd>
+            <dd>Holiday</dd>
+            <dd>PerItem</dd>
+            <dd>Monthly</dd>
+            <dd>OnAnniversary</dd>
+            <dd>Other</dd>
+            <dd>PerHundredPounds</dd>
+            <dd>PerHour</dd>
+            <dd>PerOccurrence</dd>
+            <dd>PerSheet</dd>
+            <dd>PerTransaction</dd>
+            <dd>PerTransactionAmount</dd>
+            <dd>PerTransactionPercentage</dd>
+            <dd>Quarterly</dd>
+            <dd>SixMonthly</dd>
+            <dd>StatementMonthly</dd>
+            <dd>Weekly</dd>
+            <dd>Yearly</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">CalculationFrequency : String
+    <br/>How frequently the fee/charge is calculated
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>OnClosing</dd>
+            <dd>OnOpening</dd>
+            <dd>ChargingPeriod</dd>
+            <dd>Daily</dd>
+            <dd>Holiday</dd>
+            <dd>PerItem</dd>
+            <dd>Monthly</dd>
+            <dd>OnAnniversary</dd>
+            <dd>Other</dd>
+            <dd>PerHundredPounds</dd>
+            <dd>PerHour</dd>
+            <dd>PerOccurrence</dd>
+            <dd>PerSheet</dd>
+            <dd>PerTransaction</dd>
+            <dd>PerTransactionAmount</dd>
+            <dd>PerTransactionPercentage</dd>
+            <dd>Quarterly</dd>
+            <dd>SixMonthly</dd>
+            <dd>StatementMonthly</dd>
+            <dd>Weekly</dd>
+            <dd>Yearly</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">FeeAmount : String
+    <br/>Fee Amount charged for a fee/charge (where it is charged in terms of an amount rather than a rate)
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">FeeApplicableRange : FeeApplicableRange
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">FeeCategory : String
+    <br/>Categorisation of fees and charges into standard categories.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>BankersDrafts</dd>
+            <dd>CounterServices</dd>
+            <dd>Foreign</dd>
+            <dd>Legal</dd>
+            <dd>Online</dd>
+            <dd>Other</dd>
+            <dd>PaymentScheme</dd>
+            <dd>Penalty</dd>
+            <dd>Repayment</dd>
+            <dd>Report</dd>
+            <dd>Safekeeping</dd>
+            <dd>Servicing</dd>
+            <dd>Transaction</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">FeeRate : String
+    <br/>Rate charged for Fee/Charge (where it is charged in terms of a rate rather than an amount)
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">FeeRateType : String
+    <br/>Rate type for Fee/Charge (where it is charged in terms of a rate rather than an amount)
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>BOEBaseRate</dd>
+            <dd>FixedRate</dd>
+            <dd>Gross</dd>
+            <dd>LoanProviderBaseRate</dd>
+            <dd>Net</dd>
+            <dd>Other</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">FeeType : String
+    <br/>Fee/Charge Type
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Application</dd>
+            <dd>Arrangement</dd>
+            <dd>FeeChargeCap</dd>
+            <dd>CreditReference</dd>
+            <dd>EarlyRepayment</dd>
+            <dd>LatePayment</dd>
+            <dd>MissedPaymentFee</dd>
+            <dd>Monthly</dd>
+            <dd>MissedPaymentRate</dd>
+            <dd>OtherPaymentFee</dd>
+            <dd>Other</dd>
+            <dd>PrepaymentFee</dd>
+            <dd>OtherPaymentRate</dd>
+            <dd>ReStatement</dd>
+            <dd>Statement</dd>
+            <dd>SetUp</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">NegotiableIndicator : Boolean
+    <br/>Fee/charge which is usually negotiable rather than a fixed amount
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Notes : List
+    <br/>Optional additional notes to supplement the fee/charge details.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherApplicationFrequency : OtherApplicationFrequency
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherCalculationFrequency : OtherCalculationFrequency
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherFeeCategory : OtherFeeCategory
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherFeeRateType : OtherFeeRateType
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherFeeType : OtherFeeType_6
+    <br/>
+  </li>
+</ul>

@@ -1,0 +1,16 @@
+<jxb:bindings 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
+    version="2.1">
+
+   <jxb:bindings >
+       <jxb:globalBindings typesafeEnumMaxMembers="2000"/>
+   </jxb:bindings>
+
+    <!-- <jxb:bindings schemaLocation="your-schema.xsd">
+            <jxb:bindings node="//xs:complexType[@name='tRight_Owner']">
+                <jxb:class name="TRight_Owner2"/>
+            </jxb:bindings>
+    </jxb:bindings> -->
+
+</jxb:bindings>

@@ -1,0 +1,110 @@
+<div class="main-content">
+  <h2><a name=""></a></h2>
+  <p>This is the  API</p>
+
+  <h2><a name="organisationOrganisationTypeGet"></a>organisationOrganisationTypeGet</h2>
+  <hr>
+  <p></p>
+  <p>Note that this was not in the original design but is included to inform the client</p>
+  <h3 class="section">URL</h3>
+  <code>https://localhost:8080/open-banking/v2.3/organisation/{OrganisationType}</code>
+  <h3 class="section">HTTP Method</h3>
+  <code>GET</code>
+  <h3 class="section">Response Type</h3>
+  <div class="model" data-model=""><a href=""></a></div>
+  <h3 class="section">Parameters</h3>
+  <ul>
+	  <li class="parameter">
+      
+      
+      <span class="param-in">Path: </span>
+      
+      
+      <span class="param-name">OrganisationType</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">OB Organisation Type</p>
+	  </li>
+  </ul>
+  <h2><a name="organisationOrganisationTypeOrganisationIdGet"></a>organisationOrganisationTypeOrganisationIdGet</h2>
+  <hr>
+  <p></p>
+  
+  <h3 class="section">URL</h3>
+  <code>https://localhost:8080/open-banking/v2.3/organisation/{OrganisationType}/{OrganisationId}</code>
+  <h3 class="section">HTTP Method</h3>
+  <code>GET</code>
+  <h3 class="section">Response Type</h3>
+  <div class="model" data-model=""><a href=""></a></div>
+  <h3 class="section">Parameters</h3>
+  <ul>
+	  <li class="parameter">
+      
+      
+      <span class="param-in">Path: </span>
+      
+      
+      <span class="param-name">OrganisationType</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">OB Organisation Type</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      <span class="param-in">Path: </span>
+      
+      
+      <span class="param-name">OrganisationId</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">The organsation ID</p>
+	  </li>
+  </ul>
+  <h2><a name="organisationOrganisationTypePost"></a>organisationOrganisationTypePost</h2>
+  <hr>
+  <p></p>
+  <p>Enrol an eIDAS QWAC/QSealC certificate-bearing participant onto the Open Banking Directory. Currenty only TPPs can use this enrolment endpoint, so please set &#x60;OrganisationType&#x60; to &#x60;tpp&#x60;</p>
+  <h3 class="section">URL</h3>
+  <code>https://localhost:8080/open-banking/v2.3/organisation/{OrganisationType}</code>
+  <h3 class="section">HTTP Method</h3>
+  <code>POST</code>
+  <h3 class="section">Response Type</h3>
+  <div class="model" data-model=""><a href=""></a></div>
+  <h3 class="section">Parameters</h3>
+  <ul>
+	  <li class="parameter">
+      
+      
+      <span class="param-in">Path: </span>
+      
+      
+      <span class="param-name">OrganisationType</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">OB Organisation Type</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      <span class="param-in">Path: </span>
+      
+      
+      <span class="param-name">OrganisationTypeForQSealCOnboarding</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">OB Organisation Type</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      
+      
+      <span class="param-in">Body: </span>
+      <span class="param-name">Enrol</span>
+      <span class="param-type">EnrolSchema(EnrolSchema)</span>
+      
+      <p class="param-description">The payload submitted when a TPP attempts to enrol with an eIDAS QWAC or QSealC certificate. It&#39;s format and contents will depend on the value of the &#x60;Content-Type&#x60; header:  TPP onto the Open Banking Directory (required fields to be validated). For eIDAS QSealC-bearing TPPs use a signed JWT (JWS).  * __application/json__ -- a JSON payload for QWAC onboarding. * __application/jwt__ -- a signed JWT (JWS) for QSealC onboarding. * __application/jose__ -- same as __application/jwt__.  ## QWAC-based Onboarding  Set &#x60;Content-Type&#x60; to &#x60;application/json&#x60; and send the payload conforming to the schema.  EXAMPLE REQUEST PAYLOAD FOR QWAC-BASED ONBOARDING  &#x60;&#x60;&#x60; POST /organisation/tpp HTTP/1.1 Content-Type: application/json Accept: application/json Host: matls-dirapi.openbanking.org.uk {   \&quot;client_name\&quot;: \&quot;string\&quot;,   \&quot;scope\&quot;: \&quot;string\&quot;,   \&quot;token_endpoint_auth_method\&quot;: \&quot;string\&quot;,   \&quot;tls_client_auth_subject_dn\&quot;: \&quot;string\&quot;,   \&quot;grant_types\&quot;: [     \&quot;string\&quot;   ],   \&quot;token_endpoint_auth_signing_alg\&quot;: \&quot;string\&quot; } &#x60;&#x60;&#x60;  ## QSealC-based Onboarding  Set &#x60;Content-Type&#x60; to &#x60;application/jwt&#x60; or &#x60;application/jose&#x60; and send the payload conforming to the schema as a signed JWT.  The QSealC, the issuing certificate, and the root certificate (all in DER format) must be used as the items of the array, which forms the value of the &#x60;x5c&#x60; claim in the JWT header.  The JWT MUST be signed using the private key associated with the QSealC listed in the &#x60;x5c&#x60; claim in the header.  &#x60;&#x60;&#x60; {   \&quot;typ\&quot;: \&quot;JWT\&quot;,   \&quot;alg\&quot;: \&quot;ES256\&quot;,   \&quot;kid\&quot;: \&quot;ABCD1234\&quot;,   \&quot;x5c\&quot;: [\&quot;qsealc\&quot;, \&quot;issuer certificate\&quot;, \&quot;root certificate\&quot;] } {   \&quot;client_name\&quot;: \&quot;string\&quot;,   \&quot;scope\&quot;: \&quot;string\&quot;,   \&quot;token_endpoint_auth_method\&quot;: \&quot;string\&quot;,   \&quot;tls_client_auth_subject_dn\&quot;: \&quot;string\&quot;,   \&quot;grant_types\&quot;: [     \&quot;string\&quot;   ],   \&quot;token_endpoint_auth_signing_alg\&quot;: \&quot;string\&quot; } &#x60;&#x60;&#x60;  EXAMPLE REQUEST PAYLOAD FOR QSealC-BASED ONBOARDING  &#x60;&#x60;&#x60; POST /organisation/tpp HTTP/1.1 Content-Type: application/jwt | application/jose Accept: application/json Host: matls-dirapi.openbanking.org.uk eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImtpZCI6IkFCQ0QxMjM0IiwieDVjIjpbInFzZWFsYyIsImlzc3VlciBjZXJ0aWZpY2F0ZSIsInJvb3QgY2VydGlmaWNhdGUiXX0.eyJyZWRpcmVjdF91cmlzIjpbInN0cmluZyJdLCJ0b2tlbl9lbmRwb2ludF9hdXRoX21ldGhvZCI6InN0cmluZyIsImdyYW50X3R5cGVzIjpbInN0cmluZyJdLCJyZXNwb25zZV90eXBlcyI6WyJzdHJpbmciXSwiY2xpZW50X25hbWUiOiJzdHJpbmciLCJjbGllbnRfdXJpIjoic3RyaW5nIiwibG9nb191cmkiOiJzdHJpbmciLCJzY29wZSI6InN0cmluZyIsImNvbnRhY3RzIjpbInVzZXJAZXhhbXBsZS5jb20iXSwidG9zX3VyaSI6InN0cmluZyIsInBvbGljeV91cmkiOiJzdHJpbmciLCJqd2tzX3VyaSI6InN0cmluZyIsImp3a3MiOnt9LCJzb2Z0d2FyZV9pZCI6InN0cmluZyIsInNvZnR3YXJlX3ZlcnNpb24iOiJzdHJpbmcifQ.lMsADSHkFGUw5PtgdEqXslYArzqf6tbg0lo0kCitOUA &#x60;&#x60;&#x60; </p>
+	  </li>
+  </ul>
+</div>

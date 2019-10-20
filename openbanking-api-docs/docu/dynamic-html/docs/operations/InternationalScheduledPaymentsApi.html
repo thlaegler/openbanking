@@ -1,0 +1,389 @@
+<div class="main-content">
+  <h2><a name=""></a></h2>
+  <p>This is the  API</p>
+
+  <h2><a name="createInternationalScheduledPaymentConsents"></a>createInternationalScheduledPaymentConsents</h2>
+  <hr>
+  <p></p>
+  
+  <h3 class="section">URL</h3>
+  <code>https://localhost:8080/open-banking/v2.3/international-scheduled-payment-consents</code>
+  <h3 class="section">HTTP Method</h3>
+  <code>POST</code>
+  <h3 class="section">Response Type</h3>
+  <div class="model" data-model="OBWriteInternationalScheduledConsentResponse3"><a href="">OBWriteInternationalScheduledConsentResponse3</a></div>
+  <h3 class="section">Parameters</h3>
+  <ul>
+	  <li class="parameter">
+      
+      
+      
+      
+      <span class="param-in">Body: </span>
+      <span class="param-name">OBWriteInternationalScheduledConsent3Param</span>
+      <span class="param-type">OBWriteInternationalScheduledConsent3(OBWriteInternationalScheduledConsent3)</span>
+      
+      <p class="param-description">Default</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      
+      <span class="param-in">Header: </span>
+      
+      <span class="param-name">Authorization</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">An Authorisation Token as per https://tools.ietf.org/html/rfc6750</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      
+      <span class="param-in">Header: </span>
+      
+      <span class="param-name">x-idempotency-key</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Every request will be processed only once per x-idempotency-key.  The Idempotency Key will be valid for 24 hours. </p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      
+      <span class="param-in">Header: </span>
+      
+      <span class="param-name">x-jws-signature</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">A detached JWS signature of the body of the payload.</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      
+      <span class="param-in">Header: </span>
+      
+      <span class="param-name">x-fapi-auth-date</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">The time when the PSU last logged in with the TPP.  All dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below:  Sun, 10 Sep 2017 19:43:31 UTC</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      
+      <span class="param-in">Header: </span>
+      
+      <span class="param-name">x-fapi-customer-ip-address</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">The PSU&#39;s IP address if the PSU is currently logged in with the TPP.</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      
+      <span class="param-in">Header: </span>
+      
+      <span class="param-name">x-fapi-interaction-id</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">An RFC4122 UID used as a correlation id.</p>
+	  </li>
+  </ul>
+  <h2><a name="createInternationalScheduledPayments"></a>createInternationalScheduledPayments</h2>
+  <hr>
+  <p></p>
+  
+  <h3 class="section">URL</h3>
+  <code>https://localhost:8080/open-banking/v2.3/international-scheduled-payments</code>
+  <h3 class="section">HTTP Method</h3>
+  <code>POST</code>
+  <h3 class="section">Response Type</h3>
+  <div class="model" data-model="OBWriteInternationalScheduledResponse3"><a href="">OBWriteInternationalScheduledResponse3</a></div>
+  <h3 class="section">Parameters</h3>
+  <ul>
+	  <li class="parameter">
+      
+      
+      
+      
+      <span class="param-in">Body: </span>
+      <span class="param-name">OBWriteInternationalScheduled2Param</span>
+      <span class="param-type">OBWriteInternationalScheduled2(OBWriteInternationalScheduled2)</span>
+      
+      <p class="param-description">Default</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      
+      <span class="param-in">Header: </span>
+      
+      <span class="param-name">Authorization</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">An Authorisation Token as per https://tools.ietf.org/html/rfc6750</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      
+      <span class="param-in">Header: </span>
+      
+      <span class="param-name">x-idempotency-key</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">Every request will be processed only once per x-idempotency-key.  The Idempotency Key will be valid for 24 hours. </p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      
+      <span class="param-in">Header: </span>
+      
+      <span class="param-name">x-jws-signature</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">A detached JWS signature of the body of the payload.</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      
+      <span class="param-in">Header: </span>
+      
+      <span class="param-name">x-fapi-auth-date</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">The time when the PSU last logged in with the TPP.  All dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below:  Sun, 10 Sep 2017 19:43:31 UTC</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      
+      <span class="param-in">Header: </span>
+      
+      <span class="param-name">x-fapi-customer-ip-address</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">The PSU&#39;s IP address if the PSU is currently logged in with the TPP.</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      
+      <span class="param-in">Header: </span>
+      
+      <span class="param-name">x-fapi-interaction-id</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">An RFC4122 UID used as a correlation id.</p>
+	  </li>
+  </ul>
+  <h2><a name="getInternationalScheduledPaymentConsentsConsentId"></a>getInternationalScheduledPaymentConsentsConsentId</h2>
+  <hr>
+  <p></p>
+  
+  <h3 class="section">URL</h3>
+  <code>https://localhost:8080/open-banking/v2.3/international-scheduled-payment-consents/{ConsentId}</code>
+  <h3 class="section">HTTP Method</h3>
+  <code>GET</code>
+  <h3 class="section">Response Type</h3>
+  <div class="model" data-model="OBWriteInternationalScheduledConsentResponse3"><a href="">OBWriteInternationalScheduledConsentResponse3</a></div>
+  <h3 class="section">Parameters</h3>
+  <ul>
+	  <li class="parameter">
+      
+      
+      <span class="param-in">Path: </span>
+      
+      
+      <span class="param-name">ConsentId</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">ConsentId</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      
+      <span class="param-in">Header: </span>
+      
+      <span class="param-name">Authorization</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">An Authorisation Token as per https://tools.ietf.org/html/rfc6750</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      
+      <span class="param-in">Header: </span>
+      
+      <span class="param-name">x-fapi-auth-date</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">The time when the PSU last logged in with the TPP.  All dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below:  Sun, 10 Sep 2017 19:43:31 UTC</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      
+      <span class="param-in">Header: </span>
+      
+      <span class="param-name">x-fapi-customer-ip-address</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">The PSU&#39;s IP address if the PSU is currently logged in with the TPP.</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      
+      <span class="param-in">Header: </span>
+      
+      <span class="param-name">x-fapi-interaction-id</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">An RFC4122 UID used as a correlation id.</p>
+	  </li>
+  </ul>
+  <h2><a name="getInternationalScheduledPaymentConsentsConsentIdFundsConfirmation"></a>getInternationalScheduledPaymentConsentsConsentIdFundsConfirmation</h2>
+  <hr>
+  <p></p>
+  
+  <h3 class="section">URL</h3>
+  <code>https://localhost:8080/open-banking/v2.3/international-scheduled-payment-consents/{ConsentId}/funds-confirmation</code>
+  <h3 class="section">HTTP Method</h3>
+  <code>GET</code>
+  <h3 class="section">Response Type</h3>
+  <div class="model" data-model="OBWriteFundsConfirmationResponse1"><a href="">OBWriteFundsConfirmationResponse1</a></div>
+  <h3 class="section">Parameters</h3>
+  <ul>
+	  <li class="parameter">
+      
+      
+      <span class="param-in">Path: </span>
+      
+      
+      <span class="param-name">ConsentId</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">ConsentId</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      
+      <span class="param-in">Header: </span>
+      
+      <span class="param-name">Authorization</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">An Authorisation Token as per https://tools.ietf.org/html/rfc6750</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      
+      <span class="param-in">Header: </span>
+      
+      <span class="param-name">x-fapi-auth-date</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">The time when the PSU last logged in with the TPP.  All dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below:  Sun, 10 Sep 2017 19:43:31 UTC</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      
+      <span class="param-in">Header: </span>
+      
+      <span class="param-name">x-fapi-customer-ip-address</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">The PSU&#39;s IP address if the PSU is currently logged in with the TPP.</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      
+      <span class="param-in">Header: </span>
+      
+      <span class="param-name">x-fapi-interaction-id</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">An RFC4122 UID used as a correlation id.</p>
+	  </li>
+  </ul>
+  <h2><a name="getInternationalScheduledPaymentsInternationalScheduledPaymentId"></a>getInternationalScheduledPaymentsInternationalScheduledPaymentId</h2>
+  <hr>
+  <p></p>
+  
+  <h3 class="section">URL</h3>
+  <code>https://localhost:8080/open-banking/v2.3/international-scheduled-payments/{InternationalScheduledPaymentId}</code>
+  <h3 class="section">HTTP Method</h3>
+  <code>GET</code>
+  <h3 class="section">Response Type</h3>
+  <div class="model" data-model="OBWriteInternationalScheduledResponse3"><a href="">OBWriteInternationalScheduledResponse3</a></div>
+  <h3 class="section">Parameters</h3>
+  <ul>
+	  <li class="parameter">
+      
+      
+      <span class="param-in">Path: </span>
+      
+      
+      <span class="param-name">InternationalScheduledPaymentId</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">InternationalScheduledPaymentId</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      
+      <span class="param-in">Header: </span>
+      
+      <span class="param-name">Authorization</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">An Authorisation Token as per https://tools.ietf.org/html/rfc6750</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      
+      <span class="param-in">Header: </span>
+      
+      <span class="param-name">x-fapi-auth-date</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">The time when the PSU last logged in with the TPP.  All dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below:  Sun, 10 Sep 2017 19:43:31 UTC</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      
+      <span class="param-in">Header: </span>
+      
+      <span class="param-name">x-fapi-customer-ip-address</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">The PSU&#39;s IP address if the PSU is currently logged in with the TPP.</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      
+      <span class="param-in">Header: </span>
+      
+      <span class="param-name">x-fapi-interaction-id</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">An RFC4122 UID used as a correlation id.</p>
+	  </li>
+  </ul>
+</div>

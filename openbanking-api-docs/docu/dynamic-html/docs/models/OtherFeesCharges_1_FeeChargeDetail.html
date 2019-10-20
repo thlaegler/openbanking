@@ -1,0 +1,147 @@
+
+<h2>OtherFeesCharges_1_FeeChargeDetail</h2>
+<ul class="parameter">
+  <li class="param-required-true">ApplicationFrequency : String
+    <br/>How frequently the fee/charge is applied to the account
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>AccountClosing</dd>
+            <dd>AccountOpening</dd>
+            <dd>AcademicTerm</dd>
+            <dd>ChargingPeriod</dd>
+            <dd>Daily</dd>
+            <dd>PerItem</dd>
+            <dd>Monthly</dd>
+            <dd>OnAccountAnniversary</dd>
+            <dd>Other</dd>
+            <dd>PerHour</dd>
+            <dd>PerOccurrence</dd>
+            <dd>PerSheet</dd>
+            <dd>PerTransaction</dd>
+            <dd>PerTransactionAmount</dd>
+            <dd>PerTransactionPercentage</dd>
+            <dd>Quarterly</dd>
+            <dd>SixMonthly</dd>
+            <dd>StatementMonthly</dd>
+            <dd>Weekly</dd>
+            <dd>Yearly</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">CalculationFrequency : String
+    <br/>How frequently the fee/charge is calculated
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>AccountClosing</dd>
+            <dd>AccountOpening</dd>
+            <dd>AcademicTerm</dd>
+            <dd>ChargingPeriod</dd>
+            <dd>Daily</dd>
+            <dd>PerItem</dd>
+            <dd>Monthly</dd>
+            <dd>OnAccountAnniversary</dd>
+            <dd>Other</dd>
+            <dd>PerHour</dd>
+            <dd>PerOccurrence</dd>
+            <dd>PerSheet</dd>
+            <dd>PerTransaction</dd>
+            <dd>PerTransactionAmount</dd>
+            <dd>PerTransactionPercentage</dd>
+            <dd>Quarterly</dd>
+            <dd>SixMonthly</dd>
+            <dd>StatementMonthly</dd>
+            <dd>Weekly</dd>
+            <dd>Yearly</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">FeeAmount : String
+    <br/>Fee Amount charged for a fee/charge (where it is charged in terms of an amount rather than a rate)
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">FeeApplicableRange : FeeApplicableRange
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">FeeCategory : String
+    <br/>Categorisation of fees and charges into standard categories.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Other</dd>
+            <dd>Servicing</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">FeeChargeCap : List
+    <br/>Details about any caps (maximum charges) that apply to a particular fee/charge
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">FeeRate : String
+    <br/>Rate charged for Fee/Charge (where it is charged in terms of a rate rather than an amount)
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">FeeRateType : String
+    <br/>Rate type for Fee/Charge (where it is charged in terms of a rate rather than an amount)
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>LinkedBaseRate</dd>
+            <dd>Gross</dd>
+            <dd>Net</dd>
+            <dd>Other</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">FeeType : String
+    <br/>Fee/Charge Type
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>ServiceCAccountFee</dd>
+            <dd>ServiceCAccountFeeMonthly</dd>
+            <dd>ServiceCOther</dd>
+            <dd>Other</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Notes : List
+    <br/>Optional additional notes to supplement the fee/charge details.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherApplicationFrequency : OtherApplicationFrequency_2
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherCalculationFrequency : OtherCalculationFrequency_2
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherFeeCategoryType : OtherFeeCategory
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherFeeRateType : OtherFeeRateType
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherFeeType : OtherFeeType_4
+    <br/>
+  </li>
+</ul>

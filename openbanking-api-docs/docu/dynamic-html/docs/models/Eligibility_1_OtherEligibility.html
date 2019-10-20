@@ -1,0 +1,69 @@
+
+<h2>Eligibility_1_OtherEligibility</h2>
+<ul class="parameter">
+  <li class="param-required-false">Amount : String
+    <br/>Any eligibility criteria where an amount is required to be specified e.g. Minimum Age.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Description : String
+    <br/>Full description for the eligibility criteria
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Indicator : Boolean
+    <br/>Any eligibility criteria where the value can be indicated by a true or false value. UKResident is True or False
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">Name : String
+    <br/>Name provided for the eligibility criteria
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Notes : List
+    <br/>Optional additional notes to supplement the eligibility conditions.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherType : OtherType
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Period : String
+    <br/>Period for which the other eligibility criteria applies.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Daily</dd>
+            <dd>HalfYearly</dd>
+            <dd>Monthly</dd>
+            <dd>Other</dd>
+            <dd>Quarterly</dd>
+            <dd>PerStatementDate</dd>
+            <dd>Weekly</dd>
+            <dd>Yearly</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Textual : String
+    <br/>Any eligibility criteria where a long description is supplied
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">Type : String
+    <br/>Eligibility type - method by which we group eligibilities for comparison purposes.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>AnyBusinessCustomer</dd>
+            <dd>BusinessCurrentAccount</dd>
+            <dd>CreditScoring</dd>
+            <dd>OtherFinancialHolding</dd>
+            <dd>Other</dd>
+            <dd>MinimumTurnover</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>

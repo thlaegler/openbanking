@@ -1,0 +1,105 @@
+
+<h2>OBRegistrationProperties1</h2>
+<ul class="parameter">
+  <li class="param-required-true">application_type : String
+    <br/>
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>web</dd>
+            <dd>mobile</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">client_id : String
+    <br/>OAuth 2.0 client identifier string
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">client_id_issued_at : Integer
+    <br/>Time at which the client identifier was issued expressed as seconds since 1970-01-01T00:00:00Z as measured in UTC
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">client_secret : String
+    <br/>OAuth 2.0 client secret string
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">client_secret_expires_at : Integer
+    <br/>Time at which the client secret will expire expressed as seconds since 1970-01-01T00:00:00Z as measured in UTC. Set to 0 if does not expire
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">grant_types : List
+    <br/>
+      <dl class="param-enum">
+        <dt>Enum:
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">id_token_signed_response_alg : SupportedAlgorithms
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">redirect_uris : List
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">request_object_signing_alg : SupportedAlgorithms
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">response_types : List
+    <br/>
+      <dl class="param-enum">
+        <dt>Enum:
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">scope : String
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">software_id : String
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">software_statement : String
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">tls_client_auth_subject_dn : String
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">token_endpoint_auth_method : String
+    <br/>
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>private_key_jwt</dd>
+            <dd>client_secret_jwt</dd>
+            <dd>client_secret_basic</dd>
+            <dd>client_secret_post</dd>
+            <dd>tls_client_auth</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">token_endpoint_auth_signing_alg : SupportedAlgorithms
+    <br/>
+  </li>
+</ul>

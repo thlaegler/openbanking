@@ -1,0 +1,44 @@
+package {{package}}.integration;
+
+import com.laegler.openbanking.AbstractIntegrationTest;
+import {{package}}.*;
+import {{modelPackage}}.*;
+import java.util.ArrayList;
+import javax.ws.rs.core.GenericEntity;
+{{#operations}}{{#operation}}{{#isMultipart}}import org.jboss.resteasy.plugins.providers.multipart.MultipartFormDataInput;
+{{/isMultipart}}{{/operation}}{{/operations}}
+
+{{#imports}}import {{import}};
+{{/imports}}
+
+import java.util.List;
+import {{package}}.NotFoundException;
+
+import java.io.InputStream;
+
+import javax.ws.rs.core.Response;
+import javax.ws.rs.core.SecurityContext;
+import static io.restassured.matcher.RestAssuredMatchers.*;
+import static org.hamcrest.Matchers.*;
+import static io.restassured.RestAssured.*;
+import org.junit.Test;
+import org.junit.Ignore;
+
+{{>generatedAnnotation}}
+{{#operations}}
+public class {{classname}}IntegrationTest extends AbstractIntegrationTest {
+
+	{{#operation}}
+	{{#responses}}
+	@Test
+	{{^isDefault}}
+	@Ignore("TODO: Define request to get HTTP status code {{code}}")
+	{{/isDefault}}
+	public void test_{{nickname}}_{{code}}() {
+		given().spec(spec).when().{{httpMethodLowerCase}}("{{baseName}}{{path}}").then().statusCode({{code}});
+	}
+
+	{{/responses}}
+	{{/operation}}
+}
+{{/operations}}

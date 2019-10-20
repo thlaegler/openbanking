@@ -1,0 +1,55 @@
+
+<h2>Overdraft_1_OverdraftTierBandSet</h2>
+<ul class="parameter">
+  <li class="param-required-false">AuthorisedIndicator : Boolean
+    <br/>Indicates if the Overdraft is authorised (Y) or unauthorised (N)
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">BufferAmount : String
+    <br/>When a customer exceeds their credit limit, a financial institution will not charge the customer unauthorised overdraft charges if they do not exceed by more than the buffer amount. Note: Authorised overdraft charges may still apply.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Identification : String
+    <br/>Unique and unambiguous identification of a  Tier Band for a overdraft product.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Notes : List
+    <br/>Optional additional notes to supplement the overdraft Tier Band Set details
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OverdraftFeesCharges : List
+    <br/>Overdraft fees and charges details
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">OverdraftTierBand : List
+    <br/>Provides overdraft details for a specific tier or band
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OverdraftType : String
+    <br/>An overdraft can either be &#39;committed&#39; which means that the facility cannot be withdrawn without reasonable notification before it&#39;s agreed end date, or &#39;on demand&#39; which means that the financial institution can demand repayment at any point in time.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Committed</dd>
+            <dd>OnDemand</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">TierBandMethod : String
+    <br/>The methodology of how overdraft is charged. It can be: &#39;Whole&#39;  Where the same charge/rate is applied to the entirety of the overdraft balance (where charges are applicable).  &#39;Tiered&#39; Where different charges/rates are applied dependent on overdraft maximum and minimum balance amount tiers defined by the lending financial organisation &#39;Banded&#39; Where different charges/rates are applied dependent on overdraft maximum and minimum balance amount bands defined by a government organisation.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Banded</dd>
+            <dd>Tiered</dd>
+            <dd>Whole</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>

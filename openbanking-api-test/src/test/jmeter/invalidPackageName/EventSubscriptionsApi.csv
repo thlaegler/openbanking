@@ -1,0 +1,2 @@
+testCase,httpStatusCode,obEventSubscriptionResponse1Param,eventSubscriptionId,authorization,xJwsSignature,xFapiAuthDate,xFapiCustomerIpAddress,xFapiInteractionId,obEventSubscription1Param,authorization,xJwsSignature,xFapiAuthDate,xFapiCustomerIpAddress,xFapiInteractionId,eventSubscriptionId,authorization,xFapiAuthDate,xFapiCustomerIpAddress,xFapiInteractionId,authorization,xFapiAuthDate,xFapiCustomerIpAddress,xFapiInteractionId
+Success,200,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

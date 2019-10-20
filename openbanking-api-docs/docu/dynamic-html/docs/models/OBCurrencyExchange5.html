@@ -1,0 +1,37 @@
+
+<h2>OBCurrencyExchange5</h2>
+<ul class="parameter">
+  <li class="param-required-false">ContractIdentification : String
+    <br/>Unique identification to unambiguously identify the foreign exchange contract.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">ExchangeRate : BigDecimal
+    <br/>Factor used to convert an amount from one currency into another. This reflects the price at which one currency was bought with another currency. Usage: ExchangeRate expresses the ratio between UnitCurrency and QuotedCurrency (ExchangeRate &#x3D; UnitCurrency/QuotedCurrency).
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">InstructedAmount : OBCurrencyExchange5_InstructedAmount
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">QuotationDate : Date
+    <br/>Date and time at which an exchange rate is quoted.All dates in the JSON payloads are represented in ISO 8601 date-time format.  All date-time fields in responses must include the timezone. An example is below: 2017-04-05T10:43:07+00:00
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">SourceCurrency : String
+    <br/>Currency from which an amount is to be converted in a currency conversion.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">TargetCurrency : String
+    <br/>Currency into which an amount is to be converted in a currency conversion.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">UnitCurrency : String
+    <br/>Currency in which the rate of exchange is expressed in a currency exchange. In the example 1GBP &#x3D; xxxCUR, the unit currency is GBP.
+  </li>
+</ul>

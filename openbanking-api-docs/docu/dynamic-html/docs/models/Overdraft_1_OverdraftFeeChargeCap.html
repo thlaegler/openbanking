@@ -1,0 +1,57 @@
+
+<h2>Overdraft_1_OverdraftFeeChargeCap</h2>
+<ul class="parameter">
+  <li class="param-required-false">CappingPeriod : String
+    <br/>Period e.g. day, week, month etc. for which the fee/charge is capped
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Day</dd>
+            <dd>Half Year</dd>
+            <dd>Month</dd>
+            <dd>Quarter</dd>
+            <dd>Week</dd>
+            <dd>Year</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">FeeCapAmount : String
+    <br/>Cap amount charged for a fee/charge
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">FeeCapOccurrence : Float
+    <br/>Indicates whether the advertised overdraft rate is guaranteed to be offered to a borrower by the bank e.g. if it’s part of a government scheme, or whether the rate may vary dependent on the applicant’s circumstances.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">FeeType : List
+    <br/>Fee/charge type which is being capped
+      <dl class="param-enum">
+        <dt>Enum:
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">MinMaxType : String
+    <br/>Min Max type
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Minimum</dd>
+            <dd>Maximum</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Notes : List
+    <br/>Notes related to Overdraft fee charge cap
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherFeeType : List
+    <br/>Other fee type code which is not available in the standard code set
+  </li>
+</ul>

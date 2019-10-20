@@ -1,0 +1,39 @@
+
+<h2>OBTransactionCardInstrument1</h2>
+<ul class="parameter">
+  <li class="param-required-false">AuthorisationType : String
+    <br/>The card authorisation type.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>ConsumerDevice</dd>
+            <dd>Contactless</dd>
+            <dd>None</dd>
+            <dd>PIN</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">CardSchemeName : String
+    <br/>Name of the card scheme.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>AmericanExpress</dd>
+            <dd>Diners</dd>
+            <dd>Discover</dd>
+            <dd>MasterCard</dd>
+            <dd>VISA</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Identification : String
+    <br/>Identification assigned by an institution to identify the card instrument used in the transaction. This identification is known by the account owner, and may be masked.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Name : String
+    <br/>Name of the cardholder using the card instrument.
+  </li>
+</ul>

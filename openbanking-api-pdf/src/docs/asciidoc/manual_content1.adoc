@@ -1,0 +1,73 @@
+== About
+
+This Document contains/merges the following Banking APIs:
+
+=== Read/Write Data API 3.12
+
+* Account Information & Transaction API
+- Account Access Consents/ Account Requests
+- Accounts
+- Balances
+- Transactions
+- Beneficiaries
+- Direct Debits
+- Standing Orders
+- Products
+- Offers
+- Parties
+- Scheduled Payments
+- Statements
+* Payment Initiation API
+- Domestic Payments
+- Domestic Scheduled Payments
+- Domestic Standing Orders
+- International Payments
+- International Scheduled Payments
+- International Standing Orders
+- File Payments
+- Domestic Payments Message Format
+* Confirmation of Funds API
+- Funds Confirmation Constents
+- Funds Confirmation
+* Event Notification API
+- Events Notification Subscription
+- Callback URL
+- Realtime Event Notification
+- Aggregated Polling
+* Dynamic Client Registration API
+
+
+=== Open Data API 2.3
+
+* Branch API
+* BCA API
+* PCA API
+* ATM API
+* CCC API
+* SME Loan API
+* FCA Service Metrics API 1.0
+* CMA SQM API 1.0.1
+
+
+=== Open Banking Directory API / OB*
+
+* Telephony Validation API
+* OAuth 2.0 Consent
+* Password Management
+* Accounts Resource Type
+* External Identity
+* Account Management
+* Session
+* Email Validation
+
+
+=== SCIM 2.0 Protocol (RFC7644) / OB*
+
+* Authorities Resource Type
+* Account Payment Service Providers Resource Type
+* Third Party Providers Resource Type
+
+=== Sub chapter
+
+Dummy text of sub chapter
+

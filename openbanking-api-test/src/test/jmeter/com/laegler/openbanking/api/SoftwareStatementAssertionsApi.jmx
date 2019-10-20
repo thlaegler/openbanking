@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.8" jmeter="2.13 r1665067">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="SoftwareStatementAssertionsApi Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="threads" elementType="Argument">
+            <stringProp name="Argument.name">threads</stringProp>
+            <stringProp name="Argument.value">${__P(threads,1)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="rampup" elementType="Argument">
+            <stringProp name="Argument.name">rampup</stringProp>
+            <stringProp name="Argument.value">${__P(rampup,1)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="duration" elementType="Argument">
+            <stringProp name="Argument.name">duration</stringProp>
+            <stringProp name="Argument.value">${__P(duration,1)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="testCases" elementType="Argument">
+            <stringProp name="Argument.name">testCases</stringProp>
+            <stringProp name="Argument.value">${__P(testCases,10)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="host" elementType="Argument">
+            <stringProp name="Argument.name">host</stringProp>
+            <stringProp name="Argument.value">${__P(host,localhost)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="port" elementType="Argument">
+            <stringProp name="Argument.name">port</stringProp>
+            <stringProp name="Argument.value">${__P(port,8080)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="testData.organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdSoftwareStatementAssertionGetFile" elementType="Argument">
+            <stringProp name="Argument.name">testData.organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdSoftwareStatementAssertionGetFile</stringProp>
+            <stringProp name="Argument.value">${__P(testData.organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdSoftwareStatementAssertionGetFile,SoftwareStatementAssertionsApi.csv)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+        <stringProp name="HTTPSampler.domain">${host}</stringProp>
+        <stringProp name="HTTPSampler.port">${port}</stringProp>
+        <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+        <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        <stringProp name="HTTPSampler.protocol"></stringProp>
+        <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+        <stringProp name="HTTPSampler.path"></stringProp>
+        <stringProp name="HTTPSampler.concurrentPool">4</stringProp>
+      </ConfigTestElement>
+      <hashTree/>
+    <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group - organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdSoftwareStatementAssertionGet" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">${testCases}</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">${threads}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">${rampup}</stringProp>
+        <longProp name="ThreadGroup.start_time">1448391617000</longProp>
+        <longProp name="ThreadGroup.end_time">1448391617000</longProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">${duration}</stringProp>
+        <stringProp name="ThreadGroup.delay">5</stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdSoftwareStatementAssertionGet - ${testCase}" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments">
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/open-banking/v2.3/organisation/${OrganisationType}/${OrganisationId}/software-statement/${SoftwareStatementId}/software-statement-assertion</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation"></stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="TestPlan.comments">Get a Software Statement Assertion for the given SoftwareStatementID. The response body is a signed JWT and the values found in the header and the payload of the SSA are specified below  # Terminology    This specification uses the terms \&quot;access token\&quot;, \&quot;authorization code\&quot;, \&quot;authorization endpoint\&quot;, \&quot;authorization grant\&quot;, \&quot;authorization server\&quot;, \&quot;client\&quot;, \&quot;client identifier\&quot;, \&quot;client secret\&quot;, \&quot;grant type\&quot;, \&quot;protected resource\&quot;, \&quot;redirection URI\&quot;, \&quot;refresh token\&quot;, \&quot;resource owner\&quot;, \&quot;resource server\&quot;, \&quot;response type\&quot;, and \&quot;token endpoint\&quot; defined by OAuth 2.0 [RFC6749] and uses the term \&quot;Claim\&quot; defined by JSON Web Token (JWT) [RFC7519].    * __Account Servicing Payment Services Provider (ASPSP)__ -- An organisation managing customer accounts (and operating banking APIs).   * __Primary Technical Contact__ -- The person at the TPP who creates an SSA and invokes a registration mechanism. This is an example of an [RFC7591] Client Developer.   * __OB Organisation ID__ -- The unique identifier for each OpenBanking participant. Both TPPs and ASPSPs have OB Organisation IDs.   * __OpenBanking Directory__ -- An implementation of a [PSD2] competent authority; acts as an Identity Provider, certificate authority, and registry governing the participants in the UK OpenBanking API scheme.   * __ASPSP Registration Endpoint__ -- OAuth 2.0 &amp; [RFC7591] compliant endpoint, exact value is discoverable from the [OIDCD] openid-configuration file of the ASPSP.   * __Software Statement Assertion (SSA)__ -- An implementation of an [RFC7591] software statement, signed by the OpenBanking Directory.   * __Trusted Third Party (TPP)__ -- An organization working to initiate payments or consume account information with/from an ASPSP.   * __TPP Client Software__ -- software implementing an OAuth2 client, interacting with an ASPSP registration endpoint.  # Software Statement Assertion (SSA)    The SSA is a JSON Web Token (JWT) containing client metadata about an instance of TPP client software. The JWT is issued and signed by the OpenBanking Directory.  ## SSA Payload    The payload of an OpenBanking SSA MUST be a compliant software statement according to [RFC7591]. The SSA MUST also be a compliant JWT according to [RFC7519]. The following metadata profiles the metadata in [RFC7591] and [RFC7519]:    | Metadata | Description | Source Specification |   |----------|-------------|----------------------|   |&#x60;software_id&#x60;|Unique Identifier for TPP Client Software|[RFC7591]|   |&#x60;iss&#x60;|SSA Issuer|[RFC7519]|   |&#x60;iat&#x60;|Time SSA issued|[RFC7519]|   |&#x60;jti&#x60;|JWT ID|[RFC7519]|    The following software metadata is additionally defined for this profile:    |Metadata |Description |Field Size |Default values |   |---------|------------|-----------|---------------|   |&#x60;software_client_id&#x60;|The Client ID Registered at OB used to access OB resources|Base62 GUID (22 chars)| |   |&#x60;software_client_description&#x60;|Human-readable detailed description of the client|Max256Text| |   |&#x60;software_client_name&#x60;|Human-readable Software Name|Max40Text| |   |&#x60;software_client_uri&#x60;|The website or resource root uri|Max256Text| |   |&#x60;software_version&#x60;|The version number of the software should a TPP choose to register and / or maintain it|decimal| |   |&#x60;software_environment&#x60;|Requested additional field to avoid certificate check|Max256Text| |   |&#x60;software_jwks_endpoint&#x60;|Contains all active signing and network certs for the software|Max256Text| |   |&#x60;software_jwks_revoked_endpoint&#x60;|Contains all revoked signing and network certs for the software|Max256Text| |   |&#x60;software_logo_uri&#x60;|Link to the TPP logo. Note, ASPSPs are not obliged to display images hosted by third parties|Max256Text| |   |&#x60;software_mode&#x60;|ASPSP Requested additional field to indicate that this software is &#x60;Test&#x60; or &#x60;Live&#x60; the default is &#x60;Live&#x60;. Impact and support for &#x60;Test&#x60; software is up to the ASPSP.|Max40Text| |   |&#x60;software_on_behalf_of_org&#x60;|A reference to fourth party organsiation resource on the OB Directory if the registering TPP is acting on behalf of another.|Max40Text| |   |&#x60;software_policy_uri&#x60;|A link to the software&#39;s policy page|Max256Text| |   |&#x60;software_redirect_uris&#x60;|Registered client callback endpoints as registered with Open Banking|A string array of Max256Text items|   |&#x60;software_roles&#x60;|A multi value list of PSD2 roles that this software is authorized to perform.|A string array of Max256Text items| |   |&#x60;software_tos_uri&#x60;|A link to the software&#39;s terms of service page|Max256Text| |    The following Organisational metadata is defined for this profile:    |Metadata |Description |Field Size | Default values |   |---------|------------|-----------|----------------|   |&#x60;organisation_competent_authority_claims&#x60;|Authorisations granted to the organsiation by an NCA|CodeList {&#x60;AISP&#x60;, &#x60;PISP&#x60;, &#x60;CBPII&#x60;, &#x60;ASPSP&#x60;}| |   |&#x60;org_status&#x60;|Included to cater for voluntary withdrawal from OB scenarios|&#x60;Active&#x60;, &#x60;Revoked&#x60;, or &#x60;Withdrawn&#x60;| |   |&#x60;org_id&#x60;|The Unique TPP or ASPSP ID held by OpenBanking.|Max35Text| |   |&#x60;org_name&#x60;|Legal Entity Identifier or other known organisation name|Max140Text| |   |&#x60;org_contacts&#x60;|JSON array of objects containing a triplet of name, email, and phone number|Each item Max256Text| |   |&#x60;org_jwks_endpoint&#x60;|Contains all active signing and network certs for the organisation|Max256Text| |   |&#x60;org_jwks_revoked_endpoint&#x60;|Contains all revoked signing and network certs for the organisation|Max256Text| |  ## SSA header    The SSA header MUST comply with [RFC7519].    |Metadata |Description |Comments |   |---------|------------|---------|   |&#x60;typ&#x60;|MUST be set to &#x60;JWT&#x60;| |   |&#x60;alg&#x60;|MUST be set to &#x60;ES256&#x60; or &#x60;PS256&#x60;| |   |&#x60;kid&#x60;|The kid will be kept the same as the &#x60;x5t&#x60; parameter. (X.509 Certificate SHA-1 Thumbprint) of the signing certificate.| |    ### Example SSA    The elements defined in the software statement will consist of the following values.    *Note that there are inconsistent applications of booleans or \&quot;Active\&quot; strings in the current data model.*    *Note that there are inconsistent applications of status flags case sensitivity.*    *The attributes required to be displayed by ASPSPs.*  &#x60;&#x60;&#x60; {   \&quot;typ\&quot;: \&quot;JWT\&quot;,   \&quot;alg\&quot;: \&quot;ES256\&quot;,   \&quot;kid\&quot;: \&quot;ABCD1234\&quot; } {   \&quot;iss\&quot;: \&quot;OpenBanking Ltd\&quot;,   \&quot;iat\&quot;: 1492756331,   \&quot;jti\&quot;: \&quot;id12345685439487678\&quot;,   \&quot;software_environment\&quot;: \&quot;production\&quot;,   \&quot;software_mode\&quot;: \&quot;live\&quot;,   \&quot;software_id\&quot;: \&quot;65d1f27c-4aea-4549-9c21-60e495a7a86f\&quot;,   \&quot;software_client_id\&quot;: \&quot;OpenBanking TPP Client Unique ID\&quot;,   \&quot;software_client_name\&quot;: \&quot;Amazon Prime Movies\&quot;,   \&quot;software_client_description\&quot;: \&quot;Amazon Prime Movies is a moving streaming service\&quot;,   \&quot;software_version\&quot;: \&quot;2.2\&quot;,   \&quot;software_client_uri\&quot;: \&quot;https://prime.amazon.com\&quot;,   \&quot;software_redirect_uris\&quot;: [     \&quot;https://prime.amazon.com/cb\&quot;,     \&quot;https://prime.amazon.co.uk/cb\&quot;   ],   \&quot;software_roles\&quot;: [     \&quot;PISP\&quot;,     \&quot;AISP\&quot;   ],   \&quot;organisation_competent_authority_claims\&quot;: {     \&quot;authority_id\&quot;: \&quot;FMA\&quot;, // Austrian Financial Market Authority     \&quot;registration_id\&quot;: \&quot;111111\&quot;,     \&quot;status\&quot;: \&quot;Active\&quot;,     \&quot;authorisations\&quot;:  [       {         \&quot;member_state\&quot;: \&quot;GB\&quot;,         \&quot;roles\&quot;: [           \&quot;PISP\&quot;,           \&quot;AISP\&quot;         ]       },       {         \&quot;member_state\&quot;: \&quot;IR\&quot;,         \&quot;roles\&quot;: [           \&quot;PISP\&quot;         ]       }     ]   },   \&quot;software_logo_uri\&quot;: \&quot;https://prime.amazon.com/logo.png\&quot;,   \&quot;org_status\&quot;: \&quot;Active\&quot;,   \&quot;org_id\&quot;: \&quot;Amazon TPPID\&quot;,   \&quot;org_name\&quot;: \&quot;OpenBanking TPP Registered Name\&quot;,   \&quot;org_contacts\&quot;: [     {       \&quot;name\&quot;: \&quot;contact name\&quot;,       \&quot;email\&quot;: \&quot;contact@contact.com\&quot;,       \&quot;phone\&quot;: \&quot;+447890130558\&quot;       \&quot;type\&quot;: \&quot;business\&quot;     },     {       \&quot;name\&quot;: \&quot;contact name\&quot;,       \&quot;email\&quot;: \&quot;contact@contact.com\&quot;,       \&quot;phone\&quot;: \&quot;+447890130558\&quot;,       \&quot;type\&quot;: \&quot;technical\&quot;     }   ],   \&quot;org_jwks_endpoint\&quot;: \&quot;https://jwks.openbanking.org.uk/org_id/org_id.jkws\&quot;,   \&quot;org_jwks_revoked_endpoint\&quot;: \&quot;https://jwks.openbanking.org.uk/org_id/revoked/org_id.jkws\&quot;,   \&quot;software_jwks_endpoint\&quot;: \&quot;https://jwks.openbanking.org.uk/org_id/software_id.jkws\&quot;,   \&quot;software_jwks_revoked_endpoint\&quot;: \&quot;https://jwks.openbanking.org.uk/org_id/revoked/software_id.jkws\&quot;,   \&quot;software_policy_uri\&quot;: \&quot;https://tpp.com/policy.html\&quot;,   \&quot;software_tos_uri\&quot;: \&quot;https://tpp.com/tos.html\&quot;,   \&quot;software_on_behalf_of_org\&quot;: \&quot;Acme Ltd\&quot; } {   Signature } &#x60;&#x60;&#x60;  # Automated Client Registration  A TPP MAY use automated client registration to submit an SSA to an ASPSP in exchange for client credentials for use as a client against an OAuth 2.0 Authorization Server. It is RECOMMENDED for ASPSPs to support the automated client registration mechanism. A large number of claims that OpenID Connect OPs could support as part of the RFC7591 request are detailed [https://openid.net/specs/openid-connect-registration-1_0.html#ClientMetadata](https://openid.net/specs/openid-connect-registration-1_0.html#ClientMetadata) and should be followed if not explicitly referenced in the Software Statement Assertion claim set.  ## Request Validation  Prior to issuing a client registration response, the ASPSP MUST perform the following checks  * The ASPSP SHOULD check whether the TPP that initiated the TLS connection is the same TPP as listed in the SSA. * In the case where a gateway or other piece of infrastructure pre-terminates the MATLS channel in front of the registration endpoint, the certificate used to initiate the connection or some part of that certificate (such as DN &amp; Issuer) SHOULD be made available to the ASPSP for validation against the claims in the SSA. * The registration request MUST be signed with a key contained in the JWKS referenced in the SSA included with the request. This ensures that a holder-of-key proof-of-possession is performed proving that the TPP app was the originally intended recipient of the SSA when the OB issued it. * The SSA MUST be validated according to [RFC7519], including validation of the signature and validity window.  JWT signature must be validated, this involves retrieving the jwks keyset for both the OB and the TPP. The OB keystore location will be published as part of the directory specification, The TPP&#39;s will be included in the software statement.  ### SSA Lifetime  The SSA&#39;s Lifetime / Validity period is not defined by Open Banking. ASPSPs in the Open Banking ecosystem are required to implement pragmatic time ranges in which to accept an SSA. For example, an ASPSP that has implemented Dynamic Client Registration may choose to accept SSA&#39;s that were issued no earlier than 1 minute prior to their presentation however ASPSPs that only support manual registration may need to accept SSAs that were issued 30 minutes prior as the elapsed time period between generation and use between these two flows is expected to differ significantly. </stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Load CSV Test Data - organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdSoftwareStatementAssertionGet" enabled="true">
+            <stringProp name="delimiter">,</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="filename">${testData.organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdSoftwareStatementAssertionGetFile}</stringProp>
+            <boolProp name="quotedData">true</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <stringProp name="shareMode">shareMode.group</stringProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="variableNames"></stringProp>
+            <boolProp name="ignoreFirstLine">true</boolProp>
+          </CSVDataSet>
+          <hashTree/>
+        </hashTree>
+        <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="HTTP Status Assertion" enabled="true">
+          <collectionProp name="Asserion.test_strings">
+            <stringProp name="812696575">${httpStatusCode}</stringProp>
+          </collectionProp>
+          <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+          <boolProp name="Assertion.assume_success">false</boolProp>
+          <intProp name="Assertion.test_type">8</intProp>
+        </ResponseAssertion>
+        <hashTree/>
+      </hashTree>
+      <!-- end of operations -->
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <threadCounts>true</threadCounts>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

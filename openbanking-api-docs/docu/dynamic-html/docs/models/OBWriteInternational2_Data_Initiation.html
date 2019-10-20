@@ -1,0 +1,83 @@
+
+<h2>OBWriteInternational2_Data_Initiation</h2>
+<ul class="parameter">
+  <li class="param-required-false">ChargeBearer : OBChargeBearerType1Code
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Creditor : OBWriteInternational2_Data_Initiation_Creditor
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">CreditorAccount : OBWriteDomestic2_Data_Initiation_CreditorAccount
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">CreditorAgent : OBWriteInternational2_Data_Initiation_CreditorAgent
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">CurrencyOfTransfer : String
+    <br/>Specifies the currency of the to be transferred amount, which is different from the currency of the debtor&#39;s account.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">DebtorAccount : OBWriteDomestic2_Data_Initiation_DebtorAccount
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">EndToEndIdentification : String
+    <br/>Unique identification assigned by the initiating party to unambiguously identify the transaction. This identification is passed on, unchanged, throughout the entire end-to-end chain. Usage: The end-to-end identification can be used for reconciliation or to link tasks relating to the transaction. It can be included in several messages related to the transaction. OB: The Faster Payments Scheme can only access 31 characters for the EndToEndIdentification field.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">ExchangeRateInformation : OBWriteInternational2_Data_Initiation_ExchangeRateInformation
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">InstructedAmount : OBWriteDomestic2_Data_Initiation_InstructedAmount
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">InstructionIdentification : String
+    <br/>Unique identification as assigned by an instructing party for an instructed party to unambiguously identify the instruction. Usage: the  instruction identification is a point to point reference that can be used between the instructing party and the instructed party to refer to the individual instruction. It can be included in several messages related to the instruction.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">InstructionPriority : String
+    <br/>Indicator of the urgency or order of importance that the instructing party would like the instructed party to apply to the processing of the instruction.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Normal</dd>
+            <dd>Urgent</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">LocalInstrument : OBExternalLocalInstrument1Code
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Purpose : String
+    <br/>Specifies the external purpose code in the format of character string with a maximum length of 4 characters. The list of valid codes is an external code list published separately. External code sets can be downloaded from www.iso20022.org.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">RemittanceInformation : OBWriteDomestic2_Data_Initiation_RemittanceInformation
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">SupplementaryData : OBSupplementaryData1
+    <br/>
+  </li>
+</ul>

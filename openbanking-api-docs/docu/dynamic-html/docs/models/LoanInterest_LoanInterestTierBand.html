@@ -1,0 +1,108 @@
+
+<h2>LoanInterest_LoanInterestTierBand</h2>
+<ul class="parameter">
+  <li class="param-required-true">FixedVariableInterestRateType : String
+    <br/>Type of interest rate, Fixed or Variable
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Fixed</dd>
+            <dd>Variable</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Identification : String
+    <br/>Unique and unambiguous identification of a  Tier Band for a SME Loan.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">LoanInterestFeesCharges : List
+    <br/>Contains details of fees and charges which are not associated with either LoanRepayment or features/benefits
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">LoanProviderInterestRate : String
+    <br/>Loan provider Interest for the SME Loan product
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">LoanProviderInterestRateType : String
+    <br/>Interest rate types, other than APR, which financial institutions may use to describe the annual interest rate payable for the SME Loan.
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>BOEBaseRate</dd>
+            <dd>FixedRate</dd>
+            <dd>Gross</dd>
+            <dd>LoanProviderBaseRate</dd>
+            <dd>Net</dd>
+            <dd>Other</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">MaxTermPeriod : String
+    <br/>The unit of period (days, weeks, months etc.) of the Maximum Term
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Day</dd>
+            <dd>Half Year</dd>
+            <dd>Month</dd>
+            <dd>Quarter</dd>
+            <dd>Week</dd>
+            <dd>Year</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">MinTermPeriod : String
+    <br/>The unit of period (days, weeks, months etc.) of the Minimum Term
+      <dl class="param-enum">
+        <dt>Enum:
+            <dd>Day</dd>
+            <dd>Half Year</dd>
+            <dd>Month</dd>
+            <dd>Quarter</dd>
+            <dd>Week</dd>
+            <dd>Year</dd>
+        </dt>
+      </dl>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">Notes : List
+    <br/>Optional additional notes to supplement the Tier Band details
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">OtherLoanProviderInterestRateType : OtherLoanProviderInterestRateType
+    <br/>
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">RepAPR : String
+    <br/>The annual equivalent rate (AER) is interest that is calculated under the assumption that any interest paid is combined with the original balance and the next interest payment will be based on the slightly higher account balance. Overall, this means that interest can be compounded several times in a year depending on the number of times that interest payments are made.   For SME Loan, this APR is the representative APR which includes any account fees.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">TierValueMaxTerm : Float
+    <br/>Maximum loan term for which the loan interest tier applies.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-false">TierValueMaximum : String
+    <br/>Maximum loan value for which the loan interest tier applies.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">TierValueMinTerm : Float
+    <br/>Minimum loan term for which the loan interest tier applies.
+  </li>
+</ul>
+<ul class="parameter">
+  <li class="param-required-true">TierValueMinimum : String
+    <br/>Minimum loan value for which the loan interest tier applies.
+  </li>
+</ul>

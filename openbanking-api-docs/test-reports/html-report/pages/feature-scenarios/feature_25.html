@@ -1,0 +1,791 @@
+
+
+    <!--
+    Copyright 2019 trivago N.V.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+    -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <base href="./../..">
+    <head title="Cluecumber Report - Scenarios in Feature">
+        <title>Cluecumber Report - Scenarios in Feature</title>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta http-equiv="Content-Security-Policy" content="default-src *  data: blob: 'unsafe-inline' 'unsafe-eval';
+script-src * data: blob: 'unsafe-inline' 'unsafe-eval';
+connect-src * data: blob: 'unsafe-inline';
+img-src * data: blob: 'unsafe-inline';
+frame-src * data: blob: ;
+style-src * data: blob: 'unsafe-inline';
+font-src * data: blob: 'unsafe-inline';"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Cluecumber Report">
+<meta name="author" content="Cluecumber Report Plugin version 2.3.1">
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="css/datatables.min.css">
+<link rel="stylesheet" href="css/dataTables.bootstrap4.min.css">
+<link rel="stylesheet" href="css/jquery.fancybox.min.css"/>
+<link rel="stylesheet" href="css/cluecumber.css" type="text/css">
+<link rel="stylesheet" href="css/cluecumber-custom.css"/>
+<link rel="stylesheet" href="css/cluecumber-additional.css"/>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/datatables.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/Chart.bundle.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+            // Data tables
+            $('.renderAsDataTable').on('draw.dt', function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            }).DataTable({
+                "oLanguage": {
+                    "sSearch": "Search:"
+                },
+                "pageLength": 25,
+                "responsive": true
+            });
+
+            $('.collapse').on('shown.bs.collapse', function (e) {
+                $(e.target).find("iframe").each(function (index, iframe) {
+                    resizeIframe(iframe);
+                })
+            });
+
+            // Lightbox
+            $("a.grouped_elements").fancybox();
+
+            // Tool tips
+            $('[data-toggle="tooltip"]').tooltip();
+
+            // Chart
+            var canvas = document.getElementById('chart-area');
+            var ctx = canvas.getContext("2d");
+            var chart = new Chart(ctx, {
+  "data": {
+    "labels": [
+      "passed",
+      "failed",
+      "skipped"
+    ],
+    "datasets": [
+      {
+        "data": [
+          27,
+          0,
+          0
+        ],
+        "backgroundColor": [
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(255, 193, 7, 1.000)"
+        ]
+      }
+    ]
+  },
+  "options": {
+    "events": [
+      "click",
+      "mousemove"
+    ]
+  },
+  "type": "pie"
+});
+
+            var original;
+            if (chart.config.type === "pie") {
+                original = Chart.defaults.pie.legend.onClick;
+            } else {
+                original = Chart.defaults.global.legend.onClick;
+            }
+
+            chart.options.onClick = function (evt, elements) {
+                if (chart.config.type !== "pie") return;
+                chartArea = elements[0];
+                if (chartArea === undefined) return;
+                chartArea.hidden = !chartArea.hidden;
+                chart.update();
+                toggleVisibilityByStatus(chartArea._model.label, !chartArea.hidden)
+            };
+
+            chart.options.legend.onClick = function (evt, label) {
+                original.call(this, evt, label);
+                toggleVisibilityByStatus(label.text, label.hidden);
+            };
+
+            function toggleVisibilityByStatus(statusText, show) {
+                var card = $("#card_" + statusText);
+                if (card !== undefined) {
+                    if (show) {
+                        card.show();
+                    } else {
+                        card.hide();
+                    }
+                }
+
+                var row = $(".table-row-" + statusText);
+                if (row !== undefined) {
+                    if (show) {
+                        row.show();
+                    } else {
+                        row.hide();
+                    }
+                }
+            }
+
+
+            if (false) {
+                $(".btn-outline-secondary[data-cluecumber-item='before-after-hooks-button']").click();
+            }
+            if (false) {
+                $(".btn-outline-secondary[data-cluecumber-item='step-hooks-button']").click();
+            }
+            if (false) {
+                $(".btn-outline-secondary[data-cluecumber-item='doc-strings-button']").click();
+            }
+        }
+    );
+
+    function resizeIframe(iframe) {
+        iframe.style.height = (iframe.contentWindow.document.body.scrollHeight + 25) + 'px';
+    }
+</script>    </head>
+    <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                                <a class="nav-link " href="index.html">All Scenarios</a>
+                    </li>
+                    <li class="nav-item">
+                                <a class="nav-link " href="pages/scenario-sequence.html">Scenario Sequence</a>
+                    </li>
+                    <li class="nav-item">
+                                <a class="nav-link " href="pages/tag-summary.html">All Tags</a>
+                    </li>
+                    <li class="nav-item">
+                                <a class="nav-link " href="pages/step-summary.html">All Steps</a>
+                    </li>
+                    <li class="nav-item">
+                                <a class="nav-link text-white" href="pages/feature-summary.html">All Features</a>
+                    </li>
+            </ul>
+            <span class="text-light">2019-10-19 19:19:42</span>
+        </div>
+    </nav>
+    <main role="main" class="container">
+        <div class="cluecumber-template">
+            <div class="pb-2 mt-4 mb-2 border-bottom">
+                    <h3>Scenarios in Feature 'InternationalPaymentsApi'</h3>
+            </div>
+
+
+    <div class="row">
+    <div class="col-sm-6  h-auto" data-cluecumber-item="card">
+        <div class="card h-100">
+                <div class="card-header">Scenario Results</div>
+            <div class="card-body">
+    <div id="canvas-holder" class="w-100 text-center" style="min-height: 15rem;" data-cluecumber-item="chart">
+        <canvas id="chart-area" class="w-100"></canvas>
+    </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3  h-auto" data-cluecumber-item="card">
+        <div class="card h-100">
+                <div class="card-header">Test Suite Time</div>
+            <div class="card-body">
+            <ul class="list-group list-group-flush">
+                    <li class="list-group-item" data-cluecumber-item="total-start">
+                        Started on:<br>2019-10-19 19:19:32</li>
+                    <li class="list-group-item" data-cluecumber-item="total-end">
+                        Ended on:<br>2019-10-19 19:19:32</li>
+                <li class="list-group-item" data-cluecumber-item="total-runtime">
+                    Test Runtime:<br>0m 00s 290ms
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3  h-auto" data-cluecumber-item="card">
+        <div class="card h-100">
+                <div class="card-header">Test Suite Summary</div>
+            <div class="card-body">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item" data-cluecumber-item="scenario-summary">
+                    27         Scenarios
+
+                </li>
+                <li class="list-group-item" data-cluecumber-item="scenario-summary">
+                        <a href="javascript:;"
+                           onclick="document.location.hash='anchor-passed';">27
+                            passed</a>     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
+       title="passed"><span style="display:none">passed</span></i>
+
+                        <br>
+                        <a href="javascript:;"
+                           onclick="document.location.hash='anchor-failed';">0
+                            failed</a>     <i class="color-failed cluecumber-icon icon-failed" data-toggle="tooltip"
+       title="failed"><span style="display:none">failed</span></i>
+
+                        <br>
+                        <a href="javascript:;"
+                           onclick="document.location.hash='anchor-skipped';">0
+                            skipped</a>     <i class="color-skipped cluecumber-icon icon-skipped" data-toggle="tooltip"
+       title="skipped"><span style="display:none">skipped</span></i>
+
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+        <a class="anchor" id="anchor-passed"></a>
+        <div class="row" id="card_passed" data-cluecumber-item="scenario-summary-table">
+            <div class=" col-sm-12">
+                <div class="card">
+
+                            <div class="card-header border-color-passed">
+                                27
+        passed Scenarios
+    <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
+       title="passed"><span style="display:none">passed</span></i>
+                            </div>
+
+                    <div class="card-body">
+                        <table id="results_passed" class="table table-hover renderAsDataTable">
+                            <thead>
+                            <tr>
+                                <th class="text-left">Feature</th>
+                                <th class="text-left">Scenario</th>
+                                <th>Started</th>
+                                <th>Duration</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/internationalPayments/international-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_25.html">InternationalPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_592.html"
+                                                   style="word-break: break-all">As an API-user I want to Create International Payments - Bad request</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:32.184Z">
+                                                2019-10-19<br>19:19:32
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="8,675,729">
+                                                <span class="nobr">0m 00s 008ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/internationalPayments/international-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_25.html">InternationalPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_593.html"
+                                                   style="word-break: break-all">As an API-user I want to Create International Payments - Unauthorized</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:32.196Z">
+                                                2019-10-19<br>19:19:32
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="8,034,313">
+                                                <span class="nobr">0m 00s 008ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/internationalPayments/international-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_25.html">InternationalPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_594.html"
+                                                   style="word-break: break-all">As an API-user I want to Create International Payments - Forbidden</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:32.206Z">
+                                                2019-10-19<br>19:19:32
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="7,453,265">
+                                                <span class="nobr">0m 00s 007ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/internationalPayments/international-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_25.html">InternationalPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_595.html"
+                                                   style="word-break: break-all">As an API-user I want to Create International Payments - Not found</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:32.215Z">
+                                                2019-10-19<br>19:19:32
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="8,029,463">
+                                                <span class="nobr">0m 00s 008ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/internationalPayments/international-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_25.html">InternationalPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_596.html"
+                                                   style="word-break: break-all">As an API-user I want to Create International Payments - Internal Server Error</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:32.225Z">
+                                                2019-10-19<br>19:19:32
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="7,304,035">
+                                                <span class="nobr">0m 00s 007ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/internationalPayments/international-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_25.html">InternationalPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_597.html"
+                                                   style="word-break: break-all">As an API-user I want to Create International Payments - Method Not Allowed</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:32.234Z">
+                                                2019-10-19<br>19:19:32
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="7,591,368">
+                                                <span class="nobr">0m 00s 007ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/internationalPayments/international-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_25.html">InternationalPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_598.html"
+                                                   style="word-break: break-all">As an API-user I want to Create International Payments - Not Acceptable</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:32.244Z">
+                                                2019-10-19<br>19:19:32
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="8,690,161">
+                                                <span class="nobr">0m 00s 008ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/internationalPayments/international-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_25.html">InternationalPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_599.html"
+                                                   style="word-break: break-all">As an API-user I want to Create International Payments - International Payments Created</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:32.254Z">
+                                                2019-10-19<br>19:19:32
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="7,796,764">
+                                                <span class="nobr">0m 00s 007ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/internationalPayments/international-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_25.html">InternationalPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_600.html"
+                                                   style="word-break: break-all">As an API-user I want to Create International Payments - Too Many Requests</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:32.264Z">
+                                                2019-10-19<br>19:19:32
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="7,432,621">
+                                                <span class="nobr">0m 00s 007ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/internationalPayments/international-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_25.html">InternationalPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_601.html"
+                                                   style="word-break: break-all">As an API-user I want to Get International Payments - Bad request</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:32.273Z">
+                                                2019-10-19<br>19:19:32
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="8,463,627">
+                                                <span class="nobr">0m 00s 008ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/internationalPayments/international-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_25.html">InternationalPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_602.html"
+                                                   style="word-break: break-all">As an API-user I want to Get International Payments - Unauthorized</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:32.284Z">
+                                                2019-10-19<br>19:19:32
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="8,838,578">
+                                                <span class="nobr">0m 00s 008ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/internationalPayments/international-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_25.html">InternationalPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_603.html"
+                                                   style="word-break: break-all">As an API-user I want to Get International Payments - Forbidden</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:32.294Z">
+                                                2019-10-19<br>19:19:32
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="8,787,820">
+                                                <span class="nobr">0m 00s 008ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/internationalPayments/international-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_25.html">InternationalPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_604.html"
+                                                   style="word-break: break-all">As an API-user I want to Get International Payments - Not found</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:32.305Z">
+                                                2019-10-19<br>19:19:32
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="9,451,245">
+                                                <span class="nobr">0m 00s 009ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/internationalPayments/international-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_25.html">InternationalPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_605.html"
+                                                   style="word-break: break-all">As an API-user I want to Get International Payments - Internal Server Error</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:32.317Z">
+                                                2019-10-19<br>19:19:32
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="8,215,921">
+                                                <span class="nobr">0m 00s 008ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/internationalPayments/international-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_25.html">InternationalPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_606.html"
+                                                   style="word-break: break-all">As an API-user I want to Get International Payments - Method Not Allowed</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:32.327Z">
+                                                2019-10-19<br>19:19:32
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="8,697,364">
+                                                <span class="nobr">0m 00s 008ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/internationalPayments/international-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_25.html">InternationalPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_607.html"
+                                                   style="word-break: break-all">As an API-user I want to Get International Payments - Not Acceptable</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:32.337Z">
+                                                2019-10-19<br>19:19:32
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="8,702,273">
+                                                <span class="nobr">0m 00s 008ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/internationalPayments/international-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_25.html">InternationalPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_608.html"
+                                                   style="word-break: break-all">As an API-user I want to Get International Payments - International Payments Read</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:32.348Z">
+                                                2019-10-19<br>19:19:32
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="8,028,573">
+                                                <span class="nobr">0m 00s 008ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/internationalPayments/international-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_25.html">InternationalPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_609.html"
+                                                   style="word-break: break-all">As an API-user I want to Get International Payments - Too Many Requests</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:32.358Z">
+                                                2019-10-19<br>19:19:32
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="8,299,855">
+                                                <span class="nobr">0m 00s 008ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/internationalPayments/international-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_25.html">InternationalPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_610.html"
+                                                   style="word-break: break-all">As an API-user I want to Get Payment Details - Bad request</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:32.368Z">
+                                                2019-10-19<br>19:19:32
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="8,245,544">
+                                                <span class="nobr">0m 00s 008ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/internationalPayments/international-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_25.html">InternationalPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_611.html"
+                                                   style="word-break: break-all">As an API-user I want to Get Payment Details - Unauthorized</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:32.379Z">
+                                                2019-10-19<br>19:19:32
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="8,111,991">
+                                                <span class="nobr">0m 00s 008ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/internationalPayments/international-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_25.html">InternationalPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_612.html"
+                                                   style="word-break: break-all">As an API-user I want to Get Payment Details - Forbidden</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:32.388Z">
+                                                2019-10-19<br>19:19:32
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="8,313,703">
+                                                <span class="nobr">0m 00s 008ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/internationalPayments/international-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_25.html">InternationalPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_613.html"
+                                                   style="word-break: break-all">As an API-user I want to Get Payment Details - Not found</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:32.399Z">
+                                                2019-10-19<br>19:19:32
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="15,868,576">
+                                                <span class="nobr">0m 00s 015ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/internationalPayments/international-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_25.html">InternationalPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_614.html"
+                                                   style="word-break: break-all">As an API-user I want to Get Payment Details - Internal Server Error</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:32.418Z">
+                                                2019-10-19<br>19:19:32
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="13,080,661">
+                                                <span class="nobr">0m 00s 013ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/internationalPayments/international-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_25.html">InternationalPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_615.html"
+                                                   style="word-break: break-all">As an API-user I want to Get Payment Details - Method Not Allowed</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:32.434Z">
+                                                2019-10-19<br>19:19:32
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="10,808,083">
+                                                <span class="nobr">0m 00s 010ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/internationalPayments/international-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_25.html">InternationalPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_616.html"
+                                                   style="word-break: break-all">As an API-user I want to Get Payment Details - Not Acceptable</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:32.447Z">
+                                                2019-10-19<br>19:19:32
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="8,164,944">
+                                                <span class="nobr">0m 00s 008ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/internationalPayments/international-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_25.html">InternationalPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_617.html"
+                                                   style="word-break: break-all">As an API-user I want to Get Payment Details - Payment Details Read</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:32.458Z">
+                                                2019-10-19<br>19:19:32
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="7,713,631">
+                                                <span class="nobr">0m 00s 007ms</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-row-passed">
+                                            <td class="text-left">
+                                                <span data-toggle="tooltip" title="file:src/test/java/com/laegler/openbanking/api/feature/internationalPayments/international-payments.feature">
+                                                    <a href="pages/feature-scenarios/feature_25.html">InternationalPaymentsApi</a>
+                                                </span>
+                                            </td>
+                                            <td class="text-left">
+                                                <a href="pages/scenario-detail/scenario_618.html"
+                                                   style="word-break: break-all">As an API-user I want to Get Payment Details - Too Many Requests</a>
+                                            </td>
+                                            <td class="text-center small" data-order="2019-10-19T06:19:32.467Z">
+                                                2019-10-19<br>19:19:32
+                                            </td>
+                                            <td class="text-right small"
+                                                data-order="7,306,529">
+                                                <span class="nobr">0m 00s 007ms</span>
+                                            </td>
+                                        </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+<footer class="footer navbar-dark">
+    <div class="container-fluid">
+        <span>Cluecumber Report Plugin version 2.3.1 - Report generated on 2019-10-19 19:19:42.</span>
+    </div>
+</footer>    </body>
+    </html>
+

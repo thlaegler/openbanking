@@ -1,0 +1,2 @@
+testCase,httpStatusCode,obWriteFile2Param,authorization,xIdempotencyKey,xJwsSignature,xFapiAuthDate,xFapiCustomerIpAddress,xFapiInteractionId,filePaymentId,authorization,xFapiAuthDate,xFapiCustomerIpAddress,xFapiInteractionId,filePaymentId,authorization,xFapiAuthDate,xFapiCustomerIpAddress,xFapiInteractionId,filePaymentId,authorization,xFapiAuthDate,xFapiCustomerIpAddress,xFapiInteractionId
+Success,200,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
