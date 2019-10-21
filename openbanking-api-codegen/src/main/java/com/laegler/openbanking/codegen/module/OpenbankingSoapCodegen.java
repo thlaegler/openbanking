@@ -31,8 +31,11 @@ public class OpenbankingSoapCodegen extends OpenbankingBaseCodegen {
     apiFeatureStepsTemplateFiles.clear();
     apiIntegrationTestTemplateFiles.clear();
 
-    modelTemplateFiles.put("selectTransformSoapFrom.mustache", ".json");
-    modelTemplateFiles.put("selectTransformSoapTo.mustache", ".json");
+    // supportingFiles.add(new SupportingFile("selectTransformSoapFrom.mustache", folder,
+    // destinationFilename)
+
+    resourceTemplateFiles.put("selectTransformSoapFrom.mustache", ".json");
+    resourceTemplateFiles.put("selectTransformSoapTo.mustache", ".json");
   }
 
 }

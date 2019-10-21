@@ -1,0 +1,148 @@
+-------------------------------------------------------------------------------
+Test set: com.laegler.openbanking.api.integration.FilePaymentConsentsApiIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 36, Failures: 0, Errors: 36, Skipped: 0, Time elapsed: 0.205 s <<< FAILURE! - in com.laegler.openbanking.api.integration.FilePaymentConsentsApiIntegrationTest
+test_createFilePaymentConsentsConsentIdFile_200  Time elapsed: 0.006 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FilePaymentConsentsApiIntegrationTest.test_createFilePaymentConsentsConsentIdFile_200(FilePaymentConsentsApiIntegrationTest.java:130)
+
+test_createFilePaymentConsentsConsentIdFile_400  Time elapsed: 0.007 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FilePaymentConsentsApiIntegrationTest.test_createFilePaymentConsentsConsentIdFile_400(FilePaymentConsentsApiIntegrationTest.java:88)
+
+test_createFilePaymentConsentsConsentIdFile_401  Time elapsed: 0.006 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FilePaymentConsentsApiIntegrationTest.test_createFilePaymentConsentsConsentIdFile_401(FilePaymentConsentsApiIntegrationTest.java:94)
+
+test_createFilePaymentConsentsConsentIdFile_403  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FilePaymentConsentsApiIntegrationTest.test_createFilePaymentConsentsConsentIdFile_403(FilePaymentConsentsApiIntegrationTest.java:100)
+
+test_createFilePaymentConsentsConsentIdFile_404  Time elapsed: 0.006 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FilePaymentConsentsApiIntegrationTest.test_createFilePaymentConsentsConsentIdFile_404(FilePaymentConsentsApiIntegrationTest.java:106)
+
+test_createFilePaymentConsentsConsentIdFile_405  Time elapsed: 0.006 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FilePaymentConsentsApiIntegrationTest.test_createFilePaymentConsentsConsentIdFile_405(FilePaymentConsentsApiIntegrationTest.java:118)
+
+test_createFilePaymentConsentsConsentIdFile_406  Time elapsed: 0.008 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FilePaymentConsentsApiIntegrationTest.test_createFilePaymentConsentsConsentIdFile_406(FilePaymentConsentsApiIntegrationTest.java:124)
+
+test_createFilePaymentConsentsConsentIdFile_429  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FilePaymentConsentsApiIntegrationTest.test_createFilePaymentConsentsConsentIdFile_429(FilePaymentConsentsApiIntegrationTest.java:136)
+
+test_createFilePaymentConsentsConsentIdFile_500  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FilePaymentConsentsApiIntegrationTest.test_createFilePaymentConsentsConsentIdFile_500(FilePaymentConsentsApiIntegrationTest.java:112)
+
+test_getFilePaymentConsentsConsentIdFile_200  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FilePaymentConsentsApiIntegrationTest.test_getFilePaymentConsentsConsentIdFile_200(FilePaymentConsentsApiIntegrationTest.java:238)
+
+test_getFilePaymentConsentsConsentIdFile_400  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FilePaymentConsentsApiIntegrationTest.test_getFilePaymentConsentsConsentIdFile_400(FilePaymentConsentsApiIntegrationTest.java:196)
+
+test_getFilePaymentConsentsConsentIdFile_401  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FilePaymentConsentsApiIntegrationTest.test_getFilePaymentConsentsConsentIdFile_401(FilePaymentConsentsApiIntegrationTest.java:202)
+
+test_getFilePaymentConsentsConsentIdFile_403  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FilePaymentConsentsApiIntegrationTest.test_getFilePaymentConsentsConsentIdFile_403(FilePaymentConsentsApiIntegrationTest.java:208)
+
+test_getFilePaymentConsentsConsentIdFile_404  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FilePaymentConsentsApiIntegrationTest.test_getFilePaymentConsentsConsentIdFile_404(FilePaymentConsentsApiIntegrationTest.java:214)
+
+test_getFilePaymentConsentsConsentIdFile_405  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FilePaymentConsentsApiIntegrationTest.test_getFilePaymentConsentsConsentIdFile_405(FilePaymentConsentsApiIntegrationTest.java:226)
+
+test_getFilePaymentConsentsConsentIdFile_406  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FilePaymentConsentsApiIntegrationTest.test_getFilePaymentConsentsConsentIdFile_406(FilePaymentConsentsApiIntegrationTest.java:232)
+
+test_getFilePaymentConsentsConsentIdFile_429  Time elapsed: 0.006 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FilePaymentConsentsApiIntegrationTest.test_getFilePaymentConsentsConsentIdFile_429(FilePaymentConsentsApiIntegrationTest.java:244)
+
+test_getFilePaymentConsentsConsentIdFile_500  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FilePaymentConsentsApiIntegrationTest.test_getFilePaymentConsentsConsentIdFile_500(FilePaymentConsentsApiIntegrationTest.java:220)
+
+test_getFilePaymentConsentsConsentId_200  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FilePaymentConsentsApiIntegrationTest.test_getFilePaymentConsentsConsentId_200(FilePaymentConsentsApiIntegrationTest.java:184)
+
+test_getFilePaymentConsentsConsentId_400  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FilePaymentConsentsApiIntegrationTest.test_getFilePaymentConsentsConsentId_400(FilePaymentConsentsApiIntegrationTest.java:142)
+
+test_getFilePaymentConsentsConsentId_401  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FilePaymentConsentsApiIntegrationTest.test_getFilePaymentConsentsConsentId_401(FilePaymentConsentsApiIntegrationTest.java:148)
+
+test_getFilePaymentConsentsConsentId_403  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FilePaymentConsentsApiIntegrationTest.test_getFilePaymentConsentsConsentId_403(FilePaymentConsentsApiIntegrationTest.java:154)
+
+test_getFilePaymentConsentsConsentId_404  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FilePaymentConsentsApiIntegrationTest.test_getFilePaymentConsentsConsentId_404(FilePaymentConsentsApiIntegrationTest.java:160)
+
+test_getFilePaymentConsentsConsentId_405  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FilePaymentConsentsApiIntegrationTest.test_getFilePaymentConsentsConsentId_405(FilePaymentConsentsApiIntegrationTest.java:172)
+
+test_getFilePaymentConsentsConsentId_406  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FilePaymentConsentsApiIntegrationTest.test_getFilePaymentConsentsConsentId_406(FilePaymentConsentsApiIntegrationTest.java:178)
+
+test_getFilePaymentConsentsConsentId_429  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FilePaymentConsentsApiIntegrationTest.test_getFilePaymentConsentsConsentId_429(FilePaymentConsentsApiIntegrationTest.java:190)
+
+test_getFilePaymentConsentsConsentId_500  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FilePaymentConsentsApiIntegrationTest.test_getFilePaymentConsentsConsentId_500(FilePaymentConsentsApiIntegrationTest.java:166)
+
+test_createFilePaymentConsents_201  Time elapsed: 0.016 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.FilePaymentConsentsApiIntegrationTest.test_createFilePaymentConsents_201(FilePaymentConsentsApiIntegrationTest.java:76)
+
+test_createFilePaymentConsents_400  Time elapsed: 0.006 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.FilePaymentConsentsApiIntegrationTest.test_createFilePaymentConsents_400(FilePaymentConsentsApiIntegrationTest.java:34)
+
+test_createFilePaymentConsents_401  Time elapsed: 0.007 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.FilePaymentConsentsApiIntegrationTest.test_createFilePaymentConsents_401(FilePaymentConsentsApiIntegrationTest.java:40)
+
+test_createFilePaymentConsents_403  Time elapsed: 0.007 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.FilePaymentConsentsApiIntegrationTest.test_createFilePaymentConsents_403(FilePaymentConsentsApiIntegrationTest.java:46)
+
+test_createFilePaymentConsents_404  Time elapsed: 0.005 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.FilePaymentConsentsApiIntegrationTest.test_createFilePaymentConsents_404(FilePaymentConsentsApiIntegrationTest.java:52)
+
+test_createFilePaymentConsents_405  Time elapsed: 0.006 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.FilePaymentConsentsApiIntegrationTest.test_createFilePaymentConsents_405(FilePaymentConsentsApiIntegrationTest.java:64)
+
+test_createFilePaymentConsents_406  Time elapsed: 0.01 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.FilePaymentConsentsApiIntegrationTest.test_createFilePaymentConsents_406(FilePaymentConsentsApiIntegrationTest.java:70)
+
+test_createFilePaymentConsents_429  Time elapsed: 0.006 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.FilePaymentConsentsApiIntegrationTest.test_createFilePaymentConsents_429(FilePaymentConsentsApiIntegrationTest.java:82)
+
+test_createFilePaymentConsents_500  Time elapsed: 0.005 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.FilePaymentConsentsApiIntegrationTest.test_createFilePaymentConsents_500(FilePaymentConsentsApiIntegrationTest.java:58)
+

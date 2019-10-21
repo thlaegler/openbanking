@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: com.laegler.openbanking.api.integration.ScheduledPaymentsApiIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 0.008 s <<< FAILURE! - in com.laegler.openbanking.api.integration.ScheduledPaymentsApiIntegrationTest
+test_getScheduledPayments_200  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.ScheduledPaymentsApiIntegrationTest.test_getScheduledPayments_200(ScheduledPaymentsApiIntegrationTest.java:75)
+
+test_getScheduledPayments_400  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.ScheduledPaymentsApiIntegrationTest.test_getScheduledPayments_400(ScheduledPaymentsApiIntegrationTest.java:33)
+
+test_getScheduledPayments_401  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.ScheduledPaymentsApiIntegrationTest.test_getScheduledPayments_401(ScheduledPaymentsApiIntegrationTest.java:39)
+
+test_getScheduledPayments_403  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.ScheduledPaymentsApiIntegrationTest.test_getScheduledPayments_403(ScheduledPaymentsApiIntegrationTest.java:45)
+
+test_getScheduledPayments_404  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.ScheduledPaymentsApiIntegrationTest.test_getScheduledPayments_404(ScheduledPaymentsApiIntegrationTest.java:51)
+
+test_getScheduledPayments_405  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.ScheduledPaymentsApiIntegrationTest.test_getScheduledPayments_405(ScheduledPaymentsApiIntegrationTest.java:63)
+
+test_getScheduledPayments_406  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.ScheduledPaymentsApiIntegrationTest.test_getScheduledPayments_406(ScheduledPaymentsApiIntegrationTest.java:69)
+
+test_getScheduledPayments_429  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.ScheduledPaymentsApiIntegrationTest.test_getScheduledPayments_429(ScheduledPaymentsApiIntegrationTest.java:81)
+
+test_getScheduledPayments_500  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.ScheduledPaymentsApiIntegrationTest.test_getScheduledPayments_500(ScheduledPaymentsApiIntegrationTest.java:57)
+

@@ -1,0 +1,112 @@
+-------------------------------------------------------------------------------
+Test set: com.laegler.openbanking.api.integration.InternationalScheduledPaymentConsentsApiIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 27, Failures: 0, Errors: 27, Skipped: 0, Time elapsed: 0.025 s <<< FAILURE! - in com.laegler.openbanking.api.integration.InternationalScheduledPaymentConsentsApiIntegrationTest
+test_getInternationalScheduledPaymentConsentsConsentIdFundsConfirmation_200  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentConsentsApiIntegrationTest.test_getInternationalScheduledPaymentConsentsConsentIdFundsConfirmation_200(InternationalScheduledPaymentConsentsApiIntegrationTest.java:185)
+
+test_getInternationalScheduledPaymentConsentsConsentIdFundsConfirmation_400  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentConsentsApiIntegrationTest.test_getInternationalScheduledPaymentConsentsConsentIdFundsConfirmation_400(InternationalScheduledPaymentConsentsApiIntegrationTest.java:143)
+
+test_getInternationalScheduledPaymentConsentsConsentIdFundsConfirmation_401  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentConsentsApiIntegrationTest.test_getInternationalScheduledPaymentConsentsConsentIdFundsConfirmation_401(InternationalScheduledPaymentConsentsApiIntegrationTest.java:149)
+
+test_getInternationalScheduledPaymentConsentsConsentIdFundsConfirmation_403  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentConsentsApiIntegrationTest.test_getInternationalScheduledPaymentConsentsConsentIdFundsConfirmation_403(InternationalScheduledPaymentConsentsApiIntegrationTest.java:155)
+
+test_getInternationalScheduledPaymentConsentsConsentIdFundsConfirmation_404  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentConsentsApiIntegrationTest.test_getInternationalScheduledPaymentConsentsConsentIdFundsConfirmation_404(InternationalScheduledPaymentConsentsApiIntegrationTest.java:161)
+
+test_getInternationalScheduledPaymentConsentsConsentIdFundsConfirmation_405  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentConsentsApiIntegrationTest.test_getInternationalScheduledPaymentConsentsConsentIdFundsConfirmation_405(InternationalScheduledPaymentConsentsApiIntegrationTest.java:173)
+
+test_getInternationalScheduledPaymentConsentsConsentIdFundsConfirmation_406  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentConsentsApiIntegrationTest.test_getInternationalScheduledPaymentConsentsConsentIdFundsConfirmation_406(InternationalScheduledPaymentConsentsApiIntegrationTest.java:179)
+
+test_getInternationalScheduledPaymentConsentsConsentIdFundsConfirmation_429  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentConsentsApiIntegrationTest.test_getInternationalScheduledPaymentConsentsConsentIdFundsConfirmation_429(InternationalScheduledPaymentConsentsApiIntegrationTest.java:191)
+
+test_getInternationalScheduledPaymentConsentsConsentIdFundsConfirmation_500  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentConsentsApiIntegrationTest.test_getInternationalScheduledPaymentConsentsConsentIdFundsConfirmation_500(InternationalScheduledPaymentConsentsApiIntegrationTest.java:167)
+
+test_createInternationalScheduledPaymentConsents_201  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentConsentsApiIntegrationTest.test_createInternationalScheduledPaymentConsents_201(InternationalScheduledPaymentConsentsApiIntegrationTest.java:77)
+
+test_createInternationalScheduledPaymentConsents_400  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentConsentsApiIntegrationTest.test_createInternationalScheduledPaymentConsents_400(InternationalScheduledPaymentConsentsApiIntegrationTest.java:35)
+
+test_createInternationalScheduledPaymentConsents_401  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentConsentsApiIntegrationTest.test_createInternationalScheduledPaymentConsents_401(InternationalScheduledPaymentConsentsApiIntegrationTest.java:41)
+
+test_createInternationalScheduledPaymentConsents_403  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentConsentsApiIntegrationTest.test_createInternationalScheduledPaymentConsents_403(InternationalScheduledPaymentConsentsApiIntegrationTest.java:47)
+
+test_createInternationalScheduledPaymentConsents_404  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentConsentsApiIntegrationTest.test_createInternationalScheduledPaymentConsents_404(InternationalScheduledPaymentConsentsApiIntegrationTest.java:53)
+
+test_createInternationalScheduledPaymentConsents_405  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentConsentsApiIntegrationTest.test_createInternationalScheduledPaymentConsents_405(InternationalScheduledPaymentConsentsApiIntegrationTest.java:65)
+
+test_createInternationalScheduledPaymentConsents_406  Time elapsed: 0.003 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentConsentsApiIntegrationTest.test_createInternationalScheduledPaymentConsents_406(InternationalScheduledPaymentConsentsApiIntegrationTest.java:71)
+
+test_createInternationalScheduledPaymentConsents_429  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentConsentsApiIntegrationTest.test_createInternationalScheduledPaymentConsents_429(InternationalScheduledPaymentConsentsApiIntegrationTest.java:83)
+
+test_createInternationalScheduledPaymentConsents_500  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentConsentsApiIntegrationTest.test_createInternationalScheduledPaymentConsents_500(InternationalScheduledPaymentConsentsApiIntegrationTest.java:59)
+
+test_getInternationalScheduledPaymentConsentsConsentId_200  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentConsentsApiIntegrationTest.test_getInternationalScheduledPaymentConsentsConsentId_200(InternationalScheduledPaymentConsentsApiIntegrationTest.java:131)
+
+test_getInternationalScheduledPaymentConsentsConsentId_400  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentConsentsApiIntegrationTest.test_getInternationalScheduledPaymentConsentsConsentId_400(InternationalScheduledPaymentConsentsApiIntegrationTest.java:89)
+
+test_getInternationalScheduledPaymentConsentsConsentId_401  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentConsentsApiIntegrationTest.test_getInternationalScheduledPaymentConsentsConsentId_401(InternationalScheduledPaymentConsentsApiIntegrationTest.java:95)
+
+test_getInternationalScheduledPaymentConsentsConsentId_403  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentConsentsApiIntegrationTest.test_getInternationalScheduledPaymentConsentsConsentId_403(InternationalScheduledPaymentConsentsApiIntegrationTest.java:101)
+
+test_getInternationalScheduledPaymentConsentsConsentId_404  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentConsentsApiIntegrationTest.test_getInternationalScheduledPaymentConsentsConsentId_404(InternationalScheduledPaymentConsentsApiIntegrationTest.java:107)
+
+test_getInternationalScheduledPaymentConsentsConsentId_405  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentConsentsApiIntegrationTest.test_getInternationalScheduledPaymentConsentsConsentId_405(InternationalScheduledPaymentConsentsApiIntegrationTest.java:119)
+
+test_getInternationalScheduledPaymentConsentsConsentId_406  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentConsentsApiIntegrationTest.test_getInternationalScheduledPaymentConsentsConsentId_406(InternationalScheduledPaymentConsentsApiIntegrationTest.java:125)
+
+test_getInternationalScheduledPaymentConsentsConsentId_429  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentConsentsApiIntegrationTest.test_getInternationalScheduledPaymentConsentsConsentId_429(InternationalScheduledPaymentConsentsApiIntegrationTest.java:137)
+
+test_getInternationalScheduledPaymentConsentsConsentId_500  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentConsentsApiIntegrationTest.test_getInternationalScheduledPaymentConsentsConsentId_500(InternationalScheduledPaymentConsentsApiIntegrationTest.java:113)
+

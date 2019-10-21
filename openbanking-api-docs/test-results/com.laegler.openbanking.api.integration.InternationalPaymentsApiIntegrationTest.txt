@@ -1,0 +1,112 @@
+-------------------------------------------------------------------------------
+Test set: com.laegler.openbanking.api.integration.InternationalPaymentsApiIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 27, Failures: 0, Errors: 27, Skipped: 0, Time elapsed: 0.036 s <<< FAILURE! - in com.laegler.openbanking.api.integration.InternationalPaymentsApiIntegrationTest
+test_getInternationalPaymentsInternationalPaymentId_200  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalPaymentsApiIntegrationTest.test_getInternationalPaymentsInternationalPaymentId_200(InternationalPaymentsApiIntegrationTest.java:131)
+
+test_getInternationalPaymentsInternationalPaymentId_400  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalPaymentsApiIntegrationTest.test_getInternationalPaymentsInternationalPaymentId_400(InternationalPaymentsApiIntegrationTest.java:89)
+
+test_getInternationalPaymentsInternationalPaymentId_401  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalPaymentsApiIntegrationTest.test_getInternationalPaymentsInternationalPaymentId_401(InternationalPaymentsApiIntegrationTest.java:95)
+
+test_getInternationalPaymentsInternationalPaymentId_403  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalPaymentsApiIntegrationTest.test_getInternationalPaymentsInternationalPaymentId_403(InternationalPaymentsApiIntegrationTest.java:101)
+
+test_getInternationalPaymentsInternationalPaymentId_404  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalPaymentsApiIntegrationTest.test_getInternationalPaymentsInternationalPaymentId_404(InternationalPaymentsApiIntegrationTest.java:107)
+
+test_getInternationalPaymentsInternationalPaymentId_405  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalPaymentsApiIntegrationTest.test_getInternationalPaymentsInternationalPaymentId_405(InternationalPaymentsApiIntegrationTest.java:119)
+
+test_getInternationalPaymentsInternationalPaymentId_406  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalPaymentsApiIntegrationTest.test_getInternationalPaymentsInternationalPaymentId_406(InternationalPaymentsApiIntegrationTest.java:125)
+
+test_getInternationalPaymentsInternationalPaymentId_429  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalPaymentsApiIntegrationTest.test_getInternationalPaymentsInternationalPaymentId_429(InternationalPaymentsApiIntegrationTest.java:137)
+
+test_getInternationalPaymentsInternationalPaymentId_500  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalPaymentsApiIntegrationTest.test_getInternationalPaymentsInternationalPaymentId_500(InternationalPaymentsApiIntegrationTest.java:113)
+
+test_getInternationalPaymentsInternationalPaymentIdPaymentDetails_200  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalPaymentsApiIntegrationTest.test_getInternationalPaymentsInternationalPaymentIdPaymentDetails_200(InternationalPaymentsApiIntegrationTest.java:185)
+
+test_getInternationalPaymentsInternationalPaymentIdPaymentDetails_400  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalPaymentsApiIntegrationTest.test_getInternationalPaymentsInternationalPaymentIdPaymentDetails_400(InternationalPaymentsApiIntegrationTest.java:143)
+
+test_getInternationalPaymentsInternationalPaymentIdPaymentDetails_401  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalPaymentsApiIntegrationTest.test_getInternationalPaymentsInternationalPaymentIdPaymentDetails_401(InternationalPaymentsApiIntegrationTest.java:149)
+
+test_getInternationalPaymentsInternationalPaymentIdPaymentDetails_403  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalPaymentsApiIntegrationTest.test_getInternationalPaymentsInternationalPaymentIdPaymentDetails_403(InternationalPaymentsApiIntegrationTest.java:155)
+
+test_getInternationalPaymentsInternationalPaymentIdPaymentDetails_404  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalPaymentsApiIntegrationTest.test_getInternationalPaymentsInternationalPaymentIdPaymentDetails_404(InternationalPaymentsApiIntegrationTest.java:161)
+
+test_getInternationalPaymentsInternationalPaymentIdPaymentDetails_405  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalPaymentsApiIntegrationTest.test_getInternationalPaymentsInternationalPaymentIdPaymentDetails_405(InternationalPaymentsApiIntegrationTest.java:173)
+
+test_getInternationalPaymentsInternationalPaymentIdPaymentDetails_406  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalPaymentsApiIntegrationTest.test_getInternationalPaymentsInternationalPaymentIdPaymentDetails_406(InternationalPaymentsApiIntegrationTest.java:179)
+
+test_getInternationalPaymentsInternationalPaymentIdPaymentDetails_429  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalPaymentsApiIntegrationTest.test_getInternationalPaymentsInternationalPaymentIdPaymentDetails_429(InternationalPaymentsApiIntegrationTest.java:191)
+
+test_getInternationalPaymentsInternationalPaymentIdPaymentDetails_500  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalPaymentsApiIntegrationTest.test_getInternationalPaymentsInternationalPaymentIdPaymentDetails_500(InternationalPaymentsApiIntegrationTest.java:167)
+
+test_createInternationalPayments_201  Time elapsed: 0.003 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalPaymentsApiIntegrationTest.test_createInternationalPayments_201(InternationalPaymentsApiIntegrationTest.java:77)
+
+test_createInternationalPayments_400  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalPaymentsApiIntegrationTest.test_createInternationalPayments_400(InternationalPaymentsApiIntegrationTest.java:35)
+
+test_createInternationalPayments_401  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalPaymentsApiIntegrationTest.test_createInternationalPayments_401(InternationalPaymentsApiIntegrationTest.java:41)
+
+test_createInternationalPayments_403  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalPaymentsApiIntegrationTest.test_createInternationalPayments_403(InternationalPaymentsApiIntegrationTest.java:47)
+
+test_createInternationalPayments_404  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalPaymentsApiIntegrationTest.test_createInternationalPayments_404(InternationalPaymentsApiIntegrationTest.java:53)
+
+test_createInternationalPayments_405  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalPaymentsApiIntegrationTest.test_createInternationalPayments_405(InternationalPaymentsApiIntegrationTest.java:65)
+
+test_createInternationalPayments_406  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalPaymentsApiIntegrationTest.test_createInternationalPayments_406(InternationalPaymentsApiIntegrationTest.java:71)
+
+test_createInternationalPayments_429  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalPaymentsApiIntegrationTest.test_createInternationalPayments_429(InternationalPaymentsApiIntegrationTest.java:83)
+
+test_createInternationalPayments_500  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalPaymentsApiIntegrationTest.test_createInternationalPayments_500(InternationalPaymentsApiIntegrationTest.java:59)
+

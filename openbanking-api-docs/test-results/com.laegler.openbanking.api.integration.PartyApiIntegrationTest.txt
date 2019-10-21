@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: com.laegler.openbanking.api.integration.PartyApiIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 0.02 s <<< FAILURE! - in com.laegler.openbanking.api.integration.PartyApiIntegrationTest
+test_getParty_200  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.PartyApiIntegrationTest.test_getParty_200(PartyApiIntegrationTest.java:75)
+
+test_getParty_400  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.PartyApiIntegrationTest.test_getParty_400(PartyApiIntegrationTest.java:33)
+
+test_getParty_401  Time elapsed: 0.003 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.PartyApiIntegrationTest.test_getParty_401(PartyApiIntegrationTest.java:39)
+
+test_getParty_403  Time elapsed: 0.003 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.PartyApiIntegrationTest.test_getParty_403(PartyApiIntegrationTest.java:45)
+
+test_getParty_404  Time elapsed: 0.003 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.PartyApiIntegrationTest.test_getParty_404(PartyApiIntegrationTest.java:51)
+
+test_getParty_405  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.PartyApiIntegrationTest.test_getParty_405(PartyApiIntegrationTest.java:63)
+
+test_getParty_406  Time elapsed: 0.003 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.PartyApiIntegrationTest.test_getParty_406(PartyApiIntegrationTest.java:69)
+
+test_getParty_429  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.PartyApiIntegrationTest.test_getParty_429(PartyApiIntegrationTest.java:81)
+
+test_getParty_500  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.PartyApiIntegrationTest.test_getParty_500(PartyApiIntegrationTest.java:57)
+

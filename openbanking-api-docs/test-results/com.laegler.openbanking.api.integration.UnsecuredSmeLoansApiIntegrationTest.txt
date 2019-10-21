@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: com.laegler.openbanking.api.integration.UnsecuredSmeLoansApiIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 0.003 s <<< FAILURE! - in com.laegler.openbanking.api.integration.UnsecuredSmeLoansApiIntegrationTest
+test_unsecuredSmeLoansGet_200  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.UnsecuredSmeLoansApiIntegrationTest.test_unsecuredSmeLoansGet_200(UnsecuredSmeLoansApiIntegrationTest.java:56)
+
+test_unsecuredSmeLoansGet_400  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.UnsecuredSmeLoansApiIntegrationTest.test_unsecuredSmeLoansGet_400(UnsecuredSmeLoansApiIntegrationTest.java:38)
+
+test_unsecuredSmeLoansGet_408  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.UnsecuredSmeLoansApiIntegrationTest.test_unsecuredSmeLoansGet_408(UnsecuredSmeLoansApiIntegrationTest.java:62)
+
+test_unsecuredSmeLoansGet_429  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.UnsecuredSmeLoansApiIntegrationTest.test_unsecuredSmeLoansGet_429(UnsecuredSmeLoansApiIntegrationTest.java:68)
+
+test_unsecuredSmeLoansGet_500  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.UnsecuredSmeLoansApiIntegrationTest.test_unsecuredSmeLoansGet_500(UnsecuredSmeLoansApiIntegrationTest.java:44)
+
+test_unsecuredSmeLoansGet_503  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.UnsecuredSmeLoansApiIntegrationTest.test_unsecuredSmeLoansGet_503(UnsecuredSmeLoansApiIntegrationTest.java:50)
+

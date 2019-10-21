@@ -26,7 +26,7 @@ import org.junit.Ignore;
 public class EventNotificationsApiIntegrationTest extends AbstractIntegrationTest {
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 202")
+	// @Ignore("TODO: Define request to get HTTP status code 202")
 	public void test_createEventNotification_202() {
 		given().spec(spec).when().post("/event-notifications/event-notifications").then().assertThat().statusCode(202);
 	}

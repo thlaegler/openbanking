@@ -1,0 +1,148 @@
+-------------------------------------------------------------------------------
+Test set: com.laegler.openbanking.api.integration.EventSubscriptionsApiIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 36, Failures: 0, Errors: 36, Skipped: 0, Time elapsed: 0.048 s <<< FAILURE! - in com.laegler.openbanking.api.integration.EventSubscriptionsApiIntegrationTest
+test_changeEventSubscriptionsEventSubscriptionId_200  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: EventSubscriptionId.
+	at com.laegler.openbanking.api.integration.EventSubscriptionsApiIntegrationTest.test_changeEventSubscriptionsEventSubscriptionId_200(EventSubscriptionsApiIntegrationTest.java:77)
+
+test_changeEventSubscriptionsEventSubscriptionId_400  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: EventSubscriptionId.
+	at com.laegler.openbanking.api.integration.EventSubscriptionsApiIntegrationTest.test_changeEventSubscriptionsEventSubscriptionId_400(EventSubscriptionsApiIntegrationTest.java:35)
+
+test_changeEventSubscriptionsEventSubscriptionId_401  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: EventSubscriptionId.
+	at com.laegler.openbanking.api.integration.EventSubscriptionsApiIntegrationTest.test_changeEventSubscriptionsEventSubscriptionId_401(EventSubscriptionsApiIntegrationTest.java:41)
+
+test_changeEventSubscriptionsEventSubscriptionId_403  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: EventSubscriptionId.
+	at com.laegler.openbanking.api.integration.EventSubscriptionsApiIntegrationTest.test_changeEventSubscriptionsEventSubscriptionId_403(EventSubscriptionsApiIntegrationTest.java:47)
+
+test_changeEventSubscriptionsEventSubscriptionId_404  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: EventSubscriptionId.
+	at com.laegler.openbanking.api.integration.EventSubscriptionsApiIntegrationTest.test_changeEventSubscriptionsEventSubscriptionId_404(EventSubscriptionsApiIntegrationTest.java:53)
+
+test_changeEventSubscriptionsEventSubscriptionId_405  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: EventSubscriptionId.
+	at com.laegler.openbanking.api.integration.EventSubscriptionsApiIntegrationTest.test_changeEventSubscriptionsEventSubscriptionId_405(EventSubscriptionsApiIntegrationTest.java:65)
+
+test_changeEventSubscriptionsEventSubscriptionId_406  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: EventSubscriptionId.
+	at com.laegler.openbanking.api.integration.EventSubscriptionsApiIntegrationTest.test_changeEventSubscriptionsEventSubscriptionId_406(EventSubscriptionsApiIntegrationTest.java:71)
+
+test_changeEventSubscriptionsEventSubscriptionId_429  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: EventSubscriptionId.
+	at com.laegler.openbanking.api.integration.EventSubscriptionsApiIntegrationTest.test_changeEventSubscriptionsEventSubscriptionId_429(EventSubscriptionsApiIntegrationTest.java:83)
+
+test_changeEventSubscriptionsEventSubscriptionId_500  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: EventSubscriptionId.
+	at com.laegler.openbanking.api.integration.EventSubscriptionsApiIntegrationTest.test_changeEventSubscriptionsEventSubscriptionId_500(EventSubscriptionsApiIntegrationTest.java:59)
+
+test_getEventSubscriptions_200  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.EventSubscriptionsApiIntegrationTest.test_getEventSubscriptions_200(EventSubscriptionsApiIntegrationTest.java:239)
+
+test_getEventSubscriptions_400  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.EventSubscriptionsApiIntegrationTest.test_getEventSubscriptions_400(EventSubscriptionsApiIntegrationTest.java:197)
+
+test_getEventSubscriptions_401  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.EventSubscriptionsApiIntegrationTest.test_getEventSubscriptions_401(EventSubscriptionsApiIntegrationTest.java:203)
+
+test_getEventSubscriptions_403  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.EventSubscriptionsApiIntegrationTest.test_getEventSubscriptions_403(EventSubscriptionsApiIntegrationTest.java:209)
+
+test_getEventSubscriptions_404  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.EventSubscriptionsApiIntegrationTest.test_getEventSubscriptions_404(EventSubscriptionsApiIntegrationTest.java:215)
+
+test_getEventSubscriptions_405  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.EventSubscriptionsApiIntegrationTest.test_getEventSubscriptions_405(EventSubscriptionsApiIntegrationTest.java:227)
+
+test_getEventSubscriptions_406  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.EventSubscriptionsApiIntegrationTest.test_getEventSubscriptions_406(EventSubscriptionsApiIntegrationTest.java:233)
+
+test_getEventSubscriptions_429  Time elapsed: 0.003 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.EventSubscriptionsApiIntegrationTest.test_getEventSubscriptions_429(EventSubscriptionsApiIntegrationTest.java:245)
+
+test_getEventSubscriptions_500  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.EventSubscriptionsApiIntegrationTest.test_getEventSubscriptions_500(EventSubscriptionsApiIntegrationTest.java:221)
+
+test_createEventSubscriptions_201  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.EventSubscriptionsApiIntegrationTest.test_createEventSubscriptions_201(EventSubscriptionsApiIntegrationTest.java:131)
+
+test_createEventSubscriptions_400  Time elapsed: 0.003 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.EventSubscriptionsApiIntegrationTest.test_createEventSubscriptions_400(EventSubscriptionsApiIntegrationTest.java:89)
+
+test_createEventSubscriptions_401  Time elapsed: 0.009 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.EventSubscriptionsApiIntegrationTest.test_createEventSubscriptions_401(EventSubscriptionsApiIntegrationTest.java:95)
+
+test_createEventSubscriptions_403  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.EventSubscriptionsApiIntegrationTest.test_createEventSubscriptions_403(EventSubscriptionsApiIntegrationTest.java:101)
+
+test_createEventSubscriptions_404  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.EventSubscriptionsApiIntegrationTest.test_createEventSubscriptions_404(EventSubscriptionsApiIntegrationTest.java:107)
+
+test_createEventSubscriptions_405  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.EventSubscriptionsApiIntegrationTest.test_createEventSubscriptions_405(EventSubscriptionsApiIntegrationTest.java:119)
+
+test_createEventSubscriptions_406  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.EventSubscriptionsApiIntegrationTest.test_createEventSubscriptions_406(EventSubscriptionsApiIntegrationTest.java:125)
+
+test_createEventSubscriptions_429  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.EventSubscriptionsApiIntegrationTest.test_createEventSubscriptions_429(EventSubscriptionsApiIntegrationTest.java:137)
+
+test_createEventSubscriptions_500  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.EventSubscriptionsApiIntegrationTest.test_createEventSubscriptions_500(EventSubscriptionsApiIntegrationTest.java:113)
+
+test_deleteEventSubscriptionsEventSubscriptionId_204  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: EventSubscriptionId.
+	at com.laegler.openbanking.api.integration.EventSubscriptionsApiIntegrationTest.test_deleteEventSubscriptionsEventSubscriptionId_204(EventSubscriptionsApiIntegrationTest.java:185)
+
+test_deleteEventSubscriptionsEventSubscriptionId_400  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: EventSubscriptionId.
+	at com.laegler.openbanking.api.integration.EventSubscriptionsApiIntegrationTest.test_deleteEventSubscriptionsEventSubscriptionId_400(EventSubscriptionsApiIntegrationTest.java:143)
+
+test_deleteEventSubscriptionsEventSubscriptionId_401  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: EventSubscriptionId.
+	at com.laegler.openbanking.api.integration.EventSubscriptionsApiIntegrationTest.test_deleteEventSubscriptionsEventSubscriptionId_401(EventSubscriptionsApiIntegrationTest.java:149)
+
+test_deleteEventSubscriptionsEventSubscriptionId_403  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: EventSubscriptionId.
+	at com.laegler.openbanking.api.integration.EventSubscriptionsApiIntegrationTest.test_deleteEventSubscriptionsEventSubscriptionId_403(EventSubscriptionsApiIntegrationTest.java:155)
+
+test_deleteEventSubscriptionsEventSubscriptionId_404  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: EventSubscriptionId.
+	at com.laegler.openbanking.api.integration.EventSubscriptionsApiIntegrationTest.test_deleteEventSubscriptionsEventSubscriptionId_404(EventSubscriptionsApiIntegrationTest.java:161)
+
+test_deleteEventSubscriptionsEventSubscriptionId_405  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: EventSubscriptionId.
+	at com.laegler.openbanking.api.integration.EventSubscriptionsApiIntegrationTest.test_deleteEventSubscriptionsEventSubscriptionId_405(EventSubscriptionsApiIntegrationTest.java:173)
+
+test_deleteEventSubscriptionsEventSubscriptionId_406  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: EventSubscriptionId.
+	at com.laegler.openbanking.api.integration.EventSubscriptionsApiIntegrationTest.test_deleteEventSubscriptionsEventSubscriptionId_406(EventSubscriptionsApiIntegrationTest.java:179)
+
+test_deleteEventSubscriptionsEventSubscriptionId_429  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: EventSubscriptionId.
+	at com.laegler.openbanking.api.integration.EventSubscriptionsApiIntegrationTest.test_deleteEventSubscriptionsEventSubscriptionId_429(EventSubscriptionsApiIntegrationTest.java:191)
+
+test_deleteEventSubscriptionsEventSubscriptionId_500  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: EventSubscriptionId.
+	at com.laegler.openbanking.api.integration.EventSubscriptionsApiIntegrationTest.test_deleteEventSubscriptionsEventSubscriptionId_500(EventSubscriptionsApiIntegrationTest.java:167)
+

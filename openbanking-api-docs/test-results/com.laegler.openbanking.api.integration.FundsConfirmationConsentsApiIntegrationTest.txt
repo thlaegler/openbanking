@@ -1,0 +1,112 @@
+-------------------------------------------------------------------------------
+Test set: com.laegler.openbanking.api.integration.FundsConfirmationConsentsApiIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 27, Failures: 0, Errors: 27, Skipped: 0, Time elapsed: 0.031 s <<< FAILURE! - in com.laegler.openbanking.api.integration.FundsConfirmationConsentsApiIntegrationTest
+test_createFundsConfirmationConsents_201  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.FundsConfirmationConsentsApiIntegrationTest.test_createFundsConfirmationConsents_201(FundsConfirmationConsentsApiIntegrationTest.java:76)
+
+test_createFundsConfirmationConsents_400  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.FundsConfirmationConsentsApiIntegrationTest.test_createFundsConfirmationConsents_400(FundsConfirmationConsentsApiIntegrationTest.java:34)
+
+test_createFundsConfirmationConsents_401  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.FundsConfirmationConsentsApiIntegrationTest.test_createFundsConfirmationConsents_401(FundsConfirmationConsentsApiIntegrationTest.java:40)
+
+test_createFundsConfirmationConsents_403  Time elapsed: 0.003 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.FundsConfirmationConsentsApiIntegrationTest.test_createFundsConfirmationConsents_403(FundsConfirmationConsentsApiIntegrationTest.java:46)
+
+test_createFundsConfirmationConsents_404  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.FundsConfirmationConsentsApiIntegrationTest.test_createFundsConfirmationConsents_404(FundsConfirmationConsentsApiIntegrationTest.java:52)
+
+test_createFundsConfirmationConsents_405  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.FundsConfirmationConsentsApiIntegrationTest.test_createFundsConfirmationConsents_405(FundsConfirmationConsentsApiIntegrationTest.java:64)
+
+test_createFundsConfirmationConsents_406  Time elapsed: 0.003 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.FundsConfirmationConsentsApiIntegrationTest.test_createFundsConfirmationConsents_406(FundsConfirmationConsentsApiIntegrationTest.java:70)
+
+test_createFundsConfirmationConsents_429  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.FundsConfirmationConsentsApiIntegrationTest.test_createFundsConfirmationConsents_429(FundsConfirmationConsentsApiIntegrationTest.java:82)
+
+test_createFundsConfirmationConsents_500  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.FundsConfirmationConsentsApiIntegrationTest.test_createFundsConfirmationConsents_500(FundsConfirmationConsentsApiIntegrationTest.java:58)
+
+test_getFundsConfirmationConsentsConsentId_200  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FundsConfirmationConsentsApiIntegrationTest.test_getFundsConfirmationConsentsConsentId_200(FundsConfirmationConsentsApiIntegrationTest.java:184)
+
+test_getFundsConfirmationConsentsConsentId_400  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FundsConfirmationConsentsApiIntegrationTest.test_getFundsConfirmationConsentsConsentId_400(FundsConfirmationConsentsApiIntegrationTest.java:142)
+
+test_getFundsConfirmationConsentsConsentId_401  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FundsConfirmationConsentsApiIntegrationTest.test_getFundsConfirmationConsentsConsentId_401(FundsConfirmationConsentsApiIntegrationTest.java:148)
+
+test_getFundsConfirmationConsentsConsentId_403  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FundsConfirmationConsentsApiIntegrationTest.test_getFundsConfirmationConsentsConsentId_403(FundsConfirmationConsentsApiIntegrationTest.java:154)
+
+test_getFundsConfirmationConsentsConsentId_404  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FundsConfirmationConsentsApiIntegrationTest.test_getFundsConfirmationConsentsConsentId_404(FundsConfirmationConsentsApiIntegrationTest.java:160)
+
+test_getFundsConfirmationConsentsConsentId_405  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FundsConfirmationConsentsApiIntegrationTest.test_getFundsConfirmationConsentsConsentId_405(FundsConfirmationConsentsApiIntegrationTest.java:172)
+
+test_getFundsConfirmationConsentsConsentId_406  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FundsConfirmationConsentsApiIntegrationTest.test_getFundsConfirmationConsentsConsentId_406(FundsConfirmationConsentsApiIntegrationTest.java:178)
+
+test_getFundsConfirmationConsentsConsentId_429  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FundsConfirmationConsentsApiIntegrationTest.test_getFundsConfirmationConsentsConsentId_429(FundsConfirmationConsentsApiIntegrationTest.java:190)
+
+test_getFundsConfirmationConsentsConsentId_500  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FundsConfirmationConsentsApiIntegrationTest.test_getFundsConfirmationConsentsConsentId_500(FundsConfirmationConsentsApiIntegrationTest.java:166)
+
+test_deleteFundsConfirmationConsentsConsentId_204  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FundsConfirmationConsentsApiIntegrationTest.test_deleteFundsConfirmationConsentsConsentId_204(FundsConfirmationConsentsApiIntegrationTest.java:130)
+
+test_deleteFundsConfirmationConsentsConsentId_400  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FundsConfirmationConsentsApiIntegrationTest.test_deleteFundsConfirmationConsentsConsentId_400(FundsConfirmationConsentsApiIntegrationTest.java:88)
+
+test_deleteFundsConfirmationConsentsConsentId_401  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FundsConfirmationConsentsApiIntegrationTest.test_deleteFundsConfirmationConsentsConsentId_401(FundsConfirmationConsentsApiIntegrationTest.java:94)
+
+test_deleteFundsConfirmationConsentsConsentId_403  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FundsConfirmationConsentsApiIntegrationTest.test_deleteFundsConfirmationConsentsConsentId_403(FundsConfirmationConsentsApiIntegrationTest.java:100)
+
+test_deleteFundsConfirmationConsentsConsentId_404  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FundsConfirmationConsentsApiIntegrationTest.test_deleteFundsConfirmationConsentsConsentId_404(FundsConfirmationConsentsApiIntegrationTest.java:106)
+
+test_deleteFundsConfirmationConsentsConsentId_405  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FundsConfirmationConsentsApiIntegrationTest.test_deleteFundsConfirmationConsentsConsentId_405(FundsConfirmationConsentsApiIntegrationTest.java:118)
+
+test_deleteFundsConfirmationConsentsConsentId_406  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FundsConfirmationConsentsApiIntegrationTest.test_deleteFundsConfirmationConsentsConsentId_406(FundsConfirmationConsentsApiIntegrationTest.java:124)
+
+test_deleteFundsConfirmationConsentsConsentId_429  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FundsConfirmationConsentsApiIntegrationTest.test_deleteFundsConfirmationConsentsConsentId_429(FundsConfirmationConsentsApiIntegrationTest.java:136)
+
+test_deleteFundsConfirmationConsentsConsentId_500  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.FundsConfirmationConsentsApiIntegrationTest.test_deleteFundsConfirmationConsentsConsentId_500(FundsConfirmationConsentsApiIntegrationTest.java:112)
+

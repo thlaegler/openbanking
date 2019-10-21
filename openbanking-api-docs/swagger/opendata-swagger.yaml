@@ -12,7 +12,7 @@ info:
     name: MIT Licence
     url: http://github.org/thlaegler/openbanking-api/LICENCE
 host: localhost:8080
-basePath: /open-banking/v2.3
+basePath: /api/v1
 schemes:
   - https
 produces:

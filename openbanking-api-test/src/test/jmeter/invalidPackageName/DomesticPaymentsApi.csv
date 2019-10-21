@@ -1,2 +1,0 @@
-testCase,httpStatusCode,obWriteDomestic2Param,authorization,xIdempotencyKey,xJwsSignature,xFapiAuthDate,xFapiCustomerIpAddress,xFapiInteractionId,domesticPaymentId,authorization,xFapiAuthDate,xFapiCustomerIpAddress,xFapiInteractionId,domesticPaymentId,authorization,xFapiAuthDate,xFapiCustomerIpAddress,xFapiInteractionId
-Success,200,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

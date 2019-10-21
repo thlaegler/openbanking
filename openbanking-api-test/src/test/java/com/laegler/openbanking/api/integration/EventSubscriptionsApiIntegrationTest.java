@@ -30,217 +30,217 @@ import org.junit.Ignore;
 public class EventSubscriptionsApiIntegrationTest extends AbstractIntegrationTest {
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 400")
+	// @Ignore("TODO: Define request to get HTTP status code 400")
 	public void test_changeEventSubscriptionsEventSubscriptionId_400() {
 		given().spec(spec).when().put("/event-subscriptions/event-subscriptions/{EventSubscriptionId}").then().assertThat().statusCode(400);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 401")
+	// @Ignore("TODO: Define request to get HTTP status code 401")
 	public void test_changeEventSubscriptionsEventSubscriptionId_401() {
 		given().spec(spec).when().put("/event-subscriptions/event-subscriptions/{EventSubscriptionId}").then().assertThat().statusCode(401);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 403")
+	// @Ignore("TODO: Define request to get HTTP status code 403")
 	public void test_changeEventSubscriptionsEventSubscriptionId_403() {
 		given().spec(spec).when().put("/event-subscriptions/event-subscriptions/{EventSubscriptionId}").then().assertThat().statusCode(403);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 404")
+	// @Ignore("TODO: Define request to get HTTP status code 404")
 	public void test_changeEventSubscriptionsEventSubscriptionId_404() {
 		given().spec(spec).when().put("/event-subscriptions/event-subscriptions/{EventSubscriptionId}").then().assertThat().statusCode(404);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 500")
+	// @Ignore("TODO: Define request to get HTTP status code 500")
 	public void test_changeEventSubscriptionsEventSubscriptionId_500() {
 		given().spec(spec).when().put("/event-subscriptions/event-subscriptions/{EventSubscriptionId}").then().assertThat().statusCode(500);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 405")
+	// @Ignore("TODO: Define request to get HTTP status code 405")
 	public void test_changeEventSubscriptionsEventSubscriptionId_405() {
 		given().spec(spec).when().put("/event-subscriptions/event-subscriptions/{EventSubscriptionId}").then().assertThat().statusCode(405);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 406")
+	// @Ignore("TODO: Define request to get HTTP status code 406")
 	public void test_changeEventSubscriptionsEventSubscriptionId_406() {
 		given().spec(spec).when().put("/event-subscriptions/event-subscriptions/{EventSubscriptionId}").then().assertThat().statusCode(406);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 200")
+	// @Ignore("TODO: Define request to get HTTP status code 200")
 	public void test_changeEventSubscriptionsEventSubscriptionId_200() {
 		given().spec(spec).when().put("/event-subscriptions/event-subscriptions/{EventSubscriptionId}").then().assertThat().statusCode(200);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 429")
+	// @Ignore("TODO: Define request to get HTTP status code 429")
 	public void test_changeEventSubscriptionsEventSubscriptionId_429() {
 		given().spec(spec).when().put("/event-subscriptions/event-subscriptions/{EventSubscriptionId}").then().assertThat().statusCode(429);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 400")
+	// @Ignore("TODO: Define request to get HTTP status code 400")
 	public void test_createEventSubscriptions_400() {
 		given().spec(spec).when().post("/event-subscriptions/event-subscriptions").then().assertThat().statusCode(400);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 401")
+	// @Ignore("TODO: Define request to get HTTP status code 401")
 	public void test_createEventSubscriptions_401() {
 		given().spec(spec).when().post("/event-subscriptions/event-subscriptions").then().assertThat().statusCode(401);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 403")
+	// @Ignore("TODO: Define request to get HTTP status code 403")
 	public void test_createEventSubscriptions_403() {
 		given().spec(spec).when().post("/event-subscriptions/event-subscriptions").then().assertThat().statusCode(403);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 404")
+	// @Ignore("TODO: Define request to get HTTP status code 404")
 	public void test_createEventSubscriptions_404() {
 		given().spec(spec).when().post("/event-subscriptions/event-subscriptions").then().assertThat().statusCode(404);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 500")
+	// @Ignore("TODO: Define request to get HTTP status code 500")
 	public void test_createEventSubscriptions_500() {
 		given().spec(spec).when().post("/event-subscriptions/event-subscriptions").then().assertThat().statusCode(500);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 405")
+	// @Ignore("TODO: Define request to get HTTP status code 405")
 	public void test_createEventSubscriptions_405() {
 		given().spec(spec).when().post("/event-subscriptions/event-subscriptions").then().assertThat().statusCode(405);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 406")
+	// @Ignore("TODO: Define request to get HTTP status code 406")
 	public void test_createEventSubscriptions_406() {
 		given().spec(spec).when().post("/event-subscriptions/event-subscriptions").then().assertThat().statusCode(406);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 201")
+	// @Ignore("TODO: Define request to get HTTP status code 201")
 	public void test_createEventSubscriptions_201() {
 		given().spec(spec).when().post("/event-subscriptions/event-subscriptions").then().assertThat().statusCode(201);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 429")
+	// @Ignore("TODO: Define request to get HTTP status code 429")
 	public void test_createEventSubscriptions_429() {
 		given().spec(spec).when().post("/event-subscriptions/event-subscriptions").then().assertThat().statusCode(429);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 400")
+	// @Ignore("TODO: Define request to get HTTP status code 400")
 	public void test_deleteEventSubscriptionsEventSubscriptionId_400() {
 		given().spec(spec).when().delete("/event-subscriptions/event-subscriptions/{EventSubscriptionId}").then().assertThat().statusCode(400);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 401")
+	// @Ignore("TODO: Define request to get HTTP status code 401")
 	public void test_deleteEventSubscriptionsEventSubscriptionId_401() {
 		given().spec(spec).when().delete("/event-subscriptions/event-subscriptions/{EventSubscriptionId}").then().assertThat().statusCode(401);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 403")
+	// @Ignore("TODO: Define request to get HTTP status code 403")
 	public void test_deleteEventSubscriptionsEventSubscriptionId_403() {
 		given().spec(spec).when().delete("/event-subscriptions/event-subscriptions/{EventSubscriptionId}").then().assertThat().statusCode(403);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 404")
+	// @Ignore("TODO: Define request to get HTTP status code 404")
 	public void test_deleteEventSubscriptionsEventSubscriptionId_404() {
 		given().spec(spec).when().delete("/event-subscriptions/event-subscriptions/{EventSubscriptionId}").then().assertThat().statusCode(404);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 500")
+	// @Ignore("TODO: Define request to get HTTP status code 500")
 	public void test_deleteEventSubscriptionsEventSubscriptionId_500() {
 		given().spec(spec).when().delete("/event-subscriptions/event-subscriptions/{EventSubscriptionId}").then().assertThat().statusCode(500);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 405")
+	// @Ignore("TODO: Define request to get HTTP status code 405")
 	public void test_deleteEventSubscriptionsEventSubscriptionId_405() {
 		given().spec(spec).when().delete("/event-subscriptions/event-subscriptions/{EventSubscriptionId}").then().assertThat().statusCode(405);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 406")
+	// @Ignore("TODO: Define request to get HTTP status code 406")
 	public void test_deleteEventSubscriptionsEventSubscriptionId_406() {
 		given().spec(spec).when().delete("/event-subscriptions/event-subscriptions/{EventSubscriptionId}").then().assertThat().statusCode(406);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 204")
+	// @Ignore("TODO: Define request to get HTTP status code 204")
 	public void test_deleteEventSubscriptionsEventSubscriptionId_204() {
 		given().spec(spec).when().delete("/event-subscriptions/event-subscriptions/{EventSubscriptionId}").then().assertThat().statusCode(204);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 429")
+	// @Ignore("TODO: Define request to get HTTP status code 429")
 	public void test_deleteEventSubscriptionsEventSubscriptionId_429() {
 		given().spec(spec).when().delete("/event-subscriptions/event-subscriptions/{EventSubscriptionId}").then().assertThat().statusCode(429);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 400")
+	// @Ignore("TODO: Define request to get HTTP status code 400")
 	public void test_getEventSubscriptions_400() {
 		given().spec(spec).when().get("/event-subscriptions/event-subscriptions").then().assertThat().statusCode(400);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 401")
+	// @Ignore("TODO: Define request to get HTTP status code 401")
 	public void test_getEventSubscriptions_401() {
 		given().spec(spec).when().get("/event-subscriptions/event-subscriptions").then().assertThat().statusCode(401);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 403")
+	// @Ignore("TODO: Define request to get HTTP status code 403")
 	public void test_getEventSubscriptions_403() {
 		given().spec(spec).when().get("/event-subscriptions/event-subscriptions").then().assertThat().statusCode(403);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 404")
+	// @Ignore("TODO: Define request to get HTTP status code 404")
 	public void test_getEventSubscriptions_404() {
 		given().spec(spec).when().get("/event-subscriptions/event-subscriptions").then().assertThat().statusCode(404);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 500")
+	// @Ignore("TODO: Define request to get HTTP status code 500")
 	public void test_getEventSubscriptions_500() {
 		given().spec(spec).when().get("/event-subscriptions/event-subscriptions").then().assertThat().statusCode(500);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 405")
+	// @Ignore("TODO: Define request to get HTTP status code 405")
 	public void test_getEventSubscriptions_405() {
 		given().spec(spec).when().get("/event-subscriptions/event-subscriptions").then().assertThat().statusCode(405);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 406")
+	// @Ignore("TODO: Define request to get HTTP status code 406")
 	public void test_getEventSubscriptions_406() {
 		given().spec(spec).when().get("/event-subscriptions/event-subscriptions").then().assertThat().statusCode(406);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 200")
+	// @Ignore("TODO: Define request to get HTTP status code 200")
 	public void test_getEventSubscriptions_200() {
 		given().spec(spec).when().get("/event-subscriptions/event-subscriptions").then().assertThat().statusCode(200);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 429")
+	// @Ignore("TODO: Define request to get HTTP status code 429")
 	public void test_getEventSubscriptions_429() {
 		given().spec(spec).when().get("/event-subscriptions/event-subscriptions").then().assertThat().statusCode(429);
 	}

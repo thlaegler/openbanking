@@ -1,0 +1,76 @@
+-------------------------------------------------------------------------------
+Test set: com.laegler.openbanking.api.integration.InternationalStandingOrderConsentsApiIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 18, Failures: 0, Errors: 18, Skipped: 0, Time elapsed: 0.021 s <<< FAILURE! - in com.laegler.openbanking.api.integration.InternationalStandingOrderConsentsApiIntegrationTest
+test_getInternationalStandingOrderConsentsConsentId_200  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.InternationalStandingOrderConsentsApiIntegrationTest.test_getInternationalStandingOrderConsentsConsentId_200(InternationalStandingOrderConsentsApiIntegrationTest.java:130)
+
+test_getInternationalStandingOrderConsentsConsentId_400  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.InternationalStandingOrderConsentsApiIntegrationTest.test_getInternationalStandingOrderConsentsConsentId_400(InternationalStandingOrderConsentsApiIntegrationTest.java:88)
+
+test_getInternationalStandingOrderConsentsConsentId_401  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.InternationalStandingOrderConsentsApiIntegrationTest.test_getInternationalStandingOrderConsentsConsentId_401(InternationalStandingOrderConsentsApiIntegrationTest.java:94)
+
+test_getInternationalStandingOrderConsentsConsentId_403  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.InternationalStandingOrderConsentsApiIntegrationTest.test_getInternationalStandingOrderConsentsConsentId_403(InternationalStandingOrderConsentsApiIntegrationTest.java:100)
+
+test_getInternationalStandingOrderConsentsConsentId_404  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.InternationalStandingOrderConsentsApiIntegrationTest.test_getInternationalStandingOrderConsentsConsentId_404(InternationalStandingOrderConsentsApiIntegrationTest.java:106)
+
+test_getInternationalStandingOrderConsentsConsentId_405  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.InternationalStandingOrderConsentsApiIntegrationTest.test_getInternationalStandingOrderConsentsConsentId_405(InternationalStandingOrderConsentsApiIntegrationTest.java:118)
+
+test_getInternationalStandingOrderConsentsConsentId_406  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.InternationalStandingOrderConsentsApiIntegrationTest.test_getInternationalStandingOrderConsentsConsentId_406(InternationalStandingOrderConsentsApiIntegrationTest.java:124)
+
+test_getInternationalStandingOrderConsentsConsentId_429  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.InternationalStandingOrderConsentsApiIntegrationTest.test_getInternationalStandingOrderConsentsConsentId_429(InternationalStandingOrderConsentsApiIntegrationTest.java:136)
+
+test_getInternationalStandingOrderConsentsConsentId_500  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.InternationalStandingOrderConsentsApiIntegrationTest.test_getInternationalStandingOrderConsentsConsentId_500(InternationalStandingOrderConsentsApiIntegrationTest.java:112)
+
+test_createInternationalStandingOrderConsents_201  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalStandingOrderConsentsApiIntegrationTest.test_createInternationalStandingOrderConsents_201(InternationalStandingOrderConsentsApiIntegrationTest.java:76)
+
+test_createInternationalStandingOrderConsents_400  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalStandingOrderConsentsApiIntegrationTest.test_createInternationalStandingOrderConsents_400(InternationalStandingOrderConsentsApiIntegrationTest.java:34)
+
+test_createInternationalStandingOrderConsents_401  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalStandingOrderConsentsApiIntegrationTest.test_createInternationalStandingOrderConsents_401(InternationalStandingOrderConsentsApiIntegrationTest.java:40)
+
+test_createInternationalStandingOrderConsents_403  Time elapsed: 0.003 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalStandingOrderConsentsApiIntegrationTest.test_createInternationalStandingOrderConsents_403(InternationalStandingOrderConsentsApiIntegrationTest.java:46)
+
+test_createInternationalStandingOrderConsents_404  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalStandingOrderConsentsApiIntegrationTest.test_createInternationalStandingOrderConsents_404(InternationalStandingOrderConsentsApiIntegrationTest.java:52)
+
+test_createInternationalStandingOrderConsents_405  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalStandingOrderConsentsApiIntegrationTest.test_createInternationalStandingOrderConsents_405(InternationalStandingOrderConsentsApiIntegrationTest.java:64)
+
+test_createInternationalStandingOrderConsents_406  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalStandingOrderConsentsApiIntegrationTest.test_createInternationalStandingOrderConsents_406(InternationalStandingOrderConsentsApiIntegrationTest.java:70)
+
+test_createInternationalStandingOrderConsents_429  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalStandingOrderConsentsApiIntegrationTest.test_createInternationalStandingOrderConsents_429(InternationalStandingOrderConsentsApiIntegrationTest.java:82)
+
+test_createInternationalStandingOrderConsents_500  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalStandingOrderConsentsApiIntegrationTest.test_createInternationalStandingOrderConsents_500(InternationalStandingOrderConsentsApiIntegrationTest.java:58)
+

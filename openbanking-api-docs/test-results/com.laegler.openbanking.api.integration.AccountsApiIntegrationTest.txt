@@ -1,0 +1,580 @@
+-------------------------------------------------------------------------------
+Test set: com.laegler.openbanking.api.integration.AccountsApiIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 144, Failures: 0, Errors: 144, Skipped: 0, Time elapsed: 0.124 s <<< FAILURE! - in com.laegler.openbanking.api.integration.AccountsApiIntegrationTest
+test_getAccountsAccountIdStandingOrders_200  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStandingOrders_200(AccountsApiIntegrationTest.java:626)
+
+test_getAccountsAccountIdStandingOrders_400  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStandingOrders_400(AccountsApiIntegrationTest.java:584)
+
+test_getAccountsAccountIdStandingOrders_401  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStandingOrders_401(AccountsApiIntegrationTest.java:590)
+
+test_getAccountsAccountIdStandingOrders_403  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStandingOrders_403(AccountsApiIntegrationTest.java:596)
+
+test_getAccountsAccountIdStandingOrders_404  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStandingOrders_404(AccountsApiIntegrationTest.java:602)
+
+test_getAccountsAccountIdStandingOrders_405  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStandingOrders_405(AccountsApiIntegrationTest.java:614)
+
+test_getAccountsAccountIdStandingOrders_406  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStandingOrders_406(AccountsApiIntegrationTest.java:620)
+
+test_getAccountsAccountIdStandingOrders_429  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStandingOrders_429(AccountsApiIntegrationTest.java:632)
+
+test_getAccountsAccountIdStandingOrders_500  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStandingOrders_500(AccountsApiIntegrationTest.java:608)
+
+test_getAccountsAccountIdStatementsStatementIdTransactions_200  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: AccountId, StatementId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStatementsStatementIdTransactions_200(AccountsApiIntegrationTest.java:842)
+
+test_getAccountsAccountIdStatementsStatementIdTransactions_400  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: AccountId, StatementId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStatementsStatementIdTransactions_400(AccountsApiIntegrationTest.java:800)
+
+test_getAccountsAccountIdStatementsStatementIdTransactions_401  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: AccountId, StatementId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStatementsStatementIdTransactions_401(AccountsApiIntegrationTest.java:806)
+
+test_getAccountsAccountIdStatementsStatementIdTransactions_403  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: AccountId, StatementId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStatementsStatementIdTransactions_403(AccountsApiIntegrationTest.java:812)
+
+test_getAccountsAccountIdStatementsStatementIdTransactions_404  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: AccountId, StatementId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStatementsStatementIdTransactions_404(AccountsApiIntegrationTest.java:818)
+
+test_getAccountsAccountIdStatementsStatementIdTransactions_405  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: AccountId, StatementId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStatementsStatementIdTransactions_405(AccountsApiIntegrationTest.java:830)
+
+test_getAccountsAccountIdStatementsStatementIdTransactions_406  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: AccountId, StatementId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStatementsStatementIdTransactions_406(AccountsApiIntegrationTest.java:836)
+
+test_getAccountsAccountIdStatementsStatementIdTransactions_429  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: AccountId, StatementId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStatementsStatementIdTransactions_429(AccountsApiIntegrationTest.java:848)
+
+test_getAccountsAccountIdStatementsStatementIdTransactions_500  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: AccountId, StatementId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStatementsStatementIdTransactions_500(AccountsApiIntegrationTest.java:824)
+
+test_getAccountsAccountIdDirectDebits_200  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdDirectDebits_200(AccountsApiIntegrationTest.java:302)
+
+test_getAccountsAccountIdDirectDebits_400  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdDirectDebits_400(AccountsApiIntegrationTest.java:260)
+
+test_getAccountsAccountIdDirectDebits_401  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdDirectDebits_401(AccountsApiIntegrationTest.java:266)
+
+test_getAccountsAccountIdDirectDebits_403  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdDirectDebits_403(AccountsApiIntegrationTest.java:272)
+
+test_getAccountsAccountIdDirectDebits_404  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdDirectDebits_404(AccountsApiIntegrationTest.java:278)
+
+test_getAccountsAccountIdDirectDebits_405  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdDirectDebits_405(AccountsApiIntegrationTest.java:290)
+
+test_getAccountsAccountIdDirectDebits_406  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdDirectDebits_406(AccountsApiIntegrationTest.java:296)
+
+test_getAccountsAccountIdDirectDebits_429  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdDirectDebits_429(AccountsApiIntegrationTest.java:308)
+
+test_getAccountsAccountIdDirectDebits_500  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdDirectDebits_500(AccountsApiIntegrationTest.java:284)
+
+test_getAccountsAccountIdParties_200  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdParties_200(AccountsApiIntegrationTest.java:410)
+
+test_getAccountsAccountIdParties_400  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdParties_400(AccountsApiIntegrationTest.java:368)
+
+test_getAccountsAccountIdParties_401  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdParties_401(AccountsApiIntegrationTest.java:374)
+
+test_getAccountsAccountIdParties_403  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdParties_403(AccountsApiIntegrationTest.java:380)
+
+test_getAccountsAccountIdParties_404  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdParties_404(AccountsApiIntegrationTest.java:386)
+
+test_getAccountsAccountIdParties_405  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdParties_405(AccountsApiIntegrationTest.java:398)
+
+test_getAccountsAccountIdParties_406  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdParties_406(AccountsApiIntegrationTest.java:404)
+
+test_getAccountsAccountIdParties_429  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdParties_429(AccountsApiIntegrationTest.java:416)
+
+test_getAccountsAccountIdParties_500  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdParties_500(AccountsApiIntegrationTest.java:392)
+
+test_getAccountsAccountIdParty_200  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdParty_200(AccountsApiIntegrationTest.java:464)
+
+test_getAccountsAccountIdParty_400  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdParty_400(AccountsApiIntegrationTest.java:422)
+
+test_getAccountsAccountIdParty_401  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdParty_401(AccountsApiIntegrationTest.java:428)
+
+test_getAccountsAccountIdParty_403  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdParty_403(AccountsApiIntegrationTest.java:434)
+
+test_getAccountsAccountIdParty_404  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdParty_404(AccountsApiIntegrationTest.java:440)
+
+test_getAccountsAccountIdParty_405  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdParty_405(AccountsApiIntegrationTest.java:452)
+
+test_getAccountsAccountIdParty_406  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdParty_406(AccountsApiIntegrationTest.java:458)
+
+test_getAccountsAccountIdParty_429  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdParty_429(AccountsApiIntegrationTest.java:470)
+
+test_getAccountsAccountIdParty_500  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdParty_500(AccountsApiIntegrationTest.java:446)
+
+test_getAccountsAccountIdOffers_200  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdOffers_200(AccountsApiIntegrationTest.java:356)
+
+test_getAccountsAccountIdOffers_400  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdOffers_400(AccountsApiIntegrationTest.java:314)
+
+test_getAccountsAccountIdOffers_401  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdOffers_401(AccountsApiIntegrationTest.java:320)
+
+test_getAccountsAccountIdOffers_403  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdOffers_403(AccountsApiIntegrationTest.java:326)
+
+test_getAccountsAccountIdOffers_404  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdOffers_404(AccountsApiIntegrationTest.java:332)
+
+test_getAccountsAccountIdOffers_405  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdOffers_405(AccountsApiIntegrationTest.java:344)
+
+test_getAccountsAccountIdOffers_406  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdOffers_406(AccountsApiIntegrationTest.java:350)
+
+test_getAccountsAccountIdOffers_429  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdOffers_429(AccountsApiIntegrationTest.java:362)
+
+test_getAccountsAccountIdOffers_500  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdOffers_500(AccountsApiIntegrationTest.java:338)
+
+test_getAccountsAccountIdTransactions_200  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdTransactions_200(AccountsApiIntegrationTest.java:896)
+
+test_getAccountsAccountIdTransactions_400  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdTransactions_400(AccountsApiIntegrationTest.java:854)
+
+test_getAccountsAccountIdTransactions_401  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdTransactions_401(AccountsApiIntegrationTest.java:860)
+
+test_getAccountsAccountIdTransactions_403  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdTransactions_403(AccountsApiIntegrationTest.java:866)
+
+test_getAccountsAccountIdTransactions_404  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdTransactions_404(AccountsApiIntegrationTest.java:872)
+
+test_getAccountsAccountIdTransactions_405  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdTransactions_405(AccountsApiIntegrationTest.java:884)
+
+test_getAccountsAccountIdTransactions_406  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdTransactions_406(AccountsApiIntegrationTest.java:890)
+
+test_getAccountsAccountIdTransactions_429  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdTransactions_429(AccountsApiIntegrationTest.java:902)
+
+test_getAccountsAccountIdTransactions_500  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdTransactions_500(AccountsApiIntegrationTest.java:878)
+
+test_getAccountsAccountIdBalances_200  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdBalances_200(AccountsApiIntegrationTest.java:194)
+
+test_getAccountsAccountIdBalances_400  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdBalances_400(AccountsApiIntegrationTest.java:152)
+
+test_getAccountsAccountIdBalances_401  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdBalances_401(AccountsApiIntegrationTest.java:158)
+
+test_getAccountsAccountIdBalances_403  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdBalances_403(AccountsApiIntegrationTest.java:164)
+
+test_getAccountsAccountIdBalances_404  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdBalances_404(AccountsApiIntegrationTest.java:170)
+
+test_getAccountsAccountIdBalances_405  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdBalances_405(AccountsApiIntegrationTest.java:182)
+
+test_getAccountsAccountIdBalances_406  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdBalances_406(AccountsApiIntegrationTest.java:188)
+
+test_getAccountsAccountIdBalances_429  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdBalances_429(AccountsApiIntegrationTest.java:200)
+
+test_getAccountsAccountIdBalances_500  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdBalances_500(AccountsApiIntegrationTest.java:176)
+
+test_getAccountsAccountIdProduct_200  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdProduct_200(AccountsApiIntegrationTest.java:518)
+
+test_getAccountsAccountIdProduct_400  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdProduct_400(AccountsApiIntegrationTest.java:476)
+
+test_getAccountsAccountIdProduct_401  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdProduct_401(AccountsApiIntegrationTest.java:482)
+
+test_getAccountsAccountIdProduct_403  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdProduct_403(AccountsApiIntegrationTest.java:488)
+
+test_getAccountsAccountIdProduct_404  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdProduct_404(AccountsApiIntegrationTest.java:494)
+
+test_getAccountsAccountIdProduct_405  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdProduct_405(AccountsApiIntegrationTest.java:506)
+
+test_getAccountsAccountIdProduct_406  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdProduct_406(AccountsApiIntegrationTest.java:512)
+
+test_getAccountsAccountIdProduct_429  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdProduct_429(AccountsApiIntegrationTest.java:524)
+
+test_getAccountsAccountIdProduct_500  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdProduct_500(AccountsApiIntegrationTest.java:500)
+
+test_getAccountsAccountIdStatementsStatementIdFile_200  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: AccountId, StatementId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStatementsStatementIdFile_200(AccountsApiIntegrationTest.java:788)
+
+test_getAccountsAccountIdStatementsStatementIdFile_400  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: AccountId, StatementId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStatementsStatementIdFile_400(AccountsApiIntegrationTest.java:746)
+
+test_getAccountsAccountIdStatementsStatementIdFile_401  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: AccountId, StatementId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStatementsStatementIdFile_401(AccountsApiIntegrationTest.java:752)
+
+test_getAccountsAccountIdStatementsStatementIdFile_403  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: AccountId, StatementId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStatementsStatementIdFile_403(AccountsApiIntegrationTest.java:758)
+
+test_getAccountsAccountIdStatementsStatementIdFile_404  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: AccountId, StatementId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStatementsStatementIdFile_404(AccountsApiIntegrationTest.java:764)
+
+test_getAccountsAccountIdStatementsStatementIdFile_405  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: AccountId, StatementId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStatementsStatementIdFile_405(AccountsApiIntegrationTest.java:776)
+
+test_getAccountsAccountIdStatementsStatementIdFile_406  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: AccountId, StatementId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStatementsStatementIdFile_406(AccountsApiIntegrationTest.java:782)
+
+test_getAccountsAccountIdStatementsStatementIdFile_429  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: AccountId, StatementId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStatementsStatementIdFile_429(AccountsApiIntegrationTest.java:794)
+
+test_getAccountsAccountIdStatementsStatementIdFile_500  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: AccountId, StatementId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStatementsStatementIdFile_500(AccountsApiIntegrationTest.java:770)
+
+test_getAccountsAccountIdBeneficiaries_200  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdBeneficiaries_200(AccountsApiIntegrationTest.java:248)
+
+test_getAccountsAccountIdBeneficiaries_400  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdBeneficiaries_400(AccountsApiIntegrationTest.java:206)
+
+test_getAccountsAccountIdBeneficiaries_401  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdBeneficiaries_401(AccountsApiIntegrationTest.java:212)
+
+test_getAccountsAccountIdBeneficiaries_403  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdBeneficiaries_403(AccountsApiIntegrationTest.java:218)
+
+test_getAccountsAccountIdBeneficiaries_404  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdBeneficiaries_404(AccountsApiIntegrationTest.java:224)
+
+test_getAccountsAccountIdBeneficiaries_405  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdBeneficiaries_405(AccountsApiIntegrationTest.java:236)
+
+test_getAccountsAccountIdBeneficiaries_406  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdBeneficiaries_406(AccountsApiIntegrationTest.java:242)
+
+test_getAccountsAccountIdBeneficiaries_429  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdBeneficiaries_429(AccountsApiIntegrationTest.java:254)
+
+test_getAccountsAccountIdBeneficiaries_500  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdBeneficiaries_500(AccountsApiIntegrationTest.java:230)
+
+test_getAccounts_200  Time elapsed: 0.004 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccounts_200(AccountsApiIntegrationTest.java:86)
+
+test_getAccounts_400  Time elapsed: 0.003 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccounts_400(AccountsApiIntegrationTest.java:44)
+
+test_getAccounts_401  Time elapsed: 0.003 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccounts_401(AccountsApiIntegrationTest.java:50)
+
+test_getAccounts_403  Time elapsed: 0.003 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccounts_403(AccountsApiIntegrationTest.java:56)
+
+test_getAccounts_404  Time elapsed: 0.003 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccounts_404(AccountsApiIntegrationTest.java:62)
+
+test_getAccounts_405  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccounts_405(AccountsApiIntegrationTest.java:74)
+
+test_getAccounts_406  Time elapsed: 0.003 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccounts_406(AccountsApiIntegrationTest.java:80)
+
+test_getAccounts_429  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccounts_429(AccountsApiIntegrationTest.java:92)
+
+test_getAccounts_500  Time elapsed: 0.003 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccounts_500(AccountsApiIntegrationTest.java:68)
+
+test_getAccountsAccountIdStatementsStatementId_200  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: AccountId, StatementId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStatementsStatementId_200(AccountsApiIntegrationTest.java:734)
+
+test_getAccountsAccountIdStatementsStatementId_400  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: AccountId, StatementId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStatementsStatementId_400(AccountsApiIntegrationTest.java:692)
+
+test_getAccountsAccountIdStatementsStatementId_401  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: AccountId, StatementId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStatementsStatementId_401(AccountsApiIntegrationTest.java:698)
+
+test_getAccountsAccountIdStatementsStatementId_403  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: AccountId, StatementId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStatementsStatementId_403(AccountsApiIntegrationTest.java:704)
+
+test_getAccountsAccountIdStatementsStatementId_404  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: AccountId, StatementId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStatementsStatementId_404(AccountsApiIntegrationTest.java:710)
+
+test_getAccountsAccountIdStatementsStatementId_405  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: AccountId, StatementId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStatementsStatementId_405(AccountsApiIntegrationTest.java:722)
+
+test_getAccountsAccountIdStatementsStatementId_406  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: AccountId, StatementId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStatementsStatementId_406(AccountsApiIntegrationTest.java:728)
+
+test_getAccountsAccountIdStatementsStatementId_429  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: AccountId, StatementId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStatementsStatementId_429(AccountsApiIntegrationTest.java:740)
+
+test_getAccountsAccountIdStatementsStatementId_500  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: AccountId, StatementId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStatementsStatementId_500(AccountsApiIntegrationTest.java:716)
+
+test_getAccountsAccountIdScheduledPayments_200  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdScheduledPayments_200(AccountsApiIntegrationTest.java:572)
+
+test_getAccountsAccountIdScheduledPayments_400  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdScheduledPayments_400(AccountsApiIntegrationTest.java:530)
+
+test_getAccountsAccountIdScheduledPayments_401  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdScheduledPayments_401(AccountsApiIntegrationTest.java:536)
+
+test_getAccountsAccountIdScheduledPayments_403  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdScheduledPayments_403(AccountsApiIntegrationTest.java:542)
+
+test_getAccountsAccountIdScheduledPayments_404  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdScheduledPayments_404(AccountsApiIntegrationTest.java:548)
+
+test_getAccountsAccountIdScheduledPayments_405  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdScheduledPayments_405(AccountsApiIntegrationTest.java:560)
+
+test_getAccountsAccountIdScheduledPayments_406  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdScheduledPayments_406(AccountsApiIntegrationTest.java:566)
+
+test_getAccountsAccountIdScheduledPayments_429  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdScheduledPayments_429(AccountsApiIntegrationTest.java:578)
+
+test_getAccountsAccountIdScheduledPayments_500  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdScheduledPayments_500(AccountsApiIntegrationTest.java:554)
+
+test_getAccountsAccountId_200  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountId_200(AccountsApiIntegrationTest.java:140)
+
+test_getAccountsAccountId_400  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountId_400(AccountsApiIntegrationTest.java:98)
+
+test_getAccountsAccountId_401  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountId_401(AccountsApiIntegrationTest.java:104)
+
+test_getAccountsAccountId_403  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountId_403(AccountsApiIntegrationTest.java:110)
+
+test_getAccountsAccountId_404  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountId_404(AccountsApiIntegrationTest.java:116)
+
+test_getAccountsAccountId_405  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountId_405(AccountsApiIntegrationTest.java:128)
+
+test_getAccountsAccountId_406  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountId_406(AccountsApiIntegrationTest.java:134)
+
+test_getAccountsAccountId_429  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountId_429(AccountsApiIntegrationTest.java:146)
+
+test_getAccountsAccountId_500  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountId_500(AccountsApiIntegrationTest.java:122)
+
+test_getAccountsAccountIdStatements_200  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStatements_200(AccountsApiIntegrationTest.java:680)
+
+test_getAccountsAccountIdStatements_400  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStatements_400(AccountsApiIntegrationTest.java:638)
+
+test_getAccountsAccountIdStatements_401  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStatements_401(AccountsApiIntegrationTest.java:644)
+
+test_getAccountsAccountIdStatements_403  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStatements_403(AccountsApiIntegrationTest.java:650)
+
+test_getAccountsAccountIdStatements_404  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStatements_404(AccountsApiIntegrationTest.java:656)
+
+test_getAccountsAccountIdStatements_405  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStatements_405(AccountsApiIntegrationTest.java:668)
+
+test_getAccountsAccountIdStatements_406  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStatements_406(AccountsApiIntegrationTest.java:674)
+
+test_getAccountsAccountIdStatements_429  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStatements_429(AccountsApiIntegrationTest.java:686)
+
+test_getAccountsAccountIdStatements_500  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: AccountId.
+	at com.laegler.openbanking.api.integration.AccountsApiIntegrationTest.test_getAccountsAccountIdStatements_500(AccountsApiIntegrationTest.java:662)
+

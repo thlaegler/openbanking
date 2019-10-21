@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: com.laegler.openbanking.api.integration.FundsConfirmationsApiIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 0.006 s <<< FAILURE! - in com.laegler.openbanking.api.integration.FundsConfirmationsApiIntegrationTest
+test_createFundsConfirmations_201  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.FundsConfirmationsApiIntegrationTest.test_createFundsConfirmations_201(FundsConfirmationsApiIntegrationTest.java:76)
+
+test_createFundsConfirmations_400  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.FundsConfirmationsApiIntegrationTest.test_createFundsConfirmations_400(FundsConfirmationsApiIntegrationTest.java:34)
+
+test_createFundsConfirmations_401  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.FundsConfirmationsApiIntegrationTest.test_createFundsConfirmations_401(FundsConfirmationsApiIntegrationTest.java:40)
+
+test_createFundsConfirmations_403  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.FundsConfirmationsApiIntegrationTest.test_createFundsConfirmations_403(FundsConfirmationsApiIntegrationTest.java:46)
+
+test_createFundsConfirmations_404  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.FundsConfirmationsApiIntegrationTest.test_createFundsConfirmations_404(FundsConfirmationsApiIntegrationTest.java:52)
+
+test_createFundsConfirmations_405  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.FundsConfirmationsApiIntegrationTest.test_createFundsConfirmations_405(FundsConfirmationsApiIntegrationTest.java:64)
+
+test_createFundsConfirmations_406  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.FundsConfirmationsApiIntegrationTest.test_createFundsConfirmations_406(FundsConfirmationsApiIntegrationTest.java:70)
+
+test_createFundsConfirmations_429  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.FundsConfirmationsApiIntegrationTest.test_createFundsConfirmations_429(FundsConfirmationsApiIntegrationTest.java:82)
+
+test_createFundsConfirmations_500  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.FundsConfirmationsApiIntegrationTest.test_createFundsConfirmations_500(FundsConfirmationsApiIntegrationTest.java:58)
+

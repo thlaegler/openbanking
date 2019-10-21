@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: com.laegler.openbanking.api.integration.TransactionsApiIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 1.919 s <<< FAILURE! - in com.laegler.openbanking.api.integration.TransactionsApiIntegrationTest
+test_getTransactions_200  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.TransactionsApiIntegrationTest.test_getTransactions_200(TransactionsApiIntegrationTest.java:75)
+
+test_getTransactions_400  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.TransactionsApiIntegrationTest.test_getTransactions_400(TransactionsApiIntegrationTest.java:33)
+
+test_getTransactions_401  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.TransactionsApiIntegrationTest.test_getTransactions_401(TransactionsApiIntegrationTest.java:39)
+
+test_getTransactions_403  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.TransactionsApiIntegrationTest.test_getTransactions_403(TransactionsApiIntegrationTest.java:45)
+
+test_getTransactions_404  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.TransactionsApiIntegrationTest.test_getTransactions_404(TransactionsApiIntegrationTest.java:51)
+
+test_getTransactions_405  Time elapsed: 1.908 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.TransactionsApiIntegrationTest.test_getTransactions_405(TransactionsApiIntegrationTest.java:63)
+
+test_getTransactions_406  Time elapsed: 0.004 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.TransactionsApiIntegrationTest.test_getTransactions_406(TransactionsApiIntegrationTest.java:69)
+
+test_getTransactions_429  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.TransactionsApiIntegrationTest.test_getTransactions_429(TransactionsApiIntegrationTest.java:81)
+
+test_getTransactions_500  Time elapsed: 0.003 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.TransactionsApiIntegrationTest.test_getTransactions_500(TransactionsApiIntegrationTest.java:57)
+

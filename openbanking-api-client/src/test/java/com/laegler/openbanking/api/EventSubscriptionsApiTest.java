@@ -67,7 +67,7 @@ public class EventSubscriptionsApiTest {
         List providers = new ArrayList();
         providers.add(provider);
         
-        api = JAXRSClientFactory.create("https://localhost:8080/open-banking/v2.3", EventSubscriptionsApi.class, providers);
+        api = JAXRSClientFactory.create("https://localhost:8080/api/v1", EventSubscriptionsApi.class, providers);
         org.apache.cxf.jaxrs.client.Client client = WebClient.client(api);
         
         ClientConfiguration config = WebClient.getConfig(client); 

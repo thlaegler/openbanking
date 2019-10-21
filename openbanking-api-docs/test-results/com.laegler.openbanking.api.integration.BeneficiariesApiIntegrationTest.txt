@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: com.laegler.openbanking.api.integration.BeneficiariesApiIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 0.006 s <<< FAILURE! - in com.laegler.openbanking.api.integration.BeneficiariesApiIntegrationTest
+test_getBeneficiaries_200  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.BeneficiariesApiIntegrationTest.test_getBeneficiaries_200(BeneficiariesApiIntegrationTest.java:75)
+
+test_getBeneficiaries_400  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.BeneficiariesApiIntegrationTest.test_getBeneficiaries_400(BeneficiariesApiIntegrationTest.java:33)
+
+test_getBeneficiaries_401  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.BeneficiariesApiIntegrationTest.test_getBeneficiaries_401(BeneficiariesApiIntegrationTest.java:39)
+
+test_getBeneficiaries_403  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.BeneficiariesApiIntegrationTest.test_getBeneficiaries_403(BeneficiariesApiIntegrationTest.java:45)
+
+test_getBeneficiaries_404  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.BeneficiariesApiIntegrationTest.test_getBeneficiaries_404(BeneficiariesApiIntegrationTest.java:51)
+
+test_getBeneficiaries_405  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.BeneficiariesApiIntegrationTest.test_getBeneficiaries_405(BeneficiariesApiIntegrationTest.java:63)
+
+test_getBeneficiaries_406  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.BeneficiariesApiIntegrationTest.test_getBeneficiaries_406(BeneficiariesApiIntegrationTest.java:69)
+
+test_getBeneficiaries_429  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.BeneficiariesApiIntegrationTest.test_getBeneficiaries_429(BeneficiariesApiIntegrationTest.java:81)
+
+test_getBeneficiaries_500  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.BeneficiariesApiIntegrationTest.test_getBeneficiaries_500(BeneficiariesApiIntegrationTest.java:57)
+

@@ -10,6 +10,13 @@
 	<name>Open Banking API Service</name>
 	<description>Open Banking API Service Implementations</description>
 
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.1.8.RELEASE</version>
+		<relativePath />
+	</parent>
+
 	<properties>
 		<!-- Basics: Encoding and Java version -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -51,6 +58,23 @@
 			<artifactId>openbanking-api-soap-transform</artifactId>
 			<version>${project.version}</version>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jersey.containers</groupId>
+			<artifactId>jersey-container-servlet-core</artifactId>
+			<version>2.29.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jersey.inject</groupId>
+			<artifactId>jersey-hk2</artifactId>
+			<version>2.29.1</version>
+		</dependency>
+
 		<dependency>
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
@@ -128,6 +152,19 @@
 
 	<build>
 		<finalName>${project.artifactId}</finalName>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+		<extensions>
+			<extension>
+				<groupId>com.gkatzioura.maven.cloud</groupId>
+				<artifactId>google-storage-wagon</artifactId>
+				<version>2.3</version>
+			</extension>
+		</extensions>
 		<plugins>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
@@ -166,38 +203,22 @@
 				<version>2.6</version>
 				<configuration>
 					<warName>${project.build.finalName}</warName>
-					<webappDirectory>${project.basedir}/target/${project.build.finalName}</webappDirectory>
+					<!-- <webappDirectory>${project.basedir}/target/${project.build.finalName}</webappDirectory> -->
 					<!-- <webResources> <webResource> <directory>${project.build.directory}/swagger-ui-${swagger-ui.version}/dist</directory> 
 						<targetPath>swagger-ui</targetPath> </webResource> </webResources> -->
 				</configuration>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.tomcat.maven</groupId>
-				<artifactId>tomcat7-maven-plugin</artifactId>
-				<version>2.2</version>
-				<configuration>
-					<url>http://localhost:8080/manager/text</url>
-					<path>/${project.artifactId}</path>
-					<update>true</update>
-					<username>tomcat</username>
-					<password>tomcat</password>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.eclipse.jetty</groupId>
-				<artifactId>jetty-maven-plugin</artifactId>
-				<version>9.4.0.M1</version>
-				<configuration>
-					<scanIntervalSeconds>10</scanIntervalSeconds>
-					<webAppSourceDirectory>${project.basedir}/src/main/webapp</webAppSourceDirectory>
-					<webApp>
-						<contextPath>/example</contextPath>
-					</webApp>
-					<stopPort>9966</stopPort>
-					<stopKey>example</stopKey>
-					<stopWait>10</stopWait>
-				</configuration>
-			</plugin>
+			<!-- <plugin> <groupId>org.apache.tomcat.maven</groupId> <artifactId>tomcat7-maven-plugin</artifactId> 
+				<version>2.2</version> <configuration> <url>http://localhost:8080/manager/text</url> 
+				<path>/${project.artifactId}</path> <update>true</update> <username>tomcat</username> 
+				<password>tomcat</password> </configuration> <executions> <execution> <id>run</id> 
+				<phase>pre-integration-test</phase> <goals> <goal>run-war</goal> </goals> 
+				</execution> </executions> </plugin> -->
+			<!-- <plugin> <groupId>org.eclipse.jetty</groupId> <artifactId>jetty-maven-plugin</artifactId> 
+				<version>9.4.0.M1</version> <configuration> <scanIntervalSeconds>10</scanIntervalSeconds> 
+				<webAppSourceDirectory>${project.basedir}/src/main/webapp</webAppSourceDirectory> 
+				<webApp> <contextPath>/example</contextPath> </webApp> <stopPort>9966</stopPort> 
+				<stopKey>example</stopKey> <stopWait>10</stopWait> </configuration> </plugin> -->
 		</plugins>
 	</build>
 

@@ -30,163 +30,163 @@ import org.junit.Ignore;
 public class DomesticPaymentsApiIntegrationTest extends AbstractIntegrationTest {
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 400")
+	// @Ignore("TODO: Define request to get HTTP status code 400")
 	public void test_createDomesticPayments_400() {
 		given().spec(spec).when().post("/domestic-payments/domestic-payments").then().assertThat().statusCode(400);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 401")
+	// @Ignore("TODO: Define request to get HTTP status code 401")
 	public void test_createDomesticPayments_401() {
 		given().spec(spec).when().post("/domestic-payments/domestic-payments").then().assertThat().statusCode(401);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 403")
+	// @Ignore("TODO: Define request to get HTTP status code 403")
 	public void test_createDomesticPayments_403() {
 		given().spec(spec).when().post("/domestic-payments/domestic-payments").then().assertThat().statusCode(403);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 404")
+	// @Ignore("TODO: Define request to get HTTP status code 404")
 	public void test_createDomesticPayments_404() {
 		given().spec(spec).when().post("/domestic-payments/domestic-payments").then().assertThat().statusCode(404);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 500")
+	// @Ignore("TODO: Define request to get HTTP status code 500")
 	public void test_createDomesticPayments_500() {
 		given().spec(spec).when().post("/domestic-payments/domestic-payments").then().assertThat().statusCode(500);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 405")
+	// @Ignore("TODO: Define request to get HTTP status code 405")
 	public void test_createDomesticPayments_405() {
 		given().spec(spec).when().post("/domestic-payments/domestic-payments").then().assertThat().statusCode(405);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 406")
+	// @Ignore("TODO: Define request to get HTTP status code 406")
 	public void test_createDomesticPayments_406() {
 		given().spec(spec).when().post("/domestic-payments/domestic-payments").then().assertThat().statusCode(406);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 201")
+	// @Ignore("TODO: Define request to get HTTP status code 201")
 	public void test_createDomesticPayments_201() {
 		given().spec(spec).when().post("/domestic-payments/domestic-payments").then().assertThat().statusCode(201);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 429")
+	// @Ignore("TODO: Define request to get HTTP status code 429")
 	public void test_createDomesticPayments_429() {
 		given().spec(spec).when().post("/domestic-payments/domestic-payments").then().assertThat().statusCode(429);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 400")
+	// @Ignore("TODO: Define request to get HTTP status code 400")
 	public void test_getDomesticPaymentsDomesticPaymentId_400() {
 		given().spec(spec).when().get("/domestic-payments/domestic-payments/{DomesticPaymentId}").then().assertThat().statusCode(400);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 401")
+	// @Ignore("TODO: Define request to get HTTP status code 401")
 	public void test_getDomesticPaymentsDomesticPaymentId_401() {
 		given().spec(spec).when().get("/domestic-payments/domestic-payments/{DomesticPaymentId}").then().assertThat().statusCode(401);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 403")
+	// @Ignore("TODO: Define request to get HTTP status code 403")
 	public void test_getDomesticPaymentsDomesticPaymentId_403() {
 		given().spec(spec).when().get("/domestic-payments/domestic-payments/{DomesticPaymentId}").then().assertThat().statusCode(403);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 404")
+	// @Ignore("TODO: Define request to get HTTP status code 404")
 	public void test_getDomesticPaymentsDomesticPaymentId_404() {
 		given().spec(spec).when().get("/domestic-payments/domestic-payments/{DomesticPaymentId}").then().assertThat().statusCode(404);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 500")
+	// @Ignore("TODO: Define request to get HTTP status code 500")
 	public void test_getDomesticPaymentsDomesticPaymentId_500() {
 		given().spec(spec).when().get("/domestic-payments/domestic-payments/{DomesticPaymentId}").then().assertThat().statusCode(500);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 405")
+	// @Ignore("TODO: Define request to get HTTP status code 405")
 	public void test_getDomesticPaymentsDomesticPaymentId_405() {
 		given().spec(spec).when().get("/domestic-payments/domestic-payments/{DomesticPaymentId}").then().assertThat().statusCode(405);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 406")
+	// @Ignore("TODO: Define request to get HTTP status code 406")
 	public void test_getDomesticPaymentsDomesticPaymentId_406() {
 		given().spec(spec).when().get("/domestic-payments/domestic-payments/{DomesticPaymentId}").then().assertThat().statusCode(406);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 200")
+	// @Ignore("TODO: Define request to get HTTP status code 200")
 	public void test_getDomesticPaymentsDomesticPaymentId_200() {
 		given().spec(spec).when().get("/domestic-payments/domestic-payments/{DomesticPaymentId}").then().assertThat().statusCode(200);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 429")
+	// @Ignore("TODO: Define request to get HTTP status code 429")
 	public void test_getDomesticPaymentsDomesticPaymentId_429() {
 		given().spec(spec).when().get("/domestic-payments/domestic-payments/{DomesticPaymentId}").then().assertThat().statusCode(429);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 400")
+	// @Ignore("TODO: Define request to get HTTP status code 400")
 	public void test_getDomesticPaymentsDomesticPaymentIdPaymentDetails_400() {
 		given().spec(spec).when().get("/domestic-payments/domestic-payments/{DomesticPaymentId}/payment-details").then().assertThat().statusCode(400);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 401")
+	// @Ignore("TODO: Define request to get HTTP status code 401")
 	public void test_getDomesticPaymentsDomesticPaymentIdPaymentDetails_401() {
 		given().spec(spec).when().get("/domestic-payments/domestic-payments/{DomesticPaymentId}/payment-details").then().assertThat().statusCode(401);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 403")
+	// @Ignore("TODO: Define request to get HTTP status code 403")
 	public void test_getDomesticPaymentsDomesticPaymentIdPaymentDetails_403() {
 		given().spec(spec).when().get("/domestic-payments/domestic-payments/{DomesticPaymentId}/payment-details").then().assertThat().statusCode(403);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 404")
+	// @Ignore("TODO: Define request to get HTTP status code 404")
 	public void test_getDomesticPaymentsDomesticPaymentIdPaymentDetails_404() {
 		given().spec(spec).when().get("/domestic-payments/domestic-payments/{DomesticPaymentId}/payment-details").then().assertThat().statusCode(404);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 500")
+	// @Ignore("TODO: Define request to get HTTP status code 500")
 	public void test_getDomesticPaymentsDomesticPaymentIdPaymentDetails_500() {
 		given().spec(spec).when().get("/domestic-payments/domestic-payments/{DomesticPaymentId}/payment-details").then().assertThat().statusCode(500);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 405")
+	// @Ignore("TODO: Define request to get HTTP status code 405")
 	public void test_getDomesticPaymentsDomesticPaymentIdPaymentDetails_405() {
 		given().spec(spec).when().get("/domestic-payments/domestic-payments/{DomesticPaymentId}/payment-details").then().assertThat().statusCode(405);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 406")
+	// @Ignore("TODO: Define request to get HTTP status code 406")
 	public void test_getDomesticPaymentsDomesticPaymentIdPaymentDetails_406() {
 		given().spec(spec).when().get("/domestic-payments/domestic-payments/{DomesticPaymentId}/payment-details").then().assertThat().statusCode(406);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 200")
+	// @Ignore("TODO: Define request to get HTTP status code 200")
 	public void test_getDomesticPaymentsDomesticPaymentIdPaymentDetails_200() {
 		given().spec(spec).when().get("/domestic-payments/domestic-payments/{DomesticPaymentId}/payment-details").then().assertThat().statusCode(200);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 429")
+	// @Ignore("TODO: Define request to get HTTP status code 429")
 	public void test_getDomesticPaymentsDomesticPaymentIdPaymentDetails_429() {
 		given().spec(spec).when().get("/domestic-payments/domestic-payments/{DomesticPaymentId}/payment-details").then().assertThat().statusCode(429);
 	}

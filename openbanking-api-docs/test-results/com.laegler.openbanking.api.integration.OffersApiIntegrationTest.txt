@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: com.laegler.openbanking.api.integration.OffersApiIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 0.883 s <<< FAILURE! - in com.laegler.openbanking.api.integration.OffersApiIntegrationTest
+test_getOffers_200  Time elapsed: 0.508 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.OffersApiIntegrationTest.test_getOffers_200(OffersApiIntegrationTest.java:75)
+
+test_getOffers_400  Time elapsed: 0.016 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.OffersApiIntegrationTest.test_getOffers_400(OffersApiIntegrationTest.java:33)
+
+test_getOffers_401  Time elapsed: 0.012 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.OffersApiIntegrationTest.test_getOffers_401(OffersApiIntegrationTest.java:39)
+
+test_getOffers_403  Time elapsed: 0.009 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.OffersApiIntegrationTest.test_getOffers_403(OffersApiIntegrationTest.java:45)
+
+test_getOffers_404  Time elapsed: 0.008 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.OffersApiIntegrationTest.test_getOffers_404(OffersApiIntegrationTest.java:51)
+
+test_getOffers_405  Time elapsed: 0.008 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.OffersApiIntegrationTest.test_getOffers_405(OffersApiIntegrationTest.java:63)
+
+test_getOffers_406  Time elapsed: 0.007 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.OffersApiIntegrationTest.test_getOffers_406(OffersApiIntegrationTest.java:69)
+
+test_getOffers_429  Time elapsed: 0.01 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.OffersApiIntegrationTest.test_getOffers_429(OffersApiIntegrationTest.java:81)
+
+test_getOffers_500  Time elapsed: 0.008 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.OffersApiIntegrationTest.test_getOffers_500(OffersApiIntegrationTest.java:57)
+

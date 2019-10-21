@@ -28,79 +28,79 @@ import org.junit.Ignore;
 public class RegisterApiIntegrationTest extends AbstractIntegrationTest {
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 401")
+	// @Ignore("TODO: Define request to get HTTP status code 401")
 	public void test_registerClientIdDelete_401() {
 		given().spec(spec).when().delete("/register/register/{ClientId}").then().assertThat().statusCode(401);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 403")
+	// @Ignore("TODO: Define request to get HTTP status code 403")
 	public void test_registerClientIdDelete_403() {
 		given().spec(spec).when().delete("/register/register/{ClientId}").then().assertThat().statusCode(403);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 405")
+	// @Ignore("TODO: Define request to get HTTP status code 405")
 	public void test_registerClientIdDelete_405() {
 		given().spec(spec).when().delete("/register/register/{ClientId}").then().assertThat().statusCode(405);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 204")
+	// @Ignore("TODO: Define request to get HTTP status code 204")
 	public void test_registerClientIdDelete_204() {
 		given().spec(spec).when().delete("/register/register/{ClientId}").then().assertThat().statusCode(204);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 401")
+	// @Ignore("TODO: Define request to get HTTP status code 401")
 	public void test_registerClientIdGet_401() {
 		given().spec(spec).when().get("/register/register/{ClientId}").then().assertThat().statusCode(401);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 403")
+	// @Ignore("TODO: Define request to get HTTP status code 403")
 	public void test_registerClientIdGet_403() {
 		given().spec(spec).when().get("/register/register/{ClientId}").then().assertThat().statusCode(403);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 200")
+	// @Ignore("TODO: Define request to get HTTP status code 200")
 	public void test_registerClientIdGet_200() {
 		given().spec(spec).when().get("/register/register/{ClientId}").then().assertThat().statusCode(200);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 400")
+	// @Ignore("TODO: Define request to get HTTP status code 400")
 	public void test_registerClientIdPut_400() {
 		given().spec(spec).when().put("/register/register/{ClientId}").then().assertThat().statusCode(400);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 401")
+	// @Ignore("TODO: Define request to get HTTP status code 401")
 	public void test_registerClientIdPut_401() {
 		given().spec(spec).when().put("/register/register/{ClientId}").then().assertThat().statusCode(401);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 403")
+	// @Ignore("TODO: Define request to get HTTP status code 403")
 	public void test_registerClientIdPut_403() {
 		given().spec(spec).when().put("/register/register/{ClientId}").then().assertThat().statusCode(403);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 200")
+	// @Ignore("TODO: Define request to get HTTP status code 200")
 	public void test_registerClientIdPut_200() {
 		given().spec(spec).when().put("/register/register/{ClientId}").then().assertThat().statusCode(200);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 400")
+	// @Ignore("TODO: Define request to get HTTP status code 400")
 	public void test_registerPost_400() {
 		given().spec(spec).when().post("/register/register").then().assertThat().statusCode(400);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 201")
+	// @Ignore("TODO: Define request to get HTTP status code 201")
 	public void test_registerPost_201() {
 		given().spec(spec).when().post("/register/register").then().assertThat().statusCode(201);
 	}

@@ -1,0 +1,112 @@
+-------------------------------------------------------------------------------
+Test set: com.laegler.openbanking.api.integration.DomesticPaymentsApiIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 27, Failures: 0, Errors: 27, Skipped: 0, Time elapsed: 0.021 s <<< FAILURE! - in com.laegler.openbanking.api.integration.DomesticPaymentsApiIntegrationTest
+test_createDomesticPayments_201  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DomesticPaymentsApiIntegrationTest.test_createDomesticPayments_201(DomesticPaymentsApiIntegrationTest.java:77)
+
+test_createDomesticPayments_400  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DomesticPaymentsApiIntegrationTest.test_createDomesticPayments_400(DomesticPaymentsApiIntegrationTest.java:35)
+
+test_createDomesticPayments_401  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DomesticPaymentsApiIntegrationTest.test_createDomesticPayments_401(DomesticPaymentsApiIntegrationTest.java:41)
+
+test_createDomesticPayments_403  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DomesticPaymentsApiIntegrationTest.test_createDomesticPayments_403(DomesticPaymentsApiIntegrationTest.java:47)
+
+test_createDomesticPayments_404  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DomesticPaymentsApiIntegrationTest.test_createDomesticPayments_404(DomesticPaymentsApiIntegrationTest.java:53)
+
+test_createDomesticPayments_405  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DomesticPaymentsApiIntegrationTest.test_createDomesticPayments_405(DomesticPaymentsApiIntegrationTest.java:65)
+
+test_createDomesticPayments_406  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DomesticPaymentsApiIntegrationTest.test_createDomesticPayments_406(DomesticPaymentsApiIntegrationTest.java:71)
+
+test_createDomesticPayments_429  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DomesticPaymentsApiIntegrationTest.test_createDomesticPayments_429(DomesticPaymentsApiIntegrationTest.java:83)
+
+test_createDomesticPayments_500  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DomesticPaymentsApiIntegrationTest.test_createDomesticPayments_500(DomesticPaymentsApiIntegrationTest.java:59)
+
+test_getDomesticPaymentsDomesticPaymentId_200  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticPaymentId.
+	at com.laegler.openbanking.api.integration.DomesticPaymentsApiIntegrationTest.test_getDomesticPaymentsDomesticPaymentId_200(DomesticPaymentsApiIntegrationTest.java:131)
+
+test_getDomesticPaymentsDomesticPaymentId_400  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticPaymentId.
+	at com.laegler.openbanking.api.integration.DomesticPaymentsApiIntegrationTest.test_getDomesticPaymentsDomesticPaymentId_400(DomesticPaymentsApiIntegrationTest.java:89)
+
+test_getDomesticPaymentsDomesticPaymentId_401  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticPaymentId.
+	at com.laegler.openbanking.api.integration.DomesticPaymentsApiIntegrationTest.test_getDomesticPaymentsDomesticPaymentId_401(DomesticPaymentsApiIntegrationTest.java:95)
+
+test_getDomesticPaymentsDomesticPaymentId_403  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticPaymentId.
+	at com.laegler.openbanking.api.integration.DomesticPaymentsApiIntegrationTest.test_getDomesticPaymentsDomesticPaymentId_403(DomesticPaymentsApiIntegrationTest.java:101)
+
+test_getDomesticPaymentsDomesticPaymentId_404  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticPaymentId.
+	at com.laegler.openbanking.api.integration.DomesticPaymentsApiIntegrationTest.test_getDomesticPaymentsDomesticPaymentId_404(DomesticPaymentsApiIntegrationTest.java:107)
+
+test_getDomesticPaymentsDomesticPaymentId_405  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticPaymentId.
+	at com.laegler.openbanking.api.integration.DomesticPaymentsApiIntegrationTest.test_getDomesticPaymentsDomesticPaymentId_405(DomesticPaymentsApiIntegrationTest.java:119)
+
+test_getDomesticPaymentsDomesticPaymentId_406  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticPaymentId.
+	at com.laegler.openbanking.api.integration.DomesticPaymentsApiIntegrationTest.test_getDomesticPaymentsDomesticPaymentId_406(DomesticPaymentsApiIntegrationTest.java:125)
+
+test_getDomesticPaymentsDomesticPaymentId_429  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticPaymentId.
+	at com.laegler.openbanking.api.integration.DomesticPaymentsApiIntegrationTest.test_getDomesticPaymentsDomesticPaymentId_429(DomesticPaymentsApiIntegrationTest.java:137)
+
+test_getDomesticPaymentsDomesticPaymentId_500  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticPaymentId.
+	at com.laegler.openbanking.api.integration.DomesticPaymentsApiIntegrationTest.test_getDomesticPaymentsDomesticPaymentId_500(DomesticPaymentsApiIntegrationTest.java:113)
+
+test_getDomesticPaymentsDomesticPaymentIdPaymentDetails_200  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticPaymentId.
+	at com.laegler.openbanking.api.integration.DomesticPaymentsApiIntegrationTest.test_getDomesticPaymentsDomesticPaymentIdPaymentDetails_200(DomesticPaymentsApiIntegrationTest.java:185)
+
+test_getDomesticPaymentsDomesticPaymentIdPaymentDetails_400  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticPaymentId.
+	at com.laegler.openbanking.api.integration.DomesticPaymentsApiIntegrationTest.test_getDomesticPaymentsDomesticPaymentIdPaymentDetails_400(DomesticPaymentsApiIntegrationTest.java:143)
+
+test_getDomesticPaymentsDomesticPaymentIdPaymentDetails_401  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticPaymentId.
+	at com.laegler.openbanking.api.integration.DomesticPaymentsApiIntegrationTest.test_getDomesticPaymentsDomesticPaymentIdPaymentDetails_401(DomesticPaymentsApiIntegrationTest.java:149)
+
+test_getDomesticPaymentsDomesticPaymentIdPaymentDetails_403  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticPaymentId.
+	at com.laegler.openbanking.api.integration.DomesticPaymentsApiIntegrationTest.test_getDomesticPaymentsDomesticPaymentIdPaymentDetails_403(DomesticPaymentsApiIntegrationTest.java:155)
+
+test_getDomesticPaymentsDomesticPaymentIdPaymentDetails_404  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticPaymentId.
+	at com.laegler.openbanking.api.integration.DomesticPaymentsApiIntegrationTest.test_getDomesticPaymentsDomesticPaymentIdPaymentDetails_404(DomesticPaymentsApiIntegrationTest.java:161)
+
+test_getDomesticPaymentsDomesticPaymentIdPaymentDetails_405  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticPaymentId.
+	at com.laegler.openbanking.api.integration.DomesticPaymentsApiIntegrationTest.test_getDomesticPaymentsDomesticPaymentIdPaymentDetails_405(DomesticPaymentsApiIntegrationTest.java:173)
+
+test_getDomesticPaymentsDomesticPaymentIdPaymentDetails_406  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticPaymentId.
+	at com.laegler.openbanking.api.integration.DomesticPaymentsApiIntegrationTest.test_getDomesticPaymentsDomesticPaymentIdPaymentDetails_406(DomesticPaymentsApiIntegrationTest.java:179)
+
+test_getDomesticPaymentsDomesticPaymentIdPaymentDetails_429  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticPaymentId.
+	at com.laegler.openbanking.api.integration.DomesticPaymentsApiIntegrationTest.test_getDomesticPaymentsDomesticPaymentIdPaymentDetails_429(DomesticPaymentsApiIntegrationTest.java:191)
+
+test_getDomesticPaymentsDomesticPaymentIdPaymentDetails_500  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticPaymentId.
+	at com.laegler.openbanking.api.integration.DomesticPaymentsApiIntegrationTest.test_getDomesticPaymentsDomesticPaymentIdPaymentDetails_500(DomesticPaymentsApiIntegrationTest.java:167)
+

@@ -1,0 +1,152 @@
+-------------------------------------------------------------------------------
+Test set: com.laegler.openbanking.api.integration.CallbackUrlsApiIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 37, Failures: 0, Errors: 37, Skipped: 0, Time elapsed: 0.046 s <<< FAILURE! - in com.laegler.openbanking.api.integration.CallbackUrlsApiIntegrationTest
+test_callbackUrlsCallbackUrlIdPut_200  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: CallbackUrlId.
+	at com.laegler.openbanking.api.integration.CallbackUrlsApiIntegrationTest.test_callbackUrlsCallbackUrlIdPut_200(CallbackUrlsApiIntegrationTest.java:131)
+
+test_callbackUrlsCallbackUrlIdPut_400  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: CallbackUrlId.
+	at com.laegler.openbanking.api.integration.CallbackUrlsApiIntegrationTest.test_callbackUrlsCallbackUrlIdPut_400(CallbackUrlsApiIntegrationTest.java:89)
+
+test_callbackUrlsCallbackUrlIdPut_401  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: CallbackUrlId.
+	at com.laegler.openbanking.api.integration.CallbackUrlsApiIntegrationTest.test_callbackUrlsCallbackUrlIdPut_401(CallbackUrlsApiIntegrationTest.java:95)
+
+test_callbackUrlsCallbackUrlIdPut_403  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: CallbackUrlId.
+	at com.laegler.openbanking.api.integration.CallbackUrlsApiIntegrationTest.test_callbackUrlsCallbackUrlIdPut_403(CallbackUrlsApiIntegrationTest.java:101)
+
+test_callbackUrlsCallbackUrlIdPut_404  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: CallbackUrlId.
+	at com.laegler.openbanking.api.integration.CallbackUrlsApiIntegrationTest.test_callbackUrlsCallbackUrlIdPut_404(CallbackUrlsApiIntegrationTest.java:107)
+
+test_callbackUrlsCallbackUrlIdPut_405  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: CallbackUrlId.
+	at com.laegler.openbanking.api.integration.CallbackUrlsApiIntegrationTest.test_callbackUrlsCallbackUrlIdPut_405(CallbackUrlsApiIntegrationTest.java:119)
+
+test_callbackUrlsCallbackUrlIdPut_406  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: CallbackUrlId.
+	at com.laegler.openbanking.api.integration.CallbackUrlsApiIntegrationTest.test_callbackUrlsCallbackUrlIdPut_406(CallbackUrlsApiIntegrationTest.java:125)
+
+test_callbackUrlsCallbackUrlIdPut_415  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: CallbackUrlId.
+	at com.laegler.openbanking.api.integration.CallbackUrlsApiIntegrationTest.test_callbackUrlsCallbackUrlIdPut_415(CallbackUrlsApiIntegrationTest.java:143)
+
+test_callbackUrlsCallbackUrlIdPut_429  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: CallbackUrlId.
+	at com.laegler.openbanking.api.integration.CallbackUrlsApiIntegrationTest.test_callbackUrlsCallbackUrlIdPut_429(CallbackUrlsApiIntegrationTest.java:137)
+
+test_callbackUrlsCallbackUrlIdPut_500  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: CallbackUrlId.
+	at com.laegler.openbanking.api.integration.CallbackUrlsApiIntegrationTest.test_callbackUrlsCallbackUrlIdPut_500(CallbackUrlsApiIntegrationTest.java:113)
+
+test_callbackUrlsPost_201  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.CallbackUrlsApiIntegrationTest.test_callbackUrlsPost_201(CallbackUrlsApiIntegrationTest.java:239)
+
+test_callbackUrlsPost_400  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.CallbackUrlsApiIntegrationTest.test_callbackUrlsPost_400(CallbackUrlsApiIntegrationTest.java:203)
+
+test_callbackUrlsPost_401  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.CallbackUrlsApiIntegrationTest.test_callbackUrlsPost_401(CallbackUrlsApiIntegrationTest.java:209)
+
+test_callbackUrlsPost_403  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.CallbackUrlsApiIntegrationTest.test_callbackUrlsPost_403(CallbackUrlsApiIntegrationTest.java:215)
+
+test_callbackUrlsPost_405  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.CallbackUrlsApiIntegrationTest.test_callbackUrlsPost_405(CallbackUrlsApiIntegrationTest.java:227)
+
+test_callbackUrlsPost_406  Time elapsed: 0.003 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.CallbackUrlsApiIntegrationTest.test_callbackUrlsPost_406(CallbackUrlsApiIntegrationTest.java:233)
+
+test_callbackUrlsPost_415  Time elapsed: 0.004 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.CallbackUrlsApiIntegrationTest.test_callbackUrlsPost_415(CallbackUrlsApiIntegrationTest.java:251)
+
+test_callbackUrlsPost_429  Time elapsed: 0.003 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.CallbackUrlsApiIntegrationTest.test_callbackUrlsPost_429(CallbackUrlsApiIntegrationTest.java:245)
+
+test_callbackUrlsPost_500  Time elapsed: 0.003 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.CallbackUrlsApiIntegrationTest.test_callbackUrlsPost_500(CallbackUrlsApiIntegrationTest.java:221)
+
+test_callbackUrlsGet_200  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.CallbackUrlsApiIntegrationTest.test_callbackUrlsGet_200(CallbackUrlsApiIntegrationTest.java:191)
+
+test_callbackUrlsGet_400  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.CallbackUrlsApiIntegrationTest.test_callbackUrlsGet_400(CallbackUrlsApiIntegrationTest.java:149)
+
+test_callbackUrlsGet_401  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.CallbackUrlsApiIntegrationTest.test_callbackUrlsGet_401(CallbackUrlsApiIntegrationTest.java:155)
+
+test_callbackUrlsGet_403  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.CallbackUrlsApiIntegrationTest.test_callbackUrlsGet_403(CallbackUrlsApiIntegrationTest.java:161)
+
+test_callbackUrlsGet_404  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.CallbackUrlsApiIntegrationTest.test_callbackUrlsGet_404(CallbackUrlsApiIntegrationTest.java:167)
+
+test_callbackUrlsGet_405  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.CallbackUrlsApiIntegrationTest.test_callbackUrlsGet_405(CallbackUrlsApiIntegrationTest.java:179)
+
+test_callbackUrlsGet_406  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.CallbackUrlsApiIntegrationTest.test_callbackUrlsGet_406(CallbackUrlsApiIntegrationTest.java:185)
+
+test_callbackUrlsGet_429  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.CallbackUrlsApiIntegrationTest.test_callbackUrlsGet_429(CallbackUrlsApiIntegrationTest.java:197)
+
+test_callbackUrlsGet_500  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.CallbackUrlsApiIntegrationTest.test_callbackUrlsGet_500(CallbackUrlsApiIntegrationTest.java:173)
+
+test_callbackUrlsCallbackUrlIdDelete_204  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: CallbackUrlId.
+	at com.laegler.openbanking.api.integration.CallbackUrlsApiIntegrationTest.test_callbackUrlsCallbackUrlIdDelete_204(CallbackUrlsApiIntegrationTest.java:77)
+
+test_callbackUrlsCallbackUrlIdDelete_400  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: CallbackUrlId.
+	at com.laegler.openbanking.api.integration.CallbackUrlsApiIntegrationTest.test_callbackUrlsCallbackUrlIdDelete_400(CallbackUrlsApiIntegrationTest.java:35)
+
+test_callbackUrlsCallbackUrlIdDelete_401  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: CallbackUrlId.
+	at com.laegler.openbanking.api.integration.CallbackUrlsApiIntegrationTest.test_callbackUrlsCallbackUrlIdDelete_401(CallbackUrlsApiIntegrationTest.java:41)
+
+test_callbackUrlsCallbackUrlIdDelete_403  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: CallbackUrlId.
+	at com.laegler.openbanking.api.integration.CallbackUrlsApiIntegrationTest.test_callbackUrlsCallbackUrlIdDelete_403(CallbackUrlsApiIntegrationTest.java:47)
+
+test_callbackUrlsCallbackUrlIdDelete_404  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: CallbackUrlId.
+	at com.laegler.openbanking.api.integration.CallbackUrlsApiIntegrationTest.test_callbackUrlsCallbackUrlIdDelete_404(CallbackUrlsApiIntegrationTest.java:53)
+
+test_callbackUrlsCallbackUrlIdDelete_405  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: CallbackUrlId.
+	at com.laegler.openbanking.api.integration.CallbackUrlsApiIntegrationTest.test_callbackUrlsCallbackUrlIdDelete_405(CallbackUrlsApiIntegrationTest.java:65)
+
+test_callbackUrlsCallbackUrlIdDelete_406  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: CallbackUrlId.
+	at com.laegler.openbanking.api.integration.CallbackUrlsApiIntegrationTest.test_callbackUrlsCallbackUrlIdDelete_406(CallbackUrlsApiIntegrationTest.java:71)
+
+test_callbackUrlsCallbackUrlIdDelete_429  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: CallbackUrlId.
+	at com.laegler.openbanking.api.integration.CallbackUrlsApiIntegrationTest.test_callbackUrlsCallbackUrlIdDelete_429(CallbackUrlsApiIntegrationTest.java:83)
+
+test_callbackUrlsCallbackUrlIdDelete_500  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: CallbackUrlId.
+	at com.laegler.openbanking.api.integration.CallbackUrlsApiIntegrationTest.test_callbackUrlsCallbackUrlIdDelete_500(CallbackUrlsApiIntegrationTest.java:59)
+

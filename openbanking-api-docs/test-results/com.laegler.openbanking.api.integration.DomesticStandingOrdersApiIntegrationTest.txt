@@ -1,0 +1,112 @@
+-------------------------------------------------------------------------------
+Test set: com.laegler.openbanking.api.integration.DomesticStandingOrdersApiIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 27, Failures: 0, Errors: 27, Skipped: 0, Time elapsed: 0.013 s <<< FAILURE! - in com.laegler.openbanking.api.integration.DomesticStandingOrdersApiIntegrationTest
+test_getDomesticStandingOrdersDomesticStandingOrderIdPaymentDetails_200  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticStandingOrderId.
+	at com.laegler.openbanking.api.integration.DomesticStandingOrdersApiIntegrationTest.test_getDomesticStandingOrdersDomesticStandingOrderIdPaymentDetails_200(DomesticStandingOrdersApiIntegrationTest.java:185)
+
+test_getDomesticStandingOrdersDomesticStandingOrderIdPaymentDetails_400  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticStandingOrderId.
+	at com.laegler.openbanking.api.integration.DomesticStandingOrdersApiIntegrationTest.test_getDomesticStandingOrdersDomesticStandingOrderIdPaymentDetails_400(DomesticStandingOrdersApiIntegrationTest.java:143)
+
+test_getDomesticStandingOrdersDomesticStandingOrderIdPaymentDetails_401  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticStandingOrderId.
+	at com.laegler.openbanking.api.integration.DomesticStandingOrdersApiIntegrationTest.test_getDomesticStandingOrdersDomesticStandingOrderIdPaymentDetails_401(DomesticStandingOrdersApiIntegrationTest.java:149)
+
+test_getDomesticStandingOrdersDomesticStandingOrderIdPaymentDetails_403  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticStandingOrderId.
+	at com.laegler.openbanking.api.integration.DomesticStandingOrdersApiIntegrationTest.test_getDomesticStandingOrdersDomesticStandingOrderIdPaymentDetails_403(DomesticStandingOrdersApiIntegrationTest.java:155)
+
+test_getDomesticStandingOrdersDomesticStandingOrderIdPaymentDetails_404  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticStandingOrderId.
+	at com.laegler.openbanking.api.integration.DomesticStandingOrdersApiIntegrationTest.test_getDomesticStandingOrdersDomesticStandingOrderIdPaymentDetails_404(DomesticStandingOrdersApiIntegrationTest.java:161)
+
+test_getDomesticStandingOrdersDomesticStandingOrderIdPaymentDetails_405  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticStandingOrderId.
+	at com.laegler.openbanking.api.integration.DomesticStandingOrdersApiIntegrationTest.test_getDomesticStandingOrdersDomesticStandingOrderIdPaymentDetails_405(DomesticStandingOrdersApiIntegrationTest.java:173)
+
+test_getDomesticStandingOrdersDomesticStandingOrderIdPaymentDetails_406  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticStandingOrderId.
+	at com.laegler.openbanking.api.integration.DomesticStandingOrdersApiIntegrationTest.test_getDomesticStandingOrdersDomesticStandingOrderIdPaymentDetails_406(DomesticStandingOrdersApiIntegrationTest.java:179)
+
+test_getDomesticStandingOrdersDomesticStandingOrderIdPaymentDetails_429  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticStandingOrderId.
+	at com.laegler.openbanking.api.integration.DomesticStandingOrdersApiIntegrationTest.test_getDomesticStandingOrdersDomesticStandingOrderIdPaymentDetails_429(DomesticStandingOrdersApiIntegrationTest.java:191)
+
+test_getDomesticStandingOrdersDomesticStandingOrderIdPaymentDetails_500  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticStandingOrderId.
+	at com.laegler.openbanking.api.integration.DomesticStandingOrdersApiIntegrationTest.test_getDomesticStandingOrdersDomesticStandingOrderIdPaymentDetails_500(DomesticStandingOrdersApiIntegrationTest.java:167)
+
+test_createDomesticStandingOrders_201  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DomesticStandingOrdersApiIntegrationTest.test_createDomesticStandingOrders_201(DomesticStandingOrdersApiIntegrationTest.java:77)
+
+test_createDomesticStandingOrders_400  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DomesticStandingOrdersApiIntegrationTest.test_createDomesticStandingOrders_400(DomesticStandingOrdersApiIntegrationTest.java:35)
+
+test_createDomesticStandingOrders_401  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DomesticStandingOrdersApiIntegrationTest.test_createDomesticStandingOrders_401(DomesticStandingOrdersApiIntegrationTest.java:41)
+
+test_createDomesticStandingOrders_403  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DomesticStandingOrdersApiIntegrationTest.test_createDomesticStandingOrders_403(DomesticStandingOrdersApiIntegrationTest.java:47)
+
+test_createDomesticStandingOrders_404  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DomesticStandingOrdersApiIntegrationTest.test_createDomesticStandingOrders_404(DomesticStandingOrdersApiIntegrationTest.java:53)
+
+test_createDomesticStandingOrders_405  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DomesticStandingOrdersApiIntegrationTest.test_createDomesticStandingOrders_405(DomesticStandingOrdersApiIntegrationTest.java:65)
+
+test_createDomesticStandingOrders_406  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DomesticStandingOrdersApiIntegrationTest.test_createDomesticStandingOrders_406(DomesticStandingOrdersApiIntegrationTest.java:71)
+
+test_createDomesticStandingOrders_429  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DomesticStandingOrdersApiIntegrationTest.test_createDomesticStandingOrders_429(DomesticStandingOrdersApiIntegrationTest.java:83)
+
+test_createDomesticStandingOrders_500  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DomesticStandingOrdersApiIntegrationTest.test_createDomesticStandingOrders_500(DomesticStandingOrdersApiIntegrationTest.java:59)
+
+test_getDomesticStandingOrdersDomesticStandingOrderId_200  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticStandingOrderId.
+	at com.laegler.openbanking.api.integration.DomesticStandingOrdersApiIntegrationTest.test_getDomesticStandingOrdersDomesticStandingOrderId_200(DomesticStandingOrdersApiIntegrationTest.java:131)
+
+test_getDomesticStandingOrdersDomesticStandingOrderId_400  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticStandingOrderId.
+	at com.laegler.openbanking.api.integration.DomesticStandingOrdersApiIntegrationTest.test_getDomesticStandingOrdersDomesticStandingOrderId_400(DomesticStandingOrdersApiIntegrationTest.java:89)
+
+test_getDomesticStandingOrdersDomesticStandingOrderId_401  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticStandingOrderId.
+	at com.laegler.openbanking.api.integration.DomesticStandingOrdersApiIntegrationTest.test_getDomesticStandingOrdersDomesticStandingOrderId_401(DomesticStandingOrdersApiIntegrationTest.java:95)
+
+test_getDomesticStandingOrdersDomesticStandingOrderId_403  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticStandingOrderId.
+	at com.laegler.openbanking.api.integration.DomesticStandingOrdersApiIntegrationTest.test_getDomesticStandingOrdersDomesticStandingOrderId_403(DomesticStandingOrdersApiIntegrationTest.java:101)
+
+test_getDomesticStandingOrdersDomesticStandingOrderId_404  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticStandingOrderId.
+	at com.laegler.openbanking.api.integration.DomesticStandingOrdersApiIntegrationTest.test_getDomesticStandingOrdersDomesticStandingOrderId_404(DomesticStandingOrdersApiIntegrationTest.java:107)
+
+test_getDomesticStandingOrdersDomesticStandingOrderId_405  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticStandingOrderId.
+	at com.laegler.openbanking.api.integration.DomesticStandingOrdersApiIntegrationTest.test_getDomesticStandingOrdersDomesticStandingOrderId_405(DomesticStandingOrdersApiIntegrationTest.java:119)
+
+test_getDomesticStandingOrdersDomesticStandingOrderId_406  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticStandingOrderId.
+	at com.laegler.openbanking.api.integration.DomesticStandingOrdersApiIntegrationTest.test_getDomesticStandingOrdersDomesticStandingOrderId_406(DomesticStandingOrdersApiIntegrationTest.java:125)
+
+test_getDomesticStandingOrdersDomesticStandingOrderId_429  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticStandingOrderId.
+	at com.laegler.openbanking.api.integration.DomesticStandingOrdersApiIntegrationTest.test_getDomesticStandingOrdersDomesticStandingOrderId_429(DomesticStandingOrdersApiIntegrationTest.java:137)
+
+test_getDomesticStandingOrdersDomesticStandingOrderId_500  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticStandingOrderId.
+	at com.laegler.openbanking.api.integration.DomesticStandingOrdersApiIntegrationTest.test_getDomesticStandingOrdersDomesticStandingOrderId_500(DomesticStandingOrdersApiIntegrationTest.java:113)
+

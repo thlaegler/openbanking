@@ -1,0 +1,112 @@
+-------------------------------------------------------------------------------
+Test set: com.laegler.openbanking.api.integration.InternationalStandingOrdersApiIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 27, Failures: 0, Errors: 27, Skipped: 0, Time elapsed: 0.013 s <<< FAILURE! - in com.laegler.openbanking.api.integration.InternationalStandingOrdersApiIntegrationTest
+test_createInternationalStandingOrders_201  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalStandingOrdersApiIntegrationTest.test_createInternationalStandingOrders_201(InternationalStandingOrdersApiIntegrationTest.java:77)
+
+test_createInternationalStandingOrders_400  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalStandingOrdersApiIntegrationTest.test_createInternationalStandingOrders_400(InternationalStandingOrdersApiIntegrationTest.java:35)
+
+test_createInternationalStandingOrders_401  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalStandingOrdersApiIntegrationTest.test_createInternationalStandingOrders_401(InternationalStandingOrdersApiIntegrationTest.java:41)
+
+test_createInternationalStandingOrders_403  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalStandingOrdersApiIntegrationTest.test_createInternationalStandingOrders_403(InternationalStandingOrdersApiIntegrationTest.java:47)
+
+test_createInternationalStandingOrders_404  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalStandingOrdersApiIntegrationTest.test_createInternationalStandingOrders_404(InternationalStandingOrdersApiIntegrationTest.java:53)
+
+test_createInternationalStandingOrders_405  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalStandingOrdersApiIntegrationTest.test_createInternationalStandingOrders_405(InternationalStandingOrdersApiIntegrationTest.java:65)
+
+test_createInternationalStandingOrders_406  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalStandingOrdersApiIntegrationTest.test_createInternationalStandingOrders_406(InternationalStandingOrdersApiIntegrationTest.java:71)
+
+test_createInternationalStandingOrders_429  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalStandingOrdersApiIntegrationTest.test_createInternationalStandingOrders_429(InternationalStandingOrdersApiIntegrationTest.java:83)
+
+test_createInternationalStandingOrders_500  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalStandingOrdersApiIntegrationTest.test_createInternationalStandingOrders_500(InternationalStandingOrdersApiIntegrationTest.java:59)
+
+test_getInternationalStandingOrdersInternationalStandingOrderPaymentId_200  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalStandingOrderPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalStandingOrdersApiIntegrationTest.test_getInternationalStandingOrdersInternationalStandingOrderPaymentId_200(InternationalStandingOrdersApiIntegrationTest.java:131)
+
+test_getInternationalStandingOrdersInternationalStandingOrderPaymentId_400  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalStandingOrderPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalStandingOrdersApiIntegrationTest.test_getInternationalStandingOrdersInternationalStandingOrderPaymentId_400(InternationalStandingOrdersApiIntegrationTest.java:89)
+
+test_getInternationalStandingOrdersInternationalStandingOrderPaymentId_401  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalStandingOrderPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalStandingOrdersApiIntegrationTest.test_getInternationalStandingOrdersInternationalStandingOrderPaymentId_401(InternationalStandingOrdersApiIntegrationTest.java:95)
+
+test_getInternationalStandingOrdersInternationalStandingOrderPaymentId_403  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalStandingOrderPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalStandingOrdersApiIntegrationTest.test_getInternationalStandingOrdersInternationalStandingOrderPaymentId_403(InternationalStandingOrdersApiIntegrationTest.java:101)
+
+test_getInternationalStandingOrdersInternationalStandingOrderPaymentId_404  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalStandingOrderPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalStandingOrdersApiIntegrationTest.test_getInternationalStandingOrdersInternationalStandingOrderPaymentId_404(InternationalStandingOrdersApiIntegrationTest.java:107)
+
+test_getInternationalStandingOrdersInternationalStandingOrderPaymentId_405  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalStandingOrderPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalStandingOrdersApiIntegrationTest.test_getInternationalStandingOrdersInternationalStandingOrderPaymentId_405(InternationalStandingOrdersApiIntegrationTest.java:119)
+
+test_getInternationalStandingOrdersInternationalStandingOrderPaymentId_406  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalStandingOrderPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalStandingOrdersApiIntegrationTest.test_getInternationalStandingOrdersInternationalStandingOrderPaymentId_406(InternationalStandingOrdersApiIntegrationTest.java:125)
+
+test_getInternationalStandingOrdersInternationalStandingOrderPaymentId_429  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalStandingOrderPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalStandingOrdersApiIntegrationTest.test_getInternationalStandingOrdersInternationalStandingOrderPaymentId_429(InternationalStandingOrdersApiIntegrationTest.java:137)
+
+test_getInternationalStandingOrdersInternationalStandingOrderPaymentId_500  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalStandingOrderPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalStandingOrdersApiIntegrationTest.test_getInternationalStandingOrdersInternationalStandingOrderPaymentId_500(InternationalStandingOrdersApiIntegrationTest.java:113)
+
+test_getInternationalStandingOrdersInternationalStandingOrderPaymentIdPaymentDetails_200  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalStandingOrderPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalStandingOrdersApiIntegrationTest.test_getInternationalStandingOrdersInternationalStandingOrderPaymentIdPaymentDetails_200(InternationalStandingOrdersApiIntegrationTest.java:185)
+
+test_getInternationalStandingOrdersInternationalStandingOrderPaymentIdPaymentDetails_400  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalStandingOrderPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalStandingOrdersApiIntegrationTest.test_getInternationalStandingOrdersInternationalStandingOrderPaymentIdPaymentDetails_400(InternationalStandingOrdersApiIntegrationTest.java:143)
+
+test_getInternationalStandingOrdersInternationalStandingOrderPaymentIdPaymentDetails_401  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalStandingOrderPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalStandingOrdersApiIntegrationTest.test_getInternationalStandingOrdersInternationalStandingOrderPaymentIdPaymentDetails_401(InternationalStandingOrdersApiIntegrationTest.java:149)
+
+test_getInternationalStandingOrdersInternationalStandingOrderPaymentIdPaymentDetails_403  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalStandingOrderPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalStandingOrdersApiIntegrationTest.test_getInternationalStandingOrdersInternationalStandingOrderPaymentIdPaymentDetails_403(InternationalStandingOrdersApiIntegrationTest.java:155)
+
+test_getInternationalStandingOrdersInternationalStandingOrderPaymentIdPaymentDetails_404  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalStandingOrderPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalStandingOrdersApiIntegrationTest.test_getInternationalStandingOrdersInternationalStandingOrderPaymentIdPaymentDetails_404(InternationalStandingOrdersApiIntegrationTest.java:161)
+
+test_getInternationalStandingOrdersInternationalStandingOrderPaymentIdPaymentDetails_405  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalStandingOrderPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalStandingOrdersApiIntegrationTest.test_getInternationalStandingOrdersInternationalStandingOrderPaymentIdPaymentDetails_405(InternationalStandingOrdersApiIntegrationTest.java:173)
+
+test_getInternationalStandingOrdersInternationalStandingOrderPaymentIdPaymentDetails_406  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalStandingOrderPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalStandingOrdersApiIntegrationTest.test_getInternationalStandingOrdersInternationalStandingOrderPaymentIdPaymentDetails_406(InternationalStandingOrdersApiIntegrationTest.java:179)
+
+test_getInternationalStandingOrdersInternationalStandingOrderPaymentIdPaymentDetails_429  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalStandingOrderPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalStandingOrdersApiIntegrationTest.test_getInternationalStandingOrdersInternationalStandingOrderPaymentIdPaymentDetails_429(InternationalStandingOrdersApiIntegrationTest.java:191)
+
+test_getInternationalStandingOrdersInternationalStandingOrderPaymentIdPaymentDetails_500  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalStandingOrderPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalStandingOrdersApiIntegrationTest.test_getInternationalStandingOrdersInternationalStandingOrderPaymentIdPaymentDetails_500(InternationalStandingOrdersApiIntegrationTest.java:167)
+

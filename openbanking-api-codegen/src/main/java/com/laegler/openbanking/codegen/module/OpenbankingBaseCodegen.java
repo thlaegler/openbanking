@@ -1,5 +1,6 @@
 package com.laegler.openbanking.codegen.module;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -28,6 +29,9 @@ public class OpenbankingBaseCodegen extends SpringCodegen {
 
   protected Map<String, String> apiFeatureStepsTemplateFiles = new HashMap<String, String>();
   protected Map<String, String> apiIntegrationTestTemplateFiles = new HashMap<String, String>();
+  protected Map<String, String> resourceTemplateFiles = new HashMap<String, String>();
+
+  protected String resourceFolder = projectFolder + File.separator + "resources";
 
   public OpenbankingBaseCodegen() {
     super();
@@ -42,6 +46,10 @@ public class OpenbankingBaseCodegen extends SpringCodegen {
   @Override
   public String getName() {
     return "openbanking-base";
+  }
+
+  public Map<String, String> resourceTemplateFiles() {
+    return resourceTemplateFiles;
   }
 
   @Override
@@ -336,6 +344,10 @@ public class OpenbankingBaseCodegen extends SpringCodegen {
 
   public Map<String, String> apiIntegrationTestTemplateFiles() {
     return this.apiIntegrationTestTemplateFiles;
+  }
+
+  public String resourceFileFolder() {
+    return outputFolder + "/" + resourceFolder + "/" + modelPackage().replace('.', '/');
   }
 
 }

@@ -1,0 +1,76 @@
+-------------------------------------------------------------------------------
+Test set: com.laegler.openbanking.api.integration.DomesticScheduledPaymentConsentsApiIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 18, Failures: 0, Errors: 18, Skipped: 0, Time elapsed: 0.009 s <<< FAILURE! - in com.laegler.openbanking.api.integration.DomesticScheduledPaymentConsentsApiIntegrationTest
+test_getDomesticScheduledPaymentConsentsConsentId_200  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentConsentsApiIntegrationTest.test_getDomesticScheduledPaymentConsentsConsentId_200(DomesticScheduledPaymentConsentsApiIntegrationTest.java:130)
+
+test_getDomesticScheduledPaymentConsentsConsentId_400  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentConsentsApiIntegrationTest.test_getDomesticScheduledPaymentConsentsConsentId_400(DomesticScheduledPaymentConsentsApiIntegrationTest.java:88)
+
+test_getDomesticScheduledPaymentConsentsConsentId_401  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentConsentsApiIntegrationTest.test_getDomesticScheduledPaymentConsentsConsentId_401(DomesticScheduledPaymentConsentsApiIntegrationTest.java:94)
+
+test_getDomesticScheduledPaymentConsentsConsentId_403  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentConsentsApiIntegrationTest.test_getDomesticScheduledPaymentConsentsConsentId_403(DomesticScheduledPaymentConsentsApiIntegrationTest.java:100)
+
+test_getDomesticScheduledPaymentConsentsConsentId_404  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentConsentsApiIntegrationTest.test_getDomesticScheduledPaymentConsentsConsentId_404(DomesticScheduledPaymentConsentsApiIntegrationTest.java:106)
+
+test_getDomesticScheduledPaymentConsentsConsentId_405  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentConsentsApiIntegrationTest.test_getDomesticScheduledPaymentConsentsConsentId_405(DomesticScheduledPaymentConsentsApiIntegrationTest.java:118)
+
+test_getDomesticScheduledPaymentConsentsConsentId_406  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentConsentsApiIntegrationTest.test_getDomesticScheduledPaymentConsentsConsentId_406(DomesticScheduledPaymentConsentsApiIntegrationTest.java:124)
+
+test_getDomesticScheduledPaymentConsentsConsentId_429  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentConsentsApiIntegrationTest.test_getDomesticScheduledPaymentConsentsConsentId_429(DomesticScheduledPaymentConsentsApiIntegrationTest.java:136)
+
+test_getDomesticScheduledPaymentConsentsConsentId_500  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentConsentsApiIntegrationTest.test_getDomesticScheduledPaymentConsentsConsentId_500(DomesticScheduledPaymentConsentsApiIntegrationTest.java:112)
+
+test_createDomesticScheduledPaymentConsents_201  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentConsentsApiIntegrationTest.test_createDomesticScheduledPaymentConsents_201(DomesticScheduledPaymentConsentsApiIntegrationTest.java:76)
+
+test_createDomesticScheduledPaymentConsents_400  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentConsentsApiIntegrationTest.test_createDomesticScheduledPaymentConsents_400(DomesticScheduledPaymentConsentsApiIntegrationTest.java:34)
+
+test_createDomesticScheduledPaymentConsents_401  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentConsentsApiIntegrationTest.test_createDomesticScheduledPaymentConsents_401(DomesticScheduledPaymentConsentsApiIntegrationTest.java:40)
+
+test_createDomesticScheduledPaymentConsents_403  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentConsentsApiIntegrationTest.test_createDomesticScheduledPaymentConsents_403(DomesticScheduledPaymentConsentsApiIntegrationTest.java:46)
+
+test_createDomesticScheduledPaymentConsents_404  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentConsentsApiIntegrationTest.test_createDomesticScheduledPaymentConsents_404(DomesticScheduledPaymentConsentsApiIntegrationTest.java:52)
+
+test_createDomesticScheduledPaymentConsents_405  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentConsentsApiIntegrationTest.test_createDomesticScheduledPaymentConsents_405(DomesticScheduledPaymentConsentsApiIntegrationTest.java:64)
+
+test_createDomesticScheduledPaymentConsents_406  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentConsentsApiIntegrationTest.test_createDomesticScheduledPaymentConsents_406(DomesticScheduledPaymentConsentsApiIntegrationTest.java:70)
+
+test_createDomesticScheduledPaymentConsents_429  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentConsentsApiIntegrationTest.test_createDomesticScheduledPaymentConsents_429(DomesticScheduledPaymentConsentsApiIntegrationTest.java:82)
+
+test_createDomesticScheduledPaymentConsents_500  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentConsentsApiIntegrationTest.test_createDomesticScheduledPaymentConsents_500(DomesticScheduledPaymentConsentsApiIntegrationTest.java:58)
+

@@ -26,43 +26,43 @@ import org.junit.Ignore;
 public class CertificateApiIntegrationTest extends AbstractIntegrationTest {
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 400")
+	// @Ignore("TODO: Define request to get HTTP status code 400")
 	public void test_certificateValidatePost_400() {
 		given().spec(spec).when().post("/certificate/certificate/validate").then().assertThat().statusCode(400);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 401")
+	// @Ignore("TODO: Define request to get HTTP status code 401")
 	public void test_certificateValidatePost_401() {
 		given().spec(spec).when().post("/certificate/certificate/validate").then().assertThat().statusCode(401);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 404")
+	// @Ignore("TODO: Define request to get HTTP status code 404")
 	public void test_certificateValidatePost_404() {
 		given().spec(spec).when().post("/certificate/certificate/validate").then().assertThat().statusCode(404);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 500")
+	// @Ignore("TODO: Define request to get HTTP status code 500")
 	public void test_certificateValidatePost_500() {
 		given().spec(spec).when().post("/certificate/certificate/validate").then().assertThat().statusCode(500);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 406")
+	// @Ignore("TODO: Define request to get HTTP status code 406")
 	public void test_certificateValidatePost_406() {
 		given().spec(spec).when().post("/certificate/certificate/validate").then().assertThat().statusCode(406);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 502")
+	// @Ignore("TODO: Define request to get HTTP status code 502")
 	public void test_certificateValidatePost_502() {
 		given().spec(spec).when().post("/certificate/certificate/validate").then().assertThat().statusCode(502);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 200")
+	// @Ignore("TODO: Define request to get HTTP status code 200")
 	public void test_certificateValidatePost_200() {
 		given().spec(spec).when().post("/certificate/certificate/validate").then().assertThat().statusCode(200);
 	}

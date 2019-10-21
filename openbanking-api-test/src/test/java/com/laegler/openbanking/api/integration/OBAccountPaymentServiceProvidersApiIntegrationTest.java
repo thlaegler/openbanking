@@ -31,19 +31,19 @@ import org.junit.Ignore;
 public class OBAccountPaymentServiceProvidersApiIntegrationTest extends AbstractIntegrationTest {
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 200")
+	// @Ignore("TODO: Define request to get HTTP status code 200")
 	public void test_oBAccountPaymentServiceProvidersGet_200() {
 		given().spec(spec).when().get("/OBAccountPaymentServiceProviders/OBAccountPaymentServiceProviders").then().assertThat().statusCode(200);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 200")
+	// @Ignore("TODO: Define request to get HTTP status code 200")
 	public void test_oBAccountPaymentServiceProvidersIdGet_200() {
 		given().spec(spec).when().get("/OBAccountPaymentServiceProviders/OBAccountPaymentServiceProviders/{id}").then().assertThat().statusCode(200);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 200")
+	// @Ignore("TODO: Define request to get HTTP status code 200")
 	public void test_oBAccountPaymentServiceProvidersSearchPost_200() {
 		given().spec(spec).when().post("/OBAccountPaymentServiceProviders/OBAccountPaymentServiceProviders/.search").then().assertThat().statusCode(200);
 	}

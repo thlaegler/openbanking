@@ -28,37 +28,37 @@ import org.junit.Ignore;
 public class BusinessCurrentAccountsApiIntegrationTest extends AbstractIntegrationTest {
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 400")
+	// @Ignore("TODO: Define request to get HTTP status code 400")
 	public void test_businessCurrentAccountsGet_400() {
 		given().spec(spec).when().get("/business-current-accounts/business-current-accounts").then().assertThat().statusCode(400);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 500")
+	// @Ignore("TODO: Define request to get HTTP status code 500")
 	public void test_businessCurrentAccountsGet_500() {
 		given().spec(spec).when().get("/business-current-accounts/business-current-accounts").then().assertThat().statusCode(500);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 503")
+	// @Ignore("TODO: Define request to get HTTP status code 503")
 	public void test_businessCurrentAccountsGet_503() {
 		given().spec(spec).when().get("/business-current-accounts/business-current-accounts").then().assertThat().statusCode(503);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 200")
+	// @Ignore("TODO: Define request to get HTTP status code 200")
 	public void test_businessCurrentAccountsGet_200() {
 		given().spec(spec).when().get("/business-current-accounts/business-current-accounts").then().assertThat().statusCode(200);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 408")
+	// @Ignore("TODO: Define request to get HTTP status code 408")
 	public void test_businessCurrentAccountsGet_408() {
 		given().spec(spec).when().get("/business-current-accounts/business-current-accounts").then().assertThat().statusCode(408);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 429")
+	// @Ignore("TODO: Define request to get HTTP status code 429")
 	public void test_businessCurrentAccountsGet_429() {
 		given().spec(spec).when().get("/business-current-accounts/business-current-accounts").then().assertThat().statusCode(429);
 	}

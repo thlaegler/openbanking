@@ -6,7 +6,7 @@
     "description": "Latest Swagger specification for OpenData Personal Current Account data"
   },
   "host": "localhost:8080",
-  "basePath": "/open-banking/v2.3",
+  "basePath": "/api/v1",
   "schemes": [
     "https"
   ],

@@ -6,6 +6,7 @@
 	<groupId>com.laegler.openbanking</groupId>
 	<artifactId>openbanking-api-test</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<!-- <packaging>pom</packaging> -->
 	<name>Open Banking API Test</name>
 	<description>Open Banking API Integration Test and JMeter</description>
 
@@ -142,11 +143,23 @@
 
 	<build>
 		<finalName>${project.artifactId}</finalName>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+		<extensions>
+			<extension>
+				<groupId>com.gkatzioura.maven.cloud</groupId>
+				<artifactId>google-storage-wagon</artifactId>
+				<version>2.3</version>
+			</extension>
+		</extensions>
 		<plugins>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>build-helper-maven-plugin</artifactId>
-				<version>1.9.1</version>
 				<executions>
 					<execution>
 						<id>add-source</id>
@@ -156,10 +169,33 @@
 						</goals>
 						<configuration>
 							<sources>
-								<source>${project.basedir}/src/main/gen</source>
-								<source>${project.basedir}/src/test/gen</source>
+								<source>src/main/gen</source>
 							</sources>
 						</configuration>
+					</execution>
+					<execution>
+						<id>add-test-source</id>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>add-test-source</goal>
+						</goals>
+						<configuration>
+							<sources>
+								<source>src/test/gen</source>
+							</sources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<executions>
+					<execution>
+						<phase>test-compile</phase>
+						<goals>
+							<goal>testCompile</goal>
+						</goals>
 					</execution>
 				</executions>
 			</plugin>
@@ -169,28 +205,60 @@
 				<version>9.4.21.v20190926</version>
 				<configuration>
 					<httpConnector>
-						<port>8999</port>
+						<port>8080</port>
 					</httpConnector>
 					<stopKey>quit</stopKey>
 					<stopPort>9000</stopPort>
 					<webAppConfig>
-						<war>${project.basedir}/../${projectBaseName}-server/target/${projectBaseName}-server.war</war>
+						<!-- <war>${project.basedir}/../${projectBaseName}-server/target/${projectBaseName}-service.war</war> -->
 						<contextPath>/</contextPath>
 					</webAppConfig>
+					<war>${project.basedir}/../${projectBaseName}-server/target/${projectBaseName}-service.war</war>
 				</configuration>
 				<executions>
 					<execution>
-						<id>start-jetty</id>
+						<id>start</id>
 						<phase>pre-integration-test</phase>
 						<goals>
 							<goal>start</goal>
 						</goals>
 					</execution>
 					<execution>
-						<id>stop-jetty</id>
+						<id>stop</id>
 						<phase>post-integration-test</phase>
 						<goals>
 							<goal>stop</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<url>http://localhost:8080/manager/text</url>
+					<path>/${project.artifactId}</path>
+					<update>true</update>
+					<username>tomcat</username>
+					<password>tomcat</password>
+					<address>localhost</address>
+					<port>8080</port>
+					<warDirectory>${project.basedir}/../${projectBaseName}-server/target/${projectBaseName}-service</warDirectory>
+				</configuration>
+				<executions>
+					<execution>
+						<id>start</id>
+						<phase>pre-integration-test</phase>
+						<goals>
+							<goal>run-war</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>stop</id>
+						<phase>post-integration-test</phase>
+						<goals>
+							<goal>shutdown</goal>
 						</goals>
 					</execution>
 				</executions>
@@ -200,8 +268,11 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.22.1</version>
 				<configuration>
+					<!-- <includes> <include>**/*Test.java</include> <include>**/*TestCase.java</include> 
+						</includes> <excludes> <exclude>**/*IntegrationTest.java</exclude> <exclude>**/*IntegrationTestCase.java</exclude> 
+						<exclude>**/*IT.java</exclude> <exclude>**/*ITCase.java</exclude> </excludes> -->
 					<skipTests>${skipUnitTests}</skipTests>
-					<reportsDirectory>${testReportDirectory}/surefire</reportsDirectory>
+					<reportsDirectory>${testResultDirectory}</reportsDirectory>
 					<useSystemClassLoader>false</useSystemClassLoader>
 					<systemPropertyVariables>
 						<jacoco-agent.destfile>target/jacoco.exec</jacoco-agent.destfile>
@@ -213,15 +284,19 @@
 				<artifactId>maven-failsafe-plugin</artifactId>
 				<version>2.22.1</version>
 				<configuration>
+					<!-- <includes> <include>**/*IntegrationTest.java</include> <include>**/*IntegrationTestCase.java</include> 
+						<include>**/*IT.java</include> <include>**/*ITCase.java</include> </includes> -->
 					<skipTests>${skipIntegrationTests}</skipTests>
 					<useSystemClassLoader>false</useSystemClassLoader>
+					<reportsDirectory>${testResultDirectory}</reportsDirectory>
 					<systemPropertyVariables>
 						<jacoco-agent.destfile>target/jacoco-it.exec</jacoco-agent.destfile>
 					</systemPropertyVariables>
 				</configuration>
 				<executions>
 					<execution>
-						<id>integration-tests</id>
+						<id>run-tests</id>
+						<phase>integration-test</phase>
 						<goals>
 							<goal>integration-test</goal>
 							<goal>verify</goal>
@@ -229,44 +304,125 @@
 					</execution>
 				</executions>
 			</plugin>
-			<plugin>
-				<groupId>com.trivago.rta</groupId>
-				<artifactId>cluecumber-report-plugin</artifactId>
-				<version>2.3.1</version>
-				<executions>
-					<execution>
-						<id>report</id>
-						<phase>post-integration-test</phase>
-						<goals>
-							<goal>reporting</goal>
-						</goals>
-					</execution>
-				</executions>
-				<configuration>
-					<sourceJsonReportDirectory>${testResultDirectory}</sourceJsonReportDirectory>
-					<generatedHtmlReportDirectory>${testReportDirectory}/html-report</generatedHtmlReportDirectory>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>net.masterthought</groupId>
-				<artifactId>maven-cucumber-reporting</artifactId>
-				<version>4.10.0</version>
-				<configuration>
-					<checkBuildResult>false</checkBuildResult>
-					<jsonFiles>*.json</jsonFiles>
-					<inputDirectory>${testResultDirectory}</inputDirectory>
-					<outputDirectory>${testReportDirectory}</outputDirectory>
-				</configuration>
-				<executions>
-					<execution>
-						<id>generate</id>
-						<phase>post-integration-test</phase>
-						<goals>
-							<goal>generate</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
 		</plugins>
 	</build>
+
+	<profiles>
+		<profile>
+			<id>docu</id>
+			<build>
+				<plugins>
+					<!-- This could take a very long time, that's why it's under profile 
+						'docu' -->
+					<plugin>
+						<groupId>com.lazerycode.jmeter</groupId>
+						<artifactId>jmeter-maven-plugin</artifactId>
+						<version>2.9.0</version>
+						<configuration>
+						</configuration>
+						<executions>
+							<execution>
+								<id>jmeter-tests</id>
+								<phase>integration-test</phase>
+								<goals>
+									<goal>jmeter</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<groupId>com.trivago.rta</groupId>
+						<artifactId>cluecumber-report-plugin</artifactId>
+						<version>2.3.1</version>
+						<executions>
+							<execution>
+								<id>report</id>
+								<phase>post-integration-test</phase>
+								<goals>
+									<goal>reporting</goal>
+								</goals>
+							</execution>
+						</executions>
+						<configuration>
+							<sourceJsonReportDirectory>${testResultDirectory}</sourceJsonReportDirectory>
+							<generatedHtmlReportDirectory>${testReportDirectory}/html-report</generatedHtmlReportDirectory>
+						</configuration>
+					</plugin>
+					<plugin>
+						<groupId>net.masterthought</groupId>
+						<artifactId>maven-cucumber-reporting</artifactId>
+						<version>4.10.0</version>
+						<configuration>
+							<checkBuildResult>false</checkBuildResult>
+							<jsonFiles>*.json</jsonFiles>
+							<inputDirectory>${testResultDirectory}</inputDirectory>
+							<outputDirectory>${testReportDirectory}</outputDirectory>
+						</configuration>
+						<executions>
+							<execution>
+								<id>generate</id>
+								<phase>post-integration-test</phase>
+								<goals>
+									<goal>generate</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<artifactId>maven-antrun-plugin</artifactId>
+						<executions>
+							<execution>
+								<id>generate</id>
+								<phase>post-integration-test</phase>
+								<goals>
+									<goal>run</goal>
+								</goals>
+								<configuration>
+									<tasks>
+										<junitreport
+											todir="../openbanking-api-docs/test-results">
+											<fileset dir="../openbanking-api-docs/test-results">
+												<include name="**/*Test.xml" />
+											</fileset>
+											<report format="noframes"
+												todir="../openbanking-api-docs/test-results" />
+										</junitreport>
+										<copy
+											file="../openbanking-api-docs/test-results/junit-noframes.html"
+											tofile="../openbanking-api-docs/test-reports/junit.html" />
+									</tasks>
+								</configuration>
+							</execution>
+						</executions>
+						<dependencies>
+							<dependency>
+								<groupId>ant</groupId>
+								<artifactId>ant-junit</artifactId>
+								<version>1.6.2</version>
+							</dependency>
+						</dependencies>
+					</plugin>
+					<!-- <plugin> <groupId>de.codecentric</groupId> <artifactId>jmeter-graph-maven-plugin</artifactId> 
+						<version>0.1.0</version> <configuration> <inputFile>${testResultDirectory}/jmeter.jtl</inputFile> 
+						<graphs> <graph> <pluginType>ResponseTimesOverTime</pluginType> <width>800</width> 
+						<height>600</height> <outputFile>${testReportDirectory}/jmeter.png</outputFile> 
+						</graph> </graphs> </configuration> <executions> <execution> <id>generate</id> 
+						<phase>post-integration-test</phase> <goals> <goal>create-graph</goal> </goals> 
+						</execution> </executions> </plugin> -->
+				</plugins>
+			</build>
+		</profile>
+
+	</profiles>
+
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-report-plugin</artifactId>
+				<version>2.19.1</version>
+			</plugin>
+		</plugins>
+	</reporting>
+
 </project>

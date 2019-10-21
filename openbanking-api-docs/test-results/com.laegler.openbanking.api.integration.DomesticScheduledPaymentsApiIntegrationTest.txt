@@ -1,0 +1,112 @@
+-------------------------------------------------------------------------------
+Test set: com.laegler.openbanking.api.integration.DomesticScheduledPaymentsApiIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 27, Failures: 0, Errors: 27, Skipped: 0, Time elapsed: 0.021 s <<< FAILURE! - in com.laegler.openbanking.api.integration.DomesticScheduledPaymentsApiIntegrationTest
+test_createDomesticScheduledPayments_201  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentsApiIntegrationTest.test_createDomesticScheduledPayments_201(DomesticScheduledPaymentsApiIntegrationTest.java:77)
+
+test_createDomesticScheduledPayments_400  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentsApiIntegrationTest.test_createDomesticScheduledPayments_400(DomesticScheduledPaymentsApiIntegrationTest.java:35)
+
+test_createDomesticScheduledPayments_401  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentsApiIntegrationTest.test_createDomesticScheduledPayments_401(DomesticScheduledPaymentsApiIntegrationTest.java:41)
+
+test_createDomesticScheduledPayments_403  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentsApiIntegrationTest.test_createDomesticScheduledPayments_403(DomesticScheduledPaymentsApiIntegrationTest.java:47)
+
+test_createDomesticScheduledPayments_404  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentsApiIntegrationTest.test_createDomesticScheduledPayments_404(DomesticScheduledPaymentsApiIntegrationTest.java:53)
+
+test_createDomesticScheduledPayments_405  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentsApiIntegrationTest.test_createDomesticScheduledPayments_405(DomesticScheduledPaymentsApiIntegrationTest.java:65)
+
+test_createDomesticScheduledPayments_406  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentsApiIntegrationTest.test_createDomesticScheduledPayments_406(DomesticScheduledPaymentsApiIntegrationTest.java:71)
+
+test_createDomesticScheduledPayments_429  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentsApiIntegrationTest.test_createDomesticScheduledPayments_429(DomesticScheduledPaymentsApiIntegrationTest.java:83)
+
+test_createDomesticScheduledPayments_500  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentsApiIntegrationTest.test_createDomesticScheduledPayments_500(DomesticScheduledPaymentsApiIntegrationTest.java:59)
+
+test_getDomesticScheduledPaymentsDomesticScheduledPaymentId_200  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticScheduledPaymentId.
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentsApiIntegrationTest.test_getDomesticScheduledPaymentsDomesticScheduledPaymentId_200(DomesticScheduledPaymentsApiIntegrationTest.java:131)
+
+test_getDomesticScheduledPaymentsDomesticScheduledPaymentId_400  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticScheduledPaymentId.
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentsApiIntegrationTest.test_getDomesticScheduledPaymentsDomesticScheduledPaymentId_400(DomesticScheduledPaymentsApiIntegrationTest.java:89)
+
+test_getDomesticScheduledPaymentsDomesticScheduledPaymentId_401  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticScheduledPaymentId.
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentsApiIntegrationTest.test_getDomesticScheduledPaymentsDomesticScheduledPaymentId_401(DomesticScheduledPaymentsApiIntegrationTest.java:95)
+
+test_getDomesticScheduledPaymentsDomesticScheduledPaymentId_403  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticScheduledPaymentId.
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentsApiIntegrationTest.test_getDomesticScheduledPaymentsDomesticScheduledPaymentId_403(DomesticScheduledPaymentsApiIntegrationTest.java:101)
+
+test_getDomesticScheduledPaymentsDomesticScheduledPaymentId_404  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticScheduledPaymentId.
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentsApiIntegrationTest.test_getDomesticScheduledPaymentsDomesticScheduledPaymentId_404(DomesticScheduledPaymentsApiIntegrationTest.java:107)
+
+test_getDomesticScheduledPaymentsDomesticScheduledPaymentId_405  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticScheduledPaymentId.
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentsApiIntegrationTest.test_getDomesticScheduledPaymentsDomesticScheduledPaymentId_405(DomesticScheduledPaymentsApiIntegrationTest.java:119)
+
+test_getDomesticScheduledPaymentsDomesticScheduledPaymentId_406  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticScheduledPaymentId.
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentsApiIntegrationTest.test_getDomesticScheduledPaymentsDomesticScheduledPaymentId_406(DomesticScheduledPaymentsApiIntegrationTest.java:125)
+
+test_getDomesticScheduledPaymentsDomesticScheduledPaymentId_429  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticScheduledPaymentId.
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentsApiIntegrationTest.test_getDomesticScheduledPaymentsDomesticScheduledPaymentId_429(DomesticScheduledPaymentsApiIntegrationTest.java:137)
+
+test_getDomesticScheduledPaymentsDomesticScheduledPaymentId_500  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticScheduledPaymentId.
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentsApiIntegrationTest.test_getDomesticScheduledPaymentsDomesticScheduledPaymentId_500(DomesticScheduledPaymentsApiIntegrationTest.java:113)
+
+test_getDomesticScheduledPaymentsDomesticScheduledPaymentIdPaymentDetails_200  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticScheduledPaymentId.
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentsApiIntegrationTest.test_getDomesticScheduledPaymentsDomesticScheduledPaymentIdPaymentDetails_200(DomesticScheduledPaymentsApiIntegrationTest.java:185)
+
+test_getDomesticScheduledPaymentsDomesticScheduledPaymentIdPaymentDetails_400  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticScheduledPaymentId.
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentsApiIntegrationTest.test_getDomesticScheduledPaymentsDomesticScheduledPaymentIdPaymentDetails_400(DomesticScheduledPaymentsApiIntegrationTest.java:143)
+
+test_getDomesticScheduledPaymentsDomesticScheduledPaymentIdPaymentDetails_401  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticScheduledPaymentId.
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentsApiIntegrationTest.test_getDomesticScheduledPaymentsDomesticScheduledPaymentIdPaymentDetails_401(DomesticScheduledPaymentsApiIntegrationTest.java:149)
+
+test_getDomesticScheduledPaymentsDomesticScheduledPaymentIdPaymentDetails_403  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticScheduledPaymentId.
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentsApiIntegrationTest.test_getDomesticScheduledPaymentsDomesticScheduledPaymentIdPaymentDetails_403(DomesticScheduledPaymentsApiIntegrationTest.java:155)
+
+test_getDomesticScheduledPaymentsDomesticScheduledPaymentIdPaymentDetails_404  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticScheduledPaymentId.
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentsApiIntegrationTest.test_getDomesticScheduledPaymentsDomesticScheduledPaymentIdPaymentDetails_404(DomesticScheduledPaymentsApiIntegrationTest.java:161)
+
+test_getDomesticScheduledPaymentsDomesticScheduledPaymentIdPaymentDetails_405  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticScheduledPaymentId.
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentsApiIntegrationTest.test_getDomesticScheduledPaymentsDomesticScheduledPaymentIdPaymentDetails_405(DomesticScheduledPaymentsApiIntegrationTest.java:173)
+
+test_getDomesticScheduledPaymentsDomesticScheduledPaymentIdPaymentDetails_406  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticScheduledPaymentId.
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentsApiIntegrationTest.test_getDomesticScheduledPaymentsDomesticScheduledPaymentIdPaymentDetails_406(DomesticScheduledPaymentsApiIntegrationTest.java:179)
+
+test_getDomesticScheduledPaymentsDomesticScheduledPaymentIdPaymentDetails_429  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticScheduledPaymentId.
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentsApiIntegrationTest.test_getDomesticScheduledPaymentsDomesticScheduledPaymentIdPaymentDetails_429(DomesticScheduledPaymentsApiIntegrationTest.java:191)
+
+test_getDomesticScheduledPaymentsDomesticScheduledPaymentIdPaymentDetails_500  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: DomesticScheduledPaymentId.
+	at com.laegler.openbanking.api.integration.DomesticScheduledPaymentsApiIntegrationTest.test_getDomesticScheduledPaymentsDomesticScheduledPaymentIdPaymentDetails_500(DomesticScheduledPaymentsApiIntegrationTest.java:167)
+

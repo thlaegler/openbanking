@@ -221,7 +221,7 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/open-banking/v2.3/organisation/${OrganisationType}</stringProp>
+          <stringProp name="HTTPSampler.path">/api/v1/organisation/${OrganisationType}</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -287,7 +287,7 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/open-banking/v2.3/organisation/${OrganisationType}/${OrganisationId}/authorisation-server/${AuthorisationServerId}</stringProp>
+          <stringProp name="HTTPSampler.path">/api/v1/organisation/${OrganisationType}/${OrganisationId}/authorisation-server/${AuthorisationServerId}</stringProp>
           <stringProp name="HTTPSampler.method">DELETE</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -353,7 +353,7 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/open-banking/v2.3/organisation/${OrganisationType}/${OrganisationId}/authorisation-server/${AuthorisationServerId}</stringProp>
+          <stringProp name="HTTPSampler.path">/api/v1/organisation/${OrganisationType}/${OrganisationId}/authorisation-server/${AuthorisationServerId}</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -419,7 +419,7 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/open-banking/v2.3/organisation/${OrganisationType}/${OrganisationId}/authorisation-server/${AuthorisationServerId}</stringProp>
+          <stringProp name="HTTPSampler.path">/api/v1/organisation/${OrganisationType}/${OrganisationId}/authorisation-server/${AuthorisationServerId}</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -485,7 +485,7 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/open-banking/v2.3/organisation/${OrganisationType}/${OrganisationId}/authorisation-server</stringProp>
+          <stringProp name="HTTPSampler.path">/api/v1/organisation/${OrganisationType}/${OrganisationId}/authorisation-server</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -551,7 +551,7 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/open-banking/v2.3/organisation/${OrganisationType}/${OrganisationId}/authorisation-server</stringProp>
+          <stringProp name="HTTPSampler.path">/api/v1/organisation/${OrganisationType}/${OrganisationId}/authorisation-server</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -617,7 +617,7 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/open-banking/v2.3/organisation/${OrganisationType}/${OrganisationId}/certificate</stringProp>
+          <stringProp name="HTTPSampler.path">/api/v1/organisation/${OrganisationType}/${OrganisationId}/certificate</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -683,7 +683,7 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/open-banking/v2.3/organisation/${OrganisationType}/${OrganisationId}/certificate/kid/${CertificateOrKeyId}</stringProp>
+          <stringProp name="HTTPSampler.path">/api/v1/organisation/${OrganisationType}/${OrganisationId}/certificate/kid/${CertificateOrKeyId}</stringProp>
           <stringProp name="HTTPSampler.method">DELETE</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -749,7 +749,7 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/open-banking/v2.3/organisation/${OrganisationType}/${OrganisationId}/certificate/kid/${CertificateOrKeyId}</stringProp>
+          <stringProp name="HTTPSampler.path">/api/v1/organisation/${OrganisationType}/${OrganisationId}/certificate/kid/${CertificateOrKeyId}</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -815,7 +815,7 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/open-banking/v2.3/organisation/${OrganisationType}/${OrganisationId}/certificate/${OrganisationCertificateType}</stringProp>
+          <stringProp name="HTTPSampler.path">/api/v1/organisation/${OrganisationType}/${OrganisationId}/certificate/${OrganisationCertificateType}</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -881,7 +881,7 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/open-banking/v2.3/organisation/${OrganisationType}/${OrganisationId}/certificate/${OrganisationCertificateType}</stringProp>
+          <stringProp name="HTTPSampler.path">/api/v1/organisation/${OrganisationType}/${OrganisationId}/certificate/${OrganisationCertificateType}</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -947,7 +947,7 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/open-banking/v2.3/organisation/${OrganisationType}/${OrganisationId}/contact/${ContactType}</stringProp>
+          <stringProp name="HTTPSampler.path">/api/v1/organisation/${OrganisationType}/${OrganisationId}/contact/${ContactType}</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1013,7 +1013,7 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/open-banking/v2.3/organisation/${OrganisationType}/${OrganisationId}/contact/${ContactType}</stringProp>
+          <stringProp name="HTTPSampler.path">/api/v1/organisation/${OrganisationType}/${OrganisationId}/contact/${ContactType}</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1079,7 +1079,7 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/open-banking/v2.3/organisation/${OrganisationType}/${OrganisationId}</stringProp>
+          <stringProp name="HTTPSampler.path">/api/v1/organisation/${OrganisationType}/${OrganisationId}</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1145,7 +1145,7 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/open-banking/v2.3/organisation/${OrganisationType}/${OrganisationId}/software-statement</stringProp>
+          <stringProp name="HTTPSampler.path">/api/v1/organisation/${OrganisationType}/${OrganisationId}/software-statement</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1211,7 +1211,7 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/open-banking/v2.3/organisation/${OrganisationType}/${OrganisationId}/software-statement</stringProp>
+          <stringProp name="HTTPSampler.path">/api/v1/organisation/${OrganisationType}/${OrganisationId}/software-statement</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1277,7 +1277,7 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/open-banking/v2.3/organisation/${OrganisationType}/${OrganisationId}/software-statement/${SoftwareStatementId}/certificate</stringProp>
+          <stringProp name="HTTPSampler.path">/api/v1/organisation/${OrganisationType}/${OrganisationId}/software-statement/${SoftwareStatementId}/certificate</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1343,7 +1343,7 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/open-banking/v2.3/organisation/${OrganisationType}/${OrganisationId}/software-statement/${SoftwareStatementId}/certificate/${OrganisationAssociativeCertificateType}/${CertificateOrKeyId}</stringProp>
+          <stringProp name="HTTPSampler.path">/api/v1/organisation/${OrganisationType}/${OrganisationId}/software-statement/${SoftwareStatementId}/certificate/${OrganisationAssociativeCertificateType}/${CertificateOrKeyId}</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1409,7 +1409,7 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/open-banking/v2.3/organisation/${OrganisationType}/${OrganisationId}/software-statement/${SoftwareStatementId}/certificate/${OrganisationAssociativeCertificateType}/${CertificateOrKeyId}</stringProp>
+          <stringProp name="HTTPSampler.path">/api/v1/organisation/${OrganisationType}/${OrganisationId}/software-statement/${SoftwareStatementId}/certificate/${OrganisationAssociativeCertificateType}/${CertificateOrKeyId}</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1475,7 +1475,7 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/open-banking/v2.3/organisation/${OrganisationType}/${OrganisationId}/software-statement/${SoftwareStatementId}/certificate/${SoftwareStatementCertificateOrKeyType}</stringProp>
+          <stringProp name="HTTPSampler.path">/api/v1/organisation/${OrganisationType}/${OrganisationId}/software-statement/${SoftwareStatementId}/certificate/${SoftwareStatementCertificateOrKeyType}</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1541,7 +1541,7 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/open-banking/v2.3/organisation/${OrganisationType}/${OrganisationId}/software-statement/${SoftwareStatementId}/certificate/${SoftwareStatementCertificateOrKeyType}</stringProp>
+          <stringProp name="HTTPSampler.path">/api/v1/organisation/${OrganisationType}/${OrganisationId}/software-statement/${SoftwareStatementId}/certificate/${SoftwareStatementCertificateOrKeyType}</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1607,7 +1607,7 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/open-banking/v2.3/organisation/${OrganisationType}/${OrganisationId}/software-statement/${SoftwareStatementId}</stringProp>
+          <stringProp name="HTTPSampler.path">/api/v1/organisation/${OrganisationType}/${OrganisationId}/software-statement/${SoftwareStatementId}</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1673,7 +1673,7 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/open-banking/v2.3/organisation/${OrganisationType}/${OrganisationId}/software-statement/${SoftwareStatementId}</stringProp>
+          <stringProp name="HTTPSampler.path">/api/v1/organisation/${OrganisationType}/${OrganisationId}/software-statement/${SoftwareStatementId}</stringProp>
           <stringProp name="HTTPSampler.method">PUT</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1739,7 +1739,7 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/open-banking/v2.3/organisation/${OrganisationType}/${OrganisationId}/software-statement/${SoftwareStatementId}/redirect-uri</stringProp>
+          <stringProp name="HTTPSampler.path">/api/v1/organisation/${OrganisationType}/${OrganisationId}/software-statement/${SoftwareStatementId}/redirect-uri</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1805,7 +1805,7 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/open-banking/v2.3/organisation/${OrganisationType}/${OrganisationId}/software-statement/${SoftwareStatementId}/software-statement-assertion</stringProp>
+          <stringProp name="HTTPSampler.path">/api/v1/organisation/${OrganisationType}/${OrganisationId}/software-statement/${SoftwareStatementId}/software-statement-assertion</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1871,7 +1871,7 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/open-banking/v2.3/organisation/${OrganisationType}</stringProp>
+          <stringProp name="HTTPSampler.path">/api/v1/organisation/${OrganisationType}</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>

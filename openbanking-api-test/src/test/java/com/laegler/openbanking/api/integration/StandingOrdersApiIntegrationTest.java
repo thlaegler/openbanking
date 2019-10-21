@@ -28,55 +28,55 @@ import org.junit.Ignore;
 public class StandingOrdersApiIntegrationTest extends AbstractIntegrationTest {
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 400")
+	// @Ignore("TODO: Define request to get HTTP status code 400")
 	public void test_getStandingOrders_400() {
 		given().spec(spec).when().get("/standing-orders/standing-orders").then().assertThat().statusCode(400);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 401")
+	// @Ignore("TODO: Define request to get HTTP status code 401")
 	public void test_getStandingOrders_401() {
 		given().spec(spec).when().get("/standing-orders/standing-orders").then().assertThat().statusCode(401);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 403")
+	// @Ignore("TODO: Define request to get HTTP status code 403")
 	public void test_getStandingOrders_403() {
 		given().spec(spec).when().get("/standing-orders/standing-orders").then().assertThat().statusCode(403);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 404")
+	// @Ignore("TODO: Define request to get HTTP status code 404")
 	public void test_getStandingOrders_404() {
 		given().spec(spec).when().get("/standing-orders/standing-orders").then().assertThat().statusCode(404);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 500")
+	// @Ignore("TODO: Define request to get HTTP status code 500")
 	public void test_getStandingOrders_500() {
 		given().spec(spec).when().get("/standing-orders/standing-orders").then().assertThat().statusCode(500);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 405")
+	// @Ignore("TODO: Define request to get HTTP status code 405")
 	public void test_getStandingOrders_405() {
 		given().spec(spec).when().get("/standing-orders/standing-orders").then().assertThat().statusCode(405);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 406")
+	// @Ignore("TODO: Define request to get HTTP status code 406")
 	public void test_getStandingOrders_406() {
 		given().spec(spec).when().get("/standing-orders/standing-orders").then().assertThat().statusCode(406);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 200")
+	// @Ignore("TODO: Define request to get HTTP status code 200")
 	public void test_getStandingOrders_200() {
 		given().spec(spec).when().get("/standing-orders/standing-orders").then().assertThat().statusCode(200);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 429")
+	// @Ignore("TODO: Define request to get HTTP status code 429")
 	public void test_getStandingOrders_429() {
 		given().spec(spec).when().get("/standing-orders/standing-orders").then().assertThat().statusCode(429);
 	}

@@ -30,19 +30,19 @@ import org.junit.Ignore;
 public class OBQualifiedTrustServiceProvidersApiIntegrationTest extends AbstractIntegrationTest {
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 200")
+	// @Ignore("TODO: Define request to get HTTP status code 200")
 	public void test_oBQualifiedTrustServiceProvidersGet_200() {
 		given().spec(spec).when().get("/OBQualifiedTrustServiceProviders/OBQualifiedTrustServiceProviders").then().assertThat().statusCode(200);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 200")
+	// @Ignore("TODO: Define request to get HTTP status code 200")
 	public void test_oBQualifiedTrustServiceProvidersIdGet_200() {
 		given().spec(spec).when().get("/OBQualifiedTrustServiceProviders/OBQualifiedTrustServiceProviders/{id}").then().assertThat().statusCode(200);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 200")
+	// @Ignore("TODO: Define request to get HTTP status code 200")
 	public void test_oBQualifiedTrustServiceProvidersSearchPost_200() {
 		given().spec(spec).when().post("/OBQualifiedTrustServiceProviders/OBQualifiedTrustServiceProviders/.search").then().assertThat().statusCode(200);
 	}

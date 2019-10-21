@@ -29,163 +29,163 @@ import org.junit.Ignore;
 public class FundsConfirmationConsentsApiIntegrationTest extends AbstractIntegrationTest {
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 400")
+	// @Ignore("TODO: Define request to get HTTP status code 400")
 	public void test_createFundsConfirmationConsents_400() {
 		given().spec(spec).when().post("/funds-confirmation-consents/funds-confirmation-consents").then().assertThat().statusCode(400);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 401")
+	// @Ignore("TODO: Define request to get HTTP status code 401")
 	public void test_createFundsConfirmationConsents_401() {
 		given().spec(spec).when().post("/funds-confirmation-consents/funds-confirmation-consents").then().assertThat().statusCode(401);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 403")
+	// @Ignore("TODO: Define request to get HTTP status code 403")
 	public void test_createFundsConfirmationConsents_403() {
 		given().spec(spec).when().post("/funds-confirmation-consents/funds-confirmation-consents").then().assertThat().statusCode(403);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 404")
+	// @Ignore("TODO: Define request to get HTTP status code 404")
 	public void test_createFundsConfirmationConsents_404() {
 		given().spec(spec).when().post("/funds-confirmation-consents/funds-confirmation-consents").then().assertThat().statusCode(404);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 500")
+	// @Ignore("TODO: Define request to get HTTP status code 500")
 	public void test_createFundsConfirmationConsents_500() {
 		given().spec(spec).when().post("/funds-confirmation-consents/funds-confirmation-consents").then().assertThat().statusCode(500);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 405")
+	// @Ignore("TODO: Define request to get HTTP status code 405")
 	public void test_createFundsConfirmationConsents_405() {
 		given().spec(spec).when().post("/funds-confirmation-consents/funds-confirmation-consents").then().assertThat().statusCode(405);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 406")
+	// @Ignore("TODO: Define request to get HTTP status code 406")
 	public void test_createFundsConfirmationConsents_406() {
 		given().spec(spec).when().post("/funds-confirmation-consents/funds-confirmation-consents").then().assertThat().statusCode(406);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 201")
+	// @Ignore("TODO: Define request to get HTTP status code 201")
 	public void test_createFundsConfirmationConsents_201() {
 		given().spec(spec).when().post("/funds-confirmation-consents/funds-confirmation-consents").then().assertThat().statusCode(201);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 429")
+	// @Ignore("TODO: Define request to get HTTP status code 429")
 	public void test_createFundsConfirmationConsents_429() {
 		given().spec(spec).when().post("/funds-confirmation-consents/funds-confirmation-consents").then().assertThat().statusCode(429);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 400")
+	// @Ignore("TODO: Define request to get HTTP status code 400")
 	public void test_deleteFundsConfirmationConsentsConsentId_400() {
 		given().spec(spec).when().delete("/funds-confirmation-consents/funds-confirmation-consents/{ConsentId}").then().assertThat().statusCode(400);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 401")
+	// @Ignore("TODO: Define request to get HTTP status code 401")
 	public void test_deleteFundsConfirmationConsentsConsentId_401() {
 		given().spec(spec).when().delete("/funds-confirmation-consents/funds-confirmation-consents/{ConsentId}").then().assertThat().statusCode(401);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 403")
+	// @Ignore("TODO: Define request to get HTTP status code 403")
 	public void test_deleteFundsConfirmationConsentsConsentId_403() {
 		given().spec(spec).when().delete("/funds-confirmation-consents/funds-confirmation-consents/{ConsentId}").then().assertThat().statusCode(403);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 404")
+	// @Ignore("TODO: Define request to get HTTP status code 404")
 	public void test_deleteFundsConfirmationConsentsConsentId_404() {
 		given().spec(spec).when().delete("/funds-confirmation-consents/funds-confirmation-consents/{ConsentId}").then().assertThat().statusCode(404);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 500")
+	// @Ignore("TODO: Define request to get HTTP status code 500")
 	public void test_deleteFundsConfirmationConsentsConsentId_500() {
 		given().spec(spec).when().delete("/funds-confirmation-consents/funds-confirmation-consents/{ConsentId}").then().assertThat().statusCode(500);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 405")
+	// @Ignore("TODO: Define request to get HTTP status code 405")
 	public void test_deleteFundsConfirmationConsentsConsentId_405() {
 		given().spec(spec).when().delete("/funds-confirmation-consents/funds-confirmation-consents/{ConsentId}").then().assertThat().statusCode(405);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 406")
+	// @Ignore("TODO: Define request to get HTTP status code 406")
 	public void test_deleteFundsConfirmationConsentsConsentId_406() {
 		given().spec(spec).when().delete("/funds-confirmation-consents/funds-confirmation-consents/{ConsentId}").then().assertThat().statusCode(406);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 204")
+	// @Ignore("TODO: Define request to get HTTP status code 204")
 	public void test_deleteFundsConfirmationConsentsConsentId_204() {
 		given().spec(spec).when().delete("/funds-confirmation-consents/funds-confirmation-consents/{ConsentId}").then().assertThat().statusCode(204);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 429")
+	// @Ignore("TODO: Define request to get HTTP status code 429")
 	public void test_deleteFundsConfirmationConsentsConsentId_429() {
 		given().spec(spec).when().delete("/funds-confirmation-consents/funds-confirmation-consents/{ConsentId}").then().assertThat().statusCode(429);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 400")
+	// @Ignore("TODO: Define request to get HTTP status code 400")
 	public void test_getFundsConfirmationConsentsConsentId_400() {
 		given().spec(spec).when().get("/funds-confirmation-consents/funds-confirmation-consents/{ConsentId}").then().assertThat().statusCode(400);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 401")
+	// @Ignore("TODO: Define request to get HTTP status code 401")
 	public void test_getFundsConfirmationConsentsConsentId_401() {
 		given().spec(spec).when().get("/funds-confirmation-consents/funds-confirmation-consents/{ConsentId}").then().assertThat().statusCode(401);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 403")
+	// @Ignore("TODO: Define request to get HTTP status code 403")
 	public void test_getFundsConfirmationConsentsConsentId_403() {
 		given().spec(spec).when().get("/funds-confirmation-consents/funds-confirmation-consents/{ConsentId}").then().assertThat().statusCode(403);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 404")
+	// @Ignore("TODO: Define request to get HTTP status code 404")
 	public void test_getFundsConfirmationConsentsConsentId_404() {
 		given().spec(spec).when().get("/funds-confirmation-consents/funds-confirmation-consents/{ConsentId}").then().assertThat().statusCode(404);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 500")
+	// @Ignore("TODO: Define request to get HTTP status code 500")
 	public void test_getFundsConfirmationConsentsConsentId_500() {
 		given().spec(spec).when().get("/funds-confirmation-consents/funds-confirmation-consents/{ConsentId}").then().assertThat().statusCode(500);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 405")
+	// @Ignore("TODO: Define request to get HTTP status code 405")
 	public void test_getFundsConfirmationConsentsConsentId_405() {
 		given().spec(spec).when().get("/funds-confirmation-consents/funds-confirmation-consents/{ConsentId}").then().assertThat().statusCode(405);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 406")
+	// @Ignore("TODO: Define request to get HTTP status code 406")
 	public void test_getFundsConfirmationConsentsConsentId_406() {
 		given().spec(spec).when().get("/funds-confirmation-consents/funds-confirmation-consents/{ConsentId}").then().assertThat().statusCode(406);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 200")
+	// @Ignore("TODO: Define request to get HTTP status code 200")
 	public void test_getFundsConfirmationConsentsConsentId_200() {
 		given().spec(spec).when().get("/funds-confirmation-consents/funds-confirmation-consents/{ConsentId}").then().assertThat().statusCode(200);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 429")
+	// @Ignore("TODO: Define request to get HTTP status code 429")
 	public void test_getFundsConfirmationConsentsConsentId_429() {
 		given().spec(spec).when().get("/funds-confirmation-consents/funds-confirmation-consents/{ConsentId}").then().assertThat().statusCode(429);
 	}

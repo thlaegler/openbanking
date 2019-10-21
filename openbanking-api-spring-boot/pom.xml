@@ -10,6 +10,13 @@
 	<name>Open Banking API Spring Boot</name>
 	<description>Open Banking API Spring Boot</description>
 
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.1.8.RELEASE</version>
+		<relativePath />
+	</parent>
+
 	<properties>
 		<!-- Basics: Encoding and Java version -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -30,13 +37,6 @@
 		<cucumber.version>4.8.0</cucumber.version>
 		<restassured.version>4.1.2</restassured.version>
 	</properties>
-
-	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.1.8.RELEASE</version>
-		<relativePath />
-	</parent>
 
 	<dependencies>
 		<dependency>
@@ -153,7 +153,19 @@
 
 	<build>
 		<finalName>${project.artifactId}</finalName>
-		<sourceDirectory>src/main/java</sourceDirectory>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+		<extensions>
+			<extension>
+				<groupId>com.gkatzioura.maven.cloud</groupId>
+				<artifactId>google-storage-wagon</artifactId>
+				<version>2.3</version>
+			</extension>
+		</extensions>
 		<plugins>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>

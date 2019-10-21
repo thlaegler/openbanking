@@ -6,7 +6,7 @@
     "description": "Latest Swagger specification for OpenData Unsecured SME Loan"
   },
   "host": "localhost:8080",
-  "basePath": "/open-banking/v2.3",
+  "basePath": "/api/v1",
   "schemes": ["https"],
   "produces": ["application/prs.openbanking.opendata.v2.3+json"],
   "tags": [ {

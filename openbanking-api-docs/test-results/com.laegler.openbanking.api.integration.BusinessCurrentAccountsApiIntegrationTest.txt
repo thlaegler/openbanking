@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: com.laegler.openbanking.api.integration.BusinessCurrentAccountsApiIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 0.002 s <<< FAILURE! - in com.laegler.openbanking.api.integration.BusinessCurrentAccountsApiIntegrationTest
+test_businessCurrentAccountsGet_200  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.BusinessCurrentAccountsApiIntegrationTest.test_businessCurrentAccountsGet_200(BusinessCurrentAccountsApiIntegrationTest.java:51)
+
+test_businessCurrentAccountsGet_400  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.BusinessCurrentAccountsApiIntegrationTest.test_businessCurrentAccountsGet_400(BusinessCurrentAccountsApiIntegrationTest.java:33)
+
+test_businessCurrentAccountsGet_408  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.BusinessCurrentAccountsApiIntegrationTest.test_businessCurrentAccountsGet_408(BusinessCurrentAccountsApiIntegrationTest.java:57)
+
+test_businessCurrentAccountsGet_429  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.BusinessCurrentAccountsApiIntegrationTest.test_businessCurrentAccountsGet_429(BusinessCurrentAccountsApiIntegrationTest.java:63)
+
+test_businessCurrentAccountsGet_500  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.BusinessCurrentAccountsApiIntegrationTest.test_businessCurrentAccountsGet_500(BusinessCurrentAccountsApiIntegrationTest.java:39)
+
+test_businessCurrentAccountsGet_503  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.BusinessCurrentAccountsApiIntegrationTest.test_businessCurrentAccountsGet_503(BusinessCurrentAccountsApiIntegrationTest.java:45)
+

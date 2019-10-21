@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: com.laegler.openbanking.api.integration.DirectDebitsApiIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 0.041 s <<< FAILURE! - in com.laegler.openbanking.api.integration.DirectDebitsApiIntegrationTest
+test_getDirectDebits_200  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DirectDebitsApiIntegrationTest.test_getDirectDebits_200(DirectDebitsApiIntegrationTest.java:75)
+
+test_getDirectDebits_400  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DirectDebitsApiIntegrationTest.test_getDirectDebits_400(DirectDebitsApiIntegrationTest.java:33)
+
+test_getDirectDebits_401  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DirectDebitsApiIntegrationTest.test_getDirectDebits_401(DirectDebitsApiIntegrationTest.java:39)
+
+test_getDirectDebits_403  Time elapsed: 0.007 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DirectDebitsApiIntegrationTest.test_getDirectDebits_403(DirectDebitsApiIntegrationTest.java:45)
+
+test_getDirectDebits_404  Time elapsed: 0.007 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DirectDebitsApiIntegrationTest.test_getDirectDebits_404(DirectDebitsApiIntegrationTest.java:51)
+
+test_getDirectDebits_405  Time elapsed: 0.008 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DirectDebitsApiIntegrationTest.test_getDirectDebits_405(DirectDebitsApiIntegrationTest.java:63)
+
+test_getDirectDebits_406  Time elapsed: 0.006 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DirectDebitsApiIntegrationTest.test_getDirectDebits_406(DirectDebitsApiIntegrationTest.java:69)
+
+test_getDirectDebits_429  Time elapsed: 0.006 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DirectDebitsApiIntegrationTest.test_getDirectDebits_429(DirectDebitsApiIntegrationTest.java:81)
+
+test_getDirectDebits_500  Time elapsed: 0.005 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.DirectDebitsApiIntegrationTest.test_getDirectDebits_500(DirectDebitsApiIntegrationTest.java:57)
+

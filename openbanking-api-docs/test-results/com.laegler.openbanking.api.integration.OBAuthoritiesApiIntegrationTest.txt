@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.laegler.openbanking.api.integration.OBAuthoritiesApiIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.003 s <<< FAILURE! - in com.laegler.openbanking.api.integration.OBAuthoritiesApiIntegrationTest
+test_oBAuthoritiesSearchPost_200  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.OBAuthoritiesApiIntegrationTest.test_oBAuthoritiesSearchPost_200(OBAuthoritiesApiIntegrationTest.java:47)
+
+test_oBAuthoritiesGet_200  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.OBAuthoritiesApiIntegrationTest.test_oBAuthoritiesGet_200(OBAuthoritiesApiIntegrationTest.java:35)
+
+test_oBAuthoritiesIdGet_200  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: id.
+	at com.laegler.openbanking.api.integration.OBAuthoritiesApiIntegrationTest.test_oBAuthoritiesIdGet_200(OBAuthoritiesApiIntegrationTest.java:41)
+

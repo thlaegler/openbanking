@@ -27,7 +27,7 @@ __Terms of service__ : http://github.org/thlaegler/openbanking-api
 === URI scheme
 [%hardbreaks]
 __Host__ : localhost:8080
-__BasePath__ : /open-banking/v2.3
+__BasePath__ : /api/v1
 __Schemes__ : HTTPS
 
 

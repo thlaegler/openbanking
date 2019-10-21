@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: com.laegler.openbanking.api.integration.EventsApiIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 0.005 s <<< FAILURE! - in com.laegler.openbanking.api.integration.EventsApiIntegrationTest
+test_createEvents_201  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.EventsApiIntegrationTest.test_createEvents_201(EventsApiIntegrationTest.java:76)
+
+test_createEvents_400  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.EventsApiIntegrationTest.test_createEvents_400(EventsApiIntegrationTest.java:34)
+
+test_createEvents_401  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.EventsApiIntegrationTest.test_createEvents_401(EventsApiIntegrationTest.java:40)
+
+test_createEvents_403  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.EventsApiIntegrationTest.test_createEvents_403(EventsApiIntegrationTest.java:46)
+
+test_createEvents_404  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.EventsApiIntegrationTest.test_createEvents_404(EventsApiIntegrationTest.java:52)
+
+test_createEvents_405  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.EventsApiIntegrationTest.test_createEvents_405(EventsApiIntegrationTest.java:64)
+
+test_createEvents_406  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.EventsApiIntegrationTest.test_createEvents_406(EventsApiIntegrationTest.java:70)
+
+test_createEvents_429  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.EventsApiIntegrationTest.test_createEvents_429(EventsApiIntegrationTest.java:82)
+
+test_createEvents_500  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.EventsApiIntegrationTest.test_createEvents_500(EventsApiIntegrationTest.java:58)
+

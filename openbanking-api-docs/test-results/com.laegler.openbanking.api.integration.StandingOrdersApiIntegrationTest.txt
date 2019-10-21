@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: com.laegler.openbanking.api.integration.StandingOrdersApiIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 0.018 s <<< FAILURE! - in com.laegler.openbanking.api.integration.StandingOrdersApiIntegrationTest
+test_getStandingOrders_200  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.StandingOrdersApiIntegrationTest.test_getStandingOrders_200(StandingOrdersApiIntegrationTest.java:75)
+
+test_getStandingOrders_400  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.StandingOrdersApiIntegrationTest.test_getStandingOrders_400(StandingOrdersApiIntegrationTest.java:33)
+
+test_getStandingOrders_401  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.StandingOrdersApiIntegrationTest.test_getStandingOrders_401(StandingOrdersApiIntegrationTest.java:39)
+
+test_getStandingOrders_403  Time elapsed: 0.003 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.StandingOrdersApiIntegrationTest.test_getStandingOrders_403(StandingOrdersApiIntegrationTest.java:45)
+
+test_getStandingOrders_404  Time elapsed: 0.003 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.StandingOrdersApiIntegrationTest.test_getStandingOrders_404(StandingOrdersApiIntegrationTest.java:51)
+
+test_getStandingOrders_405  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.StandingOrdersApiIntegrationTest.test_getStandingOrders_405(StandingOrdersApiIntegrationTest.java:63)
+
+test_getStandingOrders_406  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.StandingOrdersApiIntegrationTest.test_getStandingOrders_406(StandingOrdersApiIntegrationTest.java:69)
+
+test_getStandingOrders_429  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.StandingOrdersApiIntegrationTest.test_getStandingOrders_429(StandingOrdersApiIntegrationTest.java:81)
+
+test_getStandingOrders_500  Time elapsed: 0.003 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.StandingOrdersApiIntegrationTest.test_getStandingOrders_500(StandingOrdersApiIntegrationTest.java:57)
+

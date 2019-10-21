@@ -30,19 +30,19 @@ import org.junit.Ignore;
 public class OBAuthoritiesApiIntegrationTest extends AbstractIntegrationTest {
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 200")
+	// @Ignore("TODO: Define request to get HTTP status code 200")
 	public void test_oBAuthoritiesGet_200() {
 		given().spec(spec).when().get("/OBAuthorities/OBAuthorities").then().assertThat().statusCode(200);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 200")
+	// @Ignore("TODO: Define request to get HTTP status code 200")
 	public void test_oBAuthoritiesIdGet_200() {
 		given().spec(spec).when().get("/OBAuthorities/OBAuthorities/{id}").then().assertThat().statusCode(200);
 	}
 
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code 200")
+	// @Ignore("TODO: Define request to get HTTP status code 200")
 	public void test_oBAuthoritiesSearchPost_200() {
 		given().spec(spec).when().post("/OBAuthorities/OBAuthorities/.search").then().assertThat().statusCode(200);
 	}

@@ -1,0 +1,688 @@
+-------------------------------------------------------------------------------
+Test set: com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 171, Failures: 0, Errors: 171, Skipped: 0, Time elapsed: 0.413 s <<< FAILURE! - in com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest
+test_organisationOrganisationTypeOrganisationIdGet_200  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: OrganisationType, OrganisationId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdGet_200(OrganisationApiIntegrationTest.java:555)
+
+test_organisationOrganisationTypeOrganisationIdGet_404  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: OrganisationType, OrganisationId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdGet_404(OrganisationApiIntegrationTest.java:543)
+
+test_organisationOrganisationTypeOrganisationIdGet_406  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: OrganisationType, OrganisationId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdGet_406(OrganisationApiIntegrationTest.java:549)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateOrganisationAssociativeCertificateTypeCertificateOrKeyIdPut_200  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 5, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId, OrganisationAssociativeCertificateType, CertificateOrKeyId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateOrganisationAssociativeCertificateTypeCertificateOrKeyIdPut_200(OrganisationApiIntegrationTest.java:753)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateOrganisationAssociativeCertificateTypeCertificateOrKeyIdPut_204  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 5, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId, OrganisationAssociativeCertificateType, CertificateOrKeyId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateOrganisationAssociativeCertificateTypeCertificateOrKeyIdPut_204(OrganisationApiIntegrationTest.java:765)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateOrganisationAssociativeCertificateTypeCertificateOrKeyIdPut_400  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 5, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId, OrganisationAssociativeCertificateType, CertificateOrKeyId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateOrganisationAssociativeCertificateTypeCertificateOrKeyIdPut_400(OrganisationApiIntegrationTest.java:717)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateOrganisationAssociativeCertificateTypeCertificateOrKeyIdPut_401  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 5, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId, OrganisationAssociativeCertificateType, CertificateOrKeyId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateOrganisationAssociativeCertificateTypeCertificateOrKeyIdPut_401(OrganisationApiIntegrationTest.java:723)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateOrganisationAssociativeCertificateTypeCertificateOrKeyIdPut_404  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 5, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId, OrganisationAssociativeCertificateType, CertificateOrKeyId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateOrganisationAssociativeCertificateTypeCertificateOrKeyIdPut_404(OrganisationApiIntegrationTest.java:729)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateOrganisationAssociativeCertificateTypeCertificateOrKeyIdPut_406  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 5, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId, OrganisationAssociativeCertificateType, CertificateOrKeyId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateOrganisationAssociativeCertificateTypeCertificateOrKeyIdPut_406(OrganisationApiIntegrationTest.java:741)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateOrganisationAssociativeCertificateTypeCertificateOrKeyIdPut_409  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 5, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId, OrganisationAssociativeCertificateType, CertificateOrKeyId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateOrganisationAssociativeCertificateTypeCertificateOrKeyIdPut_409(OrganisationApiIntegrationTest.java:759)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateOrganisationAssociativeCertificateTypeCertificateOrKeyIdPut_500  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 5, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId, OrganisationAssociativeCertificateType, CertificateOrKeyId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateOrganisationAssociativeCertificateTypeCertificateOrKeyIdPut_500(OrganisationApiIntegrationTest.java:735)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateOrganisationAssociativeCertificateTypeCertificateOrKeyIdPut_502  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 5, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId, OrganisationAssociativeCertificateType, CertificateOrKeyId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateOrganisationAssociativeCertificateTypeCertificateOrKeyIdPut_502(OrganisationApiIntegrationTest.java:747)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateOrganisationAssociativeCertificateTypeCertificateOrKeyIdGet_200  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 5, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId, OrganisationAssociativeCertificateType, CertificateOrKeyId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateOrganisationAssociativeCertificateTypeCertificateOrKeyIdGet_200(OrganisationApiIntegrationTest.java:711)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateOrganisationAssociativeCertificateTypeCertificateOrKeyIdGet_400  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 5, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId, OrganisationAssociativeCertificateType, CertificateOrKeyId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateOrganisationAssociativeCertificateTypeCertificateOrKeyIdGet_400(OrganisationApiIntegrationTest.java:675)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateOrganisationAssociativeCertificateTypeCertificateOrKeyIdGet_401  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 5, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId, OrganisationAssociativeCertificateType, CertificateOrKeyId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateOrganisationAssociativeCertificateTypeCertificateOrKeyIdGet_401(OrganisationApiIntegrationTest.java:681)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateOrganisationAssociativeCertificateTypeCertificateOrKeyIdGet_404  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 5, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId, OrganisationAssociativeCertificateType, CertificateOrKeyId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateOrganisationAssociativeCertificateTypeCertificateOrKeyIdGet_404(OrganisationApiIntegrationTest.java:687)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateOrganisationAssociativeCertificateTypeCertificateOrKeyIdGet_406  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 5, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId, OrganisationAssociativeCertificateType, CertificateOrKeyId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateOrganisationAssociativeCertificateTypeCertificateOrKeyIdGet_406(OrganisationApiIntegrationTest.java:699)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateOrganisationAssociativeCertificateTypeCertificateOrKeyIdGet_500  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 5, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId, OrganisationAssociativeCertificateType, CertificateOrKeyId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateOrganisationAssociativeCertificateTypeCertificateOrKeyIdGet_500(OrganisationApiIntegrationTest.java:693)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateOrganisationAssociativeCertificateTypeCertificateOrKeyIdGet_502  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 5, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId, OrganisationAssociativeCertificateType, CertificateOrKeyId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateOrganisationAssociativeCertificateTypeCertificateOrKeyIdGet_502(OrganisationApiIntegrationTest.java:705)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementPost_201  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: OrganisationType, OrganisationId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementPost_201(OrganisationApiIntegrationTest.java:627)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementPost_400  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: OrganisationType, OrganisationId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementPost_400(OrganisationApiIntegrationTest.java:597)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementPost_401  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: OrganisationType, OrganisationId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementPost_401(OrganisationApiIntegrationTest.java:603)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementPost_406  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: OrganisationType, OrganisationId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementPost_406(OrganisationApiIntegrationTest.java:615)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementPost_500  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: OrganisationType, OrganisationId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementPost_500(OrganisationApiIntegrationTest.java:609)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementPost_502  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: OrganisationType, OrganisationId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementPost_502(OrganisationApiIntegrationTest.java:621)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdSoftwareStatementAssertionGet_200  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdSoftwareStatementAssertionGet_200(OrganisationApiIntegrationTest.java:1023)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdSoftwareStatementAssertionGet_400  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdSoftwareStatementAssertionGet_400(OrganisationApiIntegrationTest.java:987)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdSoftwareStatementAssertionGet_401  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdSoftwareStatementAssertionGet_401(OrganisationApiIntegrationTest.java:993)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdSoftwareStatementAssertionGet_404  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdSoftwareStatementAssertionGet_404(OrganisationApiIntegrationTest.java:999)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdSoftwareStatementAssertionGet_406  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdSoftwareStatementAssertionGet_406(OrganisationApiIntegrationTest.java:1011)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdSoftwareStatementAssertionGet_500  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdSoftwareStatementAssertionGet_500(OrganisationApiIntegrationTest.java:1005)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdSoftwareStatementAssertionGet_502  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdSoftwareStatementAssertionGet_502(OrganisationApiIntegrationTest.java:1017)
+
+test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdDelete_204  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, AuthorisationServerId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdDelete_204(OrganisationApiIntegrationTest.java:87)
+
+test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdDelete_400  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, AuthorisationServerId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdDelete_400(OrganisationApiIntegrationTest.java:51)
+
+test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdDelete_401  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, AuthorisationServerId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdDelete_401(OrganisationApiIntegrationTest.java:57)
+
+test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdDelete_404  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, AuthorisationServerId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdDelete_404(OrganisationApiIntegrationTest.java:63)
+
+test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdDelete_406  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, AuthorisationServerId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdDelete_406(OrganisationApiIntegrationTest.java:75)
+
+test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdDelete_500  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, AuthorisationServerId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdDelete_500(OrganisationApiIntegrationTest.java:69)
+
+test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdDelete_502  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, AuthorisationServerId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdDelete_502(OrganisationApiIntegrationTest.java:81)
+
+test_organisationOrganisationTypeOrganisationIdAuthorisationServerPost_201  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: OrganisationType, OrganisationId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdAuthorisationServerPost_201(OrganisationApiIntegrationTest.java:255)
+
+test_organisationOrganisationTypeOrganisationIdAuthorisationServerPost_400  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: OrganisationType, OrganisationId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdAuthorisationServerPost_400(OrganisationApiIntegrationTest.java:219)
+
+test_organisationOrganisationTypeOrganisationIdAuthorisationServerPost_401  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: OrganisationType, OrganisationId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdAuthorisationServerPost_401(OrganisationApiIntegrationTest.java:225)
+
+test_organisationOrganisationTypeOrganisationIdAuthorisationServerPost_404  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: OrganisationType, OrganisationId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdAuthorisationServerPost_404(OrganisationApiIntegrationTest.java:231)
+
+test_organisationOrganisationTypeOrganisationIdAuthorisationServerPost_406  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: OrganisationType, OrganisationId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdAuthorisationServerPost_406(OrganisationApiIntegrationTest.java:243)
+
+test_organisationOrganisationTypeOrganisationIdAuthorisationServerPost_500  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: OrganisationType, OrganisationId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdAuthorisationServerPost_500(OrganisationApiIntegrationTest.java:237)
+
+test_organisationOrganisationTypeOrganisationIdAuthorisationServerPost_502  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: OrganisationType, OrganisationId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdAuthorisationServerPost_502(OrganisationApiIntegrationTest.java:249)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdPut_200  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdPut_200(OrganisationApiIntegrationTest.java:933)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdPut_400  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdPut_400(OrganisationApiIntegrationTest.java:897)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdPut_401  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdPut_401(OrganisationApiIntegrationTest.java:903)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdPut_404  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdPut_404(OrganisationApiIntegrationTest.java:909)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdPut_406  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdPut_406(OrganisationApiIntegrationTest.java:921)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdPut_500  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdPut_500(OrganisationApiIntegrationTest.java:915)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdPut_502  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdPut_502(OrganisationApiIntegrationTest.java:927)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdGet_200  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdGet_200(OrganisationApiIntegrationTest.java:891)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdGet_400  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdGet_400(OrganisationApiIntegrationTest.java:855)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdGet_401  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdGet_401(OrganisationApiIntegrationTest.java:861)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdGet_404  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdGet_404(OrganisationApiIntegrationTest.java:867)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdGet_406  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdGet_406(OrganisationApiIntegrationTest.java:879)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdGet_500  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdGet_500(OrganisationApiIntegrationTest.java:873)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdGet_502  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdGet_502(OrganisationApiIntegrationTest.java:885)
+
+test_organisationOrganisationTypeGet_200  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: OrganisationType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeGet_200(OrganisationApiIntegrationTest.java:45)
+
+test_organisationOrganisationTypeGet_406  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: OrganisationType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeGet_406(OrganisationApiIntegrationTest.java:39)
+
+test_organisationOrganisationTypePost_201  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: OrganisationType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypePost_201(OrganisationApiIntegrationTest.java:1059)
+
+test_organisationOrganisationTypePost_400  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: OrganisationType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypePost_400(OrganisationApiIntegrationTest.java:1029)
+
+test_organisationOrganisationTypePost_401  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: OrganisationType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypePost_401(OrganisationApiIntegrationTest.java:1035)
+
+test_organisationOrganisationTypePost_406  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: OrganisationType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypePost_406(OrganisationApiIntegrationTest.java:1047)
+
+test_organisationOrganisationTypePost_500  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: OrganisationType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypePost_500(OrganisationApiIntegrationTest.java:1041)
+
+test_organisationOrganisationTypePost_502  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: OrganisationType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypePost_502(OrganisationApiIntegrationTest.java:1053)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateSoftwareStatementCertificateOrKeyTypePost_201  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 4, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId, SoftwareStatementCertificateOrKeyType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateSoftwareStatementCertificateOrKeyTypePost_201(OrganisationApiIntegrationTest.java:849)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateSoftwareStatementCertificateOrKeyTypePost_400  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 4, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId, SoftwareStatementCertificateOrKeyType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateSoftwareStatementCertificateOrKeyTypePost_400(OrganisationApiIntegrationTest.java:813)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateSoftwareStatementCertificateOrKeyTypePost_401  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 4, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId, SoftwareStatementCertificateOrKeyType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateSoftwareStatementCertificateOrKeyTypePost_401(OrganisationApiIntegrationTest.java:819)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateSoftwareStatementCertificateOrKeyTypePost_404  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 4, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId, SoftwareStatementCertificateOrKeyType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateSoftwareStatementCertificateOrKeyTypePost_404(OrganisationApiIntegrationTest.java:825)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateSoftwareStatementCertificateOrKeyTypePost_406  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 4, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId, SoftwareStatementCertificateOrKeyType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateSoftwareStatementCertificateOrKeyTypePost_406(OrganisationApiIntegrationTest.java:837)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateSoftwareStatementCertificateOrKeyTypePost_500  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 4, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId, SoftwareStatementCertificateOrKeyType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateSoftwareStatementCertificateOrKeyTypePost_500(OrganisationApiIntegrationTest.java:831)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateSoftwareStatementCertificateOrKeyTypePost_502  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 4, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId, SoftwareStatementCertificateOrKeyType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateSoftwareStatementCertificateOrKeyTypePost_502(OrganisationApiIntegrationTest.java:843)
+
+test_organisationOrganisationTypeOrganisationIdCertificateGet_200  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: OrganisationType, OrganisationId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdCertificateGet_200(OrganisationApiIntegrationTest.java:297)
+
+test_organisationOrganisationTypeOrganisationIdCertificateGet_400  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: OrganisationType, OrganisationId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdCertificateGet_400(OrganisationApiIntegrationTest.java:261)
+
+test_organisationOrganisationTypeOrganisationIdCertificateGet_401  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: OrganisationType, OrganisationId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdCertificateGet_401(OrganisationApiIntegrationTest.java:267)
+
+test_organisationOrganisationTypeOrganisationIdCertificateGet_404  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: OrganisationType, OrganisationId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdCertificateGet_404(OrganisationApiIntegrationTest.java:273)
+
+test_organisationOrganisationTypeOrganisationIdCertificateGet_406  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: OrganisationType, OrganisationId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdCertificateGet_406(OrganisationApiIntegrationTest.java:285)
+
+test_organisationOrganisationTypeOrganisationIdCertificateGet_500  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: OrganisationType, OrganisationId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdCertificateGet_500(OrganisationApiIntegrationTest.java:279)
+
+test_organisationOrganisationTypeOrganisationIdCertificateGet_502  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: OrganisationType, OrganisationId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdCertificateGet_502(OrganisationApiIntegrationTest.java:291)
+
+test_organisationOrganisationTypeOrganisationIdCertificateOrganisationCertificateTypePost_201  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, OrganisationCertificateType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdCertificateOrganisationCertificateTypePost_201(OrganisationApiIntegrationTest.java:465)
+
+test_organisationOrganisationTypeOrganisationIdCertificateOrganisationCertificateTypePost_400  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, OrganisationCertificateType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdCertificateOrganisationCertificateTypePost_400(OrganisationApiIntegrationTest.java:429)
+
+test_organisationOrganisationTypeOrganisationIdCertificateOrganisationCertificateTypePost_401  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, OrganisationCertificateType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdCertificateOrganisationCertificateTypePost_401(OrganisationApiIntegrationTest.java:435)
+
+test_organisationOrganisationTypeOrganisationIdCertificateOrganisationCertificateTypePost_404  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, OrganisationCertificateType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdCertificateOrganisationCertificateTypePost_404(OrganisationApiIntegrationTest.java:441)
+
+test_organisationOrganisationTypeOrganisationIdCertificateOrganisationCertificateTypePost_406  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, OrganisationCertificateType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdCertificateOrganisationCertificateTypePost_406(OrganisationApiIntegrationTest.java:453)
+
+test_organisationOrganisationTypeOrganisationIdCertificateOrganisationCertificateTypePost_500  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, OrganisationCertificateType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdCertificateOrganisationCertificateTypePost_500(OrganisationApiIntegrationTest.java:447)
+
+test_organisationOrganisationTypeOrganisationIdCertificateOrganisationCertificateTypePost_502  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, OrganisationCertificateType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdCertificateOrganisationCertificateTypePost_502(OrganisationApiIntegrationTest.java:459)
+
+test_organisationOrganisationTypeOrganisationIdCertificateKidCertificateOrKeyIdDelete_204  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, CertificateOrKeyId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdCertificateKidCertificateOrKeyIdDelete_204(OrganisationApiIntegrationTest.java:339)
+
+test_organisationOrganisationTypeOrganisationIdCertificateKidCertificateOrKeyIdDelete_400  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, CertificateOrKeyId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdCertificateKidCertificateOrKeyIdDelete_400(OrganisationApiIntegrationTest.java:303)
+
+test_organisationOrganisationTypeOrganisationIdCertificateKidCertificateOrKeyIdDelete_401  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, CertificateOrKeyId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdCertificateKidCertificateOrKeyIdDelete_401(OrganisationApiIntegrationTest.java:309)
+
+test_organisationOrganisationTypeOrganisationIdCertificateKidCertificateOrKeyIdDelete_404  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, CertificateOrKeyId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdCertificateKidCertificateOrKeyIdDelete_404(OrganisationApiIntegrationTest.java:315)
+
+test_organisationOrganisationTypeOrganisationIdCertificateKidCertificateOrKeyIdDelete_406  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, CertificateOrKeyId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdCertificateKidCertificateOrKeyIdDelete_406(OrganisationApiIntegrationTest.java:327)
+
+test_organisationOrganisationTypeOrganisationIdCertificateKidCertificateOrKeyIdDelete_500  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, CertificateOrKeyId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdCertificateKidCertificateOrKeyIdDelete_500(OrganisationApiIntegrationTest.java:321)
+
+test_organisationOrganisationTypeOrganisationIdCertificateKidCertificateOrKeyIdDelete_502  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, CertificateOrKeyId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdCertificateKidCertificateOrKeyIdDelete_502(OrganisationApiIntegrationTest.java:333)
+
+test_organisationOrganisationTypeOrganisationIdAuthorisationServerGet_200  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: OrganisationType, OrganisationId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdAuthorisationServerGet_200(OrganisationApiIntegrationTest.java:213)
+
+test_organisationOrganisationTypeOrganisationIdAuthorisationServerGet_400  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: OrganisationType, OrganisationId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdAuthorisationServerGet_400(OrganisationApiIntegrationTest.java:177)
+
+test_organisationOrganisationTypeOrganisationIdAuthorisationServerGet_401  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: OrganisationType, OrganisationId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdAuthorisationServerGet_401(OrganisationApiIntegrationTest.java:183)
+
+test_organisationOrganisationTypeOrganisationIdAuthorisationServerGet_404  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: OrganisationType, OrganisationId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdAuthorisationServerGet_404(OrganisationApiIntegrationTest.java:189)
+
+test_organisationOrganisationTypeOrganisationIdAuthorisationServerGet_406  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: OrganisationType, OrganisationId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdAuthorisationServerGet_406(OrganisationApiIntegrationTest.java:201)
+
+test_organisationOrganisationTypeOrganisationIdAuthorisationServerGet_500  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: OrganisationType, OrganisationId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdAuthorisationServerGet_500(OrganisationApiIntegrationTest.java:195)
+
+test_organisationOrganisationTypeOrganisationIdAuthorisationServerGet_502  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: OrganisationType, OrganisationId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdAuthorisationServerGet_502(OrganisationApiIntegrationTest.java:207)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdRedirectUriPost_200  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdRedirectUriPost_200(OrganisationApiIntegrationTest.java:975)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdRedirectUriPost_400  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdRedirectUriPost_400(OrganisationApiIntegrationTest.java:939)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdRedirectUriPost_401  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdRedirectUriPost_401(OrganisationApiIntegrationTest.java:945)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdRedirectUriPost_404  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdRedirectUriPost_404(OrganisationApiIntegrationTest.java:951)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdRedirectUriPost_406  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdRedirectUriPost_406(OrganisationApiIntegrationTest.java:963)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdRedirectUriPost_409  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdRedirectUriPost_409(OrganisationApiIntegrationTest.java:981)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdRedirectUriPost_500  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdRedirectUriPost_500(OrganisationApiIntegrationTest.java:957)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdRedirectUriPost_502  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdRedirectUriPost_502(OrganisationApiIntegrationTest.java:969)
+
+test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdPut_202  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, AuthorisationServerId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdPut_202(OrganisationApiIntegrationTest.java:171)
+
+test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdPut_400  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, AuthorisationServerId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdPut_400(OrganisationApiIntegrationTest.java:135)
+
+test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdPut_401  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, AuthorisationServerId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdPut_401(OrganisationApiIntegrationTest.java:141)
+
+test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdPut_404  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, AuthorisationServerId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdPut_404(OrganisationApiIntegrationTest.java:147)
+
+test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdPut_406  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, AuthorisationServerId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdPut_406(OrganisationApiIntegrationTest.java:159)
+
+test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdPut_500  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, AuthorisationServerId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdPut_500(OrganisationApiIntegrationTest.java:153)
+
+test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdPut_502  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, AuthorisationServerId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdPut_502(OrganisationApiIntegrationTest.java:165)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateSoftwareStatementCertificateOrKeyTypeGet_200  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 4, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId, SoftwareStatementCertificateOrKeyType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateSoftwareStatementCertificateOrKeyTypeGet_200(OrganisationApiIntegrationTest.java:807)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateSoftwareStatementCertificateOrKeyTypeGet_400  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 4, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId, SoftwareStatementCertificateOrKeyType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateSoftwareStatementCertificateOrKeyTypeGet_400(OrganisationApiIntegrationTest.java:771)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateSoftwareStatementCertificateOrKeyTypeGet_401  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 4, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId, SoftwareStatementCertificateOrKeyType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateSoftwareStatementCertificateOrKeyTypeGet_401(OrganisationApiIntegrationTest.java:777)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateSoftwareStatementCertificateOrKeyTypeGet_404  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 4, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId, SoftwareStatementCertificateOrKeyType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateSoftwareStatementCertificateOrKeyTypeGet_404(OrganisationApiIntegrationTest.java:783)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateSoftwareStatementCertificateOrKeyTypeGet_406  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 4, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId, SoftwareStatementCertificateOrKeyType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateSoftwareStatementCertificateOrKeyTypeGet_406(OrganisationApiIntegrationTest.java:795)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateSoftwareStatementCertificateOrKeyTypeGet_500  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 4, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId, SoftwareStatementCertificateOrKeyType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateSoftwareStatementCertificateOrKeyTypeGet_500(OrganisationApiIntegrationTest.java:789)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateSoftwareStatementCertificateOrKeyTypeGet_502  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 4, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId, SoftwareStatementCertificateOrKeyType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateSoftwareStatementCertificateOrKeyTypeGet_502(OrganisationApiIntegrationTest.java:801)
+
+test_organisationOrganisationTypeOrganisationIdContactContactTypePut_200  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, ContactType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdContactContactTypePut_200(OrganisationApiIntegrationTest.java:537)
+
+test_organisationOrganisationTypeOrganisationIdContactContactTypePut_400  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, ContactType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdContactContactTypePut_400(OrganisationApiIntegrationTest.java:507)
+
+test_organisationOrganisationTypeOrganisationIdContactContactTypePut_401  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, ContactType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdContactContactTypePut_401(OrganisationApiIntegrationTest.java:513)
+
+test_organisationOrganisationTypeOrganisationIdContactContactTypePut_406  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, ContactType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdContactContactTypePut_406(OrganisationApiIntegrationTest.java:525)
+
+test_organisationOrganisationTypeOrganisationIdContactContactTypePut_500  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, ContactType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdContactContactTypePut_500(OrganisationApiIntegrationTest.java:519)
+
+test_organisationOrganisationTypeOrganisationIdContactContactTypePut_502  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, ContactType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdContactContactTypePut_502(OrganisationApiIntegrationTest.java:531)
+
+test_organisationOrganisationTypeOrganisationIdCertificateOrganisationCertificateTypeGet_200  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, OrganisationCertificateType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdCertificateOrganisationCertificateTypeGet_200(OrganisationApiIntegrationTest.java:423)
+
+test_organisationOrganisationTypeOrganisationIdCertificateOrganisationCertificateTypeGet_400  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, OrganisationCertificateType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdCertificateOrganisationCertificateTypeGet_400(OrganisationApiIntegrationTest.java:387)
+
+test_organisationOrganisationTypeOrganisationIdCertificateOrganisationCertificateTypeGet_401  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, OrganisationCertificateType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdCertificateOrganisationCertificateTypeGet_401(OrganisationApiIntegrationTest.java:393)
+
+test_organisationOrganisationTypeOrganisationIdCertificateOrganisationCertificateTypeGet_404  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, OrganisationCertificateType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdCertificateOrganisationCertificateTypeGet_404(OrganisationApiIntegrationTest.java:399)
+
+test_organisationOrganisationTypeOrganisationIdCertificateOrganisationCertificateTypeGet_406  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, OrganisationCertificateType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdCertificateOrganisationCertificateTypeGet_406(OrganisationApiIntegrationTest.java:411)
+
+test_organisationOrganisationTypeOrganisationIdCertificateOrganisationCertificateTypeGet_500  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, OrganisationCertificateType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdCertificateOrganisationCertificateTypeGet_500(OrganisationApiIntegrationTest.java:405)
+
+test_organisationOrganisationTypeOrganisationIdCertificateOrganisationCertificateTypeGet_502  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, OrganisationCertificateType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdCertificateOrganisationCertificateTypeGet_502(OrganisationApiIntegrationTest.java:417)
+
+test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdGet_200  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, AuthorisationServerId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdGet_200(OrganisationApiIntegrationTest.java:129)
+
+test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdGet_400  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, AuthorisationServerId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdGet_400(OrganisationApiIntegrationTest.java:93)
+
+test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdGet_401  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, AuthorisationServerId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdGet_401(OrganisationApiIntegrationTest.java:99)
+
+test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdGet_404  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, AuthorisationServerId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdGet_404(OrganisationApiIntegrationTest.java:105)
+
+test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdGet_406  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, AuthorisationServerId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdGet_406(OrganisationApiIntegrationTest.java:117)
+
+test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdGet_500  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, AuthorisationServerId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdGet_500(OrganisationApiIntegrationTest.java:111)
+
+test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdGet_502  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, AuthorisationServerId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdAuthorisationServerAuthorisationServerIdGet_502(OrganisationApiIntegrationTest.java:123)
+
+test_organisationOrganisationTypeOrganisationIdContactContactTypeGet_200  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, ContactType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdContactContactTypeGet_200(OrganisationApiIntegrationTest.java:501)
+
+test_organisationOrganisationTypeOrganisationIdContactContactTypeGet_400  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, ContactType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdContactContactTypeGet_400(OrganisationApiIntegrationTest.java:471)
+
+test_organisationOrganisationTypeOrganisationIdContactContactTypeGet_401  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, ContactType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdContactContactTypeGet_401(OrganisationApiIntegrationTest.java:477)
+
+test_organisationOrganisationTypeOrganisationIdContactContactTypeGet_406  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, ContactType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdContactContactTypeGet_406(OrganisationApiIntegrationTest.java:489)
+
+test_organisationOrganisationTypeOrganisationIdContactContactTypeGet_500  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, ContactType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdContactContactTypeGet_500(OrganisationApiIntegrationTest.java:483)
+
+test_organisationOrganisationTypeOrganisationIdContactContactTypeGet_502  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, ContactType.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdContactContactTypeGet_502(OrganisationApiIntegrationTest.java:495)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementGet_200  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: OrganisationType, OrganisationId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementGet_200(OrganisationApiIntegrationTest.java:591)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementGet_400  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: OrganisationType, OrganisationId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementGet_400(OrganisationApiIntegrationTest.java:561)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementGet_401  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: OrganisationType, OrganisationId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementGet_401(OrganisationApiIntegrationTest.java:567)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementGet_406  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: OrganisationType, OrganisationId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementGet_406(OrganisationApiIntegrationTest.java:579)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementGet_500  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: OrganisationType, OrganisationId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementGet_500(OrganisationApiIntegrationTest.java:573)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementGet_502  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 2, was 0. Undefined path parameters are: OrganisationType, OrganisationId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementGet_502(OrganisationApiIntegrationTest.java:585)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateGet_200  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateGet_200(OrganisationApiIntegrationTest.java:669)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateGet_400  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateGet_400(OrganisationApiIntegrationTest.java:633)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateGet_401  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateGet_401(OrganisationApiIntegrationTest.java:639)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateGet_404  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateGet_404(OrganisationApiIntegrationTest.java:645)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateGet_406  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateGet_406(OrganisationApiIntegrationTest.java:657)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateGet_500  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateGet_500(OrganisationApiIntegrationTest.java:651)
+
+test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateGet_502  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, SoftwareStatementId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdSoftwareStatementSoftwareStatementIdCertificateGet_502(OrganisationApiIntegrationTest.java:663)
+
+test_organisationOrganisationTypeOrganisationIdCertificateKidCertificateOrKeyIdGet_200  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, CertificateOrKeyId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdCertificateKidCertificateOrKeyIdGet_200(OrganisationApiIntegrationTest.java:381)
+
+test_organisationOrganisationTypeOrganisationIdCertificateKidCertificateOrKeyIdGet_400  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, CertificateOrKeyId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdCertificateKidCertificateOrKeyIdGet_400(OrganisationApiIntegrationTest.java:345)
+
+test_organisationOrganisationTypeOrganisationIdCertificateKidCertificateOrKeyIdGet_401  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, CertificateOrKeyId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdCertificateKidCertificateOrKeyIdGet_401(OrganisationApiIntegrationTest.java:351)
+
+test_organisationOrganisationTypeOrganisationIdCertificateKidCertificateOrKeyIdGet_404  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, CertificateOrKeyId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdCertificateKidCertificateOrKeyIdGet_404(OrganisationApiIntegrationTest.java:357)
+
+test_organisationOrganisationTypeOrganisationIdCertificateKidCertificateOrKeyIdGet_406  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, CertificateOrKeyId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdCertificateKidCertificateOrKeyIdGet_406(OrganisationApiIntegrationTest.java:369)
+
+test_organisationOrganisationTypeOrganisationIdCertificateKidCertificateOrKeyIdGet_500  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, CertificateOrKeyId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdCertificateKidCertificateOrKeyIdGet_500(OrganisationApiIntegrationTest.java:363)
+
+test_organisationOrganisationTypeOrganisationIdCertificateKidCertificateOrKeyIdGet_502  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 3, was 0. Undefined path parameters are: OrganisationType, OrganisationId, CertificateOrKeyId.
+	at com.laegler.openbanking.api.integration.OrganisationApiIntegrationTest.test_organisationOrganisationTypeOrganisationIdCertificateKidCertificateOrKeyIdGet_502(OrganisationApiIntegrationTest.java:375)
+

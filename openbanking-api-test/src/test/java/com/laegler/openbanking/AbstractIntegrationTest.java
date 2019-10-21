@@ -23,9 +23,9 @@ abstract public class AbstractIntegrationTest {
       spec.port(Integer.valueOf(port));
     }
 
-    String basePath = System.getProperty("server.base");
+    String basePath = System.getProperty("server.basepath");
     if (basePath == null) {
-      basePath = "/example-api/";
+      basePath = "/api/v1/";
     }
     spec.basePath(basePath);
 

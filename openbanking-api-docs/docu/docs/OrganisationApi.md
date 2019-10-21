@@ -1,6 +1,6 @@
 # OrganisationApi
 
-All URIs are relative to *https://localhost:8080/open-banking/v2.3*
+All URIs are relative to *https://localhost:8080/api/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------

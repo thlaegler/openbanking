@@ -15,7 +15,7 @@ externalDocs:
   description: SCIM 2.0 Protocol (RFC7644)
   url: https://tools.ietf.org/html/rfc7644
 host: localhost:8080
-basePath: /open-banking/v2.3
+basePath: /api/v1
 schemes:
 - https
 tags:

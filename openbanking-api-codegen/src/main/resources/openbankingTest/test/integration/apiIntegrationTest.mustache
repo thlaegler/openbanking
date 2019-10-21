@@ -31,7 +31,7 @@ public class {{classname}}IntegrationTest extends AbstractIntegrationTest {
 	{{#operation}}
 	{{#responses}}
 	@Test
-	@Ignore("TODO: Define request to get HTTP status code {{{code}}}")
+	// @Ignore("TODO: Define request to get HTTP status code {{{code}}}")
 	public void test_{{nickname}}_{{{code}}}() {
 		given().spec(spec).when().{{httpMethodLowerCase}}("/{{baseName}}{{path}}").then().assertThat().statusCode({{{code}}});
 	}

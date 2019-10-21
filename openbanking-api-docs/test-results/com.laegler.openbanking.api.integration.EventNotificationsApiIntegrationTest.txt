@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.laegler.openbanking.api.integration.EventNotificationsApiIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! - in com.laegler.openbanking.api.integration.EventNotificationsApiIntegrationTest
+test_createEventNotification_202  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.EventNotificationsApiIntegrationTest.test_createEventNotification_202(EventNotificationsApiIntegrationTest.java:31)
+

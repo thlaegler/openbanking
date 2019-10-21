@@ -1,0 +1,148 @@
+-------------------------------------------------------------------------------
+Test set: com.laegler.openbanking.api.integration.FilePaymentsApiIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 36, Failures: 0, Errors: 36, Skipped: 0, Time elapsed: 0.026 s <<< FAILURE! - in com.laegler.openbanking.api.integration.FilePaymentsApiIntegrationTest
+test_getFilePaymentsFilePaymentIdReportFile_200  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: FilePaymentId.
+	at com.laegler.openbanking.api.integration.FilePaymentsApiIntegrationTest.test_getFilePaymentsFilePaymentIdReportFile_200(FilePaymentsApiIntegrationTest.java:239)
+
+test_getFilePaymentsFilePaymentIdReportFile_400  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: FilePaymentId.
+	at com.laegler.openbanking.api.integration.FilePaymentsApiIntegrationTest.test_getFilePaymentsFilePaymentIdReportFile_400(FilePaymentsApiIntegrationTest.java:197)
+
+test_getFilePaymentsFilePaymentIdReportFile_401  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: FilePaymentId.
+	at com.laegler.openbanking.api.integration.FilePaymentsApiIntegrationTest.test_getFilePaymentsFilePaymentIdReportFile_401(FilePaymentsApiIntegrationTest.java:203)
+
+test_getFilePaymentsFilePaymentIdReportFile_403  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: FilePaymentId.
+	at com.laegler.openbanking.api.integration.FilePaymentsApiIntegrationTest.test_getFilePaymentsFilePaymentIdReportFile_403(FilePaymentsApiIntegrationTest.java:209)
+
+test_getFilePaymentsFilePaymentIdReportFile_404  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: FilePaymentId.
+	at com.laegler.openbanking.api.integration.FilePaymentsApiIntegrationTest.test_getFilePaymentsFilePaymentIdReportFile_404(FilePaymentsApiIntegrationTest.java:215)
+
+test_getFilePaymentsFilePaymentIdReportFile_405  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: FilePaymentId.
+	at com.laegler.openbanking.api.integration.FilePaymentsApiIntegrationTest.test_getFilePaymentsFilePaymentIdReportFile_405(FilePaymentsApiIntegrationTest.java:227)
+
+test_getFilePaymentsFilePaymentIdReportFile_406  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: FilePaymentId.
+	at com.laegler.openbanking.api.integration.FilePaymentsApiIntegrationTest.test_getFilePaymentsFilePaymentIdReportFile_406(FilePaymentsApiIntegrationTest.java:233)
+
+test_getFilePaymentsFilePaymentIdReportFile_429  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: FilePaymentId.
+	at com.laegler.openbanking.api.integration.FilePaymentsApiIntegrationTest.test_getFilePaymentsFilePaymentIdReportFile_429(FilePaymentsApiIntegrationTest.java:245)
+
+test_getFilePaymentsFilePaymentIdReportFile_500  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: FilePaymentId.
+	at com.laegler.openbanking.api.integration.FilePaymentsApiIntegrationTest.test_getFilePaymentsFilePaymentIdReportFile_500(FilePaymentsApiIntegrationTest.java:221)
+
+test_getFilePaymentsFilePaymentId_200  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: FilePaymentId.
+	at com.laegler.openbanking.api.integration.FilePaymentsApiIntegrationTest.test_getFilePaymentsFilePaymentId_200(FilePaymentsApiIntegrationTest.java:131)
+
+test_getFilePaymentsFilePaymentId_400  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: FilePaymentId.
+	at com.laegler.openbanking.api.integration.FilePaymentsApiIntegrationTest.test_getFilePaymentsFilePaymentId_400(FilePaymentsApiIntegrationTest.java:89)
+
+test_getFilePaymentsFilePaymentId_401  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: FilePaymentId.
+	at com.laegler.openbanking.api.integration.FilePaymentsApiIntegrationTest.test_getFilePaymentsFilePaymentId_401(FilePaymentsApiIntegrationTest.java:95)
+
+test_getFilePaymentsFilePaymentId_403  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: FilePaymentId.
+	at com.laegler.openbanking.api.integration.FilePaymentsApiIntegrationTest.test_getFilePaymentsFilePaymentId_403(FilePaymentsApiIntegrationTest.java:101)
+
+test_getFilePaymentsFilePaymentId_404  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: FilePaymentId.
+	at com.laegler.openbanking.api.integration.FilePaymentsApiIntegrationTest.test_getFilePaymentsFilePaymentId_404(FilePaymentsApiIntegrationTest.java:107)
+
+test_getFilePaymentsFilePaymentId_405  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: FilePaymentId.
+	at com.laegler.openbanking.api.integration.FilePaymentsApiIntegrationTest.test_getFilePaymentsFilePaymentId_405(FilePaymentsApiIntegrationTest.java:119)
+
+test_getFilePaymentsFilePaymentId_406  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: FilePaymentId.
+	at com.laegler.openbanking.api.integration.FilePaymentsApiIntegrationTest.test_getFilePaymentsFilePaymentId_406(FilePaymentsApiIntegrationTest.java:125)
+
+test_getFilePaymentsFilePaymentId_429  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: FilePaymentId.
+	at com.laegler.openbanking.api.integration.FilePaymentsApiIntegrationTest.test_getFilePaymentsFilePaymentId_429(FilePaymentsApiIntegrationTest.java:137)
+
+test_getFilePaymentsFilePaymentId_500  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: FilePaymentId.
+	at com.laegler.openbanking.api.integration.FilePaymentsApiIntegrationTest.test_getFilePaymentsFilePaymentId_500(FilePaymentsApiIntegrationTest.java:113)
+
+test_getFilePaymentsFilePaymentIdPaymentDetails_200  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: FilePaymentId.
+	at com.laegler.openbanking.api.integration.FilePaymentsApiIntegrationTest.test_getFilePaymentsFilePaymentIdPaymentDetails_200(FilePaymentsApiIntegrationTest.java:185)
+
+test_getFilePaymentsFilePaymentIdPaymentDetails_400  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: FilePaymentId.
+	at com.laegler.openbanking.api.integration.FilePaymentsApiIntegrationTest.test_getFilePaymentsFilePaymentIdPaymentDetails_400(FilePaymentsApiIntegrationTest.java:143)
+
+test_getFilePaymentsFilePaymentIdPaymentDetails_401  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: FilePaymentId.
+	at com.laegler.openbanking.api.integration.FilePaymentsApiIntegrationTest.test_getFilePaymentsFilePaymentIdPaymentDetails_401(FilePaymentsApiIntegrationTest.java:149)
+
+test_getFilePaymentsFilePaymentIdPaymentDetails_403  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: FilePaymentId.
+	at com.laegler.openbanking.api.integration.FilePaymentsApiIntegrationTest.test_getFilePaymentsFilePaymentIdPaymentDetails_403(FilePaymentsApiIntegrationTest.java:155)
+
+test_getFilePaymentsFilePaymentIdPaymentDetails_404  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: FilePaymentId.
+	at com.laegler.openbanking.api.integration.FilePaymentsApiIntegrationTest.test_getFilePaymentsFilePaymentIdPaymentDetails_404(FilePaymentsApiIntegrationTest.java:161)
+
+test_getFilePaymentsFilePaymentIdPaymentDetails_405  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: FilePaymentId.
+	at com.laegler.openbanking.api.integration.FilePaymentsApiIntegrationTest.test_getFilePaymentsFilePaymentIdPaymentDetails_405(FilePaymentsApiIntegrationTest.java:173)
+
+test_getFilePaymentsFilePaymentIdPaymentDetails_406  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: FilePaymentId.
+	at com.laegler.openbanking.api.integration.FilePaymentsApiIntegrationTest.test_getFilePaymentsFilePaymentIdPaymentDetails_406(FilePaymentsApiIntegrationTest.java:179)
+
+test_getFilePaymentsFilePaymentIdPaymentDetails_429  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: FilePaymentId.
+	at com.laegler.openbanking.api.integration.FilePaymentsApiIntegrationTest.test_getFilePaymentsFilePaymentIdPaymentDetails_429(FilePaymentsApiIntegrationTest.java:191)
+
+test_getFilePaymentsFilePaymentIdPaymentDetails_500  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: FilePaymentId.
+	at com.laegler.openbanking.api.integration.FilePaymentsApiIntegrationTest.test_getFilePaymentsFilePaymentIdPaymentDetails_500(FilePaymentsApiIntegrationTest.java:167)
+
+test_createFilePayments_201  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.FilePaymentsApiIntegrationTest.test_createFilePayments_201(FilePaymentsApiIntegrationTest.java:77)
+
+test_createFilePayments_400  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.FilePaymentsApiIntegrationTest.test_createFilePayments_400(FilePaymentsApiIntegrationTest.java:35)
+
+test_createFilePayments_401  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.FilePaymentsApiIntegrationTest.test_createFilePayments_401(FilePaymentsApiIntegrationTest.java:41)
+
+test_createFilePayments_403  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.FilePaymentsApiIntegrationTest.test_createFilePayments_403(FilePaymentsApiIntegrationTest.java:47)
+
+test_createFilePayments_404  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.FilePaymentsApiIntegrationTest.test_createFilePayments_404(FilePaymentsApiIntegrationTest.java:53)
+
+test_createFilePayments_405  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.FilePaymentsApiIntegrationTest.test_createFilePayments_405(FilePaymentsApiIntegrationTest.java:65)
+
+test_createFilePayments_406  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.FilePaymentsApiIntegrationTest.test_createFilePayments_406(FilePaymentsApiIntegrationTest.java:71)
+
+test_createFilePayments_429  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.FilePaymentsApiIntegrationTest.test_createFilePayments_429(FilePaymentsApiIntegrationTest.java:83)
+
+test_createFilePayments_500  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.FilePaymentsApiIntegrationTest.test_createFilePayments_500(FilePaymentsApiIntegrationTest.java:59)
+

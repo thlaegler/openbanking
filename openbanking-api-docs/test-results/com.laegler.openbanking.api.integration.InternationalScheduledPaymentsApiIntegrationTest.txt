@@ -1,0 +1,112 @@
+-------------------------------------------------------------------------------
+Test set: com.laegler.openbanking.api.integration.InternationalScheduledPaymentsApiIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 27, Failures: 0, Errors: 27, Skipped: 0, Time elapsed: 0.032 s <<< FAILURE! - in com.laegler.openbanking.api.integration.InternationalScheduledPaymentsApiIntegrationTest
+test_getInternationalScheduledPaymentsInternationalScheduledPaymentIdPaymentDetails_200  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalScheduledPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentsApiIntegrationTest.test_getInternationalScheduledPaymentsInternationalScheduledPaymentIdPaymentDetails_200(InternationalScheduledPaymentsApiIntegrationTest.java:185)
+
+test_getInternationalScheduledPaymentsInternationalScheduledPaymentIdPaymentDetails_400  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalScheduledPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentsApiIntegrationTest.test_getInternationalScheduledPaymentsInternationalScheduledPaymentIdPaymentDetails_400(InternationalScheduledPaymentsApiIntegrationTest.java:143)
+
+test_getInternationalScheduledPaymentsInternationalScheduledPaymentIdPaymentDetails_401  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalScheduledPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentsApiIntegrationTest.test_getInternationalScheduledPaymentsInternationalScheduledPaymentIdPaymentDetails_401(InternationalScheduledPaymentsApiIntegrationTest.java:149)
+
+test_getInternationalScheduledPaymentsInternationalScheduledPaymentIdPaymentDetails_403  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalScheduledPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentsApiIntegrationTest.test_getInternationalScheduledPaymentsInternationalScheduledPaymentIdPaymentDetails_403(InternationalScheduledPaymentsApiIntegrationTest.java:155)
+
+test_getInternationalScheduledPaymentsInternationalScheduledPaymentIdPaymentDetails_404  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalScheduledPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentsApiIntegrationTest.test_getInternationalScheduledPaymentsInternationalScheduledPaymentIdPaymentDetails_404(InternationalScheduledPaymentsApiIntegrationTest.java:161)
+
+test_getInternationalScheduledPaymentsInternationalScheduledPaymentIdPaymentDetails_405  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalScheduledPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentsApiIntegrationTest.test_getInternationalScheduledPaymentsInternationalScheduledPaymentIdPaymentDetails_405(InternationalScheduledPaymentsApiIntegrationTest.java:173)
+
+test_getInternationalScheduledPaymentsInternationalScheduledPaymentIdPaymentDetails_406  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalScheduledPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentsApiIntegrationTest.test_getInternationalScheduledPaymentsInternationalScheduledPaymentIdPaymentDetails_406(InternationalScheduledPaymentsApiIntegrationTest.java:179)
+
+test_getInternationalScheduledPaymentsInternationalScheduledPaymentIdPaymentDetails_429  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalScheduledPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentsApiIntegrationTest.test_getInternationalScheduledPaymentsInternationalScheduledPaymentIdPaymentDetails_429(InternationalScheduledPaymentsApiIntegrationTest.java:191)
+
+test_getInternationalScheduledPaymentsInternationalScheduledPaymentIdPaymentDetails_500  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalScheduledPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentsApiIntegrationTest.test_getInternationalScheduledPaymentsInternationalScheduledPaymentIdPaymentDetails_500(InternationalScheduledPaymentsApiIntegrationTest.java:167)
+
+test_getInternationalScheduledPaymentsInternationalScheduledPaymentId_200  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalScheduledPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentsApiIntegrationTest.test_getInternationalScheduledPaymentsInternationalScheduledPaymentId_200(InternationalScheduledPaymentsApiIntegrationTest.java:131)
+
+test_getInternationalScheduledPaymentsInternationalScheduledPaymentId_400  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalScheduledPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentsApiIntegrationTest.test_getInternationalScheduledPaymentsInternationalScheduledPaymentId_400(InternationalScheduledPaymentsApiIntegrationTest.java:89)
+
+test_getInternationalScheduledPaymentsInternationalScheduledPaymentId_401  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalScheduledPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentsApiIntegrationTest.test_getInternationalScheduledPaymentsInternationalScheduledPaymentId_401(InternationalScheduledPaymentsApiIntegrationTest.java:95)
+
+test_getInternationalScheduledPaymentsInternationalScheduledPaymentId_403  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalScheduledPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentsApiIntegrationTest.test_getInternationalScheduledPaymentsInternationalScheduledPaymentId_403(InternationalScheduledPaymentsApiIntegrationTest.java:101)
+
+test_getInternationalScheduledPaymentsInternationalScheduledPaymentId_404  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalScheduledPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentsApiIntegrationTest.test_getInternationalScheduledPaymentsInternationalScheduledPaymentId_404(InternationalScheduledPaymentsApiIntegrationTest.java:107)
+
+test_getInternationalScheduledPaymentsInternationalScheduledPaymentId_405  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalScheduledPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentsApiIntegrationTest.test_getInternationalScheduledPaymentsInternationalScheduledPaymentId_405(InternationalScheduledPaymentsApiIntegrationTest.java:119)
+
+test_getInternationalScheduledPaymentsInternationalScheduledPaymentId_406  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalScheduledPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentsApiIntegrationTest.test_getInternationalScheduledPaymentsInternationalScheduledPaymentId_406(InternationalScheduledPaymentsApiIntegrationTest.java:125)
+
+test_getInternationalScheduledPaymentsInternationalScheduledPaymentId_429  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalScheduledPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentsApiIntegrationTest.test_getInternationalScheduledPaymentsInternationalScheduledPaymentId_429(InternationalScheduledPaymentsApiIntegrationTest.java:137)
+
+test_getInternationalScheduledPaymentsInternationalScheduledPaymentId_500  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: InternationalScheduledPaymentId.
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentsApiIntegrationTest.test_getInternationalScheduledPaymentsInternationalScheduledPaymentId_500(InternationalScheduledPaymentsApiIntegrationTest.java:113)
+
+test_createInternationalScheduledPayments_201  Time elapsed: 0.003 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentsApiIntegrationTest.test_createInternationalScheduledPayments_201(InternationalScheduledPaymentsApiIntegrationTest.java:77)
+
+test_createInternationalScheduledPayments_400  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentsApiIntegrationTest.test_createInternationalScheduledPayments_400(InternationalScheduledPaymentsApiIntegrationTest.java:35)
+
+test_createInternationalScheduledPayments_401  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentsApiIntegrationTest.test_createInternationalScheduledPayments_401(InternationalScheduledPaymentsApiIntegrationTest.java:41)
+
+test_createInternationalScheduledPayments_403  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentsApiIntegrationTest.test_createInternationalScheduledPayments_403(InternationalScheduledPaymentsApiIntegrationTest.java:47)
+
+test_createInternationalScheduledPayments_404  Time elapsed: 0.003 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentsApiIntegrationTest.test_createInternationalScheduledPayments_404(InternationalScheduledPaymentsApiIntegrationTest.java:53)
+
+test_createInternationalScheduledPayments_405  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentsApiIntegrationTest.test_createInternationalScheduledPayments_405(InternationalScheduledPaymentsApiIntegrationTest.java:65)
+
+test_createInternationalScheduledPayments_406  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentsApiIntegrationTest.test_createInternationalScheduledPayments_406(InternationalScheduledPaymentsApiIntegrationTest.java:71)
+
+test_createInternationalScheduledPayments_429  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentsApiIntegrationTest.test_createInternationalScheduledPayments_429(InternationalScheduledPaymentsApiIntegrationTest.java:83)
+
+test_createInternationalScheduledPayments_500  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.InternationalScheduledPaymentsApiIntegrationTest.test_createInternationalScheduledPayments_500(InternationalScheduledPaymentsApiIntegrationTest.java:59)
+

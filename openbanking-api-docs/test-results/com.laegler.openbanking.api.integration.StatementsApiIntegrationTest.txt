@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: com.laegler.openbanking.api.integration.StatementsApiIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 0.024 s <<< FAILURE! - in com.laegler.openbanking.api.integration.StatementsApiIntegrationTest
+test_getStatements_200  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.StatementsApiIntegrationTest.test_getStatements_200(StatementsApiIntegrationTest.java:75)
+
+test_getStatements_400  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.StatementsApiIntegrationTest.test_getStatements_400(StatementsApiIntegrationTest.java:33)
+
+test_getStatements_401  Time elapsed: 0.003 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.StatementsApiIntegrationTest.test_getStatements_401(StatementsApiIntegrationTest.java:39)
+
+test_getStatements_403  Time elapsed: 0.004 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.StatementsApiIntegrationTest.test_getStatements_403(StatementsApiIntegrationTest.java:45)
+
+test_getStatements_404  Time elapsed: 0.003 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.StatementsApiIntegrationTest.test_getStatements_404(StatementsApiIntegrationTest.java:51)
+
+test_getStatements_405  Time elapsed: 0.003 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.StatementsApiIntegrationTest.test_getStatements_405(StatementsApiIntegrationTest.java:63)
+
+test_getStatements_406  Time elapsed: 0.003 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.StatementsApiIntegrationTest.test_getStatements_406(StatementsApiIntegrationTest.java:69)
+
+test_getStatements_429  Time elapsed: 0.003 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.StatementsApiIntegrationTest.test_getStatements_429(StatementsApiIntegrationTest.java:81)
+
+test_getStatements_500  Time elapsed: 0.003 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.StatementsApiIntegrationTest.test_getStatements_500(StatementsApiIntegrationTest.java:57)
+

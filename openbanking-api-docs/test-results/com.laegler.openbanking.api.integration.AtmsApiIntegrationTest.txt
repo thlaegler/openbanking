@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: com.laegler.openbanking.api.integration.AtmsApiIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 0.002 s <<< FAILURE! - in com.laegler.openbanking.api.integration.AtmsApiIntegrationTest
+test_atmsGet_200  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.AtmsApiIntegrationTest.test_atmsGet_200(AtmsApiIntegrationTest.java:56)
+
+test_atmsGet_400  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.AtmsApiIntegrationTest.test_atmsGet_400(AtmsApiIntegrationTest.java:38)
+
+test_atmsGet_408  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.AtmsApiIntegrationTest.test_atmsGet_408(AtmsApiIntegrationTest.java:62)
+
+test_atmsGet_429  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.AtmsApiIntegrationTest.test_atmsGet_429(AtmsApiIntegrationTest.java:68)
+
+test_atmsGet_500  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.AtmsApiIntegrationTest.test_atmsGet_500(AtmsApiIntegrationTest.java:44)
+
+test_atmsGet_503  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.AtmsApiIntegrationTest.test_atmsGet_503(AtmsApiIntegrationTest.java:50)
+

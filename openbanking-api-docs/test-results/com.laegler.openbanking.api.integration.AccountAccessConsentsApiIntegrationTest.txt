@@ -1,0 +1,112 @@
+-------------------------------------------------------------------------------
+Test set: com.laegler.openbanking.api.integration.AccountAccessConsentsApiIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 27, Failures: 0, Errors: 27, Skipped: 0, Time elapsed: 0.019 s <<< FAILURE! - in com.laegler.openbanking.api.integration.AccountAccessConsentsApiIntegrationTest
+test_getAccountAccessConsentsConsentId_200  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.AccountAccessConsentsApiIntegrationTest.test_getAccountAccessConsentsConsentId_200(AccountAccessConsentsApiIntegrationTest.java:184)
+
+test_getAccountAccessConsentsConsentId_400  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.AccountAccessConsentsApiIntegrationTest.test_getAccountAccessConsentsConsentId_400(AccountAccessConsentsApiIntegrationTest.java:142)
+
+test_getAccountAccessConsentsConsentId_401  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.AccountAccessConsentsApiIntegrationTest.test_getAccountAccessConsentsConsentId_401(AccountAccessConsentsApiIntegrationTest.java:148)
+
+test_getAccountAccessConsentsConsentId_403  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.AccountAccessConsentsApiIntegrationTest.test_getAccountAccessConsentsConsentId_403(AccountAccessConsentsApiIntegrationTest.java:154)
+
+test_getAccountAccessConsentsConsentId_404  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.AccountAccessConsentsApiIntegrationTest.test_getAccountAccessConsentsConsentId_404(AccountAccessConsentsApiIntegrationTest.java:160)
+
+test_getAccountAccessConsentsConsentId_405  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.AccountAccessConsentsApiIntegrationTest.test_getAccountAccessConsentsConsentId_405(AccountAccessConsentsApiIntegrationTest.java:172)
+
+test_getAccountAccessConsentsConsentId_406  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.AccountAccessConsentsApiIntegrationTest.test_getAccountAccessConsentsConsentId_406(AccountAccessConsentsApiIntegrationTest.java:178)
+
+test_getAccountAccessConsentsConsentId_429  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.AccountAccessConsentsApiIntegrationTest.test_getAccountAccessConsentsConsentId_429(AccountAccessConsentsApiIntegrationTest.java:190)
+
+test_getAccountAccessConsentsConsentId_500  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.AccountAccessConsentsApiIntegrationTest.test_getAccountAccessConsentsConsentId_500(AccountAccessConsentsApiIntegrationTest.java:166)
+
+test_deleteAccountAccessConsentsConsentId_204  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.AccountAccessConsentsApiIntegrationTest.test_deleteAccountAccessConsentsConsentId_204(AccountAccessConsentsApiIntegrationTest.java:130)
+
+test_deleteAccountAccessConsentsConsentId_400  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.AccountAccessConsentsApiIntegrationTest.test_deleteAccountAccessConsentsConsentId_400(AccountAccessConsentsApiIntegrationTest.java:88)
+
+test_deleteAccountAccessConsentsConsentId_401  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.AccountAccessConsentsApiIntegrationTest.test_deleteAccountAccessConsentsConsentId_401(AccountAccessConsentsApiIntegrationTest.java:94)
+
+test_deleteAccountAccessConsentsConsentId_403  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.AccountAccessConsentsApiIntegrationTest.test_deleteAccountAccessConsentsConsentId_403(AccountAccessConsentsApiIntegrationTest.java:100)
+
+test_deleteAccountAccessConsentsConsentId_404  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.AccountAccessConsentsApiIntegrationTest.test_deleteAccountAccessConsentsConsentId_404(AccountAccessConsentsApiIntegrationTest.java:106)
+
+test_deleteAccountAccessConsentsConsentId_405  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.AccountAccessConsentsApiIntegrationTest.test_deleteAccountAccessConsentsConsentId_405(AccountAccessConsentsApiIntegrationTest.java:118)
+
+test_deleteAccountAccessConsentsConsentId_406  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.AccountAccessConsentsApiIntegrationTest.test_deleteAccountAccessConsentsConsentId_406(AccountAccessConsentsApiIntegrationTest.java:124)
+
+test_deleteAccountAccessConsentsConsentId_429  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.AccountAccessConsentsApiIntegrationTest.test_deleteAccountAccessConsentsConsentId_429(AccountAccessConsentsApiIntegrationTest.java:136)
+
+test_deleteAccountAccessConsentsConsentId_500  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Invalid number of path parameters. Expected 1, was 0. Undefined path parameters are: ConsentId.
+	at com.laegler.openbanking.api.integration.AccountAccessConsentsApiIntegrationTest.test_deleteAccountAccessConsentsConsentId_500(AccountAccessConsentsApiIntegrationTest.java:112)
+
+test_createAccountAccessConsents_201  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.AccountAccessConsentsApiIntegrationTest.test_createAccountAccessConsents_201(AccountAccessConsentsApiIntegrationTest.java:76)
+
+test_createAccountAccessConsents_400  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.AccountAccessConsentsApiIntegrationTest.test_createAccountAccessConsents_400(AccountAccessConsentsApiIntegrationTest.java:34)
+
+test_createAccountAccessConsents_401  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.AccountAccessConsentsApiIntegrationTest.test_createAccountAccessConsents_401(AccountAccessConsentsApiIntegrationTest.java:40)
+
+test_createAccountAccessConsents_403  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.AccountAccessConsentsApiIntegrationTest.test_createAccountAccessConsents_403(AccountAccessConsentsApiIntegrationTest.java:46)
+
+test_createAccountAccessConsents_404  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.AccountAccessConsentsApiIntegrationTest.test_createAccountAccessConsents_404(AccountAccessConsentsApiIntegrationTest.java:52)
+
+test_createAccountAccessConsents_405  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.AccountAccessConsentsApiIntegrationTest.test_createAccountAccessConsents_405(AccountAccessConsentsApiIntegrationTest.java:64)
+
+test_createAccountAccessConsents_406  Time elapsed: 0.003 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.AccountAccessConsentsApiIntegrationTest.test_createAccountAccessConsents_406(AccountAccessConsentsApiIntegrationTest.java:70)
+
+test_createAccountAccessConsents_429  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.AccountAccessConsentsApiIntegrationTest.test_createAccountAccessConsents_429(AccountAccessConsentsApiIntegrationTest.java:82)
+
+test_createAccountAccessConsents_500  Time elapsed: 0.003 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.AccountAccessConsentsApiIntegrationTest.test_createAccountAccessConsents_500(AccountAccessConsentsApiIntegrationTest.java:58)
+

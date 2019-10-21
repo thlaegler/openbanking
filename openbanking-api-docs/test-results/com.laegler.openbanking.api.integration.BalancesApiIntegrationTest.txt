@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: com.laegler.openbanking.api.integration.BalancesApiIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 0.016 s <<< FAILURE! - in com.laegler.openbanking.api.integration.BalancesApiIntegrationTest
+test_getBalances_200  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.BalancesApiIntegrationTest.test_getBalances_200(BalancesApiIntegrationTest.java:75)
+
+test_getBalances_400  Time elapsed: 0 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.BalancesApiIntegrationTest.test_getBalances_400(BalancesApiIntegrationTest.java:33)
+
+test_getBalances_401  Time elapsed: 0.001 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.BalancesApiIntegrationTest.test_getBalances_401(BalancesApiIntegrationTest.java:39)
+
+test_getBalances_403  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.BalancesApiIntegrationTest.test_getBalances_403(BalancesApiIntegrationTest.java:45)
+
+test_getBalances_404  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.BalancesApiIntegrationTest.test_getBalances_404(BalancesApiIntegrationTest.java:51)
+
+test_getBalances_405  Time elapsed: 0.003 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.BalancesApiIntegrationTest.test_getBalances_405(BalancesApiIntegrationTest.java:63)
+
+test_getBalances_406  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.BalancesApiIntegrationTest.test_getBalances_406(BalancesApiIntegrationTest.java:69)
+
+test_getBalances_429  Time elapsed: 0.002 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.BalancesApiIntegrationTest.test_getBalances_429(BalancesApiIntegrationTest.java:81)
+
+test_getBalances_500  Time elapsed: 0.003 s  <<< ERROR!
+java.net.ConnectException: Connection refused (Connection refused)
+	at com.laegler.openbanking.api.integration.BalancesApiIntegrationTest.test_getBalances_500(BalancesApiIntegrationTest.java:57)
+
