@@ -1,0 +1,667 @@
+{
+  "data": {
+    "attributes": {
+      "accountRelationships": [],
+      "applicationName": "Ltest Dtest Mr",
+      "applicationTitle": "Ltest Dtest Mr",
+      "clientApplication": "MXCRM",
+      "comparisonRatesSupplied": "N",
+      "currentTaskWith": "0000017170",
+      "externalSystemReference": "DONGAPP29",
+      "financialDetails": [
+        {
+          "advance": "Y",
+          "fees": {
+            "capitalised": null,
+            "fee": [
+              {
+                "amount": "300.00",
+                "code": "ESTAB",
+                "mode": "ADD",
+                "seq": "2"
+              }
+            ]
+          },
+          "instalmentBreakdown": {
+            "instalments": [
+              {
+                "date": "2019-10-03T11:00:00",
+                "externalFeeAmount": "0.00",
+                "feeAmount": "0.00",
+                "gstAmount": "94.27",
+                "held": null,
+                "instalmentAmount": "1036.99",
+                "interest": "0.00",
+                "principal": "942.72",
+                "seq": 1,
+                "structured": false
+              }
+            ],
+            "total": {
+              "gst": "5656.20",
+              "interest": "10808.65",
+              "nonCapitalisedFees": "0.00",
+              "principal": "45754.55"
+            }
+          },
+          "instalmentSummary": [
+            {
+              "amount": "1036.99",
+              "endDate": "2024-10-04T00:00:00",
+              "instalments": 60,
+              "startDate": "2019-10-03T11:00:00"
+            }
+          ],
+          "interestRate": "17.900",
+          "mode": "ADD",
+          "paymentFrequencyDay": "AN",
+          "paymentFrequencyType": {
+            "code": "M",
+            "description": "MONTHLY"
+          },
+          "paymentFrequencyUnit": "1",
+          "paymentMethod": {
+            "bankAccountNumber": "332-800-990001407",
+            "paymentMethod": "DD"
+          },
+          "product": "FLE",
+          "purchasePrice": {
+            "retailPrice": "46000.00"
+          },
+          "residualValue": "5000.00",
+          "seq": "1",
+          "settlementDate": "2019-10-03T11:00:00",
+          "signatureDate": "2019-10-03T11:00:00",
+          "taxTreatment": "STNDRD",
+          "term": "48",
+          "termType": "M"
+        }
+      ],
+      "industryCode": {
+        "level1": "04",
+        "level2": "01"
+      },
+      "loadedByClientNumber": "0003023022",
+      "loanPurpose": {
+        "level1": "NBUS",
+        "level2": ""
+      },
+      "mode": "Add",
+      "originator": {
+        "clientNumber": "0000017170",
+        "franchise": "SGF",
+        "value": "0000017170"
+      },
+      "owner": "0003019214",
+      "paymentMethod": "DD",
+      "recourseAccount": "N",
+      "salesChannel": "NOVATED",
+      "salutation": "N",
+      "settlementDate": "2019-10-03T11:00:00",
+      "subPrime": "N",
+      "taxRegion": "NSW",
+      "tradingBranch": "1218",
+      "type": "FLE"
+    },
+    "id": "0100177467",
+    "links": {
+      "self": "/v1.0/applications/0100177467"
+    },
+    "relationships": {
+      "associatedClients": {
+        "data": [
+          {
+            "id": "0000071853",
+            "type": "associatedClient"
+          }
+        ],
+        "links": {
+          "related": "/v1.0/applications/0100177467/associatedClients",
+          "self": "/v1.0/applications/0100177467/relationships/associatedClients"
+        }
+      },
+      "securities": {
+        "data": [
+          {
+            "id": "0000032348",
+            "type": "securities"
+          }
+        ],
+        "links": {
+          "related": "/v1.0/applications/0100177467/securities",
+          "self": "/v1.0/applications/0100177467/relationships/securities"
+        }
+      }
+    },
+    "type": "applications"
+  },
+  "included": [
+    {
+      "attributes": {
+        "@id": "0ccd8ecc-b210-43c2-bd91-3a88b445677c",
+        "actingAsPartnership": null,
+        "actingAsTrustee": null,
+        "clientReference": "0003019214",
+        "creditCheckAuthorised": null,
+        "mode": "ADD",
+        "order": null,
+        "role": "PRIMEB",
+        "seq": "01",
+        "signatureRequired": null,
+        "trustee": "N"
+      },
+      "id": "0000071853",
+      "links": {
+        "self": "/v1.0/associatedClient/0000071853"
+      },
+      "relationships": {
+        "clientMaint": {
+          "data": {
+            "id": "0003053995",
+            "type": "ClientMaint"
+          },
+          "links": {
+            "related": "/v1.0/associatedClient/0000071853/clientMaint",
+            "self": "/v1.0/associatedClient/0000071853/relationships/clientMaint"
+          }
+        }
+      },
+      "type": "associatedClient"
+    },
+    {
+      "attributes": {
+        "aml": {
+          "address": {
+            "addressLine1": null,
+            "addressLine2": null,
+            "addressLine3": null,
+            "addressLine4": null,
+            "addressLine5": null,
+            "addressLine6": null,
+            "addressLine7": null,
+            "alpha": "",
+            "apartment": "",
+            "building": "",
+            "careOfName": "",
+            "city": "",
+            "contactId": "132652",
+            "country": {
+              "code": "AUS",
+              "description": "Australia"
+            },
+            "effectiveDate": "2004-10-03T11:00:00",
+            "mode": "ADD",
+            "postCode": "1111",
+            "purpose": "R",
+            "seq": "1",
+            "state": "NSW",
+            "streetDirection": "",
+            "streetNumber": {
+              "from": "0",
+              "to": "0"
+            },
+            "streetOrPostalName": "Test",
+            "streetType": "",
+            "suburb": "Hillsborough",
+            "type": "S",
+            "unitType": "",
+            "verificationDetails": null
+          },
+          "deedDate": "2019-10-03T11:00:00",
+          "governmentCategory": "",
+          "governmentCountry": "",
+          "governmentLegislation": "",
+          "governmentLegislationName": "",
+          "governmentState": "",
+          "idChannel": "01",
+          "kycVerified": true,
+          "kycVerifiedOtherSystem": false,
+          "professionalAssociationMembership": "",
+          "professionalAssociationName": "",
+          "professionalAssociationWebsite": "",
+          "regulated": false,
+          "trustBeneficiaryClass": "",
+          "trustDescription": {
+            "code": "T",
+            "description": "D"
+          },
+          "trustType": "F"
+        },
+        "applicationClientRelations": [],
+        "bankAccounts": null,
+        "clientCapacity": {
+          "assets": [
+            {
+              "amount": "0.00",
+              "code": "COH",
+              "description": "Cash on Hand",
+              "refinance": "",
+              "seq": "1"
+            }
+          ],
+          "capacityAssessment": null,
+          "collectionDate": "2019-10-03T11:00:00",
+          "expenses": [
+            {
+              "amount1": {
+                "frequency": null,
+                "value": "1500.00"
+              },
+              "amount2": {
+                "frequency": null,
+                "value": "0.00"
+              },
+              "amount3": {
+                "frequency": null,
+                "value": "0.00"
+              },
+              "code": "RENT",
+              "description": "Monthly Living Expenses",
+              "refinance": "",
+              "relatedIECode": "",
+              "seq": "1"
+            }
+          ],
+          "incomes": [
+            {
+              "amount1": {
+                "frequency": null,
+                "value": "15000.00"
+              },
+              "amount2": {
+                "frequency": null,
+                "value": "0.00"
+              },
+              "amount3": {
+                "frequency": null,
+                "value": "0.00"
+              },
+              "code": "SALARY",
+              "description": "Other Income",
+              "refinance": "",
+              "relatedIECode": "",
+              "seq": "1"
+            }
+          ],
+          "joint": "Y",
+          "liabilities": [
+            {
+              "amount": "0.00",
+              "code": "CCARD1",
+              "description": "CC Limit",
+              "refinance": "",
+              "seq": "1"
+            }
+          ],
+          "linkedClientSeq": null
+        },
+        "clientCategories": [
+          {
+            "mode": "Add",
+            "seq": "1"
+          }
+        ],
+        "clientIdentifications": [
+          {
+            "effectiveDate": "2019-10-03T11:00:00",
+            "expiryDate": "2020-11-10T11:00:00",
+            "idCode1": "DRVLSC",
+            "idCode2": "",
+            "mode": "CHANGE",
+            "reference": "DD111111",
+            "seq": "1"
+          }
+        ],
+        "contactDetails": {
+          "address": [
+            {
+              "addressLine1": null,
+              "addressLine2": null,
+              "addressLine3": null,
+              "addressLine4": null,
+              "addressLine5": null,
+              "addressLine6": null,
+              "addressLine7": null,
+              "alpha": "",
+              "apartment": "",
+              "building": "",
+              "careOfName": "",
+              "city": "",
+              "contactId": "132652",
+              "country": {
+                "code": "AUS",
+                "description": "Australia"
+              },
+              "effectiveDate": "2004-10-03T11:00:00",
+              "mode": "ADD",
+              "postCode": "1111",
+              "purpose": "R",
+              "seq": "1",
+              "state": "NSW",
+              "streetDirection": "",
+              "streetNumber": {
+                "from": "0",
+                "to": "0"
+              },
+              "streetOrPostalName": "Test",
+              "streetType": "",
+              "suburb": "Hillsborough",
+              "type": "S",
+              "unitType": "",
+              "verificationDetails": null
+            }
+          ],
+          "email": [
+            {
+              "address": "fdsafd@dfadsf.com",
+              "contactId": null,
+              "defaultDelivery": "N",
+              "effectiveDate": "2019-10-03T11:00:00",
+              "expiryDate": null,
+              "mode": "ADD",
+              "preferredMethod": "N",
+              "seq": "1",
+              "type": "HM"
+            }
+          ],
+          "mobile": [
+            {
+              "contactId": null,
+              "countryCode": "64",
+              "effectiveDate": "2019-10-03T11:00:00",
+              "expiryDate": null,
+              "mode": "ADD",
+              "networkCode": "021",
+              "number": "1033333",
+              "preferredMethod": "N",
+              "seq": "1",
+              "type": "MB"
+            }
+          ],
+          "phone": [
+            {
+              "contactId": null,
+              "countryCode": "",
+              "effectiveDate": "2019-10-03T11:00:00",
+              "expiryDate": null,
+              "mode": "ADD",
+              "number": "0204488887",
+              "preferredMethod": "",
+              "seq": "1",
+              "stdCode": "02",
+              "type": "HM"
+            },
+            {
+              "contactId": null,
+              "countryCode": "",
+              "effectiveDate": "2019-10-03T11:00:00",
+              "expiryDate": null,
+              "mode": "ADD",
+              "number": "0204488887",
+              "preferredMethod": "",
+              "seq": "1",
+              "stdCode": "03",
+              "type": "WK"
+            }
+          ]
+        },
+        "dependants": null,
+        "generalDetails": {
+          "analysisCode": "",
+          "bankruptcyDate": null,
+          "bankruptcyPosition": null,
+          "clientManager": null,
+          "clientType": "I",
+          "companyDetails": null,
+          "corporateType": null,
+          "creditRating": null,
+          "defaultClientOrganisation": {
+            "unitId": "",
+            "unitType": "",
+            "value": null
+          },
+          "defaultManager": null,
+          "existingClient": "N",
+          "externalReference": null,
+          "externalSystemReference": null,
+          "foreignRegistrationNumber": null,
+          "forenames": "Dtest",
+          "gna": "N",
+          "gstNumber": "",
+          "gstabnOverrideReason": "",
+          "ictCategory": null,
+          "identificationChannel": null,
+          "individualDetails": {
+            "accommodation": {
+              "code": "OWN",
+              "description": "Homeowner"
+            },
+            "clientOtherNames": [
+              {
+                "seq": "1",
+                "value": "test"
+              }
+            ],
+            "clientOtherNamesExist": "Y",
+            "countryOfCitizenship": "",
+            "countryOfResidence": null,
+            "dateOfBirth": "1990-11-10T11:00:00",
+            "dateOfBirthRefused": "",
+            "dateOfDeath": null,
+            "electronicConsentHeld": "N",
+            "forename": {
+              "allowBlank": "N",
+              "value": "test"
+            },
+            "gender": "M",
+            "kycVerified": "Y",
+            "kycVerifiedByOtherSystem": "N",
+            "maidenName": null,
+            "maritalStatus": "M",
+            "numberOfDependants": "1",
+            "politicallyExposed": "N",
+            "preferredName": "",
+            "resident": null,
+            "secondForename": "",
+            "smoker": "N",
+            "surname": "Ltest",
+            "title": "Mr"
+          },
+          "industryCode": {
+            "level1": "04",
+            "level2": "01",
+            "level3": "02"
+          },
+          "irdNumber": "",
+          "keyPersonRole": null,
+          "mailOutRestriction": "Y",
+          "originatingSource": "",
+          "reserveBankCoding": null,
+          "status": null,
+          "surname": "Ltest",
+          "title": "Mr",
+          "tradingName": null,
+          "websiteAddress": "",
+          "whtCategory": null
+        },
+        "keyPersons": [],
+        "mode": "Change",
+        "relationships": []
+      },
+      "id": "0003053995",
+      "links": {
+        "self": "/v1.0/clientMaint/0003053995"
+      },
+      "type": "ClientMaint"
+    },
+    {
+      "attributes": {
+        "@id": "229dbe56-a58c-4e54-94ad-8d74889edda3",
+        "accountSecurity": {
+          "appPctToUse": "100.0000",
+          "assetNumber": "0000032348",
+          "clientSecurityRelationship": {
+            "code": null,
+            "description": "NotEntered"
+          },
+          "colour": "Black",
+          "condition": {
+            "code": "N",
+            "description": "New"
+          },
+          "description": "AUDI RS5 4.2 FSI QUATTRO 2017 Vin 11111111111111111",
+          "effectiveDate": "2019-10-04T11:45:08.251",
+          "fleetDiscountRate": "0.0000",
+          "id": "0000046364",
+          "insurerClientNumber": "",
+          "intendedUse": "",
+          "modifiedVehicle": "N",
+          "odometer": "1111",
+          "odometerUnitOfMeasure": "K",
+          "personalisedPlate": "",
+          "possessionDate": "0000-12-29T12:00:00",
+          "primaryCollateral": {
+            "code": null,
+            "description": "Primary"
+          },
+          "purchaseMoneySecurityInterest": null,
+          "registrationNumber": "",
+          "registrationYear": "2017",
+          "relicensingDate": null,
+          "securityPmsi": null,
+          "sundryInformation": "",
+          "supplierOfGoods": "",
+          "taxRegion": "NSW",
+          "taxableActivity": "",
+          "type": {
+            "code": "A",
+            "description": "Asset"
+          },
+          "usageAllowance": "0",
+          "usageExcessCharge": "0.000",
+          "usageFrequency": "",
+          "usageFrequencyUnit": "0",
+          "usageInitialReading": "0",
+          "usageRebate": "0.000",
+          "usageUnitOfMeasure": "",
+          "usageWaiverPercentage": "0.0000",
+          "value": "0.00",
+          "vinValidationStatus": "4"
+        },
+        "asset": {
+          "assetClassification": {
+            "code": "0004",
+            "description": "Luxury Cars"
+          },
+          "assetNumber": "0000032348",
+          "assetType": null,
+          "classificationCode": "0004",
+          "condition": {
+            "code": "N",
+            "description": "New"
+          },
+          "securityPercentageToUse": "100.0000",
+          "securityStatus": {
+            "code": "N",
+            "description": "Complete"
+          }
+        },
+        "equipmentMaint": null,
+        "links": null,
+        "miscellaneousMaint": null,
+        "mode": "ADD",
+        "seq": "1",
+        "vehicleMaint": {
+          "accountSecurityVehicle": null,
+          "assetDetails": {
+            "assetClassification": {
+              "code": "0004",
+              "description": "Luxury Cars"
+            },
+            "assetNumber": "0000032348",
+            "assetType": null,
+            "classificationCode": "0004",
+            "condition": {
+              "code": "N",
+              "description": "New"
+            },
+            "securityPercentageToUse": "100.0000",
+            "securityStatus": {
+              "code": "N",
+              "description": "Complete"
+            }
+          },
+          "assetExtras": null,
+          "assetOtherClaim": null,
+          "assetValuations": null,
+          "memoMaint": null,
+          "mode": "ENQUIRY",
+          "vehicle": {
+            "refType": null,
+            "value": "0000046364"
+          },
+          "vehicleDetails": {
+            "ageFromDate": null,
+            "bodyStyle": "07",
+            "chassisNumber": "11111111111111111",
+            "cleansed": "N",
+            "colour": "",
+            "countryFirstRegistered": "",
+            "dateFirstRegisteredOverseas": null,
+            "description": "ASTON MARTIN DB7 VANTAGE 2006",
+            "distributorStockNumber": "",
+            "engineCc": "4163",
+            "engineNumber": "3213123123213123",
+            "externalReference": "Q6X13J",
+            "fourWheelDrive": {
+              "code": "N",
+              "description": "No"
+            },
+            "fuelType": "P",
+            "fuelUsageCity": "10.7000",
+            "gpsInstalled": null,
+            "lctExempt": "N",
+            "lowTradePrice": null,
+            "make": "AUDI",
+            "manufactureDate": "2016-12-31T11:00:00",
+            "model": "RS5",
+            "modifiedVehicle": {
+              "code": "N",
+              "description": "No"
+            },
+            "motochekPerformed": "N",
+            "nonStandardVehicle": {
+              "code": "N",
+              "description": "No"
+            },
+            "numberOfCylinders": null,
+            "numberOfDoors": "0",
+            "odometer": "1000",
+            "odometerUnitOfMeasure": "K",
+            "personalisedPlate": "",
+            "registeredInterests": "0",
+            "registrationNumber": "",
+            "registrationYear": "2006",
+            "releaseYear": null,
+            "relicencingDate": null,
+            "series": null,
+            "subModel": "4.2 FSI QUATTRO",
+            "sundryInformation": "",
+            "tradePrice": null,
+            "transmissionType": "A",
+            "turbo": {
+              "code": "N",
+              "description": "No"
+            },
+            "valuationAmount": null,
+            "value": "0.00",
+            "vin": "NBKME199339933129",
+            "wheelWidth": null
+          }
+        }
+      },
+      "id": "0000032348",
+      "type": "securities"
+    }
+  ]
+}

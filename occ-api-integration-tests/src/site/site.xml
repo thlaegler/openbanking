@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="${project.artifactId}">
+	<version position="right" />
+	<publishDate position="right" />
+	<bannerLeft>
+		<name>${project.artifactId}</name>
+		<src>https://www.google.de/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png</src>
+		<href>https://www.github.com/thlaegler/mobility23-gtfs-realtime-proxy</href>
+	</bannerLeft>
+	<!-- <bannerRight> <src>https://www.google.de/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png</src> </bannerRight> -->
+	<poweredBy>
+		<logo name="Mobility Project 23" href="https://www.github.com/thlaegler/mobility23-gtfs-realtime-proxy"
+			img="https://www.google.de/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" />
+	</poweredBy>
+	<skin>
+		<groupId>org.apache.maven.skins</groupId>
+		<artifactId>maven-fluido-skin</artifactId>
+		<version>1.6</version>
+	</skin>
+
+	<body>
+		<breadcrumbs>
+			<item name="Mobility Project 23" href="https://www.github.com/thlaegler/mobility23-gtfs-realtime-proxy" />
+		</breadcrumbs>
+
+		<links>
+			<item name="Confluence" href="https://mobility23.atlassian.net" />
+			<item name="Jira" href="https://mobility23.atlassian.net/secure/RapidBoard.jspa" />
+			<item name="GCP" href="https://console.cloud.google.com/home/dashboard" />
+			<item name="Kubernetes" href="http://localhost/8001/ui/" />
+		</links>
+
+		<menu name="Generated Docs">
+			<item name="Test Report #1" href="/junit/index.html" />
+			<item name="Test Report #2" href="/cucumber/index.html" />
+			<item name="Test Report #3"
+				href="/cluecumber-reports/index.html" />
+			<item name="Test Report #4"
+				href="/cucumber-html-reports/overview-features.html" />
+			<item name="OpenAPI Spec" href="/${project.artifactId}.yaml" />
+			<item name="JavaDoc" href="/javadoc/index.html" />
+			<item name="JavaDoc X-Ref" href="/xref/index.html" />
+		</menu>
+
+		<menu ref="reports" />
+
+		<menu ref="site" />
+
+	</body>
+</project>
