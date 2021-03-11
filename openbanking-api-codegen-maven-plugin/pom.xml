@@ -25,7 +25,7 @@
 		<maven.skip.deploy>true</maven.skip.deploy>
 		<maven.site.skip>true</maven.site.skip>
 
-		<swagger.plugin.version>2.4.8</swagger.plugin.version>
+		<swagger.plugin.version>2.4.19</swagger.plugin.version>
 	</properties>
 
 	<dependencies>
